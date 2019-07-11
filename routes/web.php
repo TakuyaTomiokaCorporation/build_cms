@@ -26,6 +26,6 @@ Route::get('/admin', function(){
 /*
 | Shop Settings
 */
-Route::get('/admin/shop_registraion', 'ShopController@showCreateShop');
+Route::get('/admin/shop_registraion', 'ShopController@create');
 
-Route::post('/admin/shop_registraton', 'ShopController@createShop');
+Route::post('/admin/shop_registraton', 'ShopController@store');

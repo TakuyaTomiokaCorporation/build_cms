@@ -17,7 +17,7 @@ class ShopController extends Controller
         ]);
     }
 
-    public function showCreateShop()
+    public function create()
     {
         $regions = Region::all();
         $prefectures = Prefecture::all();
@@ -28,7 +28,7 @@ class ShopController extends Controller
         ]);
     }
 
-    public function createShop(Request $request)
+    public function store(Request $request)
     {
 
     }

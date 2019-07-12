@@ -20,25 +20,21 @@
             @method('POST')
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="region">地域</label>
-                <input type="text" name="region" class="col-sm-10 form-control-lg" value="{{ old('region') }}" required>
-                @if($errors->has('region'))<br><span class="error">{{ $errors->first('region') }}</span> @endif
-                {{-- 下記は今後使用予定
                 <select name="region" id="" size="1" class="custom-select col-sm-10">   
-                        @foreach ($regions as $region)
-                        <option value="{{ $region -> region_id }}">{{ $region -> region_name}}</option>
+                    @foreach ($regions as $region)
+                        <option value="{{ old($region -> region_id) }}" required>{{ $region -> region_name}}</option>
                     @endforeach 
-                </select> --}}
+                    @if($errors->has('region'))<br><span class="error">{{ $errors->first('region') }}</span> @endif
+                </select>
             </div>
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="prefecture">都道府県</label>
-                <input type="text" name="prefecture" class="col-sm-10 form-control-lg" value="{{ old('prefecture') }}" required>
-                @if($errors->has('prefecture'))<br><span class="error">{{ $errors->first('prefecture') }}</span> @endif
-                {{--下記は今後使用予定
                 <select name="prefecture" id="" size="1" class="custom-select col-sm-10"> 
-                        @foreach ($prefectures as $prefecture)
-                        <option value="{{ $prefecture -> prefectures_id }}">{{ $prefecture -> prefectures_name}}</option>
+                    @foreach ($prefectures as $prefecture)
+                        <option value="{{ old($prefecture -> prefectures_id) }}" required>{{ $prefecture -> prefectures_name}}</option>
                     @endforeach 
-                </select>--}}
+                </select>
+                @if($errors->has('prefecture'))<br><span class="error">{{ $errors->first('prefecture') }}</span> @endif
             </div>
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="shop_name">店舗名</label>

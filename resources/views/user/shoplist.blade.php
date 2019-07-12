@@ -14,7 +14,7 @@
         </nav>
     </header>
     <main>
-            <h1>ショップ検索</h1>
+            <h1 class="alert alert-primary">ショップ検索</h1>
             <table>
                 <tr><th>店舗名</th><th>郵便番号</th><th>住所</th><th>電話番号</th></tr>
                 @foreach($shops as $shop)

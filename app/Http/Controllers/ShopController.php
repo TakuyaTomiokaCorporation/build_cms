@@ -53,10 +53,13 @@ class ShopController extends Controller
         return view('admin.shop.create');
     }
 
-    public function store(Request $request)
+    public function confirm(\App\Http\Request\ValiShopRequest $request)
     {
-        $request->validate([
-            'name'
-        ]);
+        $data = $request -> all();
+        return view('shop.confirm')->with($data);
+    }
+
+    public function finish(){
+
     }
 }

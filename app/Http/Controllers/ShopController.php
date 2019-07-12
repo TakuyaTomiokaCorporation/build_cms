@@ -34,9 +34,13 @@ class ShopController extends Controller
 
     public function getIndex()
     {
-        $shops = Shop::all();
+        $shops_joined = \DB::table('shops')
+        ->join('regions', 'shops.region_id', '=', 'regions.region_id')
+        ->join('prefectures', 'shops.pre_id', '=', 'prefectures.prefectures_id')
+        ->get();
+
         return view('admin.shop.list',[
-            'shops' => $shops,
+            'shops' => $shops_joined,
         ]);
     }
 

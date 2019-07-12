@@ -9,7 +9,14 @@ use App\Prefecture;
 
 class ShopController extends Controller
 {
-    public function index()
+
+    /**
+     * 
+     * Bellow, related to "user"
+     * 
+     * */
+
+    public function getShopInfo()
     {
         $shops = Shop::all();
         return view('user.shoplist',[
@@ -17,19 +24,39 @@ class ShopController extends Controller
         ]);
     }
 
+    /**
+     * 
+     * Bellow, related to "admin"
+     * 
+     *  
+     * */
+
+    public function getIndex()
+    {
+        $shops = Shop::all();
+        return view('admin.shop.list',[
+            'shops' => $shops,
+        ]);
+    }
+
     public function create()
     {
-        $regions = Region::all();
-        $prefectures = Prefecture::all();
+        // 下記は今後有効かする。
+        // $regions = Region::all();
+        // $prefectures = Prefecture::all();
 
-        return view('admin.shop.create', [
-            'regions' => $regions,
-            'prefectures' => $prefectures,
-        ]);
+        // return view('admin.shop.create', [
+        //     'regions' => $regions,
+        //     'prefectures' => $prefectures,
+        // ]);
+
+        return view('admin.shop.create');
     }
 
     public function store(Request $request)
     {
-
+        $request->validate([
+            'name'
+        ]);
     }
 }

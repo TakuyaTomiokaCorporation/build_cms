@@ -11,9 +11,9 @@
         <input type="hidden" name="region_id" value="{{$region}}">
         <input type="hidden" name="pre_id" value="{{$prefecture}}">
         <input type="hidden" name="shop_name" value="{{$shop_name}}">
-        <input type="hidden" name="shop_address" value="{{$post_number}}">
-        <input type="hidden" name="shop_tel" value="{{$shop_address}}">
-        <input type="hidden" name="post_number" value="{{$shop_tel}}">
+        <input type="hidden" name="shop_address" value="{{$shop_address}}">
+        <input type="hidden" name="shop_tel" value="{{$shop_tel}}">
+        <input type="hidden" name="post_number" value="{{$post_number}}">
         <div class="row">
             <label class="col-sm-4">地域</label>
             <div class="col-sm-8">{{ $region }}</div>

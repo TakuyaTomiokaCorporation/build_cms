@@ -58,24 +58,26 @@ class ShopController extends Controller
         return view('admin.shop.create');
     }
 
-    public function confirm(\App\Http\Request\ValiShopRequest $request)
-    {
-        $data = $request -> all();
-        return view('admin.shop.confirm')->with($data);
-    }
+    // public function confirm(\App\Http\Request\ValiShopRequest $request)
+    // {
+    //     $data = $request -> all();
+    //     return view('admin.shop.confirm')->with($data);
+    // }
 
-    public function finish(){
-        $shop = new \App\Shop;
+    public function finish(Request $request){
 
-        $shop->region_id = $request->region;
-        $shop->prefecture_id = $request->prefecture;
-        $shop->shop_name = $request->shop_name;
-        $shop->post_number = $request->post_number;
-        $shop->shop_address = $request->shop_address;
-        $shop->shop_tel = $request->shop_tel;
+        dd($request);
+        // $shop = new \App\Shop;
 
-        $shop->save();
+        // $shop->region_id = $request->region;
+        // $shop->prefecture_id = $request->prefecture;
+        // $shop->shop_name = $request->shop_name;
+        // $shop->post_number = $request->post_number;
+        // $shop->shop_address = $request->shop_address;
+        // $shop->shop_tel = $request->shop_tel;
 
-        return redirect()->to('shop.list');
+        // $shop->save();
+
+        // return redirect()->to('shop.list');
     }
 }

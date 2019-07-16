@@ -12,8 +12,8 @@ class RegionsTableSeeder extends Seeder
     public function run()
     {
         $regions = [
-            // 本番環境では北海道をコメントアウトする
-            // ['region_name' => '北海道'],
+            
+            ['region_name' => '北海道'],
             ['region_name' => '東北地方'],
             ['region_name' => '関東地方'],
             ['region_name' => '中部地方'],

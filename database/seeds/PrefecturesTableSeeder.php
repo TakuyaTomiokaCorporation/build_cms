@@ -12,8 +12,8 @@ class PrefecturesTableSeeder extends Seeder
     public function run()
     {   
         $prefectures = [
-            // 本番環境では北海道をコメントアウトする。
-            // ['prefectures_name' => '北海道'],
+            
+            ['prefectures_name' => '北海道'],
             ['prefectures_name' => '青森県'],
             ['prefectures_name' => '秋田県'],
             ['prefectures_name' => '岩手県'],

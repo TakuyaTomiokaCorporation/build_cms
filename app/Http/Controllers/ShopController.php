@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Shop;
 use App\Region;
 use App\Prefecture;
-use \App\Http\Request\ValiShopRequest;
+use App\Http\Requests\ValiShopRequest;
 
 class ShopController extends Controller
 {
@@ -58,15 +58,18 @@ class ShopController extends Controller
         return view('admin.shop.create');
     }
 
-    // public function confirm(\App\Http\Request\ValiShopRequest $request)
-    // {
-    //     $data = $request -> all();
-    //     return view('admin.shop.confirm')->with($data);
-    // }
+    public function confirm(Request $request)
+    {
+        $data = $request -> all();
+        return view('admin.shop.confirm')->with($data);
+    }
 
     public function finish(Request $request){
 
-        dd($request);
+        $shop_new = $request -> all();
+        // $shop = Shop::create($shop_new);
+
+        dd($shop_new);
         // $shop = new \App\Shop;
 
         // $shop->region_id = $request->region;
@@ -78,6 +81,6 @@ class ShopController extends Controller
 
         // $shop->save();
 
-        // return redirect()->to('shop.list');
+        // return redirect()->to('shop');
     }
 }

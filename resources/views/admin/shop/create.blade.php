@@ -3,26 +3,14 @@
 @section('content')
     <h1 class="text-center jumbotron">ショップの作成</h1>
     <div class="container">
-        @if ($errors->any())
-            <div class="alert alert-danger dismissible fade show" role="alert">
-                @foreach ($erros as $error)
-                    <strong>注意!</strong> {{ $error}}
-                    <button type="button" class="close" data-dismiss="alert" aria-label="閉じる">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                @endforeach
-            </div>
-        @endif
-    </div>
-    <div class="container">
-        <form class="form-horizontal" action="{{ route('shop.finish')}}" method="post">
+        <form class="form-horizontal" action="{{ route('shop.confirm')}}" method="post">
             @csrf
-            @method('POST')
+            @method('PATCH')
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="region">地域</label>
                 <select name="region" id="" size="1" class="custom-select col-sm-10">   
                     @foreach ($regions as $region)
-                        <option value="{{ old($region -> region_id) }}" required>{{ $region -> region_name}}</option>
+                        <option value="{{ $region -> region_id }}" required>{{ $region -> region_name}}</option>
                     @endforeach 
                     @if($errors->has('region'))<br><span class="error">{{ $errors->first('region') }}</span> @endif
                 </select>
@@ -31,10 +19,10 @@
                 <label class="control-label col-sm-2" for="prefecture">都道府県</label>
                 <select name="prefecture" id="" size="1" class="custom-select col-sm-10"> 
                     @foreach ($prefectures as $prefecture)
-                        <option value="{{ old($prefecture -> prefectures_id) }}" required>{{ $prefecture -> prefectures_name}}</option>
+                        <option value="{{ $prefecture -> prefectures_id }}" required>{{ $prefecture -> prefectures_name}}</option>
                     @endforeach 
                 </select>
-                @if($errors->has('prefecture'))<br><span class="error">{{ $errors->first('prefecture') }}</span> @endif
+                @if($errors->has('prefecture'))<br><span class="error">{{ $errors->first('prefecture') }}</span>@endif
             </div>
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="shop_name">店舗名</label>

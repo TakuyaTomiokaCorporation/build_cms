@@ -15,7 +15,7 @@
         @endif
     </div>
     <div class="container">
-        <form class="form-horizontal" action="{{ route('shop.confirm')}}" method="post">
+        <form class="form-horizontal" action="{{ route('shop.finish')}}" method="post">
             @csrf
             @method('POST')
             <div class="form-group row">

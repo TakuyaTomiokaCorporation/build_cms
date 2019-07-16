@@ -2,8 +2,9 @@
 
 @section('content')
     <div class="container">
-        <h1 class="jumborton text-center">確認画面</h1>
+        <h1 class="jumborton text-center">新規ショップ確認画面</h1>
     </div>
+    <div class="container">
     <form action=" {{ route('shop.finish')}} " method="post" class="form-horizontal">
         @csrf
         @method('POST')
@@ -39,4 +40,5 @@
         </div>
         <input type="submit" name="button" value="登録" class="btn btn-primary btn-lg">
     </form>
+    </div>
 @endsection

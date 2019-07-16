@@ -39,7 +39,7 @@ class ShopController extends Controller
         ->join('prefectures', 'shops.pre_id', '=', 'prefectures.prefectures_id')
         ->get();
 
-        return view('admin.shop.list',[
+        return view('admin.shop.home',[
             'shops' => $shops_joined,
         ]);
     }
@@ -60,27 +60,15 @@ class ShopController extends Controller
 
     public function confirm(Request $request)
     {
-        $data = $request -> all();
-        return view('admin.shop.confirm')->with($data);
+        $shop_confirm = $request -> all();
+        return view('admin.shop.confirm')->with($shop_confirm);
     }
 
     public function finish(Request $request){
 
         $shop_new = $request -> all();
-        // $shop = Shop::create($shop_new);
+        $shop = Shop::create($shop_new);
 
-        dd($shop_new);
-        // $shop = new \App\Shop;
-
-        // $shop->region_id = $request->region;
-        // $shop->prefecture_id = $request->prefecture;
-        // $shop->shop_name = $request->shop_name;
-        // $shop->post_number = $request->post_number;
-        // $shop->shop_address = $request->shop_address;
-        // $shop->shop_tel = $request->shop_tel;
-
-        // $shop->save();
-
-        // return redirect()->to('shop');
+        return redirect()->to('/admin/shop');
     }
 }

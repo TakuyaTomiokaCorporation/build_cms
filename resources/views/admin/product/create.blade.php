@@ -8,22 +8,22 @@
         @method('PATCH')
         <div class="form-group row">
             <label class="control-label col-sm-2" for="product_name">製品名</label>
-            <input class="col-sm-10 form-control-lg" name="product_name" type="text" id="product_name" value="{{ old('product_name') }}" required>
+            <input class="col-sm-10 form-control-lg" name="product_name" type="text" id="product_name" value="{{ old('product_name') }}">
         </div>
         <div class="form-group row">
             <label class="control-label col-sm-2" for="overview">概要</label>
             <textarea class="form-control" name="overview" id="overview" rows="5" placeholder="製品概要を入力してください。"></textarea>
         </div>
         <div class="">
-            <input type="file" name="image_url"> 
+            <input type="file" name="thumbnail"> 
         </div>
         <div class="form-group row">
             <label class="control-label col-sm-2" for="link_detail">製品詳細ページのリンク</label>
-            <input class="col-sm-10 form-control-lg" name="link_detail" type="text" id="link_detail" value="{{ old('link_detail') }}" required>
+            <input class="col-sm-10 form-control-lg" name="link_detail" type="text" id="link_detail" value="{{ old('link_detail') }}">
         </div>
         <div class="form-group row">
             <label class="control-label col-sm-2" for="link_ec">ECページのリンク</label>
-            <input class="col-sm-10 form-control-lg" name="link_ec" type="text" id="link_ec" value="{{ old('link_ec') }}" required>
+            <input class="col-sm-10 form-control-lg" name="link_ec" type="text" id="link_ec" value="{{ old('link_ec') }}">
         </div>
         <hr>
         <p>接続方式</p>

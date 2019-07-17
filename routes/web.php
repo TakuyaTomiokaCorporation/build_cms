@@ -26,7 +26,7 @@ Route::get('/admin', function(){
 /*
 | Shop Settings
 */
-Route::group(['prefix' => '/admin/shop'], function () {
+Route::group(['prefix' => '/admin/shop'], function(){
     Route::get('/', 'ShopController@getIndex')->name('shop');
     Route::get('create', 'ShopController@create')->name('shop.create');
     Route::patch('confirm', 'ShopController@confirm')->name('shop.confirm');
@@ -36,3 +36,15 @@ Route::group(['prefix' => '/admin/shop'], function () {
 // Route::group(['middleware' => ['web']], function () {
 //     Route::get('/admin/shop/create', 'ShopController@crete');
 //   });
+
+
+/*
+| Product Settings
+*/
+
+Route::group(['prefix' => '/admin/product','middlwware'=>'web'], function(){
+    Route::get('/', 'ProductController@getList')->name('product');
+    Route::get('create', 'ProductController@create')->name('product.create');
+    Route::patch('confirm', 'ProductController@confirm')->name('product.confirm');
+    Route::post('finish', 'ProductController@finish')->name('product.finish');
+});

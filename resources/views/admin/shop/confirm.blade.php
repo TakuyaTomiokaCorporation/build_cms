@@ -5,7 +5,7 @@
         <h1 class="jumborton text-center">新規ショップ確認画面</h1>
     </div>
     <div class="container">
-    <form action=" {{ route('shop.finish')}} " method="post" class="form-horizontal">
+    <form action=" {{ route('shop.store')}} " method="post" class="form-horizontal">
         @csrf
         @method('POST')
         <input type="hidden" name="region_id" value="{{$region}}">

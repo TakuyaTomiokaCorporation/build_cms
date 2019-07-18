@@ -59,3 +59,14 @@ Route::group(['prefix' => '/admin/product-news','middlwware'=>'web'], function()
     Route::patch('confirm', 'ProductNewsController@confirm')->name('product_news.confirm');
     Route::post('store', 'ProductNewsController@store')->name('product_news.store');
 });
+
+/*
+| News Settings
+*/
+
+Route::group(['prefix' => '/admin/news','middlwware'=>'web'], function(){
+    Route::get('/', 'NewsController@getList')->name('news');
+    Route::get('create', 'NewsController@create')->name('news.create');
+    Route::patch('confirm', 'NewsController@confirm')->name('news.confirm');
+    Route::post('store', 'NewsController@store')->name('news.store');
+});

@@ -3,7 +3,7 @@
 @section('content')
     <h1 class="text-center jumbotron">製品の登録</h1>
     <div class="container">
-        <form  class="form-horizontal" action="{{ route('product.confirm') }}" method="POST">{{-- enctype="multipart/form-data" --}}
+        <form  class="form-horizontal" action="{{ route('product.confirm') }}" method="POST" enctype='multipart/form-data'>{{-- enctype="multipart/form-data" --}}
         @csrf
         @method('PATCH')
         <div class="form-group row">
@@ -56,7 +56,7 @@
         <hr>
         <p>カテゴリー</p>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="category" id="sporta" value="スポーツ向け">
+            <input class="form-check-input" type="radio" name="category" id="sports" value="スポーツ向け">
             <label class="form-check-label" for="sports">スポーツ向け</label>
         </div>
         <div class="form-check">

@@ -4,7 +4,6 @@
     <div class="container">
         <h1 class="text-center jumbotron">製品トップ</h1>
     </div>
-
     <div class="container">
         <table class="table table-striped table-hover">
             <thead>

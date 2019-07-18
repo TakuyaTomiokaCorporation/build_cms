@@ -70,11 +70,11 @@
         <hr>
         <p>ノイズキャンセリング機能</p>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="noise_canceling" id="true" value="true">
+            <input class="form-check-input" type="radio" name="noise_canceling" id="true" value="1">
             <label class="form-check-label" for="true">あり</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="noise_canceling" id="false" value="false">
+            <input class="form-check-input" type="radio" name="noise_canceling" id="false" value="0">
             <label class="form-check-label" for="false">なし</label>
         </div>
         <hr>
@@ -98,7 +98,7 @@
             <label class="form-check-label" for="hybrid">ハイブリッド型</label>
         </div>
         <hr>
-        <p>カラー</p>
+        {{-- <p>カラー</p>
         <div class="form-check">
             <input class="form-check-input" type="checkbox" name="color[]" id="color" value="黒">
             <label class="form-check-label" for="color">黒</label>
@@ -126,7 +126,7 @@
         <div class="form-check">
             <input class="form-check-input" type="checkbox" name="color[]" id="parple" value="紫">
             <label class="form-check-label" for="parple">紫</label>
-        </div>
+        </div> --}}
         <button type="submit" name="submit" class="btn btn-primary">確認</button>
     </form>
     </div>

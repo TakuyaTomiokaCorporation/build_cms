@@ -17,8 +17,8 @@ class CreateNewsProductsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->text('content');
-            $table->string('main_viusal');
-            $table->string('pdf');
+            $table->string('main_viusal')->nullable();
+            $table->string('pdf')->nullable();
             $table->integer('release');
             $table->timestamps();
         });

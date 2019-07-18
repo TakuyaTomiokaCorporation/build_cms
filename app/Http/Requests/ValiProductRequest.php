@@ -13,7 +13,7 @@ class ValiProductRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,7 @@ class ValiProductRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'thumbnail' => 'required|file|image|mimes:jpeg,png,jpg,gif|max:2048'
         ];
     }
 }

@@ -22,11 +22,11 @@ class CreateProductsTable extends Migration
             $table->string('link_ec')->nullable();
             $table->string('transmission_method');
             $table->string('waterproof');
-            $table->boolean('noise_canceling')->nullable()->default(false);
+            $table->integer('noise_canceling');
             $table->string('category');
             $table->string('compression_method');
             $table->string('sound_method');
-            $table->string('color');
+            // $table->string('color');
             $table->timestamps();
         });
     }

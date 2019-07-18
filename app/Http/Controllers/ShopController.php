@@ -10,12 +10,13 @@ use App\Http\Requests\ValiShopRequest;
 
 class ShopController extends Controller
 {
-
-    /**
+    /************************************************
+     ************************************************
      * 
      * Bellow, related to "user"
      * 
-     * */
+     ***********************************************
+     ***********************************************/
 
     public function getShopInfo()
     {
@@ -25,12 +26,13 @@ class ShopController extends Controller
         ]);
     }
 
-    /**
+    /************************************************
+     ************************************************
      * 
      * Bellow, related to "admin"
      * 
-     *  
-     * */
+     ***********************************************
+     ***********************************************/
 
     public function getIndex()
     {
@@ -61,10 +63,11 @@ class ShopController extends Controller
     public function confirm(Request $request)
     {
         $shop_confirm = $request -> all();
+
         return view('admin.shop.confirm')->with($shop_confirm);
     }
 
-    public function finish(Request $request){
+    public function store(Request $request){
 
         $shop_new = $request -> all();
         $shop = Shop::create($shop_new);

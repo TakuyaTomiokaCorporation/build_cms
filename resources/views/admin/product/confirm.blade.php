@@ -5,7 +5,7 @@
         <h1 class="text-center jumbotron">製品の確認</h1>
     </div>
     <div class="container">
-        <form action=" {{ route('product.store')}} " method="post" class="form-horizontal" enctype="multipart/form-data">
+        <form action=" {{ route('product.store')}} " method="post" class="form-horizontal" enctype='multipart/form-data'>
             @csrf
             @method('POST')
             <input type="hidden" name="product_name" value="{{ $product_name }}">
@@ -13,11 +13,12 @@
             <input type="hidden" name="thumbnail" value="{{ $thumbnail }}">
             <input type="hidden" name="link_detail" value="{{ $link_detail }}">
             <input type="hidden" name="link_ec" value="{{ $link_ec }}">
+            <input type="hidden" name="waterproof" value="{{ $waterproof }}">
             <input type="hidden" name="transmission_method" value="{{ $transmission_method }}">
             <input type="hidden" name="category" value="{{ $category }}">
             <input type="hidden" name="noise_canceling" value="{{ $noise_canceling }}">
             <input type="hidden" name="compression_method" value="{{ $compression_method }}">
-            <input type="hidden" name="transmission_method" value="{{ $sound_method }}">
+            <input type="hidden" name="sound_method" value="{{ $sound_method }}">
             {{-- <input type="hidden" name="transmission_method" value="{{ $color }}"> --}}
 
             <div class="row">
@@ -41,12 +42,12 @@
                 <div class="col-sm-8">{{  $link_ec }}</div>
             </div>
             <div class="row">
-                <label class="col-sm-4">接続方式</label>
-                <div class="col-sm-8">{{  $transmission_method }}</div>
+                <label class="col-sm-4">防水企画</label>
+                <div class="col-sm-8">{{  $waterproof }}</div>
             </div>
             <div class="row">
-                <label class="col-sm-4">防水規格</label>
-                <div class="col-sm-8">{{  $waterproof }}</div>
+                <label class="col-sm-4">接続方式</label>
+                <div class="col-sm-8">{{  $transmission_method }}</div>
             </div>
             <div class="row">
                 <label class="col-sm-4">カテゴリー</label>

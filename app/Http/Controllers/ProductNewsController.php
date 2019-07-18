@@ -30,11 +30,11 @@ class ProductNewsController extends Controller
 
     public function getList(){
 
-        $products = \DB::table('products')->get();
-
-        return view('admin.product_news.home',[
-            'products' => $products,
-        ]);
+        $news_products = \DB::table('news_products')->get();
+        // dd($news_products);
+         return view('admin.product_news.home',[
+             'news_products' => $news_products,
+         ]);
     }
 
     public function create(){

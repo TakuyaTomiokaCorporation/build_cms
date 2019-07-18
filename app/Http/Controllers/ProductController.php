@@ -32,7 +32,11 @@ class ProductController extends Controller
 
     public function getList(){
 
-        return view('admin.product.home');
+        $products = \DB::table('products')->get();
+
+        return view('admin.product.home',[
+            'products' => $products,
+        ]);
     }
 
     public function create(){

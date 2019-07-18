@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\ProductNews;
 
 class ProductNewsController extends Controller
 {
@@ -43,22 +44,31 @@ class ProductNewsController extends Controller
 
     public function confirm(Request $request){
 
-        $product_confirm = $request -> all();
+        $product_news_confirm = $request -> all();
 
-        if($file = $request->file('thumbnail')){
+        if($file = $request->file('main_visual')){
             $name = uniqid() . $file -> getClientOriginalName();
-            $file -> move('images/thumbnails/', $name);
-            $product_confirm['thumbnail'] = $name;
+            $file -> move('images/product_news/', $name);
+            $product_news_confirm['main_visual'] = $name;
             };
-        return view('admin.product_news.confirm')->with($product_confirm);
+
+        if($file = $request->file('pdf')){
+            $name = uniqid() . $file -> getClientOriginalName();
+            $file -> move('images/product_news/', $name);
+            $product_news_confirm['pdf'] = $name;
+            };
+        
+        // dd($product_news_confirm);
+        
+        return view('admin.product_news.confirm')->with($product_news_confirm);
     }
 
     public function store(Request $request){
         
-        $product_new = $request -> all();
+        $product_news_new = $request -> all();
 
-        $product = Product::create($product_new);
+        $product = ProductNews::create($product_news_new);
 
-        return redirect()->to('/admin/product_news/');
+        return redirect()->to('/admin/product-news/');
     }
 }

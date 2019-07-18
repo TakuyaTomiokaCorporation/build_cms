@@ -41,7 +41,7 @@
             <hr>
             <p>画像</p>
             <div class="">
-                <input type="file" name="main_visual"> 
+                <input type="file" name="image"> 
             </div>
             <hr>
             <p>PDF</p>
@@ -53,11 +53,11 @@
             <div class="row">
                 <div class="form-group">
                     <label for="date">日付</label>
-                    <input id="date" type="date" min="{{ $today }}">
+                    <input id="date" type="date" min="{{ $today }}" name="date">
                 </div>
                 <div class="form-group">
                     <label for="time">時間</label>
-                    <input id="time" type="time" min="{{ $time }}">
+                    <input id="time" type="time" name="time">
                 </div>
             </div>
             <hr>

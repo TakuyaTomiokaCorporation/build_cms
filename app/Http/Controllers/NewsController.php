@@ -31,10 +31,10 @@ class NewsController extends Controller
 
     public function getList(){
 
-        $news = \DB::table('news')->get();
-
+        $posts = \DB::table('news')->get();
+        // dd($posts);
         return view('admin.news.home',[
-            'news' => $news,
+            'posts' => $posts,
         ]);
     }
 
@@ -52,7 +52,7 @@ class NewsController extends Controller
 
         $news_confirm = $request -> all();
 
-        // Join date and time for creating book_date
+        // concatnate date and time for creating book_date
         $news_confirm['book_date'] = $request->date .' '.$request->time;
 
 

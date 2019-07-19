@@ -29,6 +29,12 @@ class NewsController extends Controller
      ***********************************************
      ***********************************************/
 
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+
     public function getList(){
 
         $posts = \DB::table('news')->get();
@@ -64,7 +70,7 @@ class NewsController extends Controller
         
         if($file = $request->file('pdf')){
             $name = uniqid() . $file -> getClientOriginalName();
-            $file -> move('images/product_news/', $name);
+            $file -> move('images/news/', $name);
             $product_news_confirm['pdf'] = $name;
             };
 

@@ -34,6 +34,11 @@ class ShopController extends Controller
      ***********************************************
      ***********************************************/
 
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function getIndex()
     {
         $shops_joined = \DB::table('shops')

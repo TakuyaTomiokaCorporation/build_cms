@@ -1,10 +1,10 @@
 @extends('layouts.header_admin')
 
 @section('content')
-    <div class="container">
-        <h1 class="text-center jumbotron">製品の確認</h1>
+    <div class="container jumbotron mt-5">
+        <h1 class="text-center">製品の確認</h1>
     </div>
-    <div class="container">
+    <div class="container mt-5">
         <form action=" {{ route('product.store')}} " method="post" class="form-horizontal" enctype='multipart/form-data'>
             @csrf
             @method('POST')

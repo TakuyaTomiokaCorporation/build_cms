@@ -1,10 +1,13 @@
-@extends('layouts.header_admin')
+@extends('layouts.admin')
 
-@section('content')
-    <div class="container">
+@section('main')
+    <div class="container mt-5">
         <h1 class="text-center jumbotron">製品トップ</h1>
     </div>
     <div class="container">
+        <a href="{{ route('product.create') }}" class="btn btn-primary">新規作成</a>
+    </div>
+    <div class="container mt-5">
         <table class="table table-striped table-hover">
             <thead>
                 <tr>
@@ -28,5 +31,6 @@
                 @endforeach
             </tbody>
         </table>
+        {{ $products->links() }}
     </div>
 @endsection

@@ -1,8 +1,14 @@
-@extends('layouts.header_admin')
+@extends('layouts.admin')
 
-@section('content')
-    <h1 class="text-center jumbotron">ショップの作成</h1>
+@section('main')
+    <div class="container mt-5">
+        <h1 class="text-center jumbotron">ショップの作成</h1>
+    </div>
     <div class="container">
+        <a href="{{ route('home')}}" class="btn btn-outline-primary">トップ</a>
+        <a href="{{ route('shop')}}" class="btn btn-outline-secondary ml-3">戻る</a>
+    </div>
+    <div class="container mt-5">
         <form class="form-horizontal" action="{{ route('shop.confirm')}}" method="post">
             @csrf
             @method('PATCH')
@@ -14,6 +20,7 @@
                     @endforeach 
                     {{-- @if($errors->has('region'))<br><span class="error">{{ $errors->first('region') }}</span> @endif --}}
                 </select>
+                <p class="mt-1">※北海道を選択する際も、入力してください</p>
             </div>
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="prefecture">都道府県</label>
@@ -22,6 +29,7 @@
                         <option value="{{ $prefecture -> prefectures_id }}" required>{{ $prefecture -> prefectures_name}}</option>
                     @endforeach 
                 </select>
+                <p class="mt-1">※北海道を選択する際も、入力してください</p>
                 {{-- @if($errors->has('prefecture'))<br><span class="error">{{ $errors->first('prefecture') }}</span>@endif --}}
             </div>
             <div class="form-group row">

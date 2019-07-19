@@ -1,12 +1,13 @@
 @extends('layouts.header_admin')
 
 @section('content')
-    <div class="container">
+    <div class="container mt-5">
             <h1 class="text-center jumbotron">ショップリスト</h1>
     </div>
-    
-
     <div class="container">
+        <a href="{{ route('shop.create')}}" class="btn btn-primary">新規作成</a>
+    </div> 
+    <div class="container mt-5">
     <table class="table table-striped table-hover">
         <thead>
             <tr>

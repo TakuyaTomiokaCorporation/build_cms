@@ -4,7 +4,7 @@
     <div class="container mt-5">
         <h1 class="text-center jumbotron">最新情報の確認</h1>
     </div>
-    <div class="container">
+    <div class="container mt-5">
         <form action=" {{ route('news.store')}} " method="post" class="form-horizontal" enctype='multipart/form-data'>
             @csrf
             @method('POST')

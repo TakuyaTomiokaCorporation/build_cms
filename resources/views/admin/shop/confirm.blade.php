@@ -1,8 +1,8 @@
-@extends('layouts.header_admin')
+@extends('layouts.admin')
 
-@section('content')
-    <div class="container">
-        <h1 class="jumborton text-center">新規ショップ確認画面</h1>
+@section('main')
+    <div class="container jumborton mt-5">
+        <h1 class="text-center">新規ショップ確認画面</h1>
     </div>
     <div class="container">
     <form action=" {{ route('shop.store')}} " method="post" class="form-horizontal">

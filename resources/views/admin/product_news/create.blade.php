@@ -1,10 +1,14 @@
-@extends('layouts.header_admin')
+@extends('layouts.admin')
 
-@section('content')
-    <div class="container">
+@section('main')
+    <div class="container mt-5">
         <h1 class="text-center jumbotron">製品に関するお知らせの作成</h1>
     </div>
     <div class="container">
+        <a href="{{ route('home')}}" class="btn btn-outline-primary">トップ</a>
+        <a href="{{ route('product_news')}}" class="btn btn-outline-secondary ml-3">戻る</a>
+    </div>
+    <div class="container mt-5">
         <form  class="form-horizontal" action="{{ route('product_news.confirm') }}" method="POST" enctype='multipart/form-data'>{{-- enctype="multipart/form-data" --}}
             @csrf
             @method('PATCH')

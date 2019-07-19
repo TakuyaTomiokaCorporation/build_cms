@@ -38,7 +38,7 @@ class ProductController extends Controller
 
     public function getList(){
 
-        $products = \DB::table('products')->get();
+        $products = \DB::table('products')->paginate(5);
 
         return view('admin.product.home',[
             'products' => $products,

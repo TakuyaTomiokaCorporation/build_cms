@@ -66,7 +66,7 @@ class ShopController extends Controller
     }
 
     public function confirm(Request $request)
-    {
+    {   
         $shop_confirm = $request -> all();
 
         return view('admin.shop.confirm')->with($shop_confirm);

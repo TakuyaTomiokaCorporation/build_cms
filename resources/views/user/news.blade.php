@@ -3,11 +3,11 @@
 @section('content')
     <article>
         <div class="container jumbotron">
-            <h1>{{ $posts->title }}</h1>
+            <h1>{{ $news->title }}</h1>
         </div>
         <div class="container">
             <div class="col-md-12">
-                    <p>{{ $posts->content }}</p>
+                    <p>{{ $news->content }}</p>
             </div>
         </div>
     </article>

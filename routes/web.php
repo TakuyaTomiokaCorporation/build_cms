@@ -82,6 +82,8 @@ Route::group(['prefix' => '/admin/news','middlwware'=>'web'], function(){
     Route::get('create', 'NewsController@create')->name('news.create');
     Route::patch('confirm', 'NewsController@confirm')->name('news.confirm');
     Route::post('store', 'NewsController@store')->name('news.store');
+    Route::get('{id}/edit', 'NewsController@edit')->name('news.edit');
+    Route::patch('{id}/edit', 'NewsController@update')->name('news.update');
 });
 
 

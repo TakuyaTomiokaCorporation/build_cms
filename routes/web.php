@@ -44,6 +44,8 @@ Route::group(['prefix' => '/admin/shop'], function(){
     Route::get('create', 'ShopController@create')->name('shop.create');
     Route::patch('confirm', 'ShopController@confirm')->name('shop.confirm');
     Route::post('store', 'ShopController@store')->name('shop.store');
+    Route::get('{id}/edit', 'ShopController@edit')->name('shop.edit');
+    Route::patch('{id}/edit', 'ShopController@update')->name('shop.update');
 });
 
 // Route::group(['middleware' => ['web']], function () {

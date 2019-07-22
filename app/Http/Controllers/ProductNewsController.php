@@ -74,6 +74,21 @@ class ProductNewsController extends Controller
 
         $product = ProductNews::create($product_news_new);
 
-        return redirect()->to('/admin/product-news/');
+        return redirect()->to(route('product_news'));
+    }
+
+    public function edit($id){
+
+        $news_product = ProductNews::findOrFail($id);
+
+        return view('admin.product_news.edit', compact('news_product'));
+    }
+
+    public function update(Request $request, $id){
+        
+        $news_product = $request -> all();
+        $product = ProductNews::findOrFail($id);
+        $product->update($news_product);
+        return redirect() -> to(route('product_news'));
     }
 }

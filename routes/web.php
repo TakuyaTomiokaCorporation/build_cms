@@ -6,13 +6,14 @@
 |############################
 */
 
-Route::get('/', function () {
-    return view('user.home');
-});
+Route::get('/', 'UserController@getAllInfo')->name('top');
+// Route::get('/', function () {
+//     return view('user.home');
+// });
 
 Route::get('/shoplist',  'ShopController@getShopInfo');
 
-Route::get('/news', 'NewsController@index');
+Route::get('/news/{id}', 'UserController@show')->name('news.show');
 
 /*
 |############################

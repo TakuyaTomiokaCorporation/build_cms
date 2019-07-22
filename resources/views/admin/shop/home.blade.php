@@ -31,6 +31,7 @@
                 <td>{{$shop->shop_tel}}</td>
                 <td>
                 <a href="" class="btn btn-primary btn-sm">詳細</a>
+                <a href="{{ route('shop.edit', $shop->id) }}" class="btn btn-primary btn-sm">編集</a>
                 <a href="" class="btn btn-danger btn-sm">削除</a>
                 </td>
                 </tr>

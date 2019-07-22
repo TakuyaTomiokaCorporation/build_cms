@@ -8,7 +8,6 @@ use Carbon\Carbon;
 
 class NewsController extends Controller
 {
-
     /************************************************
      ************************************************
      * 
@@ -72,7 +71,27 @@ class NewsController extends Controller
 
         $news = News::create($news_new);
 
-        return redirect()->to('/admin/news/');
+        return redirect()->to(route('news'));
+    }
+
+    public function edit($id){
+        $today = Carbon::now()->format('Y-m-d');
+
+        $news = News::findOrFail($id);
+        //dd($news);
+        return view('admin.news.edit', [
+            'today' => $today,
+            'news' => $news
+        ]);
+    }
+
+    public function update(Request $request, $id){
+        // dd($request);
+        $news_update = $request -> all();
+        $news_update['book_date'] = $request->date .' '.$request->time;
+        $news = News::findOrFail($id);
+        $news->update($news_update);
+        return redirect()->to(route('news'));
     }
 
 }

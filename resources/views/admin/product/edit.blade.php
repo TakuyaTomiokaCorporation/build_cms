@@ -1,0 +1,139 @@
+@extends('layouts.admin')
+
+@section('main')
+    <div class="container mt-5">
+        <h1 class="text-center jumbotron">製品の編集</h1>
+    </div>
+    <div class="container">
+        <a href="{{ route('home')}}" class="btn btn-outline-primary">トップ</a>
+        <a href="{{ route('product')}}" class="btn btn-outline-secondary ml-3">戻る</a>
+    </div>
+    <div class="container mt-5">
+        <form  class="form-horizontal" action="{{ route('product.update', $product->id) }}" method="POST" enctype='multipart/form-data'>{{-- enctype="multipart/form-data" --}}
+        @csrf
+        @method('PATCH')
+        <div class="form-group row">
+            <label class="control-label col-sm-2" for="product_name">製品名</label>
+            <input class="col-sm-10 form-control-lg" name="product_name" type="text" id="product_name" value="{{ $product->product_name }}">
+        </div>
+        <div class="form-group row">
+            <label class="control-label col-sm-2" for="overview">概要</label>
+            <textarea class="form-control" name="overview" id="overview" rows="5" placeholder="製品概要を入力してください。">{{ $product->overview }}</textarea>
+        </div>
+        <div class="">
+            <input type="file" name="thumbnail"> 
+        </div>
+        <div class="form-group row">
+            <label class="control-label col-sm-2" for="link_detail">製品詳細ページのリンク</label>
+            <input class="col-sm-10 form-control-lg" name="link_detail" type="text" id="link_detail" value="{{ $product->link_detail }}">
+        </div>
+        <div class="form-group row">
+            <label class="control-label col-sm-2" for="link_ec">ECページのリンク</label>
+            <input class="col-sm-10 form-control-lg" name="link_ec" type="text" id="link_ec" value="{{ $product->link_ec }}">
+        </div>
+        <hr>
+        <p>接続方式</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="transmission_method" id="wireless" value="ワイヤレス">
+            <label class="form-check-label" for="wireless">ワイヤレス</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="transmission_method" id="absolute_wireless" value="完全ワイヤレス">
+            <label class="form-check-label" for="absolute_wireless">完全ワイヤレス</label>    
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="transmission_method" id="wire" value="有線">
+            <label class="form-check-label" for="wire">有線</label>
+        </div>
+        <hr>
+        <p>防水規格</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="waterproof" id="ipx4" value="IPX4">
+            <label class="form-check-label" for="ipx4">IPX4</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="waterproof" id="ipx5" value="IPX5">
+            <label class="form-check-label" for="ipx5">IPX5</label>    
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="waterproof" id="ipx7" value="IPX7">
+            <label class="form-check-label" for="ipx7">IPX7</label>
+        </div>
+        <hr>
+        <p>カテゴリー</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="category" id="sports" value="スポーツ向け">
+            <label class="form-check-label" for="sports">スポーツ向け</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="category" id="end" value="エントリーモデル">
+            <label class="form-check-label" for="end">エントリーモデル</label>    
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="category" id="highend" value="ハイエンド">
+            <label class="form-check-label" for="highend">ハイエンド</label>
+        </div>
+        <hr>
+        <p>ノイズキャンセリング機能</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="noise_canceling" id="true" value="1">
+            <label class="form-check-label" for="true">あり</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="noise_canceling" id="false" value="0">
+            <label class="form-check-label" for="false">なし</label>
+        </div>
+        <hr>
+        <p>音声圧縮方式</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="compression_method" id="x" value="aptX">
+            <label class="form-check-label" for="x">aptX</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="compression_method" id="hd" value="aptX HD">
+            <label class="form-check-label" for="hd">aptX HD</label>
+        </div>
+        <hr>
+        <p>音声出力方式</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sound_method" id="daynamic" value="ダイナミック型">
+            <label class="form-check-label" for="daynamic">ダイナミック型</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sound_method" id="hybrid" value="ハイブリッド型">
+            <label class="form-check-label" for="hybrid">ハイブリッド型</label>
+        </div>
+        <hr>
+        {{-- <p>カラー</p>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="color[]" id="color" value="黒">
+            <label class="form-check-label" for="color">黒</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="color[]" id="white" value="白">
+            <label class="form-check-label" for="white">白</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="color[]" id="silver" value="シルバー">
+            <label class="form-check-label" for="silver">シルバー</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="color[]" id="red" value="赤">
+            <label class="form-check-label" for="red">赤</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="color[]" id="blue" value="青">
+            <label class="form-check-label" for="blue">青</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="color[]" id="pink" value="ピンク">
+            <label class="form-check-label" for="pink">ピンク</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="color[]" id="parple" value="紫">
+            <label class="form-check-label" for="parple">紫</label>
+        </div> --}}
+        <button type="submit" name="submit" class="btn btn-primary">更新</button>
+    </form>
+    </div>
+@endsection

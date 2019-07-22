@@ -68,7 +68,22 @@ class ProductController extends Controller
 
         $product = Product::create($product_new);
 
-        return redirect()->to('/admin/product/');
+        return redirect()->to(route('product'));
+    }
+
+    public function edit($id){
+
+        $product = Product::findOrFail($id);
+
+        return view('admin.product.edit',compact('product'));
+    }
+
+    public function update(Request $request, $id){
+
+        $product_update = $request -> all();
+        $product = Product::findOrFail($id);
+        $product->update($product_update);
+        return redirect() -> to(route('product'));
     }
 
 }

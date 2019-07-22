@@ -12,10 +12,9 @@ return [
     | has failed, such as for an invalid token or invalid new password.
     |
     */
-
-    'password' => 'Passwords must be at least eight characters and match the confirmation.',
-    'reset' => 'Your password has been reset!',
-    'sent' => 'We have e-mailed your password reset link!',
+    'password' => 'パスワードは少なくとも10文字以上で確認用と同じにしてください。',
+    'reset' => 'パスワードがリセットされました。',
+    'sent' => 'パスワードのリセット用リンクを送信しました。',
     'token' => 'This password reset token is invalid.',
     'user' => "We can't find a user with that e-mail address.",
 

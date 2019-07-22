@@ -1,6 +1,6 @@
-@extends('layouts.header_admin')
+@extends('layouts.admin')
 
-@section('content')
+@section('main')
     <div class="container mt-5">
         <h1 class="text-center jumbotron">最新情報トップ</h1>
     </div>

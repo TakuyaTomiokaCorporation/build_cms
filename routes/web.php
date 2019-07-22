@@ -60,6 +60,8 @@ Route::group(['prefix' => '/admin/product','middlwware'=>'web'], function(){
     Route::get('create', 'ProductController@create')->name('product.create');
     Route::patch('confirm', 'ProductController@confirm')->name('product.confirm');
     Route::post('store', 'ProductController@store')->name('product.store');
+    Route::get('{id}/edit', 'ProductController@edit')->name('product.edit');
+    Route::patch('{id}/edit', 'ProductController@update')->name('product.update');
 });
 
 /*

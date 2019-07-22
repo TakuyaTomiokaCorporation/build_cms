@@ -72,11 +72,28 @@ class ShopController extends Controller
         return view('admin.shop.confirm')->with($shop_confirm);
     }
 
-    public function store(Request $request){
-
+    public function store(Request $request)
+    {
         $shop_new = $request -> all();
         $shop = Shop::create($shop_new);
 
-        return redirect()->to('/admin/shop');
+        return redirect()->to(route('shop'));
+    }
+
+    public function edit($id)
+    {
+        $shop = Shop::findOrFail($id);
+        $regions = Region::all();
+        $prefectures = Prefecture::all();
+
+        return view('admin.shop.edit', compact('shop', 'regions', 'prefectures'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $shop_update = $request -> all();
+        $shop = Shop::findOrFail($id);
+        $shop->update($shop_update);
+        return redirect()->to(route('shop'));
     }
 }

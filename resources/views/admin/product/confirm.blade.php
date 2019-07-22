@@ -1,6 +1,6 @@
-@extends('layouts.header_admin')
+@extends('layouts.admin')
 
-@section('content')
+@section('main')
     <div class="container jumbotron mt-5">
         <h1 class="text-center">製品の確認</h1>
     </div>

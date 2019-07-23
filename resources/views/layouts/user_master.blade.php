@@ -65,7 +65,7 @@
                 </ul>
                 <ul>
                     <li><a href="{{ route('top') }}">製品一覧</a></li>
-                    <li><a href="{{ route('top') }}">コーデック</a></li>
+                    <li><a href="{{ route('codec') }}">コーデック</a></li>
                     <li><a href="{{ route('top') }}">Qualcomm QCC3026/3020</a></li>
                     <li><a href="{{ route('top') }}">防水性能</a></li>
                 </ul>

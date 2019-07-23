@@ -95,5 +95,9 @@ class UserController extends Controller
         return view('user.compensation');
     }
     
+    public function getInqury()
+    {
+        return view('user.inqury.confirm');
+    }
 
 }

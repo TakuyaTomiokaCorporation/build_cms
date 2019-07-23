@@ -4,11 +4,11 @@
 
 @section('description', '')
 
-@section('body_id', '')
-
 @section('css')
-    
+
 @endsection
+
+@section('body_id', '')
 
 @section('content')
     

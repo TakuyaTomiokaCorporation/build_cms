@@ -14,6 +14,7 @@ Route::get('/news/{id}', 'UserController@getNewsInfo')->name('news.show');
 Route::get('/product-news/{id}', 'UserController@getProductNewsInfo')->name('product-news.show');
 Route::get('/about', 'UserController@getAbout')->name('about');
 Route::get('/product', 'UserController@getProductInfo')->name('product.show');
+Route::get('/codec', 'UserController@getCodec')->name('codec');
 /*
 |############################
 | set routes of Artists bellow.

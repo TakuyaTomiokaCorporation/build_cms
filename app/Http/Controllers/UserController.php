@@ -84,6 +84,11 @@ class UserController extends Controller
     {
         return view('user.artist.pnk');
     }
+
+    public function getCodec()
+    {
+        return view('user.codec');
+    }
     
 
 }

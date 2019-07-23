@@ -6,6 +6,10 @@
 
 @section('body_id', 'e-nakamura')
 
+@section('css')
+    
+@endsection
+
 @section('content')
 
 <div id="container" class="both mb60">

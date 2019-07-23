@@ -1,6 +1,14 @@
 @extends('layouts.user_master')
 
-@section('title', 'AVIOTについて |')
+@section('title', ' |')
+
+@section('description', '')
+
+@section('body_id', '')
+
+@section('css')
+    
+@endsection
 
 @section('content')
     

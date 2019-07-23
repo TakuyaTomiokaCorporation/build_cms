@@ -16,8 +16,7 @@ Route::get('/about', 'UserController@getAbout')->name('about');
 Route::get('/product', 'UserController@getProductInfo')->name('product.show');
 Route::get('/codec', 'UserController@getCodec')->name('codec');
 Route::get('/compensation', 'UserController@getCompensation')->name('compensation');
-Route::get('/inqury', 'UserController@getInqury')->name('inqury');
-Route::get('/inqury/confirm', 'UserController@getInqury');
+
 /*
 |############################
 | set routes of Artists bellow.
@@ -29,7 +28,14 @@ Route::get('/artists/gesu', 'UserController@getGesu')->name('gesu.show');
 Route::get('/artists/maisonbookgirl', 'UserController@getMaison')->name('maison.show');
 Route::get('/artists/pnk', 'UserController@getPnk')->name('pnk.show');
 
-
+/*
+|############################
+| set routes of Inquries bellow.
+|############################
+*/
+Route::get('/inqury', 'UserController@getInqury')->name('inqury');
+Route::get('/inqury/confirm', 'UserController@getInquryConfirm');
+Route::get('/inqury/thanks', 'UserController@getInquryThanks');
 
 
 

@@ -105,4 +105,9 @@ class UserController extends Controller
         return view('user.inqury.confirm');
     }
 
+    public function getInquryThanks()
+    {
+        return view('user.inqury.thanks');
+    }
+
 }

@@ -74,7 +74,7 @@
                     <li><a href="{{ route('top') }}">よくある質問</a></li>
                     <li><a href="{{ route('top') }}">お問い合わせ</a></li>
                     <li><a href="{{ route('top') }}">製品保証</a></li>
-                    <li><a href="{{ route('top') }}">交換保障</a></li>
+                    <li><a href="{{ route('compensation') }}">交換保障</a></li>
                     <li><a href="{{ route('top') }}">説明書ダウンロード</a></li>
                 </ul>
                 <ul>

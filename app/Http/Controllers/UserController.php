@@ -89,6 +89,11 @@ class UserController extends Controller
     {
         return view('user.codec');
     }
+
+    public function getCompensation()
+    {
+        return view('user.compensation');
+    }
     
 
 }

@@ -97,6 +97,11 @@ class UserController extends Controller
     
     public function getInqury()
     {
+        return view('user.inqury.index');
+    }
+
+    public function getInquryConfirm()
+    {
         return view('user.inqury.confirm');
     }
 

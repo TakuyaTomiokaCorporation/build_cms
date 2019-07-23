@@ -57,4 +57,33 @@ class UserController extends Controller
 
     }
 
+    // 
+    // Aritists functions
+    // 
+    public function getArtistsInfo()
+    {
+        return view('user.artists');
+    }
+
+    public function getNakamura()
+    {
+        return view('user.artist.e-nakamura');
+    }
+
+    public function getGesu()
+    {
+        return view('user.artist.gesu');
+    }
+
+    public function getMaison()
+    {
+        return view('user.artist.maison');
+    }
+
+    public function getPnk()
+    {
+        return view('user.artist.pnk');
+    }
+    
+
 }

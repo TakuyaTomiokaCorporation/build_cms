@@ -25,8 +25,11 @@
     <link href="{{ asset('css/sp.css') }}" rel="stylesheet">
     <link href="{{ asset('css/tb.css') }}" rel="stylesheet">
     <link href="{{ asset('css/swiper.css') }}" rel="stylesheet">
+
+    @yield('css')
+    
 </head>
-<body>
+<body id="@yield('body_id')">
     <header>
         <nav class='greedy'>
             <h1><a href="{{ route('top') }}"><img src="{{ asset('images/user/logo_w.png') }}" alt="AVIOT"></a></h1>

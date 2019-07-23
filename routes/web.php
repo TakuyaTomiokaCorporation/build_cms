@@ -2,7 +2,9 @@
 
 /*
 |############################
+|############################
 | set routes of USERS bellow.
+|############################
 |############################
 */
 
@@ -12,6 +14,16 @@ Route::get('/news/{id}', 'UserController@getNewsInfo')->name('news.show');
 Route::get('/product-news/{id}', 'UserController@getProductNewsInfo')->name('product-news.show');
 Route::get('/about', 'UserController@getAbout')->name('about');
 Route::get('/product', 'UserController@getProductInfo')->name('product.show');
+/*
+|############################
+| set routes of Artists bellow.
+|############################
+*/
+Route::get('/artists', 'UserController@getArtistsInfo')->name('artists.show');
+Route::get('/artists/e-nakamura', 'UserController@getNakamura')->name('nakamura.show');
+Route::get('/artists/gesu', 'UserController@getGesu')->name('gesu.show');
+Route::get('/artists/maisonbookgirl', 'UserController@getMaison')->name('maison.show');
+Route::get('/artists/pnk', 'UserController@getPnk')->name('pnk.show');
 
 
 
@@ -22,7 +34,9 @@ Route::get('/product', 'UserController@getProductInfo')->name('product.show');
 
 /*
 |############################
+|############################
 | set routes of ADMIN bellow.
+|############################
 |############################
 */
 

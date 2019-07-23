@@ -37,7 +37,7 @@
                 <li><a href='{{ route('about') }}'>AVIOTとは</a></li>
                 <li><a href='{{ route('top') }}'>製品一覧</a></li>
                 <li><a href='{{ route('top') }}'>製品動画</a></li>
-                <li><a href='{{ route('top') }}'>インタビュー動画</a></li>
+                <li><a href='{{ route('artists.show') }}'>インタビュー動画</a></li>
                 <li><a href='{{ route('top') }}'>取扱店舗</a></li>
                 <li><a href='{{ route('top') }}'>製品サポート</a></li>
             </ul>
@@ -57,10 +57,10 @@
             <article class="w1020 w98 m_auto">
             <div class="foot_menu">
                 <ul>
-                    <li><a href="{{ route('top') }}">AVIOTについて</a></li>
+                    <li><a href="{{ route('about') }}">AVIOTについて</a></li>
                     <li><a href="{{ route('top') }}">最新情報</a></li>
                     <li><a href="{{ route('top') }}">製品に関するお知らせ</a></li>
-                    <li><a href="{{ route('top') }}">アーティストインタビュー</a></li>
+                    <li><a href="{{ route('artists.show') }}">アーティストインタビュー</a></li>
                     <li><a href="{{ route('top') }}">動画レビュー</a></li>
                 </ul>
                 <ul>

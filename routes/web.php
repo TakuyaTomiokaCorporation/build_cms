@@ -16,6 +16,7 @@ Route::get('/about', 'UserController@getAbout')->name('about');
 Route::get('/product', 'UserController@getProductInfo')->name('product.show');
 Route::get('/codec', 'UserController@getCodec')->name('codec');
 Route::get('/compensation', 'UserController@getCompensation')->name('compensation');
+Route::get('/operation', 'UserController@getOperation')->name('operation');
 
 /*
 |############################

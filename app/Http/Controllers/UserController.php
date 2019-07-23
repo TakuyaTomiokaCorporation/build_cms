@@ -110,4 +110,9 @@ class UserController extends Controller
         return view('user.inqury.thanks');
     }
 
+    public function getOperation()
+    {
+        return view('user.operation');
+    }
+
 }

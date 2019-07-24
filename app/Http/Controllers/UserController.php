@@ -15,6 +15,8 @@ use App\Prefecture;
 //related to ProductNews Model
 use App\ProductNews;
 
+//related to Products Model
+use App\Product;
 
 class UserController extends Controller
 {
@@ -54,7 +56,11 @@ class UserController extends Controller
 
     public function getProductInfo()
     {
+        $products = Product::all();
 
+        return view('user.product', [
+            'products' => $products,
+        ]);
     }
 
     // 

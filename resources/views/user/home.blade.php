@@ -73,8 +73,6 @@
             disableOnInteraction: true
         },
     });
-    });
-    });
 </script>
 
 @endsection

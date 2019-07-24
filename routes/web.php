@@ -13,7 +13,6 @@ Route::get('/shoplist',  'UserController@getShopInfo')->name('shoplist');
 Route::get('/news/{id}', 'UserController@getNewsInfo')->name('news.show');
 Route::get('/product-news/{id}', 'UserController@getProductNewsInfo')->name('product-news.show');
 Route::get('/about', 'UserController@getAbout')->name('about');
-Route::get('/product', 'UserController@getProductInfo')->name('product.show');
 Route::get('/codec', 'UserController@getCodec')->name('codec');
 Route::get('/compensation', 'UserController@getCompensation')->name('compensation');
 Route::get('/operation', 'UserController@getOperation')->name('operation');
@@ -38,8 +37,12 @@ Route::get('/inqury', 'UserController@getInqury')->name('inqury');
 Route::get('/inqury/confirm', 'UserController@getInquryConfirm');
 Route::get('/inqury/thanks', 'UserController@getInquryThanks');
 
-
-
+/*
+|############################
+| set routes of products bellow.
+|############################
+*/
+Route::get('/product', 'UserController@getProductInfo')->name('product.show');
 
 
 

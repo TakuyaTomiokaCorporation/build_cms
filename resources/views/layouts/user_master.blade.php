@@ -35,7 +35,7 @@
             <h1><a href="{{ route('top') }}"><img src="{{ asset('images/user/logo_w.png') }}" alt="AVIOT"></a></h1>
             <ul class='links'>
                 <li><a href='{{ route('about') }}'>AVIOTとは</a></li>
-                <li><a href='{{ route('top') }}'>製品一覧</a></li>
+                <li><a href='{{ route('product.show') }}'>製品一覧</a></li>
                 <li><a href='{{ route('top') }}'>製品動画</a></li>
                 <li><a href='{{ route('artists.show') }}'>インタビュー動画</a></li>
                 <li><a href='{{ route('top') }}'>取扱店舗</a></li>
@@ -64,7 +64,7 @@
                     <li><a href="{{ route('top') }}">動画レビュー</a></li>
                 </ul>
                 <ul>
-                    <li><a href="{{ route('top') }}">製品一覧</a></li>
+                    <li><a href="{{ route('product.show') }}">製品一覧</a></li>
                     <li><a href="{{ route('codec') }}">コーデック</a></li>
                     <li><a href="{{ route('top') }}">Qualcomm QCC3026/3020</a></li>
                     <li><a href="{{ route('top') }}">防水性能</a></li>

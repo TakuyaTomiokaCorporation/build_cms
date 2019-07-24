@@ -9,12 +9,19 @@
 */
 
 Route::get('/', 'UserController@getAllInfo')->name('top');
-Route::get('/shoplist',  'UserController@getShopInfo')->name('shoplist');
 Route::get('/about', 'UserController@getAbout')->name('about');
 Route::get('/codec', 'UserController@getCodec')->name('codec');
 Route::get('/compensation', 'UserController@getCompensation')->name('compensation');
 Route::get('/operation', 'UserController@getOperation')->name('operation');
 Route::get('/waterproof', 'UserController@getWaterproof')->name('waterproof');
+
+/*
+|############################
+| set routes of Shops bellow.
+|############################
+*/
+
+Route::get('/shoplist',  'UserShopController')->name('shoplist');
 
 /*
 |############################

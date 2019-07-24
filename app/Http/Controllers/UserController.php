@@ -50,6 +50,7 @@ class UserController extends Controller
     public function getShopInfo()
     {
         $shops = Shop::all();
+        
         return view('user.shoplist',[
             'shops' => $shops,
         ]);

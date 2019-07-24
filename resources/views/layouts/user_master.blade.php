@@ -78,7 +78,7 @@
                     <li><a href="{{ route('top') }}">説明書ダウンロード</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">取扱店舗</a></li>
+                    <li><a href="{{ route('shoplist') }}">取扱店舗</a></li>
                     <li><a href="https://www.amazon.co.jp/s?me=ABRZDPOGTSWO1" target="_blank">amazon店</a></li>
                     <li><a href="https://www.rakuten.co.jp/mobileselect/" target="_blank">楽天店</a></li>
                     <li><a href="https://store.shopping.yahoo.co.jp/mobileselect/" target="_blank">yahoo!店</a></li>

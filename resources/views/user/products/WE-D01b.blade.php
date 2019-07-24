@@ -103,7 +103,7 @@
             <div class="clm2_imgLogo"><img src="{{ asset('images/products/WE-D01b/IPX716-9.png') }}"></div>
             <div>
                 <p>外装パーツのシーリングの強化し、IPX7相当の防滴性能の実現しました。 <br>ジムでのハードなワークアウトや、ランニングでの大量の汗も大丈夫。急な雨に降られても平気です。</p>
-                <p  class="alc mt20"><a href="../../waterproof/" class="btn_Blk">詳細をみる</a></p>
+                <p  class="alc mt20"><a href="{{ rotue('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
             </div>
         </div>
     

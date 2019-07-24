@@ -68,6 +68,10 @@ class UserController extends Controller
         ]);
     }
 
+    public function getTed01h(){
+        return view('user.products.TE-D01h');
+    }
+
     // public function getProductIndividual($product_name)
     // {
     //     $product = Product::findOrFail($product_name);

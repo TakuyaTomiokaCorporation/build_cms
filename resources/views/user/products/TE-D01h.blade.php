@@ -21,10 +21,10 @@
             <div class="swiper-container gallery-top">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01h/TE-D01h_01.jpg') }}" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/TE-D01h_02.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/TE-D01h_03.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/TE-D01h_04.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/TE-D01h_05.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01h/TE-D01h_02.jpg') }}" alt=""></div>
+                    <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01h/TE-D01h_03.jpg') }}" alt=""></div>
+                    <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01h/TE-D01h_04.jpg') }}" alt=""></div>
+                    <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01h/TE-D01h_05.jpg') }}" alt=""></div>
                 </div>
     
                 <!-- Add Arrows -->
@@ -46,7 +46,7 @@
         <section class="w1020 w98 mt40"><!--商品説明-->
             <div class="flex">
             <div>
-                <img src="./img/TE-D01h_04.jpg"><!--製品画像一枚-->
+                <img src="{{ asset('/images/products/TE-D01h/TE-D01h_04.jpg') }}"><!--製品画像一枚-->
                 <p class="alc mt20"><!--製品の色-->
                     <span class="Black"></span>
                 </p>
@@ -203,7 +203,7 @@
     
         <section>
             <div class="alc mt20">
-                <a href="../" class="btn_back mt10">製品一覧へ戻る</a>
+                <a href="{{ route('product.show') }}" class="btn_back mt10">製品一覧へ戻る</a>
     
                 <a href="https://www.amazon.co.jp/AVIOT-%E6%97%A5%E6%9C%AC%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC-WE-D01b-Bluetooth-Android/dp/B07HCJHMSW/ref=sr_1_14?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&keywords=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&s=gateway&sr=8-14&th=1" class="btn_buy mt10">ご購入はこちら</a>
             </div>

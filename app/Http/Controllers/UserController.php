@@ -213,4 +213,9 @@ class UserController extends Controller
     {
         return view('user.support.confirm');
     }
+
+    public function getProductThanks()
+    {
+        return view('user.support.thanks');
+    }
 }

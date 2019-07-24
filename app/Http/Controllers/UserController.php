@@ -20,8 +20,8 @@ class UserController extends Controller
 {
     public function getAllInfo(){
 
-        $posts = \DB::table('news')->latest()->get();
-        $news_products = \DB::table('news_products')->latest()->get();
+        $posts = \DB::table('news')->latest()->take(6)->get();
+        $news_products = \DB::table('news_products')->latest()->take(5)->get();
 
         return view('user.home', compact('posts', 'news_products'));
     }

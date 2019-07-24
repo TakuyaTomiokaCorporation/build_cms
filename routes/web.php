@@ -69,7 +69,7 @@ Route::get('/product/WE-D01c', 'UserController@getWed01c');
 
 Route::get('/support', 'UserController@getSupport')->name('support');
 Route::get('/support/registration', 'UserController@getProductRegistration')->name('product_regiser');
-
+Route::get('/support/registration/confirm', 'UseController@getConfirm');
 
 
 

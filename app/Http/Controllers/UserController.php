@@ -208,4 +208,9 @@ class UserController extends Controller
     {
         return view('user.support.registration');
     }
+
+    public function getConfirm()
+    {
+        return view('user.support.confirm');
+    }
 }

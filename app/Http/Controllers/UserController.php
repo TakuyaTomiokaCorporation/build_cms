@@ -20,6 +20,10 @@ use App\Product;
 
 class UserController extends Controller
 {
+    // 
+    // Top Page function
+    // 
+
     public function getAllInfo(){
 
         $posts = \DB::table('news')->latest()->take(6)->get();
@@ -28,6 +32,9 @@ class UserController extends Controller
         return view('user.home', compact('posts', 'news_products'));
     }
 
+    // 
+    // News functions
+    // 
     public function getNewsInfo()
     {
         // $news = News::findOrFail($id);
@@ -35,6 +42,10 @@ class UserController extends Controller
         // return view('user.news', compact('news'));
         return view('user.news');
     }
+
+    // 
+    // Shop function
+    // 
 
     public function getShopInfo()
     {
@@ -44,15 +55,33 @@ class UserController extends Controller
         ]);
     }
 
-    public function getProductNewsInfo()
+    // Product News functions
+    public function showProductNewsList()
     {
-        $news_products = \DB::table('news_products')->latest()->take(5);
+        return view('user.product-news');
+    }
+    public function getProductNewsInfo($id)
+    {
+        $news_product = ProductNews::findOrFail($id);
 
     }
+
+    // 
+    // About function
+    // 
 
     public function getAbout()
     {
         return view('user.about');
+    }
+
+    // 
+    // Waterproof function
+    // 
+
+    public function getWaterproof()
+    {
+        return view('user.waterproof');
     }
 
     // 
@@ -94,6 +123,7 @@ class UserController extends Controller
     // 
     // Aritists functions
     // 
+
     public function getArtistsInfo()
     {
         return view('user.artists');
@@ -119,16 +149,28 @@ class UserController extends Controller
         return view('user.artist.pnk');
     }
 
+    // 
+    // Codec function
+    //
+
     public function getCodec()
     {
         return view('user.codec');
     }
 
+    // 
+    // Compensation function
+    //
+
     public function getCompensation()
     {
         return view('user.compensation');
     }
-    
+
+    // 
+    // Inqury functions
+    //
+
     public function getInqury()
     {
         return view('user.inqury.index');
@@ -144,9 +186,21 @@ class UserController extends Controller
         return view('user.inqury.thanks');
     }
 
+    // 
+    // Operation function
+    //
+
     public function getOperation()
     {
         return view('user.operation');
     }
 
+    // 
+    // Support functions
+    //
+
+    public function getSupport()
+    {
+        return view('user.support');
+    }
 }

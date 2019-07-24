@@ -10,11 +10,11 @@
 
 Route::get('/', 'UserController@getAllInfo')->name('top');
 Route::get('/shoplist',  'UserController@getShopInfo')->name('shoplist');
-Route::get('/product-news/{id}', 'UserController@getProductNewsInfo')->name('product-news.show');
 Route::get('/about', 'UserController@getAbout')->name('about');
 Route::get('/codec', 'UserController@getCodec')->name('codec');
 Route::get('/compensation', 'UserController@getCompensation')->name('compensation');
 Route::get('/operation', 'UserController@getOperation')->name('operation');
+Route::get('/waterproof', 'UserController@getWaterproof')->name('waterproof');
 
 /*
 |############################
@@ -22,6 +22,14 @@ Route::get('/operation', 'UserController@getOperation')->name('operation');
 |############################
 */
 Route::get('/news', 'UserController@getNewsInfo')->name('news.show');
+
+/*
+|############################
+| set routes of Product News bellow.
+|############################
+*/
+Route::get('/product-news', 'UserController@showProductNewsList');
+Route::get('/product-news/{id}', 'UserController@getEachProductNews')->name('product-news.show');
 
 /*
 |############################
@@ -53,9 +61,13 @@ Route::get('/product/TE-D01h', 'UserController@getTed01h');
 Route::get('/product/WE-D01b', 'UserController@getWed01b');
 Route::get('/product/WE-D01c', 'UserController@getWed01c');
 
+/*
+|############################
+| set routes of Support bellow.
+|############################
+*/
 
-
-
+Route::get('/support', 'UserController@getSupport');
 
 
 

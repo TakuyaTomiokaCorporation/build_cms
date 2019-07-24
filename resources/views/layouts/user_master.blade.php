@@ -70,7 +70,7 @@
                     <li><a href="{{ route('waterproof') }}">防水性能</a></li>
                 </ul>
                 <ul>
-                    <li><a href="{{ route('top') }}">カスタマーサポート</a></li>
+                    <li><a href="{{ route('support') }}">カスタマーサポート</a></li>
                     <li><a href="{{ route('top') }}">よくある質問</a></li>
                     <li><a href="{{ route('inqury') }}">お問い合わせ</a></li>
                     <li><a href="{{ route('top') }}">製品保証</a></li>

@@ -50,12 +50,24 @@ Route::get('/inqury/thanks', 'UserController@getInquryThanks');
 */
 Route::get('/product', 'UserController@getProductInfo')->name('product.show');
 Route::get('/product/TE-D01h', 'UserController@getTed01h');
-Route::get('/product/TED-D01b',function(){
-    return view('user.products.TED-D01b');
-});
-Route::get('/product/TED-D01c',function(){
-    return view('user.products.TED-D01c');
-});
+Route::get('/product/WE-D01b', 'UserController@getWed01b');
+Route::get('/product/WE-D01c', 'UserController@getWed01c');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*

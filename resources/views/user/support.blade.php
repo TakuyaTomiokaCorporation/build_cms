@@ -30,7 +30,7 @@
                 <dt class="bold">カスタマーサポートセンター</dt>
                 <dd>電話：<a href="050-2018-3909">050-2018-3909</a></dd>
                 <dd>※営業時間：10:00〜17:00（土日祝除く）</dd>
-                <dd class="mt10"><a href="../inqury/" class="btn_Blk">お問い合わせ</a></dd>
+                <dd class="mt10"><a href="{{ route('inqury') }}" class="btn_Blk">お問い合わせ</a></dd>
             </dl>
         </div>
     </section>
@@ -291,7 +291,7 @@
                 <ul class="inner">
                     <li>
                         <p>紛失したり、落下などの予期せぬ事故によって壊れてしまった場合など、保証期間内に一回限り、下記金額をご負担いただく事で、新品への交換、又は代替品のご提供をいたします。詳細に関しては下記リンクをご参照ください。</p>
-                        <p>[交換保証サービスのご案内]：<a href="../compensation/"> http://aviot.jp/compensation/</a></p>
+                        <p>[交換保証サービスのご案内]：<a href="{{ route('compensation') }}"> http://aviot.jp/compensation/</a></p>
                     </li>
                 </ul>
             </li>
@@ -301,7 +301,7 @@
                 <ul class="inner">
                     <li>
                         <p>紛失したり、落下などの予期せぬ事故によって壊れてしまった場合など、保証期間内に一回限り、下記金額をご負担いただく事で、新品への交換、又は代替品のご提供をいたします。詳細に関しては下記リンクをご参照ください。</p>
-                        <p>[交換保証サービスのご案内]：<a href="../compensation/"> http://aviot.jp/compensation/</a></p>
+                        <p>[交換保証サービスのご案内]：<a href="{{ route('compensation') }}"> http://aviot.jp/compensation/</a></p>
                     </li>
                 </ul>
             </li>
@@ -316,5 +316,33 @@
 @endsection
 
 @section('javascript-footer')
+
+<script type="text/javascript">
+	$(function(){
+
+	//.accordionの中のp要素がクリックされたら
+	$('.accordion p').click(function(){
+		$(this).next().slideToggle();	
+		// activeが存在する場合
+		if ($(this).children(".accordion_icon").hasClass('active')) {			
+			// activeを削除
+			$(this).children(".accordion_icon").removeClass('active');				
+		}
+		else {
+			// activeを追加
+			$(this).children(".accordion_icon").addClass('active');			
+		}	
+		//クリックされた.accordionの中のp要素に隣接するul要素が開いたり閉じたりする。
+	});
+
+        //.accordionの中の.innerの中のli要素の中のp要素がクリックされたら
+	$('.accordion .inner li p').click(function() {
+
+		//クリックされた.accordionの中の.innerの中のli要素の中のp要素の子要素のul要素が開いたり閉じたりする。
+		$(this).children('ul').slideToggle();
+
+  });
+});
+</script>
     
 @endsection

@@ -203,4 +203,9 @@ class UserController extends Controller
     {
         return view('user.support');
     }
+
+    public function getProductRegistration()
+    {
+        return view('user.support.registration');
+    }
 }

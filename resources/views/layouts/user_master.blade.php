@@ -39,7 +39,7 @@
                 <li><a href='{{ route('top') }}'>製品動画</a></li>
                 <li><a href='{{ route('artists.show') }}'>インタビュー動画</a></li>
                 <li><a href='{{ route('top') }}'>取扱店舗</a></li>
-                <li><a href='{{ route('top') }}'>製品サポート</a></li>
+                <li><a href='{{ route('support') }}'>製品サポート</a></li>
             </ul>
             <button>MENU</button>
             <ul class='hidden-links hidden'></ul>
@@ -73,7 +73,7 @@
                     <li><a href="{{ route('support') }}">カスタマーサポート</a></li>
                     <li><a href="{{ route('top') }}">よくある質問</a></li>
                     <li><a href="{{ route('inqury') }}">お問い合わせ</a></li>
-                    <li><a href="{{ route('top') }}">製品保証</a></li>
+                    <li><a href="{{ route('product_register') }}">製品保証</a></li>
                     <li><a href="{{ route('compensation') }}">交換保障</a></li>
                     <li><a href="{{ route('top') }}">説明書ダウンロード</a></li>
                 </ul>

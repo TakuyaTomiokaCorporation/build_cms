@@ -28,11 +28,12 @@ class UserController extends Controller
         return view('user.home', compact('posts', 'news_products'));
     }
 
-    public function getNewsInfo($id)
+    public function getNewsInfo()
     {
-        $news = News::findOrFail($id);
+        // $news = News::findOrFail($id);
         // dd($news);
-        return view('user.news', compact('news'));
+        // return view('user.news', compact('news'));
+        return view('user.news');
     }
 
     public function getShopInfo()
@@ -54,6 +55,10 @@ class UserController extends Controller
         return view('user.about');
     }
 
+    // 
+    // Products functions
+    //
+
     public function getProductInfo()
     {
         $products = Product::all();
@@ -62,6 +67,13 @@ class UserController extends Controller
             'products' => $products,
         ]);
     }
+
+    // public function getProductIndividual($product_name)
+    // {
+    //     $product = Product::findOrFail($product_name);
+
+    //     return view('user.products.individual', compact('product'));
+    // }
 
     // 
     // Aritists functions

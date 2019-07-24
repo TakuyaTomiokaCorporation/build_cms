@@ -10,12 +10,18 @@
 
 Route::get('/', 'UserController@getAllInfo')->name('top');
 Route::get('/shoplist',  'UserController@getShopInfo')->name('shoplist');
-Route::get('/news/{id}', 'UserController@getNewsInfo')->name('news.show');
 Route::get('/product-news/{id}', 'UserController@getProductNewsInfo')->name('product-news.show');
 Route::get('/about', 'UserController@getAbout')->name('about');
 Route::get('/codec', 'UserController@getCodec')->name('codec');
 Route::get('/compensation', 'UserController@getCompensation')->name('compensation');
 Route::get('/operation', 'UserController@getOperation')->name('operation');
+
+/*
+|############################
+| set routes of News bellow.
+|############################
+*/
+Route::get('/news', 'UserController@getNewsInfo')->name('news.show');
 
 /*
 |############################
@@ -43,7 +49,15 @@ Route::get('/inqury/thanks', 'UserController@getInquryThanks');
 |############################
 */
 Route::get('/product', 'UserController@getProductInfo')->name('product.show');
-
+Route::get('/product/TED-D01h',function(){
+    return view('user.product.TED-D01h');
+});
+Route::get('/product/TED-D01b',function(){
+    return view('user.product.TED-D01b');
+});
+Route::get('/product/TED-D01c',function(){
+    return view('user.product.TED-D01c');
+});
 
 
 /*

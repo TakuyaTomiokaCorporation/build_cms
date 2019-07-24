@@ -58,7 +58,7 @@
             <div class="foot_menu">
                 <ul>
                     <li><a href="{{ route('about') }}">AVIOTについて</a></li>
-                    <li><a href="{{ route('top') }}">最新情報</a></li>
+                    <li><a href="{{ route('news.show') }}">最新情報</a></li>
                     <li><a href="{{ route('top') }}">製品に関するお知らせ</a></li>
                     <li><a href="{{ route('artists.show') }}">アーティストインタビュー</a></li>
                     <li><a href="{{ route('top') }}">動画レビュー</a></li>

@@ -32,13 +32,24 @@ class UserController extends Controller
         $posts = \DB::table('news')
                 ->where('release', '=', '1')
                 ->orwhere(function($query){
-                    $query->where('created_at', '>', '$now')
-                            ->where('book_date', '>', '$now');
+                    $query->where('created_at', '>=', '$now')
+                            ->where('book_date', '>=', '$now');
                 })
                 ->latest()->take(6)->get();
 
-        $news_products = \DB::table('news_products')->latest()->take(5)->get();
+        $news_products = \DB::table('news_products')
+                ->where('release', '=', '1')
+                ->orwhere(function($query){
+                    $query->where('created_at', '>=', '$now')
+                            ->where('book_date', '>=', '$now');
+                })
+                ->latest()->take(6)->get();
 
+        foreach($news_products as $news_product){
+
+            $news_product->created_at = Carbon::createFromFormat('Y-m-d H:i:s', $news_product->created_at)->format('Y-m-d');
+        }
+        
         return view('user.home', compact('posts', 'news_products'));
     }
 

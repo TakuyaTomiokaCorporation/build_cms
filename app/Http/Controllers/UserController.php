@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 // relatedo to News Model
 use App\News;
+use Carbon\Carbon;
 
 // related to Shop Model
 use App\Shop;
@@ -26,7 +27,16 @@ class UserController extends Controller
 
     public function getAllInfo(){
 
-        $posts = \DB::table('news')->latest()->take(6)->get();
+        $now = Carbon::now();
+
+        $posts = \DB::table('news')
+                ->where('release', '=', '1')
+                ->orwhere(function($query){
+                    $query->where('created_at', '>', '$now')
+                            ->where('book_date', '>', '$now');
+                })
+                ->latest()->take(6)->get();
+
         $news_products = \DB::table('news_products')->latest()->take(5)->get();
 
         return view('user.home', compact('posts', 'news_products'));

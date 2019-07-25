@@ -21,7 +21,7 @@ class CreateNewsTable extends Migration
             $table->string('image')->nullable();
             $table->string('pdf')->nullable();
             $table->integer('release');
-            $table->string('book_date')->nullable();
+            $table->date('book_date')->nullable();
             $table->timestamps();
         });
     }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\ProductNews;
+use Carbon\Carbon;
 
 class ProductNewsController extends Controller
 {
@@ -44,12 +45,17 @@ class ProductNewsController extends Controller
 
     public function create(){
 
-        return view('admin.product_news.create');
+        $today = Carbon::now()->format('Y-m-d');
+        return view('admin.product_news.create',[
+            'today' => $today,
+        ]);
     }
 
     public function confirm(Request $request){
 
         $product_news_confirm = $request -> all();
+
+        $news_confirm['book_date'] = $request->date .' '.$request->time;
 
         if($file = $request->file('main_visual')){
             $name = uniqid() . $file -> getClientOriginalName();

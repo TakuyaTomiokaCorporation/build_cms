@@ -36,7 +36,7 @@ class ProductNewsController extends Controller
 
     public function getList(){
 
-        $news_products = \DB::table('news_products')->get();
+        $news_products = \DB::table('news_products')->paginate(5);;
         // dd($news_products);
          return view('admin.product_news.home',[
              'news_products' => $news_products,
@@ -45,18 +45,16 @@ class ProductNewsController extends Controller
 
     public function create(){
 
-        $today = Carbon::now()->format('Y-m-d');
-        return view('admin.product_news.create',[
-            'today' => $today,
-        ]);
+        $now = Carbon::now();
+
+        return view('admin.product_news.create', compact('now'));
     }
 
     public function confirm(Request $request){
 
         $product_news_confirm = $request -> all();
 
-        $news_confirm['book_date'] = $request->date .' '.$request->time;
-
+        $product_news_confirm['book_date'] = Carbon::createFromFormat('Y-m-d\TH:i', $product_news_confirm['book_date']);
         if($file = $request->file('main_visual')){
             $name = uniqid() . $file -> getClientOriginalName();
             $file -> move('images/product_news/', $name);
@@ -78,16 +76,17 @@ class ProductNewsController extends Controller
         
         $product_news_new = $request -> all();
 
-        $product = ProductNews::create($product_news_new);
-
+        ProductNews::create($product_news_new);
+        // dd($product_news_new);
         return redirect()->to(route('product_news'));
     }
 
     public function edit($id){
 
+        $now = Carbon::now();
         $news_product = ProductNews::findOrFail($id);
 
-        return view('admin.product_news.edit', compact('news_product'));
+        return view('admin.product_news.edit', compact('news_product', 'now'));
     }
 
     public function update(Request $request, $id){

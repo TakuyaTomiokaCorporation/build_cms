@@ -31,6 +31,14 @@
                 <input type="file" name="pdf"> 
             </div>
             <hr>
+            <p>予約投稿</p>
+            <div class="row">
+                <div class="form-group">
+                    <label for="book_date">日時</label>
+                    <input id="date" type="datetime-local" min="{{ $now }}" name="book_date">
+                </div>
+            </div>
+            <hr>
             <p>公開設定</p>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="release" id="release" value="1">

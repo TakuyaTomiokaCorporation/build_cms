@@ -12,6 +12,7 @@
             <input type="hidden" name="content" value="{{ $content }}">
             <input type="hidden" name="main_visual" value="{{ $main_visual }}">
             <input type="hidden" name="pdf" value="{{ $pdf }}">
+            <input type="hidden" name="book_date" value="{{ $book_date }}">
             <input type="hidden" name="release" value="{{ $release }}">
             {{-- <input type="hidden" name="transmission_method" value="{{ $color }}"> --}}
 
@@ -34,15 +35,18 @@
             <div class="row">
                 <label class="col-sm-4">公開設定</label>
                 <div class="col-sm-8">
-                    @if($release === 1)
-                        すぐに公開する
+                    @if($release == 1)
+                        公開
                     @else
-                        まだ公開しない
+                        非公開
                     @endif
                 </div>
             </div>
-                <input type="submit" name="button" value="登録" class="btn btn-primary btn-lg">
-            </div> 
+            <div class="row">
+                <label class="col-sm-4">投稿時刻</label>
+                <div class="col-sm-8">{{  $book_date }}</div>
+            </div>
+            <input type="submit" name="button" value="登録" class="btn btn-primary btn-lg">
         </form>
-    </div>
+    </div> 
 @endsection

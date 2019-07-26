@@ -40,5 +40,6 @@
                 @endforeach
             </tbody>
         </table>
+        <div class="mt-5">{{ $news_products->links() }}</div>
     </div>
 @endsection

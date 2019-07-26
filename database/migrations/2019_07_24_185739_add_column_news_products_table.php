@@ -15,7 +15,7 @@ class AddColumnNewsProductsTable extends Migration
     {
         Schema::table('news_products', function (Blueprint $table) {
             
-            $table->date('book_date')->nullable();
+            $table->datetime('book_date')->nullable();
 
         });
     }

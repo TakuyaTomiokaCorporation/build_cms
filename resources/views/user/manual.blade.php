@@ -24,7 +24,7 @@
         <p class="mt10">※取扱説明書をご利用いただくには『<a href="https://get.adobe.com/reader/?loc=jp" target="_brank">AdobeReader</a>』が必要です。<br>
             お持ちでない場合は、<a href="https://get.adobe.com/reader/?loc=jp" target="_brank">こちら</a>からダウンロードしてください。</p>
     </div>
-    <p class="mt10 mb10"><a href="../movies/" class="btn_Blk">ペアリング動画はこちら</a></p>
+    <p class="mt10 mb10"><a href="{{ route('movies') }}" class="btn_Blk">ペアリング動画はこちら</a></p>
     
         <!--<section class="manual_product">
                 <div class="manual_photo"><img src="../product/WE-D01b/img/WE-D01b_02.png"></div>

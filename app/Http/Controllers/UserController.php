@@ -103,7 +103,7 @@ class UserController extends Controller
     }
 
     // 
-    // Waterproof function
+    // Qualcomm function
     // 
 
     public function getQualcomm()
@@ -112,12 +112,21 @@ class UserController extends Controller
     }
 
     // 
-    // Waterproof function
+    // Manual function
     // 
 
     public function getManual()
     {
         return view('user.manual');
+    }
+
+    // 
+    // Movies function
+    // 
+
+    public function getMovies()
+    {
+        return view('user.movies');
     }
 
 

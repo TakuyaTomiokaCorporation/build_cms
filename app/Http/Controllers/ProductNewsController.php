@@ -46,8 +46,6 @@ class ProductNewsController extends Controller
             $product_news_confirm['pdf'] = $name;
             };
         
-        // dd($product_news_confirm);
-        
         return view('admin.product_news.confirm')->with($product_news_confirm);
     }
 
@@ -56,7 +54,7 @@ class ProductNewsController extends Controller
         $product_news_new = $request -> all();
 
         ProductNews::create($product_news_new);
-        // dd($product_news_new);
+        
         return redirect()->to(route('product_news'));
     }
 

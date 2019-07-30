@@ -45,7 +45,6 @@ class NewsController extends Controller
             $product_news_confirm['pdf'] = $name;
             };
 
-
         return view('admin.news.confirm')->with($news_confirm);
     }
 
@@ -59,18 +58,19 @@ class NewsController extends Controller
     }
 
     public function edit($id){
-        $now = Carbon::now();
 
+        $now = Carbon::now();
         $news = News::findOrFail($id);
-        //dd($news);
-        return view('admin.news.edit', [
-            'now' => $now,
-            'news' => $news
-        ]);
+
+        return view('admin.news.edit', compact('news', 'now'));
+        // return view('admin.news.edit', [
+        //     'now' => $now,
+        //     'news' => $news
+        // ]);
     }
 
     public function update(Request $request, $id){
-        // dd($request);
+        
         $news_update = $request -> all();
         $news_update['book_date'] = $request->date .' '.$request->time;
         $news = News::findOrFail($id);

@@ -280,4 +280,13 @@ class UserController extends Controller
         return view('user.support.thanks');
     }
 
+
+    // 
+    // LP1 function
+    // 
+
+    public function getLP()
+    {
+        return view('user.lp.lp1');
+    }
 }

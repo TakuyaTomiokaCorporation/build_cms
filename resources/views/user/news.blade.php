@@ -19,6 +19,7 @@
                 <div class="news_title mb20">
                     <p class="tag_artist">アーティストインタビュー</p>
                     <h3>AVIOT LIVE :01開催のお知らせ</h3>
+                    @if()
                     <time><small>2019.07.03</small></time>
                 </div>
         

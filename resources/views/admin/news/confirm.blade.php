@@ -51,8 +51,7 @@
                 <label class="col-sm-4">予約投稿時刻</label>
                 <div class="col-sm-8">{{  $book_date }}</div>
             </div>
-                <input type="submit" name="button" value="登録" class="btn btn-primary btn-lg">
-            </div> 
+            <input type="submit" name="button" value="登録" class="btn btn-primary btn-lg">
         </form>
     </div>
 @endsection

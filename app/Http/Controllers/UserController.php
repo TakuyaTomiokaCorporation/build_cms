@@ -112,6 +112,16 @@ class UserController extends Controller
     }
 
     // 
+    // Waterproof function
+    // 
+
+    public function getManual()
+    {
+        return view('user.manual');
+    }
+
+
+    // 
     // Products functions
     //
 

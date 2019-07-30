@@ -15,6 +15,8 @@ Route::get('/compensation', 'UserController@getCompensation')->name('compensatio
 Route::get('/operation', 'UserController@getOperation')->name('operation');
 Route::get('/waterproof', 'UserController@getWaterproof')->name('waterproof');
 Route::get('/qualcomm', 'UserController@getQualcomm')->name('qualcomm');
+Route::get('/manual', 'UserController@getManual')->name('manual');
+
 
 /*
 |############################

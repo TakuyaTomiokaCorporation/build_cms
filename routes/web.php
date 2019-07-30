@@ -39,8 +39,8 @@ Route::get('/news', 'UserController@getNewsInfo')->name('news.show');
 | set routes of Product News bellow.
 |############################
 */
-Route::get('/product-news', 'UserController@showProductNewsList');
-Route::get('/product-news/{id}', 'UserController@getEachProductNews')->name('product-news.show');
+Route::get('/product-news', 'UserController@showProductNewsList')->name('product_news.list');
+Route::get('/product-news/{id}', 'UserController@getEachProductNews')->name('product_news.show');
 
 /*
 |############################

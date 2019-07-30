@@ -76,11 +76,26 @@ class UserController extends Controller
     // Product News functions
     public function showProductNewsList()
     {
-        return view('user.product-news');
+        $now = Carbon::now()->format('Y-m-d H:i:s');
+        $news_products = \DB::table('news_products')
+                    ->where('release', '=', '1')
+                    ->where('book_date', '<=', $now)
+                    ->latest()->paginate(5);
+        
+        foreach($news_products as $news_product)
+        {
+            $news_product->book_date = Carbon::createFromFormat('Y-m-d H:i:s', $news_product->book_date)->format('Y-m-d');
+        }
+
+        return view('user.product-news',[
+            'news_products' => $news_products,
+        ]);
     }
-    public function getProductNewsInfo($id)
+    public function getEachProductNews($id)
     {
         $news_product = ProductNews::findOrFail($id);
+
+        return view('user.product-news-info', compact('news_product'));
 
     }
 
@@ -264,4 +279,5 @@ class UserController extends Controller
     {
         return view('user.support.thanks');
     }
+
 }

@@ -25,7 +25,7 @@
                     <td><img src="/images/product_news/{{ $news_product->main_visual }}" alt=""></td>
                     <td>{{ $news_product->pdf }}</td>
                     <td>
-                        @if($news_product->release)
+                        @if($news_product->release === 1)
                         公開中
                         @else
                         非公開

@@ -33,21 +33,15 @@ class NewsController extends Controller
 
     public function create(){
 
-        $today = Carbon::now()->format('Y-m-d');
+        $now = Carbon::now();
         
 
-        return view('admin.news.create',[
-            'today' => $today,
-        ]);
+        return view('admin.news.create', compact('now'));
     }
 
     public function confirm(Request $request){
 
         $news_confirm = $request -> all();
-
-        // concatnate date and time for creating book_date
-        $news_confirm['book_date'] = $request->date .' '.$request->time;
-
 
         if($file = $request->file('image')){
             $name = uniqid() . $file -> getClientOriginalName();
@@ -75,12 +69,12 @@ class NewsController extends Controller
     }
 
     public function edit($id){
-        $today = Carbon::now()->format('Y-m-d');
+        $now = Carbon::now();
 
         $news = News::findOrFail($id);
         //dd($news);
         return view('admin.news.edit', [
-            'today' => $today,
+            'now' => $now,
             'news' => $news
         ]);
     }

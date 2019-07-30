@@ -16,8 +16,7 @@ class NewsController extends Controller
 
     public function getList(){
 
-        $posts = \DB::table('news')->get();
-        // dd($posts);
+        $posts = \DB::table('news')->paginate(5);
         return view('admin.news.home',[
             'posts' => $posts,
         ]);
@@ -26,7 +25,6 @@ class NewsController extends Controller
     public function create(){
 
         $now = Carbon::now();
-        
 
         return view('admin.news.create', compact('now'));
     }

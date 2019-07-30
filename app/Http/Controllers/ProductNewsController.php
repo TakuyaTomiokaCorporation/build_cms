@@ -17,7 +17,6 @@ class ProductNewsController extends Controller
     public function getList(){
 
         $news_products = \DB::table('news_products')->paginate(5);;
-        // dd($news_products);
          return view('admin.product_news.home',[
              'news_products' => $news_products,
          ]);

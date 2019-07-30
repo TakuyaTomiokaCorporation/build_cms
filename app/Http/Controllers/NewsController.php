@@ -8,14 +8,6 @@ use Carbon\Carbon;
 
 class NewsController extends Controller
 {
-    /************************************************
-     ************************************************
-     * 
-     * Bellow, related to "admin"
-     * 
-     ***********************************************
-     ***********************************************/
-
     public function __construct()
     {
         $this->middleware('auth');

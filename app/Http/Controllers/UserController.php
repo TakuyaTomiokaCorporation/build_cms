@@ -103,6 +103,15 @@ class UserController extends Controller
     }
 
     // 
+    // Waterproof function
+    // 
+
+    public function getQualcomm()
+    {
+        return view('user.qualcomm');
+    }
+
+    // 
     // Products functions
     //
 

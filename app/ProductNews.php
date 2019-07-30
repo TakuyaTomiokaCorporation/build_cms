@@ -13,6 +13,7 @@ class ProductNews extends Model
         'content',
         'main_viusal',
         'pdf',
-        'release'
+        'release',
+        'book_date'
     ];
 }

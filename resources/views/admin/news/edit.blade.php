@@ -52,10 +52,10 @@
             <div class="">
                 <input type="file" name="pdf"> 
             </div>
-            <p>詳細のリンク</p>
+            <hr>
             <div class="form-group row">
-                <label class="control-label col-sm-2" for="pdf">タイトル</label>
-                <input class="col-sm-10 form-control-lg" name="pdf" type="text" id="pdf" value="{{ $news->link }}">
+                <label class="control-label col-sm-2" for="pdf">詳細ページのリンク</label>
+                <input class="col-sm-10 form-control-lg" name="link" type="text" id="link" value="{{ $news->link }}">
             </div>
             <hr>
             <p>予約投稿</p>

@@ -31,6 +31,11 @@
                 <input type="file" name="pdf"> 
             </div>
             <hr>
+            <div class="form-group row">
+                <label class="control-label col-sm-2" for="pdf">詳細のリンク</label>
+                <input class="col-sm-10 form-control-lg" name="link" type="text" id="link" value="{{ old('link') }}">
+            </div>
+            <hr>
             <p>予約投稿</p>
             <div class="row">
                 <div class="form-group">

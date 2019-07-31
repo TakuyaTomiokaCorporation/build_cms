@@ -17,6 +17,7 @@
     <script src="{{ asset('js/swiper.js') }}"></script>
 
     <!-- Fonts -->
+    @yield('fonts')
 
     <!-- Styles -->
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">

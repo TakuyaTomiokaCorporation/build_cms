@@ -20,6 +20,7 @@ class CreateNewsProductsTable extends Migration
             $table->string('main_visual')->nullable();
             $table->string('pdf')->nullable();
             $table->integer('release');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

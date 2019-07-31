@@ -26,6 +26,7 @@ class CreateProductsTable extends Migration
             $table->string('category');
             $table->string('compression_method');
             $table->string('sound_method');
+            $table->softDeletes();
             // $table->string('color');
             $table->timestamps();
         });

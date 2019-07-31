@@ -29,23 +29,29 @@ class UserController extends Controller
 
         $now = Carbon::now()->format('Y-m-d H:i:s');
 
-        $posts = \DB::table('news')
-                ->where('release', '=', '1')
-                ->where('book_date', '<=', $now)
-                ->latest()->take(6)->get();
+        // $posts = \DB::table('news')
+        //         ->where('release', '=', '1')
+        //         ->where('book_date', '<=', $now)
+        //         ->latest()->take(6)->get();
 
-        $news_products = \DB::table('news_products')
-                ->where('release', '=', '1')
-                ->where('book_date', '<=', $now)
-                ->latest()->take(5)->get();
+        $posts = \DB::table('news')->where([
+            ['release', '=', '1'],
+            ['book_date', '<=', $now],
+        ])->latest()->take(6)->get();
+
+        // $news_products = \DB::table('news_products')
+        //         ->where('release', '=', '1')
+        //         ->where('book_date', '<=', $now)
+        //         ->latest()->take(5)->get();
+        $news_products = \DB::table('news_products')->where([
+            ['release', '=', '1'],
+            ['book_date', '<=', $now],
+        ])->latest()->take(5)->get();
 
         foreach($news_products as $news_product){
 
             $news_product->book_date = Carbon::createFromFormat('Y-m-d H:i:s', $news_product->book_date)->format('Y-m-d');
         }
-
-        // dd($news_products);
-        
         return view('user.home', compact('posts', 'news_products'));
     }
 
@@ -70,7 +76,8 @@ class UserController extends Controller
 
     public function getShopInfo()
     {
-        $shops = Shop::all();
+        // $shops = Shop::all();
+        $shops = \DB::table('shops')->select('')->get();
         
         return view('user.shoplist',[
             'shops' => $shops,
@@ -155,8 +162,7 @@ class UserController extends Controller
 
     public function getProductInfo()
     {
-        $products = Product::all();
-
+        $products = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')->get();
         return view('user.product', [
             'products' => $products,
         ]);
@@ -176,14 +182,6 @@ class UserController extends Controller
     {
         return view('user.products.WE-D01c');
     }
-    // public function getProductIndividual($product_name)
-    // {
-    //     $product = Product::findOrFail($product_name);
-
-    //     return view('user.products.individual', compact('product'));
-    // }
-
-
 
     // 
     // Aritists functions

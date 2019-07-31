@@ -13,60 +13,60 @@ class UserShopController extends Controller
 {
     public function __invoke(){
         // Hokkaido
-        $hokkaido_shops = Shop::where('pre_id', '1')->get();
+        $hokkaido_shops = \DB::table('shops')->where('pre_id', '1')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
         // Tohoku
-        $aomori_shops = Shop::where('pre_id', '2')->get();
-        $akita_shops = Shop::where('pre_id', '3')->get();
-        $iwate_shops = Shop::where('pre_id', '4')->get();
-        $yamagata_shops = Shop::where('pre_id', '5')->get();
-        $miyagi_shops = Shop::where('pre_id', '6')->get();
-        $fukushima_shops = Shop::where('pre_id', '7')->get();
+        $aomori_shops = \DB::table('shops')->where('pre_id', '2')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $akita_shops = \DB::table('shops')->where('pre_id', '3')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $iwate_shops = \DB::table('shops')->where('pre_id', '4')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $yamagata_shops = \DB::table('shops')->where('pre_id', '5')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $miyagi_shops = \DB::table('shops')->where('pre_id', '6')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $fukushima_shops = \DB::table('shops')->where('pre_id', '7')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
         // Kanto
-        $gunma_shops = Shop::where('pre_id', '8')->get();
-        $tochigi_shops = Shop::where('pre_id', '9')->get();
-        $ibaraki_shops = Shop::where('pre_id', '10')->get();
-        $saitama_shops = Shop::where('pre_id', '11')->get();
-        $chiba_shops = Shop::where('pre_id', '12')->get();
-        $tokyo_shops = Shop::where('pre_id', '13')->get();
-        $kanagawa_shops = Shop::where('pre_id', '14')->get();
+        $gunma_shops = \DB::table('shops')->where('pre_id', '8')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $tochigi_shops = \DB::table('shops')->where('pre_id', '9')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $ibaraki_shops = \DB::table('shops')->where('pre_id', '10')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $saitama_shops = \DB::table('shops')->where('pre_id', '11')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $chiba_shops = \DB::table('shops')->where('pre_id', '12')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $tokyo_shops = \DB::table('shops')->where('pre_id', '13')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $kanagawa_shops = \DB::table('shops')->where('pre_id', '14')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
         // Chubu
-        $yamanashi_shops = Shop::where('pre_id', '15')->get();
-        $shizuoka_shops = Shop::where('pre_id', '16')->get();
-        $niigata_shops = Shop::where('pre_id', '17')->get();
-        $nagano_shops = Shop::where('pre_id', '18')->get();
-        $gifu_shops = Shop::where('pre_id', '19')->get();
-        $aichi_shops = Shop::where('pre_id', '20')->get();
-        $toyama_shops = Shop::where('pre_id', '21')->get();
-        $ishikawa_shops = Shop::where('pre_id', '22')->get();
-        $fukui_shops = Shop::where('pre_id', '23')->get();
-        $mie_shops = Shop::where('pre_id', '24')->get();
+        $yamanashi_shops = \DB::table('shops')->where('pre_id', '15')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $shizuoka_shops = \DB::table('shops')->where('pre_id', '16')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $niigata_shops = \DB::table('shops')->where('pre_id', '17')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $nagano_shops = \DB::table('shops')->where('pre_id', '18')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $gifu_shops = \DB::table('shops')->where('pre_id', '19')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $aichi_shops = \DB::table('shops')->where('pre_id', '20')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $toyama_shops = \DB::table('shops')->where('pre_id', '21')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $ishikawa_shops = \DB::table('shops')->where('pre_id', '22')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $fukui_shops = \DB::table('shops')->where('pre_id', '23')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $mie_shops = \DB::table('shops')->where('pre_id', '24')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
         // Kinki
-        $shiga_shops = Shop::where('pre_id', '25')->get();
-        $kyoto_shops = Shop::where('pre_id', '26')->get();
-        $nara_shops = Shop::where('pre_id', '27')->get();
-        $osaka_shops = Shop::where('pre_id', '28')->get();
-        $wakayama_shops = Shop::where('pre_id', '29')->get();
-        $hyogo_shops = Shop::where('pre_id', '30')->get();
+        $shiga_shops = \DB::table('shops')->where('pre_id', '25')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $kyoto_shops = \DB::table('shops')->where('pre_id', '26')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $nara_shops = \DB::table('shops')->where('pre_id', '27')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $osaka_shops = \DB::table('shops')->where('pre_id', '28')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $wakayama_shops = \DB::table('shops')->where('pre_id', '29')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $hyogo_shops = \DB::table('shops')->where('pre_id', '30')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
         // Chugoku
-        $tottori_shops = Shop::where('pre_id', '31')->get();
-        $okayama_shops = Shop::where('pre_id', '32')->get();
-        $shimane_shops = Shop::where('pre_id', '33')->get();
-        $hiroshima_shops = Shop::where('pre_id', '34')->get();
-        $yamaguchi_shops = Shop::where('pre_id', '35')->get();
+        $tottori_shops = \DB::table('shops')->where('pre_id', '31')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $okayama_shops = \DB::table('shops')->where('pre_id', '32')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $shimane_shops = \DB::table('shops')->where('pre_id', '33')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $hiroshima_shops = \DB::table('shops')->where('pre_id', '34')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $yamaguchi_shops = \DB::table('shops')->where('pre_id', '35')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
         // Shikoku
-        $kagawa_shops = Shop::where('pre_id', '36')->get();
-        $tokushima_shops = Shop::where('pre_id', '37')->get();
-        $ehime_shops = Shop::where('pre_id', '38')->get();
-        $kochi_shops = Shop::where('pre_id', '39')->get();
+        $kagawa_shops = \DB::table('shops')->where('pre_id', '36')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $tokushima_shops = \DB::table('shops')->where('pre_id', '37')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $ehime_shops = \DB::table('shops')->where('pre_id', '38')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $kochi_shops = \DB::table('shops')->where('pre_id', '39')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
         // Kyushu
-        $fukuoka_shops = Shop::where('pre_id', '40')->get();
-        $saga_shops = Shop::where('pre_id', '41')->get();
-        $nagasaki_shops = Shop::where('pre_id', '42')->get();
-        $oita_shops = Shop::where('pre_id', '43')->get();
-        $kumamoto_shops = Shop::where('pre_id', '44')->get();
-        $miyagi_shops = Shop::where('pre_id', '45')->get();
-        $kagoshima_shops = Shop::where('pre_id', '46')->get();
-        $okinawa_shops = Shop::where('pre_id', '47')->get();
+        $fukuoka_shops = \DB::table('shops')->where('pre_id', '40')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $saga_shops = \DB::table('shops')->where('pre_id', '41')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $nagasaki_shops = \DB::table('shops')->where('pre_id', '42')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $oita_shops = \DB::table('shops')->where('pre_id', '43')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $kumamoto_shops = \DB::table('shops')->where('pre_id', '44')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $miyagi_shops = \DB::table('shops')->where('pre_id', '45')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $kagoshima_shops = \DB::table('shops')->where('pre_id', '46')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $okinawa_shops = \DB::table('shops')->where('pre_id', '47')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
 
 
 

@@ -14,6 +14,7 @@ class ProductNews extends Model
         'main_viusal',
         'pdf',
         'release',
-        'book_date'
+        'book_date',
+        'link'
     ];
 }

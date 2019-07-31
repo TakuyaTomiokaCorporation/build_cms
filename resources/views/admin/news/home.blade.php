@@ -35,7 +35,7 @@
                     <td>
                     <a href="" class="btn btn-primary btn-sm">詳細</a>
                     <a href="{{ route('news.edit', $post->id) }}" class="btn btn-primary btn-sm">編集</a>
-                    <a href="" class="btn btn-danger btn-sm">削除</a>
+                    <a href="{{ route('news.delete', $post->id) }}" class="btn btn-danger btn-sm">削除</a>
                     </td>
                     </tr>
                 @endforeach

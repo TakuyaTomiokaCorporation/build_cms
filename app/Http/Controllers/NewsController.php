@@ -116,7 +116,9 @@ class NewsController extends Controller
     public function delete($id)
     {
         $news = News::findOrFail($id);
-        $news->delete()->to(route('news'));
+        $news->delete();
+        return redirect()->to(route('news'));
     }
+
 
 }

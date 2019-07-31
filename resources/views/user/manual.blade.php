@@ -4,8 +4,8 @@
 
 @section('description', '日本のサウンドを熟知した日本人オーディオエキスパートが携わる日本発のオーディオビジュアルブランド')
 
-@section('css')
-
+@section('fonts')
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 @endsection
 
 @section('body_id', 'manual')

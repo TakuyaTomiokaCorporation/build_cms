@@ -16,7 +16,8 @@ class News extends Model
         'pdf',
         'release',
         'book_date',
-        'link'
+        'link',
+        'class'
     ];
 
 }

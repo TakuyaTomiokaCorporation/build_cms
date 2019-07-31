@@ -31,7 +31,7 @@ class UserController extends Controller
 
         $posts = \DB::table('news')
                 ->where('release', '=', '1')
-                ->where('book_date', '=>', $now)
+                ->where('book_date', '<=', $now)
                 ->latest()->take(6)->get();
 
         $news_products = \DB::table('news_products')
@@ -54,10 +54,14 @@ class UserController extends Controller
     // 
     public function getNewsInfo()
     {
-        // $news = News::findOrFail($id);
-        // dd($news);
-        // return view('user.news', compact('news'));
-        return view('user.news');
+        $now = Carbon::now()->format('Y-m-d H:i:s');
+
+        $posts = \DB::table('news')
+                ->where('release', '=', '1')
+                ->where('book_date', '=>', $now)
+                ->latest()->take(6)->get();
+
+        return view('user.news', compact('posts'));
     }
 
     // 

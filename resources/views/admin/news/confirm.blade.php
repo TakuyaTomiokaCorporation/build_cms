@@ -16,6 +16,7 @@
             <input type="hidden" name="release" value="{{ $release }}">
             <input type="hidden" name="book_date" value="{{ $book_date }}">
             <input type="hidden" name="link" value="{{ $link }}">
+            <input type="hidden" name="class" value="{{ $class }}">
             {{-- <input type="hidden" name="transmission_method" value="{{ $color }}"> --}}
 
             <div class="row">

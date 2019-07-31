@@ -44,6 +44,25 @@ class NewsController extends Controller
             $file -> move('images/news/', $name);
             $product_news_confirm['pdf'] = $name;
             };
+        
+        switch($news_confirm['category'])
+        {
+            case '新製品情報':
+                $news_confirm['class'] = 'tag_product';
+                break;
+            case '最新情報':
+                $news_confirm['class'] = 'tag_news';
+                break;
+            case 'アーティストインタビュー':
+                $news_confirm['class'] = 'tag_artist';
+                break;
+            case 'イベント情報':
+                $news_confirm['class'] = 'tag_event';
+                break;
+            case 'お知らせ':
+                $news_confirm['class'] = 'tag_information';
+                break;
+        }
 
         return view('admin.news.confirm')->with($news_confirm);
     }
@@ -51,7 +70,7 @@ class NewsController extends Controller
     public function store(Request $request){
         
         $news_new = $request -> all();
-
+        
         $news = News::create($news_new);
 
         return redirect()->to(route('news'));
@@ -69,7 +88,28 @@ class NewsController extends Controller
         
         $news_update = $request -> all();
         $news = News::findOrFail($id);
+
+        switch($news_confirm['category'])
+        {
+            case '新製品情報':
+                $news_confirm['class'] = 'tag_product';
+                break;
+            case '最新情報':
+                $news_confirm['class'] = 'tag_news';
+                break;
+            case 'アーティストインタビュー':
+                $news_confirm['class'] = 'tag_artist';
+                break;
+            case 'イベント情報':
+                $news_confirm['class'] = 'tag_event';
+                break;
+            case 'お知らせ':
+                $news_confirm['class'] = 'tag_information';
+                break;
+        }
+
         $news->update($news_update);
+
         return redirect()->to(route('news'));
     }
 

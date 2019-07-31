@@ -25,9 +25,9 @@
         <div class="news">
         @foreach ($posts as $post)
         <div class="news_box">
-            <a href="{{ route('news.show', $post->id) }}">
+            <a href="{{ route('news.show') }}#{{ $post->id }}">
                 <img src="images/news/{{ $post->image }}">
-                <span class="tag_product">{{ $post->category }}</span>
+                <span class="{{ $post->class }}">{{ $post->category }}</span>
                 <h4>{{ $post->title }}</h4>
             </a>
         </div>

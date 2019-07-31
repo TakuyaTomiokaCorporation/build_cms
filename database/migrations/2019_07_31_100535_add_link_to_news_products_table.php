@@ -26,7 +26,7 @@ class AddLinkToNewsProductsTable extends Migration
     public function down()
     {
         Schema::table('news_products', function (Blueprint $table) {
-            $table->string('link');
+            $table->dropColumn('link');
         });
     }
 }

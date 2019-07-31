@@ -15,6 +15,7 @@
             <input type="hidden" name="pdf" value="{{ $pdf }}">
             <input type="hidden" name="release" value="{{ $release }}">
             <input type="hidden" name="book_date" value="{{ $book_date }}">
+            <input type="hidden" name="link" value="{{ $link }}">
             {{-- <input type="hidden" name="transmission_method" value="{{ $color }}"> --}}
 
             <div class="row">
@@ -31,16 +32,20 @@
             </div>
             <div class="row">
                 <label class="col-sm-4">画像</label>
-                <div class="col-sm-8">{{  $image }}</div>
+                <div class="col-sm-8">{{ $image }}</div>
             </div>
             <div class="row">
                 <label class="col-sm-4">PDF</label>
-                <div class="col-sm-8">{{  $pdf }}</div>
+                <div class="col-sm-8">{{ $pdf }}</div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4">詳細ページのリンク</label>
+                <div class="col-sm-8">{{ $link }}</div>
             </div>
             <div class="row">
                 <label class="col-sm-4">公開設定</label>
                 <div class="col-sm-8">
-                    @if($release === 1)
+                    @if($release === "1")
                         公開
                     @else
                         非公開

@@ -63,16 +63,11 @@ class NewsController extends Controller
         $news = News::findOrFail($id);
 
         return view('admin.news.edit', compact('news', 'now'));
-        // return view('admin.news.edit', [
-        //     'now' => $now,
-        //     'news' => $news
-        // ]);
     }
 
     public function update(Request $request, $id){
         
         $news_update = $request -> all();
-        $news_update['book_date'] = $request->date .' '.$request->time;
         $news = News::findOrFail($id);
         $news->update($news_update);
         return redirect()->to(route('news'));

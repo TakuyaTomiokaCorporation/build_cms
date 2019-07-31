@@ -174,8 +174,11 @@ Route::group(['prefix' => '/admin/news','middlwware'=>'web'], function(){
     Route::patch('confirm', 'NewsController@confirm')->name('news.confirm');
     Route::post('store', 'NewsController@store')->name('news.store');
     Route::get('{id}/edit', 'NewsController@edit')->name('news.edit');
-    Route::patch('{id}/edit', 'NewsController@update')->name('news.update');
+    Route::patch('{id}/update', 'NewsController@update')->name('news.update');
+    Route::get('/trash', 'NewsController@trash')->name('news.trash');
+    Route::get('{id}/restore', 'NewsController@restore')->name('news.restore');
     Route::delete('{id}/delete', 'NewsController@delete')->name('news.delete');
+    Route::delete('{id}/destroy', 'NewsController@destroy')->name('news.destroy');
 });
 
 

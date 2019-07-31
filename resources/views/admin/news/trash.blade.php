@@ -5,8 +5,7 @@
         <h1 class="text-center jumbotron">最新情報トップ</h1>
     </div>
     <div class="container">
-        <a href="{{ route('news.create')}}" class="btn btn-primary mr-5">新規作成</a>
-        <a href="{{ route('news.trash')}}" class="btn btn-secondary">ゴミ箱</a>
+        <a href="{{ route('news')}}" class="btn btn-primary">最新情報トップに戻る</a>
     </div>
       
     <div class="container mt-5">
@@ -21,8 +20,8 @@
                 </tr>
             </thead>
             <tbody>
-                @isset($posts)
-                @foreach($posts as $post )
+                @isset($trashedPosts)
+                @foreach($trashedPosts as $post )
                 <tr>
                     <td>{{ $post->title }}</td>
                     <td>{{ $post->category }}</td>
@@ -35,14 +34,17 @@
                         @endif
                     </td>
                     <td class="row">
-                    {{-- <a href="" class="btn btn-primary btn-sm">詳細</a> --}}
-                    <a href="{{ route('news.edit', $post->id) }}" class="btn btn-primary btn-sm mr-3">編集</a>
-                    {{-- <a href="{{ route('news.delete', $post->id) }}" class="btn btn-danger btn-sm">削除</a> --}}
-                    <form method="POST" action="{{ route('news.delete', $post->id) }}">
-                        <button type="submit" class="btn btn-danger btn-sm">削除</button>
+                    <form method="GET" action="{{ route('news.restore', $post->id) }}">
+                        <button type="submit" class="btn btn-success btn-sm">元に戻す</button>
                         @csrf
-                        @method('DELETE')
                     </form>
+                    <form method="GET" action="{{ route('news.restore', $post->id) }}">
+                        <button type="submit" class="btn btn-danger btn-sm">元に戻す</button>
+                        @csrf
+                    </form>
+                    {{-- <a href="" class="btn btn-primary btn-sm">詳細</a>
+                    <a href="{{ route('news.restore', $post->id) }}" class="btn btn-primary btn-sm">元に戻す</a>
+                    <a href="{{ route('news.destroy', $post->id) }}" class="btn btn-danger btn-sm">完全に削除する</a> --}}
                     </td>
                     </tr>
                 @endforeach

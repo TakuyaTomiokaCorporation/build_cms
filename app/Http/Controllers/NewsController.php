@@ -16,7 +16,9 @@ class NewsController extends Controller
 
     public function getList(){
 
-        $posts = \DB::table('news')->paginate(5);
+        $posts = \DB::table('news')
+            ->whereNull('deleted_at')
+            ->paginate(5);
         return view('admin.news.home',[
             'posts' => $posts,
         ]);
@@ -120,5 +122,24 @@ class NewsController extends Controller
         return redirect()->to(route('news'));
     }
 
+    public function trash()
+    {
+        $trashedPosts = News::onlyTrashed()->get();
+        return view('news.trash', compact('trashedPosts'));
+    }
+
+    public function restore($id)
+    {
+        $restoredNews = News::onlyTrashed()->findOrFail($id);
+        $restoredNews->restore();
+        return redirect()->to(route('news'));
+    }
+
+    public function destroy($id)
+    {
+        $news = News::findOrFail($id);
+        $news->forceDelete();;
+        return redirect()->to(route('news'));
+    }
 
 }

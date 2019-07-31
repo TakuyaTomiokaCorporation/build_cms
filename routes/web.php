@@ -128,6 +128,7 @@ Route::group(['prefix' => '/admin/shop'], function(){
     Route::post('store', 'ShopController@store')->name('shop.store');
     Route::get('{id}/edit', 'ShopController@edit')->name('shop.edit');
     Route::patch('{id}/edit', 'ShopController@update')->name('shop.update');
+    Route::delete('{id}/delete', 'ShopController@delete')->name('shop.delete');
 });
 
 // Route::group(['middleware' => ['web']], function () {
@@ -146,6 +147,7 @@ Route::group(['prefix' => '/admin/product','middlwware'=>'web'], function(){
     Route::post('store', 'ProductController@store')->name('product.store');
     Route::get('{id}/edit', 'ProductController@edit')->name('product.edit');
     Route::patch('{id}/edit', 'ProductController@update')->name('product.update');
+    Route::delete('{id}/delete', 'ProductController@delete')->name('product.delete');
 });
 
 /*
@@ -159,6 +161,7 @@ Route::group(['prefix' => '/admin/product-news','middlwware'=>'web'], function()
     Route::post('store', 'ProductNewsController@store')->name('product_news.store');
     Route::get('{id}/edit', 'ProductNewsController@edit')->name('product_news.edit');
     Route::patch('{id}/edit', 'ProductNewsController@update')->name('product_news.update');
+    Route::delete('{id}/delete', 'ProductNewsController@delete')->name('product_news.delete');
 });
 
 /*
@@ -172,6 +175,7 @@ Route::group(['prefix' => '/admin/news','middlwware'=>'web'], function(){
     Route::post('store', 'NewsController@store')->name('news.store');
     Route::get('{id}/edit', 'NewsController@edit')->name('news.edit');
     Route::patch('{id}/edit', 'NewsController@update')->name('news.update');
+    Route::delete('{id}/delete', 'NewsController@delete')->name('news.delete');
 });
 
 

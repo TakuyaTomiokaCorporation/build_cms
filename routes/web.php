@@ -122,13 +122,16 @@ Route::group(['prefix' => '/admin'], function(){
 | Shop Settings
 */
 Route::group(['prefix' => '/admin/shop'], function(){
-    Route::get('/', 'ShopController@getIndex')->name('shop');
+    Route::get('/', 'ShopController@getList')->name('shop');
     Route::get('create', 'ShopController@create')->name('shop.create');
     Route::patch('confirm', 'ShopController@confirm')->name('shop.confirm');
     Route::post('store', 'ShopController@store')->name('shop.store');
     Route::get('{id}/edit', 'ShopController@edit')->name('shop.edit');
     Route::patch('{id}/edit', 'ShopController@update')->name('shop.update');
+    Route::get('/trash', 'ShopController@trash')->name('shop.trash');
+    Route::get('{id}/restore', 'ShopController@restore')->name('shop.restore');
     Route::delete('{id}/delete', 'ShopController@delete')->name('shop.delete');
+    Route::delete('{id}/destroy', 'ShopController@destroy')->name('shop.destroy');
 });
 
 // Route::group(['middleware' => ['web']], function () {

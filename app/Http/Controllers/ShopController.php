@@ -10,25 +10,19 @@ use App\Http\Requests\ValiShopRequest;
 
 class ShopController extends Controller
 {
-    /************************************************
-     ************************************************
-     * 
-     * Bellow, related to "admin"
-     * 
-     ***********************************************
-     ***********************************************/
 
     public function __construct()
     {
         $this->middleware('auth');
     }
 
-    public function getIndex()
+    public function getList()
     {
         $shops_joined = \DB::table('shops')
-        ->join('regions', 'shops.region_id', '=', 'regions.region_id')
-        ->join('prefectures', 'shops.pre_id', '=', 'prefectures.prefectures_id')
-        ->get();
+                        ->whereNull('deleted_at')
+                        ->join('regions', 'shops.region_id', '=', 'regions.region_id')
+                        ->join('prefectures', 'shops.pre_id', '=', 'prefectures.prefectures_id')
+                        ->paginate(100);
 
         return view('admin.shop.home',[
             'shops' => $shops_joined,
@@ -79,5 +73,35 @@ class ShopController extends Controller
         $shop = Shop::findOrFail($id);
         $shop->update($shop_update);
         return redirect()->to(route('shop'));
+    }
+
+    public function delete($id)
+    {
+        $shop = Shop::findOrFail($id);
+        $shop->delete();
+        return redirect()->to(route('shop'));
+    }
+
+    public function trash()
+    {
+        $trashedShops = Shop::onlyTrashed()
+                        ->join('regions', 'shops.region_id', '=', 'regions.region_id')
+                        ->join('prefectures', 'shops.pre_id', '=', 'prefectures.prefectures_id')
+                        ->paginate(50);
+        return view('admin.shop.trash', compact('trashedShops'));
+    }
+
+    public function restore($id)
+    {
+        $restoredShops = Shop::onlyTrashed()->findOrFail($id);
+        $restoredShops->restore();
+        return redirect()->to(route('shop'));
+    }
+
+    public function destroy($id)
+    {
+        $destroyedShop = Shop::onlyTrashed()->findOrFail($id);
+        $destroyedShop->forceDelete($destroyedShop);
+        return redirect()->to(route('shop.trash'));
     }
 }

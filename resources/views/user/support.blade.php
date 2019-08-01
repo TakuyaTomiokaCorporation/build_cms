@@ -17,9 +17,9 @@
     <section>
         <ul class="support_menu">
             <li><a href="#QA"><img src="{{ asset('images/user/QA.png') }}" alt="よくあるご質問"></a></li>
-            <li><a href="../manual/"><img src="{{ asset('images/user/manual.png') }}" alt="説明書ダウンロード"></a></li>
-            <li><a href="./registration/"><img src="{{ asset('images/user/registration.png') }}" alt="製品保証"></a></li>
-            <li><a href="../compensation/"><img src="{{ asset('images/user/compensation.png') }}" alt="交換保障"></a></li>
+            <li><a href="{{ route('manual') }}"><img src="{{ asset('images/user/manual.png') }}" alt="説明書ダウンロード"></a></li>
+            <li><a href="{{ route('product_regiser') }}"><img src="{{ asset('images/user/registration.png') }}" alt="製品保証"></a></li>
+            <li><a href="{{ route('compensation') }}"><img src="{{ asset('images/user/compensation.png') }}" alt="交換保障"></a></li>
         </ul>
         </ul>
 

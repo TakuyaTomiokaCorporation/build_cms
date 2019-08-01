@@ -35,12 +35,13 @@
                     </td>
                     <td class="row">
                     <form method="GET" action="{{ route('news.restore', $post->id) }}">
-                        <button type="submit" class="btn btn-success btn-sm">元に戻す</button>
+                        <button type="submit" class="btn btn-success btn-sm mr-3">元に戻す</button>
                         @csrf
                     </form>
-                    <form method="GET" action="{{ route('news.restore', $post->id) }}">
-                        <button type="submit" class="btn btn-danger btn-sm">元に戻す</button>
+                    <form method="POST" action="{{ route('news.destroy', $post->id) }}">
+                        <button type="submit" class="btn btn-danger btn-sm">完全に削除する</button>
                         @csrf
+                        @method('delete')
                     </form>
                     {{-- <a href="" class="btn btn-primary btn-sm">詳細</a>
                     <a href="{{ route('news.restore', $post->id) }}" class="btn btn-primary btn-sm">元に戻す</a>

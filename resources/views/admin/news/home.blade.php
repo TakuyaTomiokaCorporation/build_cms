@@ -28,7 +28,7 @@
                     <td>{{ $post->category }}</td>
                     <td>{{ $post->book_date }}</td>
                     <td>
-                        @if($post->release === "1")
+                        @if($post->release === 1)
                         公開中
                         @else
                         非公開

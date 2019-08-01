@@ -16,10 +16,9 @@
                 <label class="control-label col-sm-2" for="title">タイトル</label>
                 <input class="col-sm-10 form-control-lg" name="title" type="text" id="title" value="{{ old('title') }}">
             </div>
-            <div class="form-group row">
-                <label class="control-label col-sm-2" for="content">内容</label>
-                <textarea class="form-control" name="content" id="content" rows="5" placeholder="最新情報の内容を入力してください。"></textarea>
-            </div>
+            <hr>
+            <p>内容　※改行は「shift + enter」で行えます</p>
+            <textarea class="form-control" name="content" id="summary-ckeditor"></textarea>
             <hr>
             <p>カテゴリー</p>
             <div class="form-check">
@@ -79,4 +78,12 @@
             <button type="submit" class="btn btn-primary">確認</button>
         </form>
     </div>
+@endsection
+
+@section('footer-js')
+
+<script>
+    CKEDITOR.replace( 'content' );
+</script>
+    
 @endsection

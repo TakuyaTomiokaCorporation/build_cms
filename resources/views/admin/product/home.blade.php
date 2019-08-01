@@ -5,7 +5,7 @@
         <h1 class="text-center jumbotron">製品トップ</h1>
     </div>
     <div class="container">
-        <a href="{{ route('product.create') }}" class="btn btn-primary">新規作成</a>
+        <a href="{{ route('product.create') }}" class="btn btn-primary mr-5">新規作成</a>
         <a href="{{ route('product.trash')}}" class="btn btn-secondary">ゴミ箱</a>
     </div>
     <div class="container mt-5">

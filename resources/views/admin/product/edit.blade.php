@@ -104,6 +104,25 @@
             <label class="form-check-label" for="hybrid">ハイブリッド型</label>
         </div>
         <hr>
+        <p>公開設定</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="release" id="release" value="1">
+            <label class="form-check-label" for="release">公開</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="release" id="close" value="0">
+            <label class="form-check-label" for="close">非公開</label>    
+        </div>
+        <hr>
+        <p>廃盤設定</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="discontinued" id="discontinued" value="1">
+            <label class="form-check-label" for="discontinued">廃盤</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="discontinued" id="discontinued" value="0">
+            <label class="form-check-label" for="discontinued">現行品</label>
+        </div>
         {{-- <p>カラー</p>
         <div class="form-check">
             <input class="form-check-input" type="checkbox" name="color[]" id="color" value="黒">

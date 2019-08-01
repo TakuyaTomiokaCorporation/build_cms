@@ -8,28 +8,6 @@ use App\Product;
 
 class ProductController extends Controller
 {
-
-    /************************************************
-     ************************************************
-     * 
-     * Bellow, related to "user"
-     * 
-     ***********************************************
-     ***********************************************/
-
-    public function getProductInfo(){
-
-        return view();
-    }
-
-    /************************************************
-     ************************************************
-     * 
-     * Bellow, related to "admin"
-     * 
-     ***********************************************
-     ***********************************************/
-
     public function __construct()
     {
         $this->middleware('auth');
@@ -38,8 +16,9 @@ class ProductController extends Controller
 
     public function getList(){
 
-        $products = \DB::table('products')->paginate(5);
-
+        $products = \DB::table('products')
+                    ->whereNull('deleted_at')
+                    ->paginate(5);
         return view('admin.product.home',[
             'products' => $products,
         ]);
@@ -84,6 +63,33 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
         $product->update($product_update);
         return redirect() -> to(route('product'));
+    }
+
+    public function delete($id)
+    {
+        $product = Product::findOrFail($id);
+        $product->delete();
+        return redirect()->to(route('product'));
+    }
+
+    public function trash()
+    {
+        $trashedProducts = Product::onlyTrashed()->get();
+        return view('admin.product.trash', compact('trashedProducts'));
+    } 
+
+    public function restore($id)
+    {
+        $restoredProducts = Product::onlyTrashed()->findOrFail($id);
+        $restoredProducts->restore();
+        return redirect()->to(route('product'));
+    }
+
+    public function destroy($id)
+    {
+        $destroyedProduct = Product::onlyTrashed()->findOrFail($id);
+        $destroyedProduct->forceDelete($destroyedProduct);
+        return redirect()->to(route('product.trash'));
     }
 
 }

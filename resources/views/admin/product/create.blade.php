@@ -16,17 +16,22 @@
             <label class="control-label col-sm-2" for="product_name">製品名</label>
             <input class="col-sm-10 form-control-lg" name="product_name" type="text" id="product_name" value="{{ old('product_name') }}">
         </div>
+        <hr>
         <div class="form-group row">
             <label class="control-label col-sm-2" for="overview">概要</label>
             <textarea class="form-control" name="overview" id="overview" rows="5" placeholder="製品概要を入力してください。"></textarea>
         </div>
+        <hr>
+        <p>画像</p>
         <div class="">
             <input type="file" name="thumbnail"> 
         </div>
+        <hr>
         <div class="form-group row">
             <label class="control-label col-sm-2" for="link_detail">製品詳細ページのリンク</label>
             <input class="col-sm-10 form-control-lg" name="link_detail" type="text" id="link_detail" value="{{ old('link_detail') }}">
         </div>
+        <hr>
         <div class="form-group row">
             <label class="control-label col-sm-2" for="link_ec">ECページのリンク</label>
             <input class="col-sm-10 form-control-lg" name="link_ec" type="text" id="link_ec" value="{{ old('link_ec') }}">
@@ -104,6 +109,26 @@
             <label class="form-check-label" for="hybrid">ハイブリッド型</label>
         </div>
         <hr>
+        <p>公開設定</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="release" id="release" value="1">
+            <label class="form-check-label" for="release">公開</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="release" id="close" value="0">
+            <label class="form-check-label" for="close">非公開</label>    
+        </div>
+        <hr>
+        <p>廃盤設定</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="discontinued" id="discontinued" value="1">
+            <label class="form-check-label" for="discontinued">廃盤</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="discontinued" id="discontinued" value="0">
+            <label class="form-check-label" for="discontinued">現行品</label>
+        </div>
+        
         {{-- <p>カラー</p>
         <div class="form-check">
             <input class="form-check-input" type="checkbox" name="color[]" id="color" value="黒">
@@ -133,7 +158,8 @@
             <input class="form-check-input" type="checkbox" name="color[]" id="parple" value="紫">
             <label class="form-check-label" for="parple">紫</label>
         </div> --}}
-        <button type="submit" name="submit" class="btn btn-primary">確認</button>
+        <hr>
+        <button type="submit" name="submit" class="btn btn-primary mb-5">確認</button>
     </form>
     </div>
 @endsection

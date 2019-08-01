@@ -2,11 +2,10 @@
 
 @section('main')
     <div class="container mt-5">
-        <h1 class="text-center jumbotron">製品トップ</h1>
+        <h1 class="text-center jumbotron">ゴミ箱</h1>
     </div>
     <div class="container">
-        <a href="{{ route('product.create') }}" class="btn btn-primary">新規作成</a>
-        <a href="{{ route('product.trash')}}" class="btn btn-secondary">ゴミ箱</a>
+        <a href="{{ route('product')}}" class="btn btn-primary">製品トップに戻る</a>
     </div>
     <div class="container mt-5">
         <table class="table table-striped table-hover">
@@ -20,7 +19,8 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($products as $product)
+                @isset($trashedProducts)
+                @foreach($trashedProducts as $product)
                 <tr>
                     <td>{{ $product->product_name }}</td>
                     <td><img src="/images/thumbnails/{{ $product->thumbnail }}" alt=""></td>
@@ -33,18 +33,20 @@
                         @endif
                     </td>
                     <td class="row">
-                    {{-- <a href="" class="btn btn-primary btn-sm">詳細</a> --}}
-                    <a href="{{ route('product.edit', $product->id) }}" class="btn btn-primary btn-sm mr-3">編集</a>
-                    <form method="POST" action="{{ route('product.delete', $product->id) }}">
-                        <button type="submit" class="btn btn-danger btn-sm">削除</button>
-                        @csrf
-                        @method('DELETE')
-                    </form>
+                        <form method="GET" action="{{ route('product.restore', $product->id) }}">
+                            <button type="submit" class="btn btn-success btn-sm mr-3">元に戻す</button>
+                            @csrf
+                        </form>
+                        <form method="POST" action="{{ route('product.destroy', $product->id) }}">
+                            <button type="submit" class="btn btn-danger btn-sm">完全に削除する</button>
+                            @csrf
+                            @method('delete')
+                        </form>
                     </td>
                     </tr>
                 @endforeach
+                @endisset
             </tbody>
         </table>
-        {{ $products->links() }}
     </div>
 @endsection

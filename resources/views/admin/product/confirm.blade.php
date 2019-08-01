@@ -19,6 +19,8 @@
             <input type="hidden" name="noise_canceling" value="{{ $noise_canceling }}">
             <input type="hidden" name="compression_method" value="{{ $compression_method }}">
             <input type="hidden" name="sound_method" value="{{ $sound_method }}">
+            <input type="hidden" name="release" value="{{ $release }}">
+            <input type="hidden" name="discontinued" value="{{ $discontinued }}">
             {{-- <input type="hidden" name="transmission_method" value="{{ $color }}"> --}}
 
             <div class="row">
@@ -64,6 +66,26 @@
             <div class="row">
                 <label class="col-sm-4">音声出力方式</label>
                 <div class="col-sm-8">{{  $sound_method }}</div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4">公開設定</label>
+                <div class="col-sm-8">
+                    @if($release === "1")
+                        公開
+                    @else
+                        非公開
+                    @endif
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4">廃盤設定</label>
+                <div class="col-sm-8">
+                    @if($discontinued === "1")
+                        廃盤
+                    @else
+                        現行品
+                    @endif
+                </div>
             </div>
             {{-- <div class="row">
                 <label class="col-sm-4">カラー</label>

@@ -23,7 +23,9 @@ class Product extends Model
         'category',
         'compression_method',
         'sound_method',
-        'color'
+        'color',
+        'release',
+        'discontinued'
     ];
 
 

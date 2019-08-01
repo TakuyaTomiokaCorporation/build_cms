@@ -17,8 +17,8 @@ class NewsController extends Controller
     public function getList(){
 
         $posts = \DB::table('news')
-            ->whereNull('deleted_at')
-            ->paginate(5);
+                ->whereNull('deleted_at')
+                ->paginate(5);
         return view('admin.news.home',[
             'posts' => $posts,
         ]);
@@ -137,8 +137,8 @@ class NewsController extends Controller
 
     public function destroy($id)
     {
-        $news = News::findOrFail($id);
-        $news->forceDelete();;
+        $destroyedNews = News::onlyTrashed()->findOrFail($id);
+        $destroyedNews->forceDelete($destroyedNews);
         return redirect()->to(route('news'));
     }
 

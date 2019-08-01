@@ -125,7 +125,7 @@ class NewsController extends Controller
     public function trash()
     {
         $trashedPosts = News::onlyTrashed()->get();
-        return view('news.trash', compact('trashedPosts'));
+        return view('admin.news.trash', compact('trashedPosts'));
     }
 
     public function restore($id)

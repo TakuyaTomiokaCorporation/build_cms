@@ -16,7 +16,9 @@ class ProductNewsController extends Controller
 
     public function getList(){
 
-        $news_products = \DB::table('news_products')->paginate(5);;
+        $news_products = \DB::table('news_products')
+                        ->whereNull('deleted_at')
+                        ->paginate(5);
          return view('admin.product_news.home',[
              'news_products' => $news_products,
          ]);
@@ -72,5 +74,32 @@ class ProductNewsController extends Controller
         $product = ProductNews::findOrFail($id);
         $product->update($news_product);
         return redirect() -> to(route('product_news'));
+    }
+
+    public function delete($id)
+    {
+        $news_product = ProductNews::findOrFail($id);
+        $news_product->delete();
+        return redirect()->to(route('product_news'));
+    }
+
+    public function trash()
+    {
+        $trashedNewsProducts = ProductNews::onlyTrashed()->get();
+        return view('admin.product_news.trash', compact('trashedNewsProducts'));
+    }
+
+    public function restore($id)
+    {
+        $restoredNewsProducts = ProductNews::onlyTrashed()->findOrFail($id);
+        $restoredNewsProducts->restore();
+        return redirect()->to(route('product_news'));
+    }
+
+    public function destroy($id)
+    {
+        $destroyedNewsProduct = ProductNews::onlyTrashed()->findOrFail($id);
+        $destroyedNewsProduct->forceDelete($destroyedNewsProduct);
+        return redirect()->to(route('product_news.trash'));
     }
 }

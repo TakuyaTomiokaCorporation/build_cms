@@ -147,7 +147,10 @@ Route::group(['prefix' => '/admin/product','middlwware'=>'web'], function(){
     Route::post('store', 'ProductController@store')->name('product.store');
     Route::get('{id}/edit', 'ProductController@edit')->name('product.edit');
     Route::patch('{id}/edit', 'ProductController@update')->name('product.update');
+    Route::get('/trash', 'ProductController@trash')->name('product.trash');
+    Route::get('{id}/restore', 'ProductController@restore')->name('product.restore');
     Route::delete('{id}/delete', 'ProductController@delete')->name('product.delete');
+    Route::delete('{id}/destroy', 'ProductController@destroy')->name('product.destroy');
 });
 
 /*
@@ -161,7 +164,10 @@ Route::group(['prefix' => '/admin/product-news','middlwware'=>'web'], function()
     Route::post('store', 'ProductNewsController@store')->name('product_news.store');
     Route::get('{id}/edit', 'ProductNewsController@edit')->name('product_news.edit');
     Route::patch('{id}/edit', 'ProductNewsController@update')->name('product_news.update');
+    Route::get('/trash', 'ProductNewsController@trash')->name('product_news.trash');
+    Route::get('{id}/restore', 'ProductNewsController@restore')->name('product_news.restore');
     Route::delete('{id}/delete', 'ProductNewsController@delete')->name('product_news.delete');
+    Route::delete('{id}/destroy', 'ProductNewsController@destroy')->name('product_news.destroy');
 });
 
 /*

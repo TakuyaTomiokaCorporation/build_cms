@@ -2,11 +2,10 @@
 
 @section('main')
     <div class="container mt-5">
-        <h1 class="text-center jumbotron">製品に関するお知らせのトップページ</h1>
+        <h1 class="text-center jumbotron">ゴミ箱</h1>
     </div>
     <div class="container">
-        <a href="{{ route('product_news.create') }}" class="btn btn-primary mr-5">新規作成</a>
-        <a href="{{ route('product_news.trash')}}" class="btn btn-secondary">ゴミ箱</a>
+        <a href="{{ route('product_news')}}" class="btn btn-primary">製品に関するお知らせのトップページに戻る</a> 
     </div>  
     <div class="container mt-5">
         <table class="table table-striped table-hover">
@@ -20,7 +19,8 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($news_products as $news_product)
+                @isset($trashedNewsProducts)
+                @foreach($trashedNewsProducts as $news_product)
                 <tr>
                     <td>{{ $news_product->title }}</td>
                     <td><img src="/images/product_news/{{ $news_product->main_visual }}" alt=""></td>
@@ -33,18 +33,20 @@
                         @endif
                     </td>
                     <td class="row">
-                    {{-- <a href="" class="btn btn-primary btn-sm">詳細</a> --}}
-                    <a href="{{ route('product_news.edit', $news_product->id) }}" class="btn btn-primary btn-sm mr-3">編集</a>
-                    <form method="POST" action="{{ route('product_news.delete', $news_product->id) }}">
-                        <button type="submit" class="btn btn-danger btn-sm">削除</button>
-                        @csrf
-                        @method('DELETE')
-                    </form>
+                        <form method="GET" action="{{ route('product_news.restore', $news_product->id) }}">
+                            <button type="submit" class="btn btn-success btn-sm mr-3">元に戻す</button>
+                            @csrf
+                        </form>
+                        <form method="POST" action="{{ route('product_news.destroy', $news_product->id) }}">
+                            <button type="submit" class="btn btn-danger btn-sm">完全に削除する</button>
+                            @csrf
+                            @method('delete')
+                        </form>
                     </td>
                     </tr>
                 @endforeach
+                @endisset
             </tbody>
         </table>
-        <div class="mt-5">{{ $news_products->links() }}</div>
     </div>
 @endsection

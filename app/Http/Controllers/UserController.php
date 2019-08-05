@@ -259,31 +259,6 @@ class UserController extends Controller
     }
 
     // 
-    // Support functions
-    //
-
-    public function getSupport()
-    {
-        return view('user.support');
-    }
-
-    public function getProductRegistration()
-    {
-        return view('user.support.registration');
-    }
-
-    public function getConfirm()
-    {
-        return view('user.support.confirm');
-    }
-
-    public function getProductThanks()
-    {
-        return view('user.support.thanks');
-    }
-
-
-    // 
     // LP1 function
     // 
 

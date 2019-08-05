@@ -23,6 +23,11 @@
 @section('content')
 <div id="container" class="both">
 <div id="" class="main" role="main">
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'>
+    <input type=hidden name="oid" value="00D6F000002Kz08">
+    <input type=hidden name="retURL" value="{{ route('product_register.thanks') }}">
+    <input type="hidden" name="00N6F00000WyN80" value="A" />
     <article class="w1020 w98 m_auto mb60">
         <h2 class="pt20 border_b mb20">ご確認</h2>
         <p class="read">製品保証登録情報ににお間違いがないかご確認ください。</p>
@@ -30,13 +35,13 @@
         <div class="confirm_item bgGray mt20">
             <dl>
                 <dt>お名前</dt>
-                <dd>池袋　南</dd>
+                <dd></dd>
     
                 <dt>フリガナ</dt>
-                <dd>イケブクロ　ミナミ</dd>
+                <dd></dd>
     
                 <dt>性別</dt>
-                <dd>男</dd>
+                <dd></dd>
     
                 <dt>ご住所</dt>
                 <dd>123-4568</dd>

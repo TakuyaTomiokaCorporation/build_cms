@@ -78,10 +78,10 @@ Route::get('/product/WE-D01c', 'UserController@getWed01c');
 |############################
 */
 
-Route::get('/support', 'UserController@getSupport')->name('support');
-Route::get('/support/registration', 'UserController@getProductRegistration')->name('product_regiser');
-Route::get('/support/registration/confirm', 'UserController@getConfirm');
-Route::get('/support/registration/thanks', 'UserController@getProductThanks');
+Route::get('/support', 'UserRegisterController@getSupport')->name('support');
+Route::get('/support/registration', 'UserRegisterController@getProductRegistration')->name('product_regiser');
+Route::post('/support/registration/confirm', 'UserRegisterController@getConfirm')->name('product_regiser.confirm');
+Route::get('/support/registration/thanks', 'UserRegisterController@getProductThanks')->name('product_register.thanks');
 
 
 

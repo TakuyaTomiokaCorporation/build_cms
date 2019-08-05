@@ -93,13 +93,11 @@
         </nav>
     </header>
             
-            
-    <div id="app">
-        <main class="">
-            {{-- コンテンツ部分読み込み --}}
-            @yield('content')
-        </main>
-    </div>
+    <main class="">
+        {{-- コンテンツ部分読み込み --}}
+        @yield('content')
+    </main>
+
     <footer>
             <article class="w1020 w98 m_auto">
             <div class="foot_menu">

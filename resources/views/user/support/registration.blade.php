@@ -32,7 +32,7 @@
                 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                 <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'>
                 <input type=hidden name="oid" value="00D6F000002Kz08">
-                <input type=hidden name="retURL" value="/support/registration/thanks">
+                <input type=hidden name="retURL" value="{{ route('product_register.thanks') }}">
                 <input type="hidden" name="00N6F00000WyN80" value="A" />
                 @csrf
                 @method('POST')
@@ -95,7 +95,7 @@
                     </dd>
                     
     
-                    <dt>色</dt>
+                    <dt><span class="required">必須</span>色</dt>
                     <dd>
                     <select  id="00N6F00000MmEeh" name="00N6F00000MmEeh" title="カラー" required>
                         <option value="">--なし--</option>

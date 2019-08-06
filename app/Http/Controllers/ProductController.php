@@ -34,18 +34,21 @@ class ProductController extends Controller
 
         $product_confirm = $request -> all();
 
-        if($file = $request->file('thumbnail')){
+        if($file = $request->file('thumbnail'))
+        {
             $name = uniqid() . $file -> getClientOriginalName();
             $file -> move('images/thumbnails/', $name);
             $product_confirm['thumbnail'] = $name;
-            };
+        };
 
-        if (is_null($product_confirm['release'])) {
-            # code...
+        if (is_null($product_confirm['release']))
+        {
+            $product_confirm['release'] = "1";
         }
 
-        if (is_null($product_confirm['discontinued'])) {
-            # code...
+        if (is_null($product_confirm['discontinued'])) 
+        {
+            $product_confirm['discontinued'] = "0";
         }
 
         return view('admin.product.confirm')->with($product_confirm);

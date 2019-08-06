@@ -37,17 +37,35 @@ class ProductNewsController extends Controller
         $product_news_confirm = $request -> all();
 
         $product_news_confirm['book_date'] = Carbon::createFromFormat('Y-m-d\TH:i', $product_news_confirm['book_date']);
-        if($file = $request->file('main_visual')){
+        
+        if(isset($product_news_confirm['main_visual']))
+        {
+            $file = $request->file('main_visual');
             $name = uniqid() . $file -> getClientOriginalName();
             $file -> move('images/product_news/', $name);
             $product_news_confirm['main_visual'] = $name;
-            };
+        }
+        else 
+        {
+            $product_news_confirm['main_visual'] = 'noimage.png';
+        };
 
-        if($file = $request->file('pdf')){
+        if(isset($product_news_confirm['pdf']))
+        {
+            $file = $request->file('pdf');
             $name = uniqid() . $file -> getClientOriginalName();
             $file -> move('images/product_news/', $name);
             $product_news_confirm['pdf'] = $name;
-            };
+        }
+        else
+        {
+            $product_news_confirm['pdf'] = "";
+        };
+
+        if(is_null($product_news_confirm['release']))
+        {
+            $product_news_confirm['release'] = 1;
+        }
         
         return view('admin.product_news.confirm')->with($product_news_confirm);
     }

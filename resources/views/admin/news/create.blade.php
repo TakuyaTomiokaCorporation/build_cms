@@ -14,7 +14,7 @@
             @method('PATCH')
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="title">タイトル</label>
-                <input class="col-sm-10 form-control-lg" name="title" type="text" id="title" value="{{ old('title') }}">
+                <input class="col-sm-10 form-control-lg" name="title" type="text" id="title" value="{{ old('title') }}" required>
             </div>
             <hr>
             <p>内容　※改行は「shift + enter」で行えます</p>

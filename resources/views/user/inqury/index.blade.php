@@ -12,6 +12,13 @@
 
 @section('content')
 
+@section('javascript-head')
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+    function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+    </script>
+@endsection
+
 <div id="container" class="both">
 <div id="" class="main" role="main">
     <article class="w1020 w98 m_auto mb60">
@@ -22,7 +29,12 @@
         <p class="read mt10">製品保証登録をお済みでない場合は、ご案内をスムーズに行う為に、製品保証登録をお願いしております。<br class="ifpc">お手数をおかけしますが、「<a href="../support/registration/">製品保証登録フォーム</a>」よりご登録をお願いします。</p>
         <div class="registration_form mt40">
             <p>※<span class="required">必須</span>は入力必須項目となります。</p>
-            <form accept="confirmation" method="POST">
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" accept="confirmation" method="POST">
+            <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'>
+            <input type=hidden name="orgid" value="00D6F000002Kz08">
+            <input type=hidden name="retURL" value="{{ routes('inqury.thanks') }}">
+            @csrf
+            @method('POST')
                 <dl>
                     <dt><span class="required">必須</span>お名前</dt>
                     <dd><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="姓"  required="true"/>
@@ -53,10 +65,10 @@
                     <dd><input  id="city" maxlength="40" name="city" size="20" type="text" id="00N6F00000Mmgas" name="00N6F00000Mmgas" required="true" placeholder="豊島区"/></dd>
     
                     <dt><span class="required">必須</span><label for="city">町名・番地</label></dt>
-                    <dd><input type="text" name="N6F00000Mmgax" value="" size="40" id="N6F00000Mmgax" name="N6F00000Mmgax"</dd>
+                    <dd><input type="text" name="N6F00000Mmgax" value="" size="40" id="N6F00000Mmgax" name="N6F00000Mmgax"></dd>
     
                     <dt><label for="phone">電話番号</label></dt>
-                    <dd><input  id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="090-0000-0000" pattern="\d{8,}" title="正式な電話番号をご入力ください。" /></dd>
+                    <dd><input  id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="090-0000-0000" pattern="^\d{2,4}[-]\d{2,4}[-]\d{2,4}$" title="正式な電話番号をご入力ください。" /></dd>
     
                     <dt><span class="required">必須</span><label for="email">メールアドレス</label></dt>
                     <dd><input  id="email" maxlength="80" name="email" size="60" type="text"  required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="メールアドレスをご確認ください。"　required="true"/></dd>
@@ -153,6 +165,7 @@
                         <label for="box-1">【プライバシーポリシーに同意する】</label>
                         <p>※こちらの『<a href="https://v-trade.co.jp/company/#cap1" target="_blank">PRIVACY POLICY</a>』の内容をご確認の上ご同意ください。</p>
                     </div>
+                    {{-- <div class="g-recaptcha" data-sitekey="6Ldnm68UAAAAAIHuRLurfVAazlDVc4aJw_f-CLG2"></div><br> --}}
                     <p class="alc mt20"><input type="submit" name="submit"></p>
                 </dl>
             </form>

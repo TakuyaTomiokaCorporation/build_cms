@@ -49,5 +49,6 @@
                 @endisset
             </tbody>
         </table>
+        {{ $posts->links() }}
     </div>
 @endsection

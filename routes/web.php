@@ -104,6 +104,7 @@ Route::get('/support/registration/thanks', 'UserRegisterController@getProductTha
 */
 
 Route::group(['prefix' => '/admin'], function(){
+
     Route::get('/', 'AdminController@index')->name('home');
     Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
     Route::post('/login', 'Auth\LoginController@login');
@@ -116,7 +117,9 @@ Route::group(['prefix' => '/admin'], function(){
     Route::post('/password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
     Route::get('/password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
     Route::post('/password/reset', 'Auth\ResetPasswordController@reset');
+
 });
+
 
 /*
 | Shop Settings
@@ -134,16 +137,12 @@ Route::group(['prefix' => '/admin/shop'], function(){
     Route::delete('{id}/destroy', 'ShopController@destroy')->name('shop.destroy');
 });
 
-// Route::group(['middleware' => ['web']], function () {
-//     Route::get('/admin/shop/create', 'ShopController@crete');
-//   });
-
 
 /*
 | Product Settings
 */
 
-Route::group(['prefix' => '/admin/product','middlwware'=>'web'], function(){
+Route::group(['prefix' => '/admin/product'], function(){
     Route::get('/', 'ProductController@getList')->name('product');
     Route::get('create', 'ProductController@create')->name('product.create');
     Route::patch('confirm', 'ProductController@confirm')->name('product.confirm');
@@ -160,7 +159,7 @@ Route::group(['prefix' => '/admin/product','middlwware'=>'web'], function(){
 | Product-News Settings
 */
 
-Route::group(['prefix' => '/admin/product-news','middlwware'=>'web'], function(){
+Route::group(['prefix' => '/admin/product-news'], function(){
     Route::get('/', 'ProductNewsController@getList')->name('product_news');
     Route::get('create', 'ProductNewsController@create')->name('product_news.create');
     Route::patch('confirm', 'ProductNewsController@confirm')->name('product_news.confirm');
@@ -177,7 +176,7 @@ Route::group(['prefix' => '/admin/product-news','middlwware'=>'web'], function()
 | News Settings
 */
 
-Route::group(['prefix' => '/admin/news','middlwware'=>'web'], function(){
+Route::group(['prefix' => '/admin/news'], function(){
     Route::get('/', 'NewsController@getList')->name('news');
     Route::get('create', 'NewsController@create')->name('news.create');
     Route::patch('confirm', 'NewsController@confirm')->name('news.confirm');
@@ -189,6 +188,3 @@ Route::group(['prefix' => '/admin/news','middlwware'=>'web'], function(){
     Route::delete('{id}/delete', 'NewsController@delete')->name('news.delete');
     Route::delete('{id}/destroy', 'NewsController@destroy')->name('news.destroy');
 });
-
-
-// Auth::routes();

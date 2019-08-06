@@ -60,7 +60,7 @@ Route::get('/artists/pnk', 'UserController@getPnk')->name('pnk.show');
 */
 Route::get('/inqury', 'UserController@getInqury')->name('inqury');
 Route::get('/inqury/confirm', 'UserController@getInquryConfirm');
-Route::get('/inqury/thanks', 'UserController@getInquryThanks');
+Route::get('/inqury/thanks', 'UserController@getInquryThanks')->name('inqury.thanks');
 
 /*
 |############################

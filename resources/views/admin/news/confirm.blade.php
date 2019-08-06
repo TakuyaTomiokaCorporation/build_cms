@@ -12,37 +12,51 @@
             <input type="hidden" name="content" value="{{ $content }}">
             <input type="hidden" name="category" value="{{ $category }}">
             <input type="hidden" name="image" value="{{ $image }}">
+            @isset($pdf)
             <input type="hidden" name="pdf" value="{{ $pdf }}">
+            @endisset
             <input type="hidden" name="release" value="{{ $release }}">
             <input type="hidden" name="book_date" value="{{ $book_date }}">
+            @isset($link)
             <input type="hidden" name="link" value="{{ $link }}">
+            @endisset
             <input type="hidden" name="class" value="{{ $class }}">
             {{-- <input type="hidden" name="transmission_method" value="{{ $color }}"> --}}
-
+            <hr>
             <div class="row">
                 <label class="col-sm-4">タイトル</label>
                 <div class="col-sm-8">{{ $title }}</div>
             </div>
+            <hr>
             <div class="row">
                 <label class="col-sm-4">内容</label>
                 <div class="col-sm-8">{{ $content }}</div>
             </div>
+            <hr>
             <div class="row">
                 <label class="col-sm-4">カテゴリー</label>
                 <div class="col-sm-8">{{ $category }}</div>
             </div>
+            <hr>
             <div class="row">
                 <label class="col-sm-4">画像</label>
                 <div class="col-sm-8">{{ $image }}</div>
             </div>
+            <hr>
             <div class="row">
                 <label class="col-sm-4">PDF</label>
+                @isset($pdf)
                 <div class="col-sm-8">{{ $pdf }}</div>
+                @endisset
             </div>
+            <hr>
             <div class="row">
                 <label class="col-sm-4">詳細ページのリンク</label>
+                @isset($link)
                 <div class="col-sm-8">{{ $link }}</div>
+                @endisset
             </div>
+            <hr>
             <div class="row">
                 <label class="col-sm-4">公開設定</label>
                 <div class="col-sm-8">
@@ -53,6 +67,7 @@
                     @endif
                 </div>
             </div>
+            <hr>
             <div class="row">
                 <label class="col-sm-4">予約投稿時刻</label>
                 <div class="col-sm-8">{{  $book_date }}</div>

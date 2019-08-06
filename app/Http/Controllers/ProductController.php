@@ -26,7 +26,7 @@ class ProductController extends Controller
 
     public function create(){
 
-        return view('admin.product.create');
+        return view('admin.product.create', compact('now'));
     }
 
     public function confirm(Request $request){

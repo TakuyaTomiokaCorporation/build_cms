@@ -18,7 +18,7 @@
         {{-- 最新情報 --}}
         <div class="col-sm-6">
             <div class="card img-thumbnail">
-                <img class="card-img-top" src="/images/admin/news.jpg" alt="最新情報の画像">
+                <img class="card-img-top" src="{{ asset('images/admin/news.jpg') }}" alt="最新情報の画像">
                 <div class="card-body px-2 py-3">
                 <h5 class="card-title">最新情報</h5>
                 <p class="card-text">最新情報の登録はこちらから行えます。</p>
@@ -33,7 +33,7 @@
                 {{-- 製品のお知らせ --}}
                 <div class="col-sm-6">
                     <div class="card img-thumbnail">
-                        <img class="card-img-top" src="/images/admin/information.jpg" alt="お知らせの画像">
+                        <img class="card-img-top" src="{{ asset('images/admin/information.jpg') }}" alt="お知らせの画像">
                         <div class="card-body px-2 py-3">
                         <h5 class="card-title">製品に関するお知らせ</h5>
                         <p class="card-text">製品に関するお知らせはこちらから行えます。</p>
@@ -44,7 +44,7 @@
                 {{-- 店舗の登録 --}}
                 <div class="col-sm-6">
                     <div class="card img-thumbnail">
-                        <img class="card-img-top" src="/images/admin/store.jpg" alt="店舗画像">
+                        <img class="card-img-top" src="{{ asset('images/admin/store.jpg') }}" alt="店舗画像">
                         <div class="card-body px-2 py-3">
                         <h5 class="card-title">店舗情報の登録</h5>
                         <p class="card-text">店舗情報の登録や編集はこちらから行えます。</p>

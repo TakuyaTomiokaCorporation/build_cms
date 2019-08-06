@@ -16,7 +16,7 @@
         function timestamp() 
         { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
     </script>
-    
+
 @endsection
 
 @section('body_id', 'registration')
@@ -136,7 +136,7 @@
                         <p>※こちらの『<a href="https://v-trade.co.jp/company/#cap1" target="_blank">PRIVACY POLICY</a>』の内容をご確認の上ご同意ください。</p>
                         <p>※製品登録可能な正規販売店についての詳細は、『<a href="{{ route('shoplist') }}" target="_blank">こちら</a>』をご覧ください。</p>
                     </div>
-                    {{-- <div class="g-recaptcha" data-sitekey="6Ldnm68UAAAAAIHuRLurfVAazlDVc4aJw_f-CLG2"></div><br> --}}
+                    <div class="g-recaptcha" data-sitekey="6Ldnm68UAAAAAIHuRLurfVAazlDVc4aJw_f-CLG2"></div><br>
                     <p class="alc mt20"><input type="submit" name="submit"></p>
                 </dl>
             </form>

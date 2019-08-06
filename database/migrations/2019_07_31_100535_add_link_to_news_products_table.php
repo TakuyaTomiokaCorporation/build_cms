@@ -14,7 +14,7 @@ class AddLinkToNewsProductsTable extends Migration
     public function up()
     {
         Schema::table('news_products', function (Blueprint $table) {
-            $table->string('link');
+            $table->string('link')->nullable();
         });
     }
 

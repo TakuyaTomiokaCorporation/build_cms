@@ -48,11 +48,17 @@ class NewsController extends Controller
             $news_confirm['image'] = 'noimage.png';
         };
         
-        if($file = $request->file('pdf')){
+        if($file = $request->file('pdf'))
+        {
             $name = uniqid() . $file -> getClientOriginalName();
             $file -> move('images/news/', $name);
             $product_news_confirm['pdf'] = $name;
-            };
+        };
+
+        if(is_null($news_confirm['release']))
+        {
+            $news_confirm['release'] = "1";
+        }
         
         switch($news_confirm['category'])
         {

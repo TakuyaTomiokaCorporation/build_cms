@@ -49,6 +49,7 @@
     gtag('config', 'UA-139956359-1');
     </script>
 
+    @yield('javascript-head')
     <!-- Google ReCapcha -->
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>

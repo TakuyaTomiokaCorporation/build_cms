@@ -11,8 +11,12 @@
             <input type="hidden" name="product_name" value="{{ $product_name }}">
             <input type="hidden" name="overview" value="{{ $overview }}">
             <input type="hidden" name="thumbnail" value="{{ $thumbnail }}">
+            @isset($link_detail)
             <input type="hidden" name="link_detail" value="{{ $link_detail }}">
+            @endisset
+            @isset($link_ec)
             <input type="hidden" name="link_ec" value="{{ $link_ec }}">
+            @endisset
             <input type="hidden" name="waterproof" value="{{ $waterproof }}">
             <input type="hidden" name="transmission_method" value="{{ $transmission_method }}">
             <input type="hidden" name="category" value="{{ $category }}">
@@ -37,11 +41,15 @@
             </div>
             <div class="row">
                 <label class="col-sm-4">製品詳細ページのリンク</label>
+                @isset($link_detail)
                 <div class="col-sm-8">{{  $link_detail }}</div>
+                @endisset
             </div>
             <div class="row">
                 <label class="col-sm-4">ECページへのリンク</label>
+                @isset($link_ec)
                 <div class="col-sm-8">{{  $link_ec }}</div>
+                @endisset
             </div>
             <div class="row">
                 <label class="col-sm-4">防水企画</label>
@@ -57,7 +65,13 @@
             </div>
             <div class="row">
                 <label class="col-sm-4">ノイズキャンセリング機能</label>
-                <div class="col-sm-8">{{  $noise_canceling }}</div>
+                <div class="col-sm-8">
+                    @if ($noise_canceling)
+                        あり
+                    @else
+                        なし    
+                    @endif
+                </div>
             </div>
             <div class="row">
                 <label class="col-sm-4">音声圧縮方式</label>
@@ -95,7 +109,7 @@
                     @endfor
                     {{-- $i < count($product_confirm->color) 
                 </div>--}}
-                <input type="submit" name="button" value="登録" class="btn btn-primary btn-lg">
+                <input type="submit" name="button" value="登録" class="btn btn-primary btn-lg mt-5">
             </div> 
             
         </form>

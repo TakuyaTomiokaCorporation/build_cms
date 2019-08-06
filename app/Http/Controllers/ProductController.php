@@ -39,6 +39,15 @@ class ProductController extends Controller
             $file -> move('images/thumbnails/', $name);
             $product_confirm['thumbnail'] = $name;
             };
+
+        if (is_null($product_confirm['release'])) {
+            # code...
+        }
+
+        if (is_null($product_confirm['discontinued'])) {
+            # code...
+        }
+
         return view('admin.product.confirm')->with($product_confirm);
     }
 

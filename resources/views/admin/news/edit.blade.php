@@ -14,11 +14,11 @@
             @method('PATCH')
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="title">タイトル</label>
-                <input class="col-sm-10 form-control-lg" name="title" type="text" id="title" value="{{ $news->title }}">
+                <input class="col-sm-10 form-control-lg" name="title" type="text" id="title" value="{{ old('title', $news->title) }}">
             </div>
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="content">内容</label>
-                <textarea class="form-control" name="content" id="content" rows="5" placeholder="最新情報の内容を入力してください。">{{ $news->content }}</textarea>
+                <textarea class="form-control" name="content" id="content" rows="5" placeholder="最新情報の内容を入力してください。">{{ old('content', $news->content) }}</textarea>
             </div>
             <hr>
             <p>カテゴリー</p>

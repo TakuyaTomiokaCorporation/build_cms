@@ -35,6 +35,7 @@ class NewsController extends Controller
 
         $news_confirm = $request -> all();
 
+        $news_confirm['book_date'] = Carbon::createFromFormat('Y-m-d\TH:i', $news_confirm['book_date']);
         if($file = $request->file('image')){
             $name = uniqid() . $file -> getClientOriginalName();
             $file -> move('images/news/', $name);

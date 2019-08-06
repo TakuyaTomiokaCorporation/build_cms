@@ -19,7 +19,7 @@ class NewsController extends Controller
 
         $posts = \DB::table('news')
                 ->whereNull('deleted_at')
-                ->paginate(5);
+                ->paginate(15);
         return view('admin.news.home',[
             'posts' => $posts,
         ]);
@@ -37,11 +37,16 @@ class NewsController extends Controller
         $news_confirm = $request -> all();
 
         $news_confirm['book_date'] = Carbon::createFromFormat('Y-m-d\TH:i', $news_confirm['book_date']);
-        if($file = $request->file('image')){
+        if($file = $request->file('image'))
+        {
             $name = uniqid() . $file -> getClientOriginalName();
             $file -> move('images/news/', $name);
             $news_confirm['image'] = $name;
-            };
+        }
+        else 
+        {
+            $news_confirm['image'] = 'noimage.png';
+        };
         
         if($file = $request->file('pdf')){
             $name = uniqid() . $file -> getClientOriginalName();

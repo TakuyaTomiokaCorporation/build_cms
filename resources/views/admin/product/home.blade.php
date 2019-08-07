@@ -23,7 +23,8 @@
                 @foreach($products as $product)
                 <tr>
                     <td>{{ $product->product_name }}</td>
-                    <td><img src="/images/thumbnails/{{ $product->thumbnail }}" alt=""></td>
+                    {{-- <td><img src="/images/thumbnails/{{ $product->thumbnail }}" alt=""></td> --}}
+                    <td><img src="{{ asset('images/thumbnails') }}/{{ $product->thumbnail }}" alt=""></td>
                     <td>{{ $product->overview }}</td>
                     <td>
                         @if($product->release === 1)

@@ -35,12 +35,8 @@
                 <input class="col-sm-10 form-control-lg" name="link" type="text" id="link" value="{{ $news->link }}">
             </div>
             <hr>
-            <p>予約投稿</p>
-            <div class="row">
-                <div class="form-group">
-                    <input class="col-sm-10 form-control-lg" id="date" type="datetime-local" min="{{ $now }}" name="book_date">
-                </div>
-            </div>
+            <p>投稿日時<span class="req">*</span></p>
+            <input id="date" type="datetime-local" name="book_date">
             <hr>
             <p>公開設定</p>
             <div class="form-check">

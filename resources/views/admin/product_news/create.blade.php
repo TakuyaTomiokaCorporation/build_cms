@@ -44,11 +44,7 @@
             </div>
             <hr>
             <p>投稿日時<span class="req">*</span></p>
-            <div class="row">
-                <div>
-                    <input id="date" type="datetime-local" name="book_date">
-                </div>
-            </div>
+            <input id="date" type="datetime-local" name="book_date">
             <hr>
             <p>公開設定<span class="req">*</span>  ※非公開にした場合、投稿日時を指定していても表示されません。</p>
             <div class="form-check">

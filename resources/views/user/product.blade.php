@@ -51,7 +51,12 @@
                 {{-- <li class="alc"><a href=""><img src="/images/thumbnails/{{ $product->thumbnail }}" alt="{{ $product->product_name }}"></a></li> --}}
                 <li class="alc"><a href=""><img src="{{ asset('images/thumbnails') }}/{{ $product->thumbnail }}" alt="{{ $product->product_name }}"></a></li>
                 <li class="mt10 mb10"><h3><a harf="">{{ $product->product_name }}</a></h3></li>
-                <li><p class="fs12">{{ $product->overview }}</p></li>
+                {{-- <li><p class="fs12">{{ $product->overview }}</p></li> --}}
+                <li><p class="fs12">
+                @php
+                    echo mb_substr($product->overview, 0, 100)
+                @endphp...
+                </p></li>
                 <li class="alc mt10"><a href="{{ $product->link_detail }}" class="btn_product">詳細をみる</a></li>
             </ul>
             @endforeach
@@ -66,5 +71,6 @@
 @endsection
 
 @section('javascript-footer')
+
     
 @endsection

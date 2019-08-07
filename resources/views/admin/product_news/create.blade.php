@@ -59,8 +59,8 @@
 
 @section('footer-js')
 
-<script>
+{{-- <script>
     CKEDITOR.replace( 'summary-ckeditor' );
-</script>
+</script> --}}
     
 @endsection

@@ -23,7 +23,7 @@
                 @foreach($news_products as $news_product)
                 <tr>
                     <td>{{ $news_product->title }}</td>
-                    <td><img src="/images/product_news/{{ $news_product->main_visual }}" alt=""></td>
+                    <td><img src="{{ asset('images/product_news') }}/{{ $news_product->main_visual }}" alt=""></td>
                     <td>{{ $news_product->pdf }}</td>
                     <td>
                         @if($news_product->release === 1)

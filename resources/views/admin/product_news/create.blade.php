@@ -38,9 +38,8 @@
             <hr>
             <p>予約投稿</p>
             <div class="row">
-                <div class="form-group">
-                    <label for="book_date">日時</label>
-                    <input id="date" type="datetime-local" min="{{ $now }}" name="book_date">
+                <div>
+                    <input class="col-sm-10 form-control-lg" id="date" type="datetime-local" min="{{ $now }}" name="book_date">
                 </div>
             </div>
             <hr>
@@ -54,7 +53,7 @@
                 <label class="form-check-label" for="close">非公開</label>    
             </div>
             <hr>
-            <button type="submit" class="btn btn-primary">確認</button>
+            <button type="submit" class="btn btn-primary mb-5">確認</button>
         </form>
     </div>
 @endsection

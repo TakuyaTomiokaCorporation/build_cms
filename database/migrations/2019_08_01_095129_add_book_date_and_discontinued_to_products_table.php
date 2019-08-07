@@ -14,8 +14,8 @@ class AddBookDateAndDiscontinuedToProductsTable extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->integer('release');
-            $table->integer('discontinued');
+            $table->integer('release')->nullable();
+            $table->integer('discontinued')->nullable();
         });
     }
 

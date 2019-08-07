@@ -27,9 +27,8 @@ class ProductNewsController extends Controller
 
     public function create(){
 
-        $now = Carbon::now();
-
-        return view('admin.product_news.create', compact('now'));
+        return view('admin.product_news.create');
+        
     }
 
     public function confirm(Request $request){
@@ -60,11 +59,6 @@ class ProductNewsController extends Controller
         else
         {
             $product_news_confirm['pdf'] = "";
-        };
-
-        if(is_null($product_news_confirm['release']))
-        {
-            $product_news_confirm['release'] = 1;
         }
         
         return view('admin.product_news.confirm')->with($product_news_confirm);

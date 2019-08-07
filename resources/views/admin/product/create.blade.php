@@ -17,10 +17,8 @@
             <input class="col-sm-10 form-control-lg" name="product_name" type="text" id="product_name" value="{{ old('product_name') }}">
         </div>
         <hr>
-        <div class="form-group row">
-            <label class="control-label col-sm-2" for="overview">概要</label>
-            <textarea class="form-control" name="overview" id="overview" rows="5" placeholder="製品概要を入力してください。"></textarea>
-        </div>
+        <p>概要　※改行は「shift + enter」で行えます</p>
+            <textarea class="form-control" name="overview" id="summary-ckeditor" rows="5" placeholder="製品概要を入力してください。"></textarea>
         <hr>
         <p>画像</p>
         <div class="">
@@ -162,4 +160,12 @@
         <button type="submit" name="submit" class="btn btn-primary mb-5">確認</button>
     </form>
     </div>
+@endsection
+
+@section('footer-js')
+
+<script>
+    CKEDITOR.replace( 'summary-ckeditor' );
+</script>
+    
 @endsection

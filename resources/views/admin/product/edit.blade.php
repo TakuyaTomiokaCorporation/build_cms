@@ -16,10 +16,11 @@
             <label class="control-label col-sm-2" for="product_name">製品名</label>
             <input class="col-sm-10 form-control-lg" name="product_name" type="text" id="product_name" value="{{ $product->product_name }}">
         </div>
-        <div class="form-group row">
-            <label class="control-label col-sm-2" for="overview">概要</label>
-            <textarea class="form-control" name="overview" id="overview" rows="5" placeholder="製品概要を入力してください。">{{ $product->overview }}</textarea>
-        </div>
+        <hr>
+        <p>概要　※改行は「shift + enter」で行えます</p>
+            <textarea class="form-control" name="overview" id="summary-ckeditor" rows="5" placeholder="製品概要を入力してください。"></textarea>
+        <hr>
+        <p>画像</p>
         <div class="">
             <input type="file" name="thumbnail"> 
         </div>
@@ -155,4 +156,12 @@
         <button type="submit" name="submit" class="btn btn-primary">更新</button>
     </form>
     </div>
+@endsection
+
+@section('footer-js')
+
+<script>
+    CKEDITOR.replace( 'summary-ckeditor' );
+</script>
+    
 @endsection

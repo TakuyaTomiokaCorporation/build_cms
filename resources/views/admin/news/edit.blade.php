@@ -83,7 +83,7 @@
 @section('footer-js')
 
 <script>
-    CKEDITOR.replace( 'content' );
+    CKEDITOR.replace( 'summary-ckeditor' );
 </script>
     
 @endsection

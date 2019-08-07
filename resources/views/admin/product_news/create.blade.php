@@ -16,10 +16,9 @@
                 <label class="control-label col-sm-2" for="title">タイトル</label>
                 <input class="col-sm-10 form-control-lg" name="title" type="text" id="title" value="{{ old('title') }}">
             </div>
-            <div class="form-group row">
-                <label class="control-label col-sm-2" for="content">内容</label>
-                <textarea class="form-control" name="content" id="content" rows="5" placeholder="お知らせの内容を入力してください。"></textarea>
-            </div>
+            <hr>
+            <p>内容　※改行は「shift + enter」で行えます</p>
+            <textarea class="form-control" name="content" id="summary-ckeditor"></textarea>
             <hr>
             <p>画像</p>
             <div class="">
@@ -39,7 +38,7 @@
             <p>予約投稿</p>
             <div class="row">
                 <div>
-                    <input class="col-sm-10 form-control-lg" id="date" type="datetime-local" min="{{ $now }}" name="book_date">
+                    <input class="col-sm-10" id="date" type="datetime-local" name="book_date">
                 </div>
             </div>
             <hr>
@@ -56,4 +55,12 @@
             <button type="submit" class="btn btn-primary mb-5">確認</button>
         </form>
     </div>
+@endsection
+
+@section('footer-js')
+
+<script>
+    CKEDITOR.replace( 'summary-ckeditor' );
+</script>
+    
 @endsection

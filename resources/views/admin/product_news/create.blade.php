@@ -1,5 +1,13 @@
 @extends('layouts.admin')
 
+@section('css')
+<style>
+    .req{
+        color : #e45353;
+    };
+</style>
+@endsection
+
 @section('main')
     <div class="container mt-5">
         <h1 class="text-center jumbotron">製品に関するお知らせの作成</h1>
@@ -13,11 +21,11 @@
             @csrf
             @method('PATCH')
             <div class="form-group row">
-                <label class="control-label col-sm-2" for="title">タイトル</label>
+                <label class="control-label col-sm-2" for="title">タイトル<span class="req">*</span></label>
                 <input class="col-sm-10 form-control-lg" name="title" type="text" id="title" value="{{ old('title') }}">
             </div>
             <hr>
-            <p>内容　※改行は「shift + enter」で行えます</p>
+            <p>内容<span class="req">*</span></p>
             <textarea class="form-control" name="content" id="summary-ckeditor"></textarea>
             <hr>
             <p>画像</p>
@@ -35,14 +43,14 @@
                 <input class="col-sm-10 form-control-lg" name="link" type="text" id="link" value="{{ old('link') }}">
             </div>
             <hr>
-            <p>予約投稿</p>
+            <p>投稿日時<span class="req">*</span></p>
             <div class="row">
                 <div>
-                    <input class="col-sm-10" id="date" type="datetime-local" name="book_date">
+                    <input id="date" type="datetime-local" name="book_date">
                 </div>
             </div>
             <hr>
-            <p>公開設定</p>
+            <p>公開設定<span class="req">*</span>  ※非公開にした場合、投稿日時を指定していても表示されません。</p>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="release" id="release" value="1">
                 <label class="form-check-label" for="release">公開</label>

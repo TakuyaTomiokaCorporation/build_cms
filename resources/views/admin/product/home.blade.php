@@ -8,6 +8,9 @@
         height: auto;
     }
 
+    .sentence-sm{
+        widows: 400px;
+    }
 </style>
 
 @section('main')
@@ -35,7 +38,7 @@
                     <td>{{ $product->product_name }}</td>
                     {{-- <td><img src="/images/thumbnails/{{ $product->thumbnail }}" alt=""></td> --}}
                     <td><img src="{{ asset('images/thumbnails') }}/{{ $product->thumbnail }}" alt="" class="img-sm"></td>
-                    <td>
+                    <td class="sentence-sm">
                     @php
                     echo mb_substr($product->overview, 0, 100)    
                     @endphp...

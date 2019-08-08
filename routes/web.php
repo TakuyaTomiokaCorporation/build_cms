@@ -40,7 +40,7 @@ Route::get('/news', 'UserController@getNewsInfo')->name('news.show');
 |############################
 */
 Route::get('/product-news', 'UserController@showProductNewsList')->name('product_news.list');
-Route::get('/product-news/{id}', 'UserController@getEachProductNews')->name('product_news.show');
+// Route::get('/product-news/{id}', 'UserController@getEachProductNews')->name('product_news.show');
 
 /*
 |############################

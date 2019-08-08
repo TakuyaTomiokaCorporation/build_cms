@@ -80,11 +80,12 @@ class UserController extends Controller
     public function showProductNewsList()
     {
         $now = Carbon::now()->format('Y-m-d H:i:s');
-        $news_products = \DB::table('news_products')
-                    ->where('release', '=', '1')
-                    ->where('book_date', '<=', $now)
-                    ->latest()->paginate(5);
         
+        $news_products = \DB::table('news_products')->where([
+            ['release', '=', '1'],
+            ['book_date', '<=', $now],
+        ])->latest()->paginate(5);
+
         foreach($news_products as $news_product)
         {
             $news_product->book_date = Carbon::createFromFormat('Y-m-d H:i:s', $news_product->book_date)->format('Y-m-d');

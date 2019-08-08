@@ -52,7 +52,7 @@
             </div>
             <div class="row">
                 <label class="col-sm-4">概要</label>
-                <div class="col-sm-8">{{ $overview }}</div>
+                <div class="col-sm-8">{!! $overview !!}</div>
             </div>
             <div class="row">
                 <label class="col-sm-4">サムネイル画像</label>

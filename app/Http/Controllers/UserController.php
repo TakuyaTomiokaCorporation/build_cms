@@ -146,7 +146,9 @@ class UserController extends Controller
 
     public function getProductInfo()
     {
-        $products = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')->get();
+        $products = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')
+                    ->orderBy('id', 'asc')
+                    ->get();
         return view('user.product', [
             'products' => $products,
         ]);

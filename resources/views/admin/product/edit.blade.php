@@ -18,7 +18,7 @@
         </div>
         <hr>
         <p>概要　※改行は「shift + enter」で行えます</p>
-            <textarea class="form-control" name="overview" id="summary-ckeditor" rows="5" placeholder="製品概要を入力してください。"></textarea>
+            <textarea class="form-control" name="overview" id="summary-ckeditor" rows="5" placeholder="製品概要を入力してください。">{{ $product->overview }}</textarea>
         <hr>
         <p>画像</p>
         <div class="">

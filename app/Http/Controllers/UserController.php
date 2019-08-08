@@ -30,14 +30,16 @@ class UserController extends Controller
         $now = Carbon::now()->format('Y-m-d H:i:s');
 
         $posts = \DB::table('news')->where([
-            ['release', '=', '1'],
-            ['book_date', '<=', $now],
-        ])->latest()->take(6)->get();
+                    ['release', '=', '1'],
+                    ['book_date', '<=', $now],
+                ])->whereNull('deleted_at')
+                ->latest()->take(6)->get();
 
         $news_products = \DB::table('news_products')->where([
-            ['release', '=', '1'],
-            ['book_date', '<=', $now],
-        ])->latest()->take(5)->get();
+                            ['release', '=', '1'],
+                            ['book_date', '<=', $now],
+                        ])->whereNull('deleted_at')->
+                        latest()->take(5)->get();
 
         foreach($news_products as $news_product){
 
@@ -57,23 +59,10 @@ class UserController extends Controller
         $posts = \DB::table('news')
                 ->where('release', '=', '1')
                 ->where('book_date', '<=', $now)
+                ->whereNull('deleted_at')
                 ->latest()->take(6)->get();
 
         return view('user.news', compact('posts'));
-    }
-
-    // 
-    // Shop function
-    // 
-
-    public function getShopInfo()
-    {
-        // $shops = Shop::all();
-        $shops = \DB::table('shops')->select('')->get();
-        
-        return view('user.shoplist',[
-            'shops' => $shops,
-        ]);
     }
 
     // Product News functions
@@ -82,9 +71,11 @@ class UserController extends Controller
         $now = Carbon::now()->format('Y-m-d H:i:s');
         
         $news_products = \DB::table('news_products')->where([
-            ['release', '=', '1'],
-            ['book_date', '<=', $now],
-        ])->latest()->paginate(5);
+                            ['release', '=', '1'],
+                            ['book_date', '<=', $now],
+                        ])
+                        ->whereNull('deleted_at')
+                        ->latest()->paginate(5);
 
         foreach($news_products as $news_product)
         {

@@ -36,7 +36,7 @@
             </div>
     
             <div class="news_text mt20">
-                {{ $post->content }}
+                {!! $post->content !!}
             </div>
     
             

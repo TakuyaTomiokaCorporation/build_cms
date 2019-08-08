@@ -28,7 +28,7 @@
         </div>
 
         <div class="news_text mt20">
-            {{ $news_product->content }}
+            {!! $news_product->content !!}
         </div>
 
         <div class="news_Link alc mt10 mb20">

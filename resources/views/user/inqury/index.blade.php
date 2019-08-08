@@ -32,7 +32,7 @@
             <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" accept="confirmation" method="POST">
             <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'>
             <input type=hidden name="orgid" value="00D6F000002Kz08">
-            <input type=hidden name="retURL" value="{{ routes('inqury.thanks') }}">
+            <input type=hidden name="retURL" value="{{ route('inqury.thanks') }}">
             @csrf
             @method('POST')
                 <dl>

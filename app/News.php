@@ -20,7 +20,8 @@ class News extends Model
         'release',
         'book_date',
         'link',
-        'class'
+        'class',
+        'another_link'
     ];
 
 }

@@ -39,9 +39,7 @@
                     {{-- <td><img src="/images/thumbnails/{{ $product->thumbnail }}" alt=""></td> --}}
                     <td><img src="{{ asset('images/thumbnails') }}/{{ $product->thumbnail }}" alt="" class="img-sm"></td>
                     <td class="sentence-sm">
-                    @php
-                    echo mb_substr($product->overview, 0, 100)    
-                    @endphp...
+                        {!! Str::limit($product->overview, 100) !!}
                     </td>
                     <td>
                         @if($product->release === 1)

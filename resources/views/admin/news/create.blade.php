@@ -26,11 +26,11 @@
             </div>
             <hr>
             <p>内容<span class="req">*</span></p>
-            <textarea class="form-control" name="content" id="summary-ckeditor"></textarea>
+            <textarea class="form-control" name="content" id="summary-ckeditor" required></textarea>
             <hr>
             <p>カテゴリー<span class="req">*</span></p>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="category" id="product" value="新製品情報">
+                <input class="form-check-input" type="radio" name="category" id="product" value="新製品情報" required>
                 <label class="form-check-label" for="product">新製品情報</label>
             </div>
             <div class="form-check">
@@ -71,11 +71,11 @@
             </div>
             <hr>
             <p>投稿日時<span class="req">*</span></p>
-            <input id="date" type="datetime-local" min="{{ $now }}" name="book_date">
+            <input id="date" type="datetime-local" min="{{ $now }}" name="book_date" required>
             <hr>
             <p>公開設定<span class="req">*</span>※非公開にした場合、投稿日時を指定していても表示されません。</p>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="release" id="release" value="1">
+                <input class="form-check-input" type="radio" name="release" id="release" value="1" required>
                 <label class="form-check-label" for="release">公開</label>
             </div>
             <div class="form-check">

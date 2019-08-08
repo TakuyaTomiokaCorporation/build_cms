@@ -34,12 +34,11 @@ class ProductNewsController extends Controller
     public function confirm(Request $request){
 
         $product_news_confirm = $request -> all();
-
+        
         $product_news_confirm['book_date'] = Carbon::createFromFormat('Y-m-d\TH:i', $product_news_confirm['book_date']);
         
-        if(isset($product_news_confirm['main_visual']))
+        if($file = $request->file('main_visual'))
         {
-            $file = $request->file('main_visual');
             $name = uniqid() . $file -> getClientOriginalName();
             $file -> move('images/product_news/', $name);
             $product_news_confirm['main_visual'] = $name;
@@ -49,9 +48,8 @@ class ProductNewsController extends Controller
             $product_news_confirm['main_visual'] = 'noimage.png';
         };
 
-        if(isset($product_news_confirm['pdf']))
+        if($file = $request->file('pdf'))
         {
-            $file = $request->file('pdf');
             $name = uniqid() . $file -> getClientOriginalName();
             $file -> move('images/product_news/', $name);
             $product_news_confirm['pdf'] = $name;

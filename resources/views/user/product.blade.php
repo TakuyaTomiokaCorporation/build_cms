@@ -55,7 +55,7 @@
                     <a harf="">{{ $continuedProduct->product_name }}</a>
                 </h3></li>
                 <li>
-                    <p class="fs12">{!! Str::limit($continuedProduct->overview, 100) !!}</p>
+                    <p class="fs12">{!! Str::limit($continuedProduct->overview, 120) !!}</p>
                 </li>
                 <li class="alc mt10">
                     <a href="{{ $continuedProduct->link_detail }}" class="btn_product">詳細をみる</a>
@@ -77,7 +77,7 @@
                     <a harf="">{{ $discontinuedProduct->product_name }}</a>
                 </h3></li>
                 <li>
-                    <p class="fs12">{!! Str::limit($discontinuedProduct->overview, 100) !!}</p>
+                    <p class="fs12">{!! Str::limit($discontinuedProduct->overview, 120) !!}</p>
                 </li>
                 <li class="alc mt10">
                     <a href="{{ $discontinuedProduct->link_detail }}" class="btn_product">詳細をみる</a>

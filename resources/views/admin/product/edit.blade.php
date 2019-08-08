@@ -121,8 +121,8 @@
             <label class="form-check-label" for="discontinued">廃盤</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="discontinued" id="discontinued" value="0">
-            <label class="form-check-label" for="discontinued">現行品</label>
+            <input class="form-check-input" type="radio" name="discontinued" id="continued" value="0">
+            <label class="form-check-label" for="continued">現行品</label>
         </div>
         {{-- <p>カラー</p>
         <div class="form-check">
@@ -153,7 +153,7 @@
             <input class="form-check-input" type="checkbox" name="color[]" id="parple" value="紫">
             <label class="form-check-label" for="parple">紫</label>
         </div> --}}
-        <button type="submit" name="submit" class="btn btn-primary">更新</button>
+        <button type="submit" name="submit" class="btn btn-primary mt-5 mb-5">更新</button>
     </form>
     </div>
 @endsection

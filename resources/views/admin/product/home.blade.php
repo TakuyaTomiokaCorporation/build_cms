@@ -1,5 +1,15 @@
 @extends('layouts.admin')
 
+@section('css')
+
+<style>
+    .img-sm{
+        width: 200px;
+        height: auto;
+    }
+
+</style>
+
 @section('main')
     <div class="container mt-5">
         <h1 class="text-center jumbotron">製品トップ</h1>
@@ -24,8 +34,12 @@
                 <tr>
                     <td>{{ $product->product_name }}</td>
                     {{-- <td><img src="/images/thumbnails/{{ $product->thumbnail }}" alt=""></td> --}}
-                    <td><img src="{{ asset('images/thumbnails') }}/{{ $product->thumbnail }}" alt=""></td>
-                    <td>{{ $product->overview }}</td>
+                    <td><img src="{{ asset('images/thumbnails') }}/{{ $product->thumbnail }}" alt="" class="img-sm"></td>
+                    <td>
+                    @php
+                    echo mb_substr($product->overview, 0, 100)    
+                    @endphp...
+                    </td>
                     <td>
                         @if($product->release === 1)
                         公開中

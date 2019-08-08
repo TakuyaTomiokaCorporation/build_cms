@@ -20,6 +20,9 @@
             @isset($link)
             <input type="hidden" name="link" value="{{ $link }}">
             @endisset
+            @isset($another_link)
+            <input type="hidden" name="link" value="{{ $another_link }}">
+            @endisset
             <input type="hidden" name="class" value="{{ $class }}">
             {{-- <input type="hidden" name="transmission_method" value="{{ $color }}"> --}}
             <hr>
@@ -58,6 +61,13 @@
             </div>
             <hr>
             <div class="row">
+                <label class="col-sm-4">別ページのリンク</label>
+                @isset($another_link)
+                <div class="col-sm-8">{{ $another_link }}</div>
+                @endisset
+            </div>
+            <hr>
+            <div class="row">
                 <label class="col-sm-4">公開設定</label>
                 <div class="col-sm-8">
                     @if($release === "1")
@@ -69,7 +79,7 @@
             </div>
             <hr>
             <div class="row">
-                <label class="col-sm-4">予約投稿時刻</label>
+                <label class="col-sm-4">投稿日時</label>
                 <div class="col-sm-8">{{  $book_date }}</div>
             </div>
             <input type="submit" name="button" value="登録" class="btn btn-primary btn-lg">

@@ -29,20 +29,11 @@ class UserController extends Controller
 
         $now = Carbon::now()->format('Y-m-d H:i:s');
 
-        // $posts = \DB::table('news')
-        //         ->where('release', '=', '1')
-        //         ->where('book_date', '<=', $now)
-        //         ->latest()->take(6)->get();
-
         $posts = \DB::table('news')->where([
             ['release', '=', '1'],
             ['book_date', '<=', $now],
         ])->latest()->take(6)->get();
 
-        // $news_products = \DB::table('news_products')
-        //         ->where('release', '=', '1')
-        //         ->where('book_date', '<=', $now)
-        //         ->latest()->take(5)->get();
         $news_products = \DB::table('news_products')->where([
             ['release', '=', '1'],
             ['book_date', '<=', $now],
@@ -52,6 +43,7 @@ class UserController extends Controller
 
             $news_product->book_date = Carbon::createFromFormat('Y-m-d H:i:s', $news_product->book_date)->format('Y-m-d');
         }
+
         return view('user.home', compact('posts', 'news_products'));
     }
 

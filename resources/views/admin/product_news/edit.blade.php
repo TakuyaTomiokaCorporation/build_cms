@@ -18,7 +18,7 @@
             </div>
             <hr>
             <p>内容　※改行は「shift + enter」で行えます</p>
-            <textarea class="form-control" name="content" id="summary-ckeditor"></textarea>
+            <textarea class="form-control" name="content" id="summary-ckeditor">{{ $news_product->content }}</textarea>
             <hr>
             <p>画像</p>
             <div class="">

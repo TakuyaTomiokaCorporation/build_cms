@@ -80,7 +80,7 @@ class ProductController extends Controller
 
         $product_update = $request -> all();
         $product = Product::findOrFail($id);
-        $product->update($product_update);
+        $product->fill($product_update)->save();
         return redirect() -> to(route('product'));
     }
 

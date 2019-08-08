@@ -124,7 +124,7 @@ class NewsController extends Controller
                 break;
         }
 
-        $news->update($news_update);
+        $news->fill($news_update)->save();
 
         return redirect()->to(route('news'));
     }

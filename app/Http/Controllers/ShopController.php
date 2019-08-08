@@ -72,7 +72,7 @@ class ShopController extends Controller
     {
         $shop_update = $request -> all();
         $shop = Shop::findOrFail($id);
-        $shop->update($shop_update);
+        $shop->fill($shop_update)->save();
         return redirect()->to(route('shop'));
     }
 

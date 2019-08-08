@@ -1,5 +1,17 @@
 @extends('layouts.admin')
 
+@section('css')
+
+<style>
+    .img-sm{
+        width: 200px;
+        height: auto;
+    }
+
+</style>
+    
+@endsection
+
 @section('main')
     <div class="container mt-5">
         <h1 class="text-center jumbotron">製品に関するお知らせのトップページ</h1>
@@ -23,7 +35,7 @@
                 @foreach($news_products as $news_product)
                 <tr>
                     <td>{{ $news_product->title }}</td>
-                    <td><img src="{{ asset('images/product_news') }}/{{ $news_product->main_visual }}" alt=""></td>
+                    <td><img src="{{ asset('images/product_news') }}/{{ $news_product->main_visual }}" alt="" class="img-sm"></td>
                     <td>{{ $news_product->pdf }}</td>
                     <td>
                         @if($news_product->release === 1)

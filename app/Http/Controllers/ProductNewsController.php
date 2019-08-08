@@ -20,7 +20,8 @@ class ProductNewsController extends Controller
         $news_products = \DB::table('news_products')
                         ->whereNull('deleted_at')
                         ->paginate(5);
-         return view('admin.product_news.home',[
+                        
+        return view('admin.product_news.home',[
              'news_products' => $news_products,
          ]);
     }
@@ -83,7 +84,8 @@ class ProductNewsController extends Controller
         
         $news_product = $request -> all();
         $product = ProductNews::findOrFail($id);
-        $product->update($news_product);
+        $product->fill($news_product)->save();
+        // $product->update($news_product);
         return redirect() -> to(route('product_news'));
     }
 

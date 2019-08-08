@@ -22,11 +22,11 @@
             @method('PATCH')
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="title">タイトル<span class="req">*</span></label>
-                <input class="col-sm-10 form-control-lg" name="title" type="text" id="title" value="{{ old('title') }}">
+                <input class="col-sm-10 form-control-lg" name="title" type="text" id="title" value="{{ old('title') }}" required>
             </div>
             <hr>
             <p>内容<span class="req">*</span></p>
-            <textarea class="form-control" name="content" id="summary-ckeditor"></textarea>
+            <textarea class="form-control" name="content" id="summary-ckeditor" required></textarea>
             <hr>
             <p>画像</p>
             <div class="">
@@ -44,11 +44,11 @@
             </div>
             <hr>
             <p>投稿日時<span class="req">*</span></p>
-            <input id="date" type="datetime-local" name="book_date">
+            <input id="date" type="datetime-local" name="book_date" required>
             <hr>
             <p>公開設定<span class="req">*</span>  ※非公開にした場合、投稿日時を指定していても表示されません。</p>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="release" id="release" value="1">
+                <input class="form-check-input" type="radio" name="release" id="release" value="1" required>
                 <label class="form-check-label" for="release">公開</label>
             </div>
             <div class="form-check">

@@ -22,11 +22,11 @@
         @method('PATCH')
         <div class="form-group row">
             <label class="control-label col-sm-2" for="product_name">製品名<span class="req">*</span></label>
-            <input class="col-sm-10 form-control-lg" name="product_name" type="text" id="product_name" value="{{ old('product_name') }}">
+            <input class="col-sm-10 form-control-lg" name="product_name" type="text" id="product_name" value="{{ old('product_name') }}" required>
         </div>
         <hr>
         <p>概要<span class="req">*</span></p>
-            <textarea class="form-control" name="overview" id="summary-ckeditor" rows="5" placeholder="製品概要を入力してください。"></textarea>
+            <textarea class="form-control" name="overview" id="summary-ckeditor" rows="5" placeholder="製品概要を入力してください。" required></textarea>
         <hr>
         <p>画像</p>
         <div class="">
@@ -117,7 +117,7 @@
         <hr>
         <p>公開設定<span class="req">*</span></p>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="release" id="release" value="1">
+            <input class="form-check-input" type="radio" name="release" id="release" value="1" required>
             <label class="form-check-label" for="release">公開</label>
         </div>
         <div class="form-check">
@@ -127,7 +127,7 @@
         <hr>
         <p>廃盤設定<span class="req">*</span></p>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="discontinued" id="discontinued" value="1">
+            <input class="form-check-input" type="radio" name="discontinued" id="discontinued" value="1" required>
             <label class="form-check-label" for="discontinued">廃盤</label>
         </div>
         <div class="form-check">
@@ -136,6 +136,37 @@
         </div>
         
         {{-- <p>カラー</p>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="color[]" id="color" value="黒">
+            <label class="form-check-label" for="color">黒</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="color[]" id="white" value="白">
+            <label class="form-check-label" for="white">白</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="color[]" id="silver" value="シルバー">
+            <label class="form-check-label" for="silver">シルバー</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="color[]" id="red" value="赤">
+            <label class="form-check-label" for="red">赤</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="color[]" id="blue" value="青">
+            <label class="form-check-label" for="blue">青</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="color[]" id="pink" value="ピンク">
+            <label class="form-check-label" for="pink">ピンク</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="color[]" id="parple" value="紫">
+            <label class="form-check-label" for="parple">紫</label>
+        </div> --}}
+
+        {{-- <p>音声圧縮方式</p>
+            チェックボックスで選択できるようにする。
         <div class="form-check">
             <input class="form-check-input" type="checkbox" name="color[]" id="color" value="黒">
             <label class="form-check-label" for="color">黒</label>

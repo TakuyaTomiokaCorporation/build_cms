@@ -14,7 +14,7 @@ class ProductNews extends Model
     protected $fillable = [
         'title',
         'content',
-        'main_viusal',
+        'main_visual',
         'pdf',
         'release',
         'book_date',

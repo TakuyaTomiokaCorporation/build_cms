@@ -9,7 +9,7 @@
     }
 
     .sentence-sm{
-        widows: 400px;
+        width: 400px;
     }
 </style>
 

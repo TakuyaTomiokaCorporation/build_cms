@@ -14,7 +14,6 @@ class AddPostNumberToShopsTable extends Migration
     public function up()
     {
         Schema::table('shops', function (Blueprint $table) {
-            //Add post-number
             $table->string('post_number', '10');
         });
     }

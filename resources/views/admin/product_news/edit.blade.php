@@ -32,7 +32,7 @@
             <hr>
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="pdf">詳細ページのリンク</label>
-                <input class="col-sm-10 form-control-lg" name="link" type="text" id="link" value="{{ $news->link }}">
+                <input class="col-sm-10 form-control-lg" name="link" type="text" id="link" value="{{ $news_product->link }}">
             </div>
             <hr>
             <p>投稿日時<span class="req">*</span></p>

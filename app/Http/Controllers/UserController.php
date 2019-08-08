@@ -146,11 +146,17 @@ class UserController extends Controller
 
     public function getProductInfo()
     {
-        $products = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')
-                    ->orderBy('id', 'desc')
-                    ->get();
+        $continuedProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail', 'discontinued')
+                        ->where('discontinued', 0)
+                        ->orderBy('id', 'desc')
+                        ->get();
+        $discontinuedProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail', 'discontinued')
+                        ->where('discontinued', 1)
+                        ->orderBy('id', 'desc')
+                        ->get();
         return view('user.product', [
-            'products' => $products,
+            'continuedProducts' => $continuedProducts,
+            'discontinuedProducts' => $discontinuedProducts,
         ]);
     }
 

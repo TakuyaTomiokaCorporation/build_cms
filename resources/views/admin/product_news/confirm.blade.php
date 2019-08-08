@@ -27,7 +27,7 @@
             </div>
             <div class="row">
                 <label class="col-sm-4">内容</label>
-                <div class="col-sm-8">{{ $content }}</div>
+                <div class="col-sm-8">{!! $content !!}</div>
             </div>
             <div class="row">
                 <label class="col-sm-4">画像</label>

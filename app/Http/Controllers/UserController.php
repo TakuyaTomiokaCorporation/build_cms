@@ -64,7 +64,7 @@ class UserController extends Controller
 
         $posts = \DB::table('news')
                 ->where('release', '=', '1')
-                ->where('book_date', '=>', $now)
+                ->where('book_date', '<=', $now)
                 ->latest()->take(6)->get();
 
         return view('user.news', compact('posts'));
@@ -102,13 +102,13 @@ class UserController extends Controller
             'news_products' => $news_products,
         ]);
     }
-    public function getEachProductNews($id)
-    {
-        $news_product = ProductNews::findOrFail($id);
+    // public function getEachProductNews($id)
+    // {
+    //     $news_product = ProductNews::findOrFail($id);
 
-        return view('user.product-news-info', compact('news_product'));
+    //     return view('user.product-news', compact('news_products'));
 
-    }
+    // }
 
     // 
     // About function

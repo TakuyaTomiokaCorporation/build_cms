@@ -25,7 +25,12 @@
         <div class="news">
         @foreach ($posts as $post)
         <div class="news_box">
-            <a href="{{ route('news.show') }}#{{ $post->id }}">
+            @if (isset($post->another_link))
+                <a href="{{ $post->another_link }}">
+            @else
+                <a href="{{ route('news.show') }}#{{ $post->id }}">
+            @endif
+            {{-- <a href="{{ route('news.show') }}#{{ $post->id }}"> --}}
                 <img src="{{ asset('images/news') }}/{{ $post->image }}">
                 <span class="{{ $post->class }}">{{ $post->category }}</span>
                 <h4>{{ $post->title }}</h4>

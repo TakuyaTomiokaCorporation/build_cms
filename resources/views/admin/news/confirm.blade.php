@@ -21,7 +21,7 @@
             <input type="hidden" name="link" value="{{ $link }}">
             @endisset
             @isset($another_link)
-            <input type="hidden" name="link" value="{{ $another_link }}">
+            <input type="hidden" name="another_link" value="{{ $another_link }}">
             @endisset
             <input type="hidden" name="class" value="{{ $class }}">
             {{-- <input type="hidden" name="transmission_method" value="{{ $color }}"> --}}

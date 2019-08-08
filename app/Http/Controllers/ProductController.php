@@ -35,11 +35,8 @@ class ProductController extends Controller
 
         $product_confirm = $request -> all();
 
-        
-        // dd($product_confirm);
-        if(isset($product_confirm['thumbnail']))
+        if($file = $request->file('thumbnail'))
         {
-            $file = $request->file('thumbnail');
             $name = uniqid() . $file -> getClientOriginalName();
             $file -> move('images/thumbnails/', $name);
             $product_confirm['thumbnail'] = $name;
@@ -49,9 +46,8 @@ class ProductController extends Controller
             $product_confirm['thumbnail'] = 'noimage.png';    
         }
 
-        if(isset($product_confirm['pdf']))
+        if($file = $request->file('pdf'))
         {
-            $file = $request->file('pdf');
             $name = uniqid() . $file -> getClientOriginalName();
             $file -> move('images/product_news/', $name);
             $product_news_confirm['pdf'] = $name;
@@ -60,13 +56,6 @@ class ProductController extends Controller
         {
             $product_confirm['pdf'] = "";
         }
-
-        // if($file = $request->file('thumbnail'))
-        // {
-        //     $name = uniqid() . $file -> getClientOriginalName();
-        //     $file -> move('images/thumbnails/', $name);
-        //     $product_confirm['thumbnail'] = $name;
-        // };
 
         return view('admin.product.confirm')->with($product_confirm);
     }

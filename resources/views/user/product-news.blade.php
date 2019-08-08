@@ -23,18 +23,24 @@
             <h3>{{ $news_product->title }}</h3>
         </div>
 
+        <div class="news_img both m_auto mt10 mb10">
+            <img src="{{ asset('images/product_news') }}/{{ $news_product->main_visual }}">
+        </div>
+
         <div class="news_text mt20">
             {{ $news_product->content }}
         </div>
 
         <div class="news_Link alc mt10 mb20">
-            <a href="{{ route('product_news.show', $news_product->id) }}" class="btn_Blk mt10">詳しくはこちら</a>
+            {{-- <a href="{{ route('product_news.show', $news_product->id) }}" class="btn_Blk mt10">詳しくはこちら</a> --}}
             @isset($news_product->pdf)
                 <a href="pdf/{{ $news_product->pdf }}" class="btn_Blk mt10">PDFを見る</a>   
             @endisset
         </div>
     </section>
     @endforeach
+
+    {{ $news_products->links() }}
 
 </div><!--/main-->
 </div><!--/container-->

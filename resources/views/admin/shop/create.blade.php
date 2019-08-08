@@ -46,7 +46,7 @@
                 {{-- @if($errors->has('shop_name'))<br><span class="error">{{ $errors->first('shop_name') }}</span> @endif --}}
             </div>
             <div class="form-group row">
-                <label class="control-label col-sm-2" for="post_number">郵便番号<span class="req">*</span></label>  
+                <label class="control-label col-sm-2" for="post_number">郵便番号</label>  
                 <input class="col-sm-10 form-control-lg" name="post_number" type="text" id="post_number" value="{{ old('post_number') }}">
                 {{-- @if($errors->has('post_number'))<br><span class="error">{{ $errors->first('post_number') }}</span> @endif --}}
             </div>

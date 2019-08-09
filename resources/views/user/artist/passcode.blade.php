@@ -1,10 +1,10 @@
 @extends('layouts.user_master')
 
-@section('title', '声優 中村繪里子×TE-D01d |')
+@section('title', 'PassCode×TE-D01d |')
 
 @section('description', 'アーティストによるインタビュー動画、AVIOT製品のレビュー、操作方法')
 
-@section('body_id', 'e-nakamura')
+@section('body_id', '')
 
 @section('css')
     

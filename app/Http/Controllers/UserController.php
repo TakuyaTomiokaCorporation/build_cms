@@ -204,6 +204,11 @@ class UserController extends Controller
         return view('user.artist.pnk');
     }
 
+    public function getPass()
+    {
+        return view('user.artist.passcode');
+    }
+
     // 
     // Codec function
     //

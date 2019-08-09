@@ -30,8 +30,7 @@ body {
 	/* width: 100%;
 	height: auto; */
 	color: #222;
-	font: normal 15px/1.6 'Lucida Grande', Meiryo, sans-serif;
-	/* font-family: メイリオ, Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', sans-serif; */
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 }
@@ -39,7 +38,6 @@ body {
 h1,h2,h3,h4,h5,h6 {
 	line-height: 1.2;
 }
-h2 { margin-top: 64px;}
 	
 /* link */
 a {
@@ -131,6 +129,9 @@ a:hover img {
 .mt15 {	margin-top: 15px !important;}
 .mt20 {	margin-top: 20px !important;}
 .mt40 { margin-top: 40px !important;}
+.mt60 { margin-top: 60px !important;}
+.mt80 { margin-top: 80px !important;}
+.mt100 { margin-top: 100px !important;}
 
 .pb0 {	padding-bottom: 0px !important;}
 .pb5 {	padding-bottom: 5px !important;}
@@ -248,8 +249,6 @@ a:hover img {
   z-index: 1;
 }
 
-
-
 /* --------------
  common
 -------------- */
@@ -264,6 +263,7 @@ header {
     z-index: 1000;
     width: 100%;
     background: #000;
+    height: 64px;
 }
 
 nav.greedy {
@@ -343,6 +343,15 @@ nav.greedy ul.hidden-links li {
 
 nav.greedy ul.hidden-links li a {
 	color: #fff;
+}
+
+#container {
+  margin-top: 67px;
+}
+
+.id_top {
+  margin-top: -67px;
+  padding-top: 67px;
 }
 
 .news {
@@ -428,6 +437,14 @@ nav.greedy ul.hidden-links li a {
   font-size: 10px;
 }
 
+.tag_information { 
+  background: #ff7b00;
+  color: #fff;
+  font-weight: bold;
+  padding: 4px;
+  font-size: 10px;
+}
+
 .notice h3 {
 	border-bottom: 1px solid #444;
 	padding-bottom: 5px;
@@ -496,12 +513,27 @@ nav.greedy ul.hidden-links li a {
     padding: 20px;
 }
 
+ul.product_category li {
+    display: inline-block;
+}
+
+ul.product_category li a {
+    display: block;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+ul.product_category li a:hover {
+    background: #555;
+}
+
+
 .product_box {
   margin: 20px 10px;
 }
 
 .product_content div {
-  display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -527,10 +559,10 @@ nav.greedy ul.hidden-links li a {
 .btn_product {
   background: #000;
   color: #fff;
-  padding: 5px 20px;
+  padding: 10px 40px;
 }
 
-
+/*--AVIOTについて--*/
 
 /*製品詳細*/
 
@@ -545,6 +577,11 @@ nav.greedy ul.hidden-links li a {
   opacity: 0;
   transition: all 3s ease 0s;
 }*/
+
+#product h2 {
+  font-size: 1.8em;
+}
+
 #product h3 {
   font-size: 24px;
   margin-top: 12px;
@@ -575,7 +612,13 @@ nav.greedy ul.hidden-links li a {
     #product .gallery-thumbs .swiper-slide-thumb-active {
       opacity: 1;
     }
+#product table {
+  margin: 0;
+}
 
+.btn_area {
+  margin-top: 10px;
+}
 
 .Black { display: inline-block; background-color: #000; height: 20px; width: 20px; }
 .Gold { display: inline-block; background-color: #beaa6f; height: 20px; width: 20px; }
@@ -621,6 +664,17 @@ nav.greedy ul.hidden-links li a {
 
 /*--コーデックについて--*/
 
+.codec_txt {
+  margin-left: 160px;
+}
+
+#codec .codec_logo {
+  width: 120px;
+}
+
+.logo_small img {
+  width: 46%;
+}
 /*--防水性能--*/
 #waterproof section ul {
     display: flex;
@@ -632,7 +686,7 @@ nav.greedy ul.hidden-links li a {
     margin-top: 20px;
   }
   #waterproof ul li img {
-    width: 160px;
+    width: 80px;
   }
 /*--アーティストインタビュー--*/
 .artist_about {
@@ -931,10 +985,23 @@ ul.inner {
 
 /*--取扱店舗--*/
 
-
 .internet_shop ul li {
   margin: 10px;
 }
+
+#shop .shoplist {
+  width: 96%;
+  margin: 0 auto;
+}
+
+#shop dt {
+  float: left;
+}
+
+#shop dd {
+  margin-left: 280px;
+}
+
 
 /*--説明書ダウンロード--*/
 .read {
@@ -962,19 +1029,6 @@ ul.inner {
  padding: 10px;
 }
 
-/*--取扱店舗--*/
-#shop .shoplist {
-  width: 96%;
-  margin: 0 auto;
-}
-
-#shop dt {
-  float: left;
-}
-
-#shop dd {
-  margin-left: 280px;
-}
 
 
 
@@ -1081,11 +1135,11 @@ footer article {
 .w1020 {width: 1020px;}
 .ifsp { display: none; }
 .flex { display: flex; }
-.flex_ImgLogo { width: 50%; padding: 10px;}
-.flex_ImgR { display: flex; flex-direction: row-reverse; align-items: center; }
-.flex_ImgL { display: flex; align-items: center; }
-.clm2_img { width: 50%; padding: 10px;}
-.clm2_imgLogo { width: 30%; padding: 10px;}
+.flex_ImgLogo { width: 30%; display: flex; align-items: center; justify-content: center; }
+.flex_ImgR { display: flex; flex-direction: row-reverse; }
+.flex_ImgL { display: flex; }
+.clm2_img { width: 50%; }
+.clm2_imgLogo { width: 20%; padding: 10px;}
 
 nav.greedy {
 	width: 1080px;
@@ -1111,17 +1165,41 @@ nav.greedy {
 	padding: 10px 40px;
 }
 
+.japansound_logo {
+  width: 440px;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.healable a img {
+  width: 300px;
+}
+
 /*.product_phot  {
 	width: 800px;
 }*/
 
-#codec p img {
-  width: 60%;
+.product_text {
+  width: 824px;
 }
 
 .example p img {
   margin-top: 14px;
   margin-bottom: 14px;
+}
+
+.btn_area{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.genuine_01, .genuine_02, .genuine_03 {
+  font-size: 0.94em;
+}
+
+.genuine_01, .genuine_02 {
+  margin-right: 12px;
 }
 
 #manual .manual_product {
@@ -1200,6 +1278,12 @@ nav.greedy {
   float: none;
 }
 
+/*--AVIOTについて--*/
+.japansound_logo {
+  width: 60%;
+  margin: 0 auto;
+}
+
 
 /*--製品一覧・製品詳細--*/
 .product_phot  {
@@ -1208,6 +1292,10 @@ nav.greedy {
 
 .swiper-my-pagination {
 	display: none;
+}
+
+ul.product_category li {
+  margin: 2px;
 }
 
  .product_box {
@@ -1229,13 +1317,29 @@ nav.greedy {
     border-top: none;
   }
 
+.product_content {
+  padding: 0;
+}
+
   .product_content div ul {
-    width: 44%;
+    width: 80%;
     margin: 0 auto;
   }
 
-  .product_content {
-  padding: 0;
+  .product_content div ul li{
+    margin-top: 40px;
+  }
+
+.btn_product {
+  padding: 20px 80px;
+}
+
+
+.flex_ImgLogo {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 /*--アーティストインタビュー--*/
@@ -1311,6 +1415,20 @@ nav.greedy {
   }
 
 
+/*--コーデック--*/
+#codec .codec_logo {
+  width: 100px;
+}
+
+.codec_txt {
+  margin-left: 120px;
+}
+
+.logo_small img {
+  width: 76%;
+}
+
+
 /*--防水性能--*/
 
   #waterproof section ul li:last-child {
@@ -1318,7 +1436,7 @@ nav.greedy {
     margin-top: 0;
   }
   #waterproof ul li img {
-    width: 80%;
+    width: 60%;
   }
 
 .registration_form form input,
@@ -1347,8 +1465,13 @@ nav.greedy {
   width: 90%;
 }
 
+.product_content div {
+  display: flex;
+}
+
 .product_content div ul {
-  margin-right: 0;
+  margin-left: 10px;
+  width: 44%;
 }
 
 .swiper-my-pagination {

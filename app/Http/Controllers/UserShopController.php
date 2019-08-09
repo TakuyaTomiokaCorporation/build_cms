@@ -64,7 +64,7 @@ class UserShopController extends Controller
         $nagasaki_shops = \DB::table('shops')->where('pre_id', '42')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
         $oita_shops = \DB::table('shops')->where('pre_id', '43')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
         $kumamoto_shops = \DB::table('shops')->where('pre_id', '44')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
-        $miyagi_shops = \DB::table('shops')->where('pre_id', '45')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
+        $miyazaki_shops = \DB::table('shops')->where('pre_id', '45')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
         $kagoshima_shops = \DB::table('shops')->where('pre_id', '46')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
         $okinawa_shops = \DB::table('shops')->where('pre_id', '47')->select('shop_name', 'post_number', 'shop_address', 'shop_tel')->get();
 
@@ -117,7 +117,7 @@ class UserShopController extends Controller
             'nagasaki_shops',
             'oita_shops',
             'kumamoto_shops',
-            'miyagi_shops',
+            'miyazaki_shops',
             'kagoshima_shops',
             'okinawa_shops'
 

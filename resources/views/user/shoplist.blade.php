@@ -817,12 +817,12 @@
                         <p>宮崎県<i class="accordion_icon ifpc"><span></span><span></span></i></p>
                         <ul>
                             <li>
-                                @foreach ($miyagi_shops as $miyagi_shop)
+                                @foreach ($miyazaki_shops as $miyazaki_shop)
                                 <dl class="shoplist mt20 mb20">
-                                    <dt>{{ $miyagi_shop->shop_name }}</dt>
-                                    <dd>{{ $miyagi_shop->post_number }}</dd>
-                                    <dd>{{ $miyagi_shop->shop_address }}</dd>
-                                    <dd>{{ $miyagi_shop->shop_tel }}</dd>
+                                    <dt>{{ $miyazaki_shop->shop_name }}</dt>
+                                    <dd>{{ $miyazaki_shop->post_number }}</dd>
+                                    <dd>{{ $miyazaki_shop->shop_address }}</dd>
+                                    <dd>{{ $miyazaki_shop->shop_tel }}</dd>
                                     <hr class="mt10 mb10">
                                 </dl>
                                 @endforeach

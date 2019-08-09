@@ -209,6 +209,16 @@ class UserController extends Controller
         return view('user.artist.passcode');
     }
 
+    public function getUijin()
+    {
+        return view('user.artist.uijin');
+    }
+
+    public function getWagamama()
+    {
+        return view('user.artist.wagamama');
+    }
+
     // 
     // Codec function
     //

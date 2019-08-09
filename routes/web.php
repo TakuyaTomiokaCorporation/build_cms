@@ -53,6 +53,8 @@ Route::get('/artists/gesu', 'UserController@getGesu')->name('gesu.show');
 Route::get('/artists/maisonbookgirl', 'UserController@getMaison')->name('maison.show');
 Route::get('/artists/pnk', 'UserController@getPnk')->name('pnk.show');
 Route::get('/artists/passcode', 'UserController@getPass')->name('pass.show');
+Route::get('/artists/uijin', 'UserController@getUijin')->name('uijin.show');
+Route::get('/artists/wagamamarakia', 'UserController@getWagamama')->name('wagamama.show');
 
 /*
 |############################

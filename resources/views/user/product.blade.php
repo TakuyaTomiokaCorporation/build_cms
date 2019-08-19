@@ -38,9 +38,10 @@
     <section>
         <ul class="product_category">
             <li><a href="">全商品</a></li>
-            <li><a href="">ハイエンドモデル</a></li>
-            <li><a href="">防水</a></li>
-            <li><a href="">長時間充電</a></li>
+            <li><a href="">完全ワイヤレス</a></li>
+            <li><a href="">エントリーモデル</a></li>
+            <li><a href="">ハイブリッドドライバー</a></li>
+            <li><a href="">aptX HD</a></li>
         </ul>
     </section>
     
@@ -57,7 +58,7 @@
                 <li>
                     <p class="fs12">{!! Str::limit($continuedProduct->overview, 120) !!}</p>
                 </li>
-                <li class="alc mt10">
+                <li class="alc mt20">
                     <a href="{{ $continuedProduct->link_detail }}" class="btn_product">詳細をみる</a>
                 </li>
             </ul>
@@ -79,7 +80,7 @@
                 <li>
                     <p class="fs12">{!! Str::limit($discontinuedProduct->overview, 120) !!}</p>
                 </li>
-                <li class="alc mt10">
+                <li class="alc mt20">
                     <a href="{{ $discontinuedProduct->link_detail }}" class="btn_product">詳細をみる</a>
                 </li>
             </ul>

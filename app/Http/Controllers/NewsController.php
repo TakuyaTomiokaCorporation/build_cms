@@ -105,7 +105,7 @@ class NewsController extends Controller
         $news = News::findOrFail($id);
 
         $news_update['book_date'] = Carbon::createFromFormat('Y-m-d\TH:i', $news_update['book_date']);
-        switch($news_confirm['category'])
+        switch($news_update['category'])
         {
             case '新製品情報':
                 $news_confirm['class'] = 'tag_product';

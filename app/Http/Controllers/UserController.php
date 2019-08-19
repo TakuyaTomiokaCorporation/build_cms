@@ -219,6 +219,11 @@ class UserController extends Controller
         return view('user.artist.wagamama');
     }
 
+    public function getYanakoto()
+    {
+        return view('user.artist.yanakotosottomute');
+    }
+
     // 
     // Codec function
     //

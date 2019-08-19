@@ -28,7 +28,7 @@
             <div class="news_title mb20">
                 <p class="{{ $post->class }}">{{ $post->category }}</p>
                 <h3>{{ $post->title }}</h3>
-                <time><small>{{ $post->book_date }}</small></time>
+                <time><small>{{ \Carbon\Carbon::parse($post->book_date)->format('Y-m-d') }}</small></time>
             </div>
     
             <div class="news_img both m_auto mt10 mb10">

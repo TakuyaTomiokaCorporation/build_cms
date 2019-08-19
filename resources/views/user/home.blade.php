@@ -46,7 +46,7 @@
             <dl>
                 @foreach ($news_products as $news_product)
                 <dt>{{ $news_product->book_date }}</dt>
-                <dd><a href="{{ route('product_news.list', $news_product->id) }}">{{ $news_product->title }}</a></dd>
+                <dd><a href="{{ route('product_news.list') }}#{{ $news_product->id }}">{{ $news_product->title }}</a></dd>
                 @endforeach
             </dl>
         </div>

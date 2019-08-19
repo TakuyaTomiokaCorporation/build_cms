@@ -396,7 +396,7 @@ nav.greedy ul.hidden-links li a {
 	background-color: rgba(255,255,255,0.7);
 	width: 100%;
 	text-align: center;
-	padding: 10px 0;
+	padding: 10px 4px;
 }
 
 .news_box span {
@@ -1436,7 +1436,7 @@ ul.product_category li {
     margin-top: 0;
   }
   #waterproof ul li img {
-    width: 60%;
+    width: 6s0%;
   }
 
 .registration_form form input,

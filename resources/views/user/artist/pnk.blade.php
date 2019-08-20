@@ -25,7 +25,8 @@
                 <p class="mt10">シグネチャー・スネアやスティックの年間売上トップクラスをキープするなど、ドラマーとして高い注目を集めている。</p>
                 <p class="mt10">また、著名ミュージシャンのレコーディングへの参加や、ドラムチューナー、テレビ出演、番組MC、DJ、ドラムDJ、音楽監修、フェス主催、ビバラポップ プレゼンター、インタビュアー、コラム連載など、ドラマーの枠を超えた幅広い活動を展開している。</p>
             </div>
-    
+            
+            <h3 class="mt40">TE-D01d</h3>
             <ul class="flex mt20 artist_movie">
                 <li><iframe width="560" height="315" src="https://www.youtube.com/embed/OKDbx3BgF3s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
                 <li><iframe width="560" height="315" src="https://www.youtube.com/embed/CzqhevxR2jg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
@@ -35,6 +36,14 @@
                 <a href="../../product/TE-D01d/" target="_blank" class="btn_back mt10">製品詳細はこちら</a>
             </div>
             
+            <h3 class="mt20">TE-BD21f-pnk</h3>
+            <ul class="flex mt20 artist_movie">
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/LcJAXDk4oRc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            </ul>
+
+            <div class="alc mt20">
+                <a href="../../product/TE-BD21f-pnk/" target="_blank" class="btn_back mt10">製品詳細はこちら</a>
+            </div>
         </section>
     </article>
 </div><!--/main-->

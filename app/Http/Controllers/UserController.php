@@ -33,7 +33,7 @@ class UserController extends Controller
                     ['release', '=', '1'],
                     ['book_date', '<=', $now],
                 ])->whereNull('deleted_at')
-                ->orderBy('book_date', 'desc')->take(6)->get();
+                ->orderBy('book_date', 'desc')->take(9)->get();
 
         $news_products = \DB::table('news_products')->where([
                             ['release', '=', '1'],

@@ -15,7 +15,7 @@
 <div id="container" class="both mb60">
 <div id="" class="main" role="main">
     <article class="w1020 w98 m_auto">
-        <h2 class="pt20 border_b mb20">我儘ラキア×TE-D01d</h2>
+        <h2 class="pt20 border_b mb20">我儘ラキア × TE-D01d</h2>
         <section class="artist_movie">
             <div><img src="{{ asset('images/artists/wagamama_mv.jpg') }}" alt="我儘ラキア"></div>
             <div>

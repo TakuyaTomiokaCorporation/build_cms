@@ -37,7 +37,7 @@
             </ul>
     
             <div class="alc mt20">
-                <a href="../../lp1/" target="_blank" class="btn_back mt10">製品詳細はこちら</a>
+                <a href="{{ route('lp1') }}" target="_blank" class="btn_back mt10">製品詳細はこちら</a>
     
                 <a href="https://www.amazon.co.jp/AVIOT-TE-D01g-Bluetooth-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3-%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0/dp/B07R1Y2ZXJ/ref=sr_1_7?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;keywords=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3%2Baviot&amp;qid=1557750671&amp;s=electronics&amp;sr=1-7&amp;th=1" class="btn_buy mt10" target="_blank" rel="noopener noreferrer">ご購入はこちら</a>
             </div>

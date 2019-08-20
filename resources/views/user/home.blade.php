@@ -1,6 +1,6 @@
 @extends('layouts.user_master')
 
-@section('title', 'AVIOT')
+@section('title', '')
 
 @section('content')
 
@@ -31,7 +31,6 @@
             @else
                 <a href="{{ route('news.show') }}#{{ $post->id }}">
             @endif
-            {{-- <a href="{{ route('news.show') }}#{{ $post->id }}"> --}}
                 <img src="{{ asset('images/news') }}/{{ $post->image }}">
                 <span class="{{ $post->class }}">{{ $post->category }}</span>
                 <h4>{{ $post->title }}</h4>

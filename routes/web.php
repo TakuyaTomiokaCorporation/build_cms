@@ -56,6 +56,7 @@ Route::get('/artists/passcode', 'UserController@getPass')->name('pass.show');
 Route::get('/artists/uijin', 'UserController@getUijin')->name('uijin.show');
 Route::get('/artists/wagamamarakia', 'UserController@getWagamama')->name('wagamama.show');
 Route::get('/artists/yanakotosottomute', 'UserController@getYanakoto')->name('yanakoto.show');
+Route::get('/artists/CY8ER', 'UserController@getCy8er')->name('cy8er.show');
 
 /*
 |############################

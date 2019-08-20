@@ -224,6 +224,10 @@ class UserController extends Controller
         return view('user.artist.yanakotosottomute');
     }
 
+    public function getCy8er()
+    {
+        return view('user.artist.cy8er');
+    }
     // 
     // Codec function
     //

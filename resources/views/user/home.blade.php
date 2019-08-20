@@ -1,6 +1,6 @@
 @extends('layouts.user_master')
 
-@section('title', '')
+@section('title', 'AVIOT')
 
 @section('content')
 
@@ -10,9 +10,10 @@
     <div class="mv w1020 m_auto">
     <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="{{ asset('images/user/mv.png') }}" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('images/user/mv.png') }}" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('images/user/mv.png') }}" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/user/mv_01.gif') }}" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/user/mv_02.png') }}" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/user/mv_03.png') }}" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/user/mv_04.png') }}" alt=""></div>
         </div>
         <!-- Add Arrows -->
         {{-- <img src="./img/mv.png"> --}}

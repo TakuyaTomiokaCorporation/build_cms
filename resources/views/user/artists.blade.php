@@ -7,20 +7,32 @@
 @section('css')
 
 <style type="text/css">
-    .e-nakamura { background: url("{{ asset('images/artists/e-nakamura.jpg') }}") top center no-repeat;}
-    .pnk { background: url("{{ asset('images/artists/pnk.jpg') }}") top center no-repeat;}
-    .maisonbookgirl { background: url("{{ asset('images/artists/maisonbookgirl.jpg') }}") top center no-repeat;}
-    .gesu {	background: url("{{ asset('images/artists/gesu.jpg') }}") top center no-repeat;}
-    
-    @media only screen and (min-width:640px) and (max-width:1023px) {
-    /*tablet用のcssを記述*/
-    .artist_name_left img, .artist_name_right img { display: none;}
-    }
-    
-    @media screen and (max-width: 640px) {
-    /*ここにスマホ用スタイルを記述*/
-    .gesu,.maisonbookgirl,.pnk,.e-nakamura { background: none;}
-    }
+.product_name {
+    width: 320px;
+    font-size: 1.4em;
+    display: flex;
+    align-items: center; 
+}
+
+.product_name img {
+	width: 30%;	
+	margin-left: 10px;
+}
+
+.artist_name {
+	background: #000;
+	padding: 8px 4px;
+	font-weight: bold;
+	position: absolute;
+	color: #fff;
+}
+.artist_list {
+	position: relative;
+}
+
+.artist_list img{
+	width: 340px;
+}
 </style>
 
 @endsection
@@ -29,50 +41,102 @@
 
 @section('content')
 
-<div id="container" class="both">
+<div id="container" class="both mb60">
 <div id="" class="main" role="main">
-    <article class="w1020 w98 m_auto">
-        <h2 class="pt20 border_b mb20">アーティストインタビュー</h2>
-        <section class="artist_about gesu mt40">
-            <div class="artist_name_left">
-                <h3><a href="{{ route('gesu.show') }}">ゲスの極み乙女。<br class="ifpc">×<br class="ifpc">TE-D01g</a></h3>
-                <img src="{{ asset('images/artists/gesu_sp.jpg') }}" class="ifsp">
-                <div class="mt10">
-                    <a href="{{ route('gesu.show') }}" class="btn_Blk">詳しくみる</a>
-                </div>
+<article class="w1020 w98 m_auto">
+    <h2 class="pt20 border_b mb20">アーティストインタビュー</h2>
+    <section class="">
+        <div class="mt40">
+            <h3 class="product_name">TE-BD21f-pnk<img src="{{ asset('images/artists/artistmovie_TE-BD21f-pnk.png') }}" alt="TE-D01g"></h3>
+            <div>
+                <ul class="flex">
+                    <li class="artist_list">
+                        <a href="{{ route('pnk.show') }}">
+                            <span class="artist_name">凛として時雨ドラマー<br>ピエール中野</span>
+                            <img src="{{ asset('images/artists/pnk_mv.jpg') }}">
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </section>
-        
-        <section class="artist_about maisonbookgirl mt40">
-            <div class="artist_name_right">
-                <h3><a href="{{ route('maison.show') }}">Maison book girl<br class="ifpc">×<br class="ifpc">TE-D01d</a></h3>
-                <img src="{{ asset('images/artists/maisonbookgirl_sp.jpg') }}" class="ifsp">
-                <div class="mt10">
-                    <a href="{{ route('maison.show') }}" class="btn_Blk">詳しくみる</a>
-                </div>
+        </div>
+
+        <div class="mt40">
+            <h3 class="product_name">TE-D01g<img src="{{ asset('images/artists/artistmovie_TE-D01g.png') }}" alt="TE-D01g"></h3>
+            <div>
+                <ul class="flex">
+                    <!--<li class="artist_list">
+                        <a href="./CY8ER/">
+                            <span class="artist_name">CY8ER</span>
+                            <img src="./img/CY8ER_mv.jpg">
+                        </a>
+                    </li>-->
+                    <li class="artist_list">
+                        <a href="{{ route('yanakoto.show') }}">
+                            <span class="artist_name">ヤなことそっとミュート</span>
+                            <img src="{{ asset('images/artists/yanakoto_mv.jpg') }}">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="flex">
+                    <li class="artist_list">
+                        <a href="{{ route('uijin.show') }}">
+                            <span class="artist_name">uijin</span>
+                            <img src="{{ asset('images/artists/uijin_mv.jpg') }}">
+                        </a>
+                    </li>
+                    <li class="artist_list">
+                        <a href="{{ route('wagamama.show') }}">
+                            <span class="artist_name">我儘ラキア</span>
+                            <img src="{{ asset('images/artists/wagamama_mv.jpg') }}">
+                        </a>
+                    </li>
+                    <li class="artist_list">
+                        <a href="{{ route('gesu.show') }}">
+                            <span class="artist_name">ゲスの極み乙女。</span>
+                            <img src="{{ asset('images/artists/gesu_mv.jpg') }}">
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </section>
-        
-        <section class="artist_about pnk mt40">
-            <div class="artist_name_left">
-                <h3><a href="{{ route('pnk.show') }}">凛として時雨ドラマー<br>ピエール中野<br class="ifpc">×<br class="ifpc">TE-D01d</a></h3>
-                <img src="{{ asset('images/artists/pnk_sp.jpg') }}" class="ifsp">
-                <div class="mt10">
-                    <a href="{{ route('pnk.show') }}" class="btn_Blk">詳しくみる</a>
-                </div>
+        </div>
+
+        <div class="mt40">
+            <h3 class="product_name">TE-D01g<img src="{{ asset('images/artists/artistmovie_TE-D01d.png') }}" alt="TE-D01g"></h3>
+            <div>
+                <ul class="flex">
+                    <li class="artist_list">
+                        <a href="{{ route('pass.show') }}">
+                            <span class="artist_name">PassCode</span>
+                            <img src="{{ asset('images/artists/passcode_mv.jpg') }}">
+                        </a>
+                    </li>
+                </ul>
+                
+                <ul class="flex">
+                    <li class="artist_list">
+                        <a href="{{ route('maison.show') }}">
+                            <span class="artist_name">Maison book girl</span>
+                            <img src="{{ asset('images/artists/maisonbookgirl_mv.jpg') }}">
+                        </a>
+                    </li>
+                    <li class="artist_list">
+                        <a href="{{ route('pnk.show') }}">
+                            <span class="artist_name">凛として時雨ドラマー<br>ピエール中野</span>
+                            <img src="{{ asset('images/artists/pnk_mv.jpg') }}">
+                        </a>
+                    </li>
+                    <li class="artist_list">
+                        <a href="{{ route('nakamura.show') }}">
+                            <span class="artist_name">声優 中村繪里子</span>
+                            <img src="{{ asset('images/artists/e-nakamura_mv.jpg') }}">
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </section>
-        
-        <section class="artist_about e-nakamura mt40 mb60">
-            <div class="artist_name_right">
-                <h3><a href="{{ route('nakamura.show') }}">声優 中村繪里子<br class="ifpc">×<br class="ifpc">TE-D01d</a></h3>
-                <img src="{{ asset('images/artists/e-nakamura_sp.jpg') }}" class="ifsp">
-                <div class="mt10">
-                    <a href="{{ route('nakamura.show') }}" class="btn_Blk">詳しくみる</a>
-                </div>
-            </div>
-        </section>
-    </article>
+        </div>
+    </section>
+    
+</article>
 </div><!--/main-->
 </div><!--/container-->
     

@@ -346,12 +346,12 @@ nav.greedy ul.hidden-links li a {
 }
 
 #container {
-  margin-top: 67px;
+  margin-top: 64px;
 }
 
 .id_top {
-  margin-top: -67px;
-  padding-top: 67px;
+  margin-top: -64px;
+  padding-top: 64px;
 }
 
 .news {
@@ -1436,7 +1436,7 @@ ul.product_category li {
     margin-top: 0;
   }
   #waterproof ul li img {
-    width: 6s0%;
+    width: 60%;
   }
 
 .registration_form form input,

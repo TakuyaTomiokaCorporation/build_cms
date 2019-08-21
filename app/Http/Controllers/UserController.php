@@ -160,6 +160,11 @@ class UserController extends Controller
         ]);
     }
 
+    public function getTebd21fpnk()
+    {
+        return view('user.products.TE-BD21f-pnk');
+    }
+
     public function getTed01h()
     {
         return view('user.products.TE-D01h');

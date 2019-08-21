@@ -50,7 +50,7 @@
             </div>
         </section>
         @endforeach 
-        
+        {{ $posts->links() }}
     </div><!--/main-->
     </div><!--/container-->
         

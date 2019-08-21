@@ -61,16 +61,16 @@
         <h3 class="border_l">製品レビュー動画</h3>
         <ul class="flex mt20">
             <li>
+                <h4>ガチ検証！AVIOT “TE-D01g” の接続安定性を試してみた！＜完全ワイヤレスイヤホン＞</h4>
+                <p class="alc"><iframe width="300" height="200" src="https://www.youtube.com/embed/87lm8rFd_Mk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            </li>
+            <li>
                 <h4>[AVIOT TE-D01g]1回のフル充電で連続最大10時間再生！売れ筋1位の完全ワイヤレス！</h4>
                 <p class="alc"><iframe width="300" height="200" src="https://www.youtube.com/embed/f-4rcpN6iZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
             </li>
             <li>
                 <h4>[AVIOT WE-BD21d]ハイブリッドでトリプルドライバーで13時間再生なワイヤレスイヤホン！</h4>
                 <p class="alc"><iframe width="300" height="200" src="https://www.youtube.com/embed/ra6n9cGN698" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-            </li>
-            <li>
-                <h4>AVIOTの完全ワイヤレス“TE-D01g”を女性目線でレビューしてみた♡【超人気！！】</h4>
-                <p class="alc mt15"><iframe width="300" height="200" src="https://www.youtube.com/embed/C-iBuXC1F84" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
             </li>
         </ul>
         <p><a href="https://www.youtube.com/playlist?list=PLj8nT5YBl3EDgeyNgjrzJsMTW94J2xvZu" target="_blank" class="btn_Blk">他のレビュー動画はこちら</a></p>

@@ -165,6 +165,11 @@ class UserController extends Controller
         return view('user.products.TE-BD21f-pnk');
     }
 
+    public function getTebd21f()
+    {
+        return view('user.products.TE-BD21f');
+    }
+    
     public function getTed01h()
     {
         return view('user.products.TE-D01h');

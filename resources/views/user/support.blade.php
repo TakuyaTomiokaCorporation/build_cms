@@ -16,6 +16,7 @@
     <h2 class="pt20 border_b mb20">カスタマーサポート</h2>
     <section>
         <ul class="support_menu">
+            <li><a href="{{ route('movies') }}"><img src="{{ asset('images/user/movies.png') }}" alt="ペアリング動画"></a></li>
             <li><a href="#QA"><img src="{{ asset('images/user/QA.png') }}" alt="よくあるご質問"></a></li>
             <li><a href="{{ route('manual') }}"><img src="{{ asset('images/user/manual.png') }}" alt="説明書ダウンロード"></a></li>
             <li><a href="{{ route('product_regiser') }}"><img src="{{ asset('images/user/registration.png') }}" alt="製品保証"></a></li>
@@ -319,26 +320,18 @@
 
 <script type="text/javascript">
 	$(function(){
-
-	//.accordionの中のp要素がクリックされたら
 	$('.accordion p').click(function(){
 		$(this).next().slideToggle();	
-		// activeが存在する場合
 		if ($(this).children(".accordion_icon").hasClass('active')) {			
-			// activeを削除
 			$(this).children(".accordion_icon").removeClass('active');				
 		}
 		else {
-			// activeを追加
 			$(this).children(".accordion_icon").addClass('active');			
 		}	
-		//クリックされた.accordionの中のp要素に隣接するul要素が開いたり閉じたりする。
-	});
-
-        //.accordionの中の.innerの中のli要素の中のp要素がクリックされたら
+    });
+    
 	$('.accordion .inner li p').click(function() {
-
-		//クリックされた.accordionの中の.innerの中のli要素の中のp要素の子要素のul要素が開いたり閉じたりする。
+        
 		$(this).children('ul').slideToggle();
 
   });

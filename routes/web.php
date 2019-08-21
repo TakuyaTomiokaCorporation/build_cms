@@ -76,6 +76,7 @@ Route::get('/product', 'UserController@getProductInfo')->name('product.show');
 Route::get('/product/TE-BD21f-pnk', 'UserController@getTebd21fpnk');
 Route::get('/product/TE-BD21f', 'UserController@getTebd21f');
 Route::get('/product/TE-D01a', 'UserController@getTed01a');
+Route::get('/product/TE-D01b', 'UserController@getTed01b');
 Route::get('/product/TE-D01h', 'UserController@getTed01h');
 Route::get('/product/WE-D01b', 'UserController@getWed01b');
 Route::get('/product/WE-D01c', 'UserController@getWed01c');

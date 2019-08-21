@@ -180,6 +180,11 @@ class UserController extends Controller
         return view('user.products.TE-D01b');
     }
 
+    public function getTed01c()
+    {
+        return view('user.products.TE-D01c');
+    }
+
     public function getTed01h()
     {
         return view('user.products.TE-D01h');

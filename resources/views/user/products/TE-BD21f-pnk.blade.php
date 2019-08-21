@@ -155,7 +155,7 @@
 
     <section>
         <div class="alc mt20">
-            <a href="../" class="btn_back mt10">製品一覧へ戻る</a>
+            <a href="{{ route('product.show') }}" class="btn_back mt10">製品一覧へ戻る</a>
 
             <a href="https://www.amazon.co.jp/dp/B07TTQKHL4/" target="_blank" class="btn_buy mt10">ご購入はこちら</a>
         </div>

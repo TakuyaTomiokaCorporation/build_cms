@@ -79,6 +79,7 @@ Route::get('/product/TE-D01a', 'UserController@getTed01a');
 Route::get('/product/TE-D01b', 'UserController@getTed01b');
 Route::get('/product/TE-D01c', 'UserController@getTed01c');
 Route::get('/product/TE-D01d', 'UserController@getTed01d');
+Route::get('/product/TE-D01d-kzn', 'UserController@getTed01dkzn');
 Route::get('/product/TE-D01h', 'UserController@getTed01h');
 Route::get('/product/WE-D01b', 'UserController@getWed01b');
 Route::get('/product/WE-D01c', 'UserController@getWed01c');

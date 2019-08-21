@@ -60,7 +60,7 @@ class UserController extends Controller
                 ->where('release', '=', '1')
                 ->where('book_date', '<=', $now)
                 ->whereNull('deleted_at')
-                ->orderBy('book_date', 'desc')->take(6)->get();
+                ->orderBy('book_date', 'desc')->paginate(5);
 
         return view('user.news', compact('posts'));
     }

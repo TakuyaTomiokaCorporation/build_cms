@@ -30,6 +30,10 @@
         <h3 class="border_l">ペアリング動画</h3>
         <ul class="flex mt20">
             <li>
+                <h4>TE-BD21f、TE-BD21f-pnk</h4>
+                <p class="alc"><iframe width="300" height="200" src="https://www.youtube.com/embed/YX9vmFISoEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            </li>
+            <li>
                 <h4>WE-BD21d</h4>
                 <p class="alc"><iframe width="300" height="200" src="https://www.youtube.com/embed/kK23PsB9yFk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
             </li>
@@ -48,10 +52,6 @@
             <li>
                 <h4>TE-D01a</h4>
                 <p class="alc"><iframe width="300" height="200" src="https://www.youtube.com/embed/nPEzH2aLWL0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-            </li>
-            <li>
-                <h4>TE-D01b</h4>
-                <p class="alc"><iframe width="300" height="200" src="https://www.youtube.com/embed/a2YxK_2yhhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
             </li>
         </ul>
         <p><a href="https://www.youtube.com/playlist?list=PLj8nT5YBl3EDoV7TWMC0vyBBnCMKY5xom" target="_blank" class="btn_Blk">他機種のペアリング方法はこちら</a></p>

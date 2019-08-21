@@ -220,6 +220,11 @@ class UserController extends Controller
         return view('user.products.WE-D01c');
     }
 
+    public function getWebd21d()
+    {
+        return view('user.products.WE-BD21d');
+    }
+
     // 
     // Aritists functions
     // 

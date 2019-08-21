@@ -23,14 +23,12 @@
         <h3 class="border_l">ロールスワッピング機能について</h3>
         <p class="mt10">従来の完全ワイヤレスイヤホンはほとんどの製品が左右のどちらかが親機、子機という関係性で設計されており、親機側の負担が大きいため先にバッテリー切れを起こすことが運用時間の短さに繋がっていました。</p>
         <p>ロールスワッピング機能は、左右両方のイヤホンが親機にも子機にもなり、なおかつ起動時のバッテリー残量に応じて親機を指定することで駆動時間を最適化する仕組みです。</p>
-        <p class="alc mt10"><img src="{{ asset('images/user/rollswaping.png') }}"></p>
     </section>
 
     <section class="mt40">
         <h3 class="border_l">True Wireless Stereo Plusについて</h3>
         <p class="mt10">QCC3026/3020実装モデルにはデバイスから親機側イヤホンを経由して子機側までデータをブリッジして伝送するTrue Wireless Stereo(TWS)方式に加え、左右イヤホンへそれぞれデータを伝送するTrue Wireless Stereo Plus(TWS Plus)にも対応しています。<br>
         この方式はTWSよりも接続安定性に優れ、レイテンシも低くなることが期待される次世代の接続方式です。（接続にはデバイス側もTWS Plusに対応している必要があります）</p>
-        <p class="alc mt10"><img src="{{ asset('images/user/TrueWirelessStereoPlus.png') }}"></p>
     </section>
     
     

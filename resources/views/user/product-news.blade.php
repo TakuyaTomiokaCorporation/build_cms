@@ -17,7 +17,7 @@
     
     <h2 class="pt20 border_b mb20">製品に関するお知らせ</h2>
     @foreach ($news_products as $news_product)
-    <section id="{{ $news_product->id }}" class="news_TL m_auto mt10 mb40">
+    <section id="{{ $news_product->id }}" class="news_TL m_auto mb40 id_top">
         <div class="news_title mb20">
             <time>{{ $news_product->book_date }}</time>
             <h3>{{ $news_product->title }}</h3>

@@ -53,6 +53,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
+                                {{-- <div class="g-recaptcha" data-callback="clearcall" data-sitekey="6Ldnm68UAAAAAIHuRLurfVAazlDVc4aJw_f-CLG2"></div> --}}
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('ログイン') }}
                                 </button>

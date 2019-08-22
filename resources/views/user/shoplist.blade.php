@@ -14,24 +14,48 @@
     <h2 class="pt20 border_b mb20">取り扱い店舗</h2>
     <section class="read mb20">
         <div>
-            <p>AVIOTのイヤホンはいずれも<strong>ヤマダ電機（ヤマダウェブコム含む）、ビックカメラ（ビックカメラ.com、楽天ビック含む）、ソフマップ（ソフマップ・ドットコム含む）、コジマ電機（コジマネット含む）、ヨドバシカメラ（ヨドバシカメラ.com含む）、エディオン、上新電機（Joshin Web含む）コストコ、eイヤホン（eイヤホンWEB本店）、フジヤカメラ店（フジヤエービックオンラインショップ）、ロフト、東急ハンズ、二子玉川 蔦屋家電、山野楽器</strong>が正規販売店となっております。</p>
-            <p>お求めは正規販売店または下記公式インターネットショップよりお願いいたします。</p>
-            <p class="mt10 txtRed">※並行輸入品・転売品・模倣品をはじめ正規販売店、公式インターネットショップ以外でご購入の製品はサポートをお受けできません。</p>
+            <p>AVIOTのイヤホンのお求めは下記正規販売店または公式ストアよりお願いいたします。</p>
+            <p class="txtRed">※並行輸入品・転売品・模倣品をはじめ正規販売店、公式ストア以外でご購入の製品はサポートをお受けできない場合がございます。</p>
+        </div>
+
+        <div class="flex mt20">
+            <ul class="genuine_01">
+                <li>ヤマダ電機（<a href="https://www.yamada-denkiweb.com/" target="_blank">ヤマダウェブコム</a>含む）</li>
+                <li>コジマ（<a href="https://www.kojima.net/ec/top/CSfTop.jsp" target="_blank"> コジマネット</a>含む）</li>
+                <li>上新電機（<a href="https://joshinweb.jp/" target="_blank">Joshin Web</a>含む）</li>
+                <li>フジヤカメラ店<br>
+                （<a href="https://www.fujiya-avic.jp/" target="_blank">フジヤエービックオンラインショップ</a>）</li>
+                <li>au Shop</li>
+            </ul>
+            <ul class="genuine_02">
+                <li>ビックカメラ（<a href="https://www.biccamera.com/bc/main/" target="_blank">ビックカメラ.com</a>、<a href="https://biccamera.rakuten.co.jp/" target="_blank">楽天ビック</a>含む）</li>
+                <li>ヨドバシカメラ（<a href="https://www.yodobashi.com/" target="_blank"> ヨドバシカメラ.com</a>含む）</li>
+                <li>コストコ</li>
+                <li>ロフト</li>
+                <li>山野楽器</li>
+            </ul>
+            <ul class="genuine_03">
+                <li>ソフマップ（<a href="https://www.sofmap.com/" target="_blank">ソフマップ・ドットコム</a>含む）</li>
+                <li>エディオン</li>
+                <li>eイヤホン（<a href="https://www.e-earphone.jp/" target="_blank">eイヤホンWEB</a>本店）</li>
+                <li>東急ハンズ</li>
+                <li>二子玉川 蔦屋家電</li>
+            </ul>
         </div>
     </section>
 
-    <section class="internet_shop mt10 mb20">
-            <h3 class="border_l">インターネットショップ</h3>
+    <section class="internet_shop mt40 mb20">
+			<h3 class="border_l">公式ストア</h3>
             <ul class="flex">
-                <li class="alc"><a href="https://www.amazon.co.jp/s?me=ABRZDPOGTSWO1" target="_btank"><img src="../img/bnr_amazon.png"></a></li>
-                <li class="alc"><a href="https://www.rakuten.co.jp/mobileselect/" target="_btank"><img src="../img/bnr_rakuten.png"></a></li>
-                <li class="alc"><a href="https://store.shopping.yahoo.co.jp/mobileselect/" target="_btank"><img src="../img/bnr_yahoo.png"></a></li>
+                <li class="alc"><a href="https://www.amazon.co.jp/s?me=ABRZDPOGTSWO1" target="_btank"><img src="{{ asset('images/user/bnr_amazon.png') }}"></a></li>
+                <li class="alc"><a href="https://www.rakuten.co.jp/mobileselect/" target="_btank"><img src="{{ asset('images/user/bnr_rakuten.png') }}"></a></li>
+                <li class="alc"><a href="https://store.shopping.yahoo.co.jp/mobileselect/" target="_btank"><img src="{{ asset('images/user/bnr_yahoo.png') }}"></a></li>
             </ul>
     </section>
 
     <section>
     <ul class="accordion">
-        <h3 class="border_l mb20">地域から探す</h3>
+        <h3 class="border_l mt40 mb20">地域から探す</h3>
             <li>
                 <p class="ac">北海道<i class="accordion_icon ifpc"><span></span><span></span></i></p>
                 <ul class="inner">

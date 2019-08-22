@@ -9,12 +9,16 @@
 <style>
 .id_top{
     margin-top: -67px;
-  padding-top: 67px;
+    padding-top: 67px;
+}
+
+.pagination {
+    margin-top: 20px;
+    justify-content: center; 
 }
 
 </style>
-
-<link rel="stylesheet" href="{{ asset('/css/app.css') }}">
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 @endsection
 

@@ -25,7 +25,7 @@
 @section('body_id', 'news')
 
 @section('content')
-    <div id="container" class="both">
+    <div id="container" class="both bg-white">
     <div id="" class="main w1020 w98 m_auto" role="main">
         <h2 class="pt20 border_b mb20">最新情報</h2>
 

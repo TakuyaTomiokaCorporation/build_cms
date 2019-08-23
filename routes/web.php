@@ -18,7 +18,6 @@ Route::get('/qualcomm', 'UserController@getQualcomm')->name('qualcomm');
 Route::get('/manual', 'UserController@getManual')->name('manual');
 Route::get('/movies', 'UserController@getMovies')->name('movies');
 Route::get('/lp1', 'UserController@getLp')->name('lp1');
-Route::post('/pnk_reservation', 'UserController@getPnkReservation');
 
 /*
 |############################
@@ -98,7 +97,7 @@ Route::get('/support', 'UserRegisterController@getSupport')->name('support');
 Route::get('/support/registration', 'UserRegisterController@getProductRegistration')->name('product_regiser');
 Route::post('/support/registration/confirm', 'UserRegisterController@getConfirm')->name('product_regiser.confirm');
 Route::get('/support/registration/thanks', 'UserRegisterController@getProductThanks')->name('product_register.thanks');
-
+Route::get('/pnk_reservation', 'UserController@getPnkReservation');
 
 
 

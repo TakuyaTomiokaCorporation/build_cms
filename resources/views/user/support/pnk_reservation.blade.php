@@ -44,64 +44,64 @@
             </div>
             
             <div class="registration_form mt40">
-                <p class="mb20">※<span class="required">必須</span>は入力必須項目となります。</p>
-                <form accept="confirmation" method="POST">
+            <p class="mb20">※<span class="required">必須</span>は入力必須項目となります。</p>
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                 @csrf
-                    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-                        <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'>
-                        <input type=hidden name="oid" value="00D6F000002Kz08">
-                        <input type=hidden name="retURL" value="http://aviot.jp">
-                    <dl>
-                <dt><span class="required">必須</span> お名前(姓・名)</dt>
-                <dd>
-                    <label for="last_name"></label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="姓" required/>
-                    <label for="first_name"></label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="名" required/>
-                </dd>
-            </dl>
-            <dl>
-                <dt><span class="required">必須</span> フリガナ</dt>
-                <dd>
-                    <input  id="00N6F00000SUcr2" maxlength="255" name="00N6F00000SUcr2" size="20" type="text"　 placeholder="セイ" required/>
-                    <input  id="00N6F00000SUcr7" maxlength="255" name="00N6F00000SUcr7" size="20" type="text" placeholder="メイ" required/>
-                </dd>
-            </dl>
+                @method('POST')    
+                    <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'>
+                    <input type=hidden name="oid" value="00D6F000002Kz08">
+                    <input type=hidden name="retURL" value="http://aviot.jp">
+                <dl>
+                    <dt><span class="required">必須</span> お名前(姓・名)</dt>
+                    <dd>
+                        <label for="last_name"></label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="姓" required/>
+                        <label for="first_name"></label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="名" required/>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><span class="required">必須</span> フリガナ</dt>
+                    <dd>
+                        <input  id="00N6F00000SUcr2" maxlength="255" name="00N6F00000SUcr2" size="20" type="text"　 placeholder="セイ" required/>
+                        <input  id="00N6F00000SUcr7" maxlength="255" name="00N6F00000SUcr7" size="20" type="text" placeholder="メイ" required/>
+                    </dd>
+                </dl>
+    
+                <dl>
+                    <dt><label for="phone">電話</label></dt>
+                    <dd><input  id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="080-0000-1111"/></dd>
+                </dl>
+                <dl>
+                    <dt><span class="required">必須</span><label for="email">メール</label></dt>
+                    <dd><input id="email" maxlength="80" name="email" size="60" type="text" required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="メールアドレスをご確認ください。" 　required="true"></dd>
+                </dl>
+                <input  id="00N6F00000MmEeS" name="00N6F00000MmEeS" title="性別" type="hidden" value="なし">
+                <input  id="zip" maxlength="20" name="zip" size="20" type="hidden" value="000-0000" required/>
+                <input  id="state" maxlength="20" name="state" size="20" type="hidden" value="都道府県" required/>
+                <input  id="city" maxlength="40" name="city" size="20" type="hidden" value="市町村" required/>
+                <input  id="city" maxlength="40" name="city" size="20" type="hidden" value="番地" required/>
+                <input  id="00N6F00000O5eOY" name="00N6F00000O5eOY" title="ブランド名" type="hidden" value="reservation">
+                <input  id="00N6F00000O5eOx" name="00N6F00000O5eOx" title="機種名" type="hidden" value="TE-BD21f-pnk">
+                <input  id="00N6F00000MmEeh" maxlength="255" name="00N6F00000MmEeh" size="20" type="hidden" value="なし" required/>
+                <input  id="00N6F00000MmEem" maxlength="255" name="00N6F00000MmEem" size="20" type="hidden" value="XXX0000000" required/>
+                <input  id="00N6F00000MmEer" name="00N6F00000MmEer" size="12" type="hidden" value="0000/00/00" required/>
+                <input  id="00N6F00000MmEew" name="00N6F00000MmEew" title="購入店（miraporta）" type="hidden">
         
-            <dl>
-                <dt><label for="phone">電話</label></dt>
-                <dd><input  id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="080-0000-1111"/></dd>
-            </dl>
-            <dl>
-                <dt><span class="required">必須</span><label for="email">メール</label></dt>
-                <dd><input id="email" maxlength="80" name="email" size="60" type="text" required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="メールアドレスをご確認ください。" 　required="true"></dd>
-            </dl>
-            <input  id="00N6F00000MmEeS" name="00N6F00000MmEeS" title="性別" type="hidden" value="なし">
-            <input  id="zip" maxlength="20" name="zip" size="20" type="hidden" value="000-0000" required/>
-            <input  id="state" maxlength="20" name="state" size="20" type="hidden" value="都道府県" required/>
-            <input  id="city" maxlength="40" name="city" size="20" type="hidden" value="市町村" required/>
-            <input  id="city" maxlength="40" name="city" size="20" type="hidden" value="番地" required/>
-            <input  id="00N6F00000O5eOY" name="00N6F00000O5eOY" title="ブランド名" type="hidden" value="reservation">
-            <input  id="00N6F00000O5eOx" name="00N6F00000O5eOx" title="機種名" type="hidden" value="TE-BD21f-pnk">
-            <input  id="00N6F00000MmEeh" maxlength="255" name="00N6F00000MmEeh" size="20" type="hidden" value="なし" required/>
-            <input  id="00N6F00000MmEem" maxlength="255" name="00N6F00000MmEem" size="20" type="hidden" value="XXX0000000" required/>
-            <input  id="00N6F00000MmEer" name="00N6F00000MmEer" size="12" type="hidden" value="0000/00/00" required/>
-            <input  id="00N6F00000MmEew" name="00N6F00000MmEew" title="購入店（miraporta）" type="hidden">
-            
-            <div class="button_area">
-                <p class="checkbox_text">
-                    <label><input  id="00N6F00000WyM0A" name="00N6F00000WyM0A" type="checkbox" value="1" /><span class="label">こちらはTE-BD21f-pnk専用の予約受付フォームです。お間違いなければチェックを入れてください。</span></label>
-                </p>
-                <p class="checkbox_text mt10">
-                    <label><input type="checkbox" name="" value="確認画面は表示されません。上記内容にて送信しますので、よろしければチェックを入れてください。" /><span class="label">確認画面は表示されません。上記内容にて送信されます。</span></label>
-                </p>
-                <p class="checkbox_text mt10">
-                    <label><input type="checkbox" name="" value="【プライバシーポリシーに同意する】" /><span class="label">プライバシーポリシーに同意する</span></label>
-                </p>
-                <p>※こちらの『<a href="https://v-trade.co.jp/company/#cap1" target="_blank">PRIVACY POLICY</a>』の内容をご確認の上ご同意ください。</p>
-                {{-- <div class="g-recaptcha" data-sitekey="6Ldnm68UAAAAAIHuRLurfVAazlDVc4aJw_f-CLG2"></div><br> --}}
-                    <p class="form_submit alc"><input type="submit" value="送信する" class="" /></p>
-            </div>
-            </dl>
-        </form>
+                <div class="button_area">
+                    <p class="checkbox_text">
+                        <label><input  id="00N6F00000WyM0A" name="00N6F00000WyM0A" type="checkbox" value="1" /><span class="label">こちらはTE-BD21f-pnk専用の予約受付フォームです。お間違いなければチェックを入れてください。</span></label>
+                    </p>
+                    <p class="checkbox_text mt10">
+                        <label><input type="checkbox" name="" value="確認画面は表示されません。上記内容にて送信しますので、よろしければチェックを入れてください。" /><span class="label">確認画面は表示されません。上記内容にて送信されます。</span></label>
+                    </p>
+                    <p class="checkbox_text mt10">
+                        <label><input type="checkbox" name="" value="【プライバシーポリシーに同意する】" /><span class="label">プライバシーポリシーに同意する</span></label>
+                    </p>
+                    <p>※こちらの『<a href="https://v-trade.co.jp/company/#cap1" target="_blank">PRIVACY POLICY</a>』の内容をご確認の上ご同意ください。</p>
+                    {{-- <div class="g-recaptcha" data-sitekey="6Ldnm68UAAAAAIHuRLurfVAazlDVc4aJw_f-CLG2"></div><br> --}}
+                        <p class="form_submit alc"><input type="submit" value="送信する" class="" /></p>
+                </div>
+                </dl>
+            </form>
         </div>
     </article>
         

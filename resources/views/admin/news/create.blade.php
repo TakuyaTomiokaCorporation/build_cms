@@ -30,23 +30,23 @@
             <hr>
             <p>カテゴリー<span class="req">*</span></p>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="category" id="product" value="新製品情報" required>
+                <input class="form-check-input" type="radio" name="category" id="product" value="新製品情報" required {{ old('category') == "新製品情報" ? 'checked' : '' }}>
                 <label class="form-check-label" for="product">新製品情報</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="category" id="news" value="最新情報">
+                <input class="form-check-input" type="radio" name="category" id="news" value="最新情報" {{ old('category') == "最新情報" ? 'checked' : '' }}>
                 <label class="form-check-label" for="news">最新情報</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="category" id="event" value="イベント情報">
+                <input class="form-check-input" type="radio" name="category" id="event" value="イベント情報" {{ old('category') == "イベント情報" ? 'checked' : '' }}>
                 <label class="form-check-label" for="event">イベント情報</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="category" id="artists" value="アーティストインタビュー">
+                <input class="form-check-input" type="radio" name="category" id="artists" value="アーティストインタビュー" {{ old('category') == "アーティストインタビュー" ? 'checked' : '' }}>
                 <label class="form-check-label" for="artists">アーティストインタビュー</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="category" id="information" value="お知らせ">
+                <input class="form-check-input" type="radio" name="category" id="information" value="お知らせ" {{ old('category') == "お知らせ" ? 'checked' : '' }}>
                 <label class="form-check-label" for="information">お知らせ</label>
             </div>
             <hr>
@@ -75,11 +75,11 @@
             <hr>
             <p>公開設定<span class="req">*</span>※非公開にした場合、投稿日時を指定していても表示されません。</p>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="release" id="release" value="1" required>
+                <input class="form-check-input" type="radio" name="release" id="release" value="1" required {{ old('release') == "1" ? 'checked' : '' }}>
                 <label class="form-check-label" for="release">公開</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="release" id="close" value="0">
+                <input class="form-check-input" type="radio" name="release" id="close" value="0" {{ old('release') == "0" ? 'checked' : '' }}>
                 <label class="form-check-label" for="close">非公開</label>    
             </div>
             <hr>

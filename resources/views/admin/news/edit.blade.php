@@ -22,23 +22,23 @@
             <hr>
             <p>カテゴリー</p>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="category" id="product" value="新製品情報">
+                <input class="form-check-input" type="radio" name="category" id="product" value="新製品情報" {{ $news->category == "新製品情報" ? 'checked' : '' }}>
                 <label class="form-check-label" for="product">新製品情報</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="category" id="news" value="最新情報">
+                <input class="form-check-input" type="radio" name="category" id="news" value="最新情報" {{ $news->category == "最新情報" ? 'checked' : '' }}>
                 <label class="form-check-label" for="news">最新情報</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="category" id="event" value="イベント情報">
+                <input class="form-check-input" type="radio" name="category" id="event" value="イベント情報" {{ $news->category == "イベント情報" ? 'checked' : '' }}>
                 <label class="form-check-label" for="event">イベント情報</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="category" id="artists" value="アーティストインタビュー">
+                <input class="form-check-input" type="radio" name="category" id="artists" value="アーティストインタビュー" {{ $news->category == "アーティストインタビュー" ? 'checked' : '' }}>
                 <label class="form-check-label" for="artists">アーティストインタビュー</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="category" id="information" value="お知らせ">
+                <input class="form-check-input" type="radio" name="category" id="information" value="お知らせ" {{ $news->category == "お知らせ" ? 'checked' : '' }}>
                 <label class="form-check-label" for="information">お知らせ</label>
             </div>
             <hr>
@@ -58,15 +58,15 @@
             </div>
             <hr>
             <p>投稿日時<span class="req">*</span></p>
-            <input id="date" type="datetime-local" min="{{ $now }}" name="book_date">
+            <input id="date" type="datetime-local" min="{{ $now }}" name="book_date" value="{{ \Carbon\Carbon::parse($news->book_date)->format('Y-m-d\TH:i') }}">
             <hr>
             <p>公開設定</p>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="release" id="release" value="1">
+                <input class="form-check-input" type="radio" name="release" id="release" value="1" {{ $news->release == "1" ? 'checked' : '' }}>
                 <label class="form-check-label" for="release">公開</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="release" id="close" value="0">
+                <input class="form-check-input" type="radio" name="release" id="close" value="0" {{ $news->release == "0" ? 'checked' : '' }}>
                 <label class="form-check-label" for="close">非公開</label>    
             </div>
             <hr>
@@ -77,8 +77,8 @@
 
 @section('footer-js')
 
-{{-- <script>
+<script>
     CKEDITOR.replace( 'summary-ckeditor' );
-</script> --}}
+</script>
     
 @endsection

@@ -128,19 +128,19 @@ class NewsController extends Controller
         switch($news_update['category'])
         {
             case '新製品情報':
-                $news_confirm['class'] = 'tag_product';
+                $news_update['class'] = 'tag_product';
                 break;
             case '最新情報':
-                $news_confirm['class'] = 'tag_news';
+                $news_update['class'] = 'tag_news';
                 break;
             case 'アーティストインタビュー':
-                $news_confirm['class'] = 'tag_artist';
+                $news_update['class'] = 'tag_artist';
                 break;
             case 'イベント情報':
-                $news_confirm['class'] = 'tag_event';
+                $news_update['class'] = 'tag_event';
                 break;
             case 'お知らせ':
-                $news_confirm['class'] = 'tag_information';
+                $news_update['class'] = 'tag_information';
                 break;
         }
 

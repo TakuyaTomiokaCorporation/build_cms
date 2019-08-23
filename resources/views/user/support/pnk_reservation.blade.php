@@ -46,6 +46,7 @@
             <div class="registration_form mt40">
                 <p class="mb20">※<span class="required">必須</span>は入力必須項目となります。</p>
                 <form accept="confirmation" method="POST">
+                @csrf
                     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                         <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'>
                         <input type=hidden name="oid" value="00D6F000002Kz08">

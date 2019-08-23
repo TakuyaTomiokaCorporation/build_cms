@@ -6,6 +6,52 @@
 
 @section('css')
 
+<style>
+#registration .registration_form form input[type="checkbox"] + span::before {
+    -webkit-transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #d0d0d0;
+    border-radius: 0;
+    content: "";
+    display: block;
+    height: 20px;
+    left: 2px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 20px;
+}
+
+#registration .registration_form input[type="checkbox"] + span {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 0.2em 0;
+    padding: 0 0 0 28px;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+#registration .registration_form input[type="checkbox"]:checked + span::after {
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+    border-bottom: 3px solid #333;
+    border-left: 3px solid #333;
+    content: "";
+    display: block;
+    height: 0.6em;
+    left: 0;
+    margin-top: -0.2em;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
+    width: 1em;
+}
+</style>
+
 @endsection
 
 @section('javascript-head')

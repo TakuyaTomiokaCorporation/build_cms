@@ -18,6 +18,7 @@ Route::get('/qualcomm', 'UserController@getQualcomm')->name('qualcomm');
 Route::get('/manual', 'UserController@getManual')->name('manual');
 Route::get('/movies', 'UserController@getMovies')->name('movies');
 Route::get('/lp1', 'UserController@getLp')->name('lp1');
+Route::get('/pnk_reservation', 'UserController@getPnkReservation');
 
 /*
 |############################

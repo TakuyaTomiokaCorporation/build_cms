@@ -49,6 +49,11 @@ class UserController extends Controller
         return view('user.home', compact('posts', 'news_products'));
     }
 
+    public function getPnkReservation()
+    {
+        return view('user.support.pnk_reservation');
+    }
+
     // 
     // News functions
     // 

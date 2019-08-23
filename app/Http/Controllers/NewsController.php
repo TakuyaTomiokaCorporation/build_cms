@@ -19,6 +19,7 @@ class NewsController extends Controller
 
         $posts = \DB::table('news')
                 ->whereNull('deleted_at')
+                ->orderBy('book_date', 'desc')
                 ->paginate(15);
         return view('admin.news.home',[
             'posts' => $posts,

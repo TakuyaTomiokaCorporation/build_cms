@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 // use App\Http\Requests\ValiProductRequest;
 use Illuminate\Http\Request;
-use App\Product; 
+use App\Product;
 
 class ProductController extends Controller
 {
@@ -49,12 +49,20 @@ class ProductController extends Controller
         if($file = $request->file('pdf'))
         {
             $name = uniqid() . $file -> getClientOriginalName();
-            $file -> move('images/product_news/', $name);
-            $product_news_confirm['pdf'] = $name;
+            $file -> move('images/products/pdf', $name);
+            $product_confirm['pdf'] = $name;
         }
         else
         {
             $product_confirm['pdf'] = "";
+        }
+
+        if(isset($product_confirm['link_detail']))
+        {
+            $product_confirm['link_detail'] = "aviot.jp/product/" . $product_confirm['link_detail'];
+        }else
+        {
+            $product_confirm['link_detail'] = "aviot.jp/product/" . $product_confirm['product_name'];
         }
 
         return view('admin.product.confirm')->with($product_confirm);
@@ -80,6 +88,37 @@ class ProductController extends Controller
 
         $product_update = $request -> all();
         $product = Product::findOrFail($id);
+
+        if($file = $request->file('thumbnail'))
+        {
+            $name = uniqid() . $file -> getClientOriginalName();
+            $file -> move('images/thumbnails/', $name);
+            $product_update['thumbnail'] = $name;
+        }
+        else
+        {
+            $product_update['thumbnail'] = 'noimage.png';    
+        }
+
+        if($file = $request->file('pdf'))
+        {
+            $name = uniqid() . $file -> getClientOriginalName();
+            $file -> move('images/product_news/', $name);
+            $product_update['pdf'] = $name;
+        }
+        else
+        {
+            $product_update['pdf'] = "";
+        }
+
+        if(isset($product_update['link_detail']))
+        {
+            $product_update['link_detail'] = "aviot.jp/product/" . $product_update['link_detail'];
+        }else
+        {
+            $product_update['link_detail'] = "aviot.jp/product/" . $product_update['product_name'];
+        }
+
         $product->fill($product_update)->save();
         return redirect() -> to(route('product'));
     }

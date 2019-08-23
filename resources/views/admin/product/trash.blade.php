@@ -1,5 +1,20 @@
 @extends('layouts.admin')
 
+@section('css')
+
+<style>
+    .img-sm{
+        width: 200px;
+        height: auto;
+    }
+
+    .sentence-sm{
+        width: 400px;
+    }
+</style>
+
+@endsection
+
 @section('main')
     <div class="container mt-5">
         <h1 class="text-center jumbotron">ゴミ箱</h1>
@@ -23,8 +38,8 @@
                 @foreach($trashedProducts as $product)
                 <tr>
                     <td>{{ $product->product_name }}</td>
-                    <td><img src="/images/thumbnails/{{ $product->thumbnail }}" alt=""></td>
-                    <td>{{ $product->overview }}</td>
+                    <td><img src="/images/thumbnails/{{ $product->thumbnail }}" alt="" class="img-sm"></td>
+                    <td class="sentence-sm">{{ $product->overview }}</td>
                     <td>
                         @if($product->release === 1)
                         公開中

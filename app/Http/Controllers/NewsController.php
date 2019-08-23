@@ -106,6 +106,25 @@ class NewsController extends Controller
         $news = News::findOrFail($id);
 
         $news_update['book_date'] = Carbon::createFromFormat('Y-m-d\TH:i', $news_update['book_date']);
+
+        if($file = $request->file('image'))
+        {
+            $name = uniqid() . $file -> getClientOriginalName();
+            $file -> move('images/news/', $name);
+            $news_update['image'] = $name;
+        }
+        else 
+        {
+            $news_update['image'] = 'noimage.png';
+        };
+        
+        if($file = $request->file('pdf'))
+        {
+            $name = uniqid() . $file -> getClientOriginalName();
+            $file -> move('images/news/', $name);
+            $news_update['pdf'] = $name;
+        };
+
         switch($news_update['category'])
         {
             case '新製品情報':

@@ -12,6 +12,7 @@
         width: 400px;
     }
 </style>
+@endsection
 
 @section('main')
     <div class="container mt-5">
@@ -49,9 +50,9 @@
                         @endif
                     </td>
                     <td class="row">
-                    {{-- <a href="" class="btn btn-primary btn-sm">詳細</a> --}}
-                    <a href="{{ route('product.edit', $product->id) }}" class="btn btn-primary btn-sm mr-3">編集</a>
                     <form method="POST" action="{{ route('product.delete', $product->id) }}">
+                        {{-- <a href="" class="btn btn-primary btn-sm">詳細</a> --}}
+                        <a href="{{ route('product.edit', $product->id) }}" class="btn btn-primary btn-sm mr-3">編集</a>
                         <button type="submit" class="btn btn-danger btn-sm">削除</button>
                         @csrf
                         @method('DELETE')

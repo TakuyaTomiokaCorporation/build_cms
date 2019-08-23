@@ -45,93 +45,93 @@
         <hr>
         <p>接続方式</p>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="transmission_method" id="wireless" value="ワイヤレス">
+            <input class="form-check-input" type="radio" name="transmission_method" id="wireless" value="ワイヤレス" {{ old('transmission_method') == "ワイヤレス" ? 'checked' : '' }}>
             <label class="form-check-label" for="wireless">ワイヤレス</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="transmission_method" id="absolute_wireless" value="完全ワイヤレス">
+            <input class="form-check-input" type="radio" name="transmission_method" id="absolute_wireless" value="完全ワイヤレス" {{ old('transmission_method') == "完全ワイヤレス" ? 'checked' : '' }}>
             <label class="form-check-label" for="absolute_wireless">完全ワイヤレス</label>    
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="transmission_method" id="wire" value="有線">
+            <input class="form-check-input" type="radio" name="transmission_method" id="wire" value="有線" {{ old('transmission_method') == "有線" ? 'checked' : '' }}>
             <label class="form-check-label" for="wire">有線</label>
         </div>
         <hr>
         <p>防水規格</p>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="waterproof" id="ipx4" value="IPX4">
+            <input class="form-check-input" type="radio" name="waterproof" id="ipx4" value="IPX4" {{ old('waterproof') == "IPX4" ? 'checked' : '' }}>
             <label class="form-check-label" for="ipx4">IPX4</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="waterproof" id="ipx5" value="IPX5">
+            <input class="form-check-input" type="radio" name="waterproof" id="ipx5" value="IPX5" {{ old('waterproof') == "IPX5" ? 'checked' : '' }}>
             <label class="form-check-label" for="ipx5">IPX5</label>    
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="waterproof" id="ipx7" value="IPX7">
+            <input class="form-check-input" type="radio" name="waterproof" id="ipx7" value="IPX7" {{ old('waterproof') == "IPX7" ? 'checked' : '' }}>
             <label class="form-check-label" for="ipx7">IPX7</label>
         </div>
         <hr>
         <p>カテゴリー</p>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="category" id="sports" value="スポーツ向け">
+            <input class="form-check-input" type="radio" name="category" id="sports" value="スポーツ向け" {{ old('category') == "スポーツ向け" ? 'checked' : '' }}>
             <label class="form-check-label" for="sports">スポーツ向け</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="category" id="end" value="エントリーモデル">
+            <input class="form-check-input" type="radio" name="category" id="end" value="エントリーモデル" {{ old('category') == "エントリーモデル" ? 'checked' : '' }}>
             <label class="form-check-label" for="end">エントリーモデル</label>    
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="category" id="highend" value="ハイエンド">
+            <input class="form-check-input" type="radio" name="category" id="highend" value="ハイエンド" {{ old('category') == "ハイエンド" ? 'checked' : '' }}>
             <label class="form-check-label" for="highend">ハイエンド</label>
         </div>
         <hr>
         <p>ノイズキャンセリング機能</p>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="noise_canceling" id="true" value="1">
+            <input class="form-check-input" type="radio" name="noise_canceling" id="true" value="1" {{ old('noise_canceling') == "1" ? 'checked' : '' }}>
             <label class="form-check-label" for="true">あり</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="noise_canceling" id="false" value="0">
+            <input class="form-check-input" type="radio" name="noise_canceling" id="false" value="0" {{ old('noise_canceling') == "0" ? 'checked' : '' }}>
             <label class="form-check-label" for="false">なし</label>
         </div>
         <hr>
         <p>音声圧縮方式</p>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="compression_method" id="x" value="aptX">
+            <input class="form-check-input" type="radio" name="compression_method" id="x" value="aptX" {{ old('compression_method') == "aptX" ? 'checked' : '' }}>
             <label class="form-check-label" for="x">aptX</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="compression_method" id="hd" value="aptX HD">
+            <input class="form-check-input" type="radio" name="compression_method" id="hd" value="aptX HD" {{ old('compression_method') == "aptX HD" ? 'checked' : '' }}>
             <label class="form-check-label" for="hd">aptX HD</label>
         </div>
         <hr>
         <p>音声出力方式</p>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="sound_method" id="daynamic" value="ダイナミック型">
+            <input class="form-check-input" type="radio" name="sound_method" id="daynamic" value="ダイナミック型" {{ old('sound_method') == "ダイナミック型" ? 'checked' : '' }}>
             <label class="form-check-label" for="daynamic">ダイナミック型</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="sound_method" id="hybrid" value="ハイブリッド型">
+            <input class="form-check-input" type="radio" name="sound_method" id="hybrid" value="ハイブリッド型" {{ old('sound_method') == "ハイブリッド型" ? 'checked' : '' }}>
             <label class="form-check-label" for="hybrid">ハイブリッド型</label>
         </div>
         <hr>
         <p>公開設定<span class="req">*</span></p>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="release" id="release" value="1" required>
+            <input class="form-check-input" type="radio" name="release" id="release" value="1" required {{ old('release') == "1" ? 'checked' : '' }}>
             <label class="form-check-label" for="release">公開</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="release" id="close" value="0">
+            <input class="form-check-input" type="radio" name="release" id="close" value="0" {{ old('release') == "0" ? 'checked' : '' }}>
             <label class="form-check-label" for="close">非公開</label>    
         </div>
         <hr>
         <p>廃盤設定<span class="req">*</span></p>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="discontinued" id="discontinued" value="1" required>
+            <input class="form-check-input" type="radio" name="discontinued" id="discontinued" value="1" required {{ old('discontinued') == "1" ? 'checked' : '' }}>
             <label class="form-check-label" for="discontinued">廃盤</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="discontinued" id="continued" value="0">
+            <input class="form-check-input" type="radio" name="discontinued" id="continued" value="0" {{ old('discontinued') == "0" ? 'checked' : '' }}>
             <label class="form-check-label" for="continued">現行品</label>
         </div>
         

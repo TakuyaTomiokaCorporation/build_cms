@@ -36,15 +36,15 @@
             </div>
             <hr>
             <p>投稿日時<span class="req">*</span></p>
-            <input id="date" type="datetime-local" name="book_date">
+            <input id="date" type="datetime-local" name="book_date" value="{{ \Carbon\Carbon::parse($news_product->book_date)->format('Y-m-d\TH:i') }}">
             <hr>
             <p>公開設定</p>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="release" id="release" value="1">
+                <input class="form-check-input" type="radio" name="release" id="release" value="1" {{ $news_product->release == "1" ? 'checked' : '' }}>
                 <label class="form-check-label" for="release">公開</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="release" id="close" value="0">
+                <input class="form-check-input" type="radio" name="release" id="close" value="0" {{ $news_product->release == "0" ? 'checked' : '' }}>
                 <label class="form-check-label" for="close">非公開</label>    
             </div>
             <hr>
@@ -55,8 +55,8 @@
 
 @section('footer-js')
 
-{{-- <script>
+<script>
     CKEDITOR.replace( 'summary-ckeditor' );
-</script> --}}
+</script>
     
 @endsection

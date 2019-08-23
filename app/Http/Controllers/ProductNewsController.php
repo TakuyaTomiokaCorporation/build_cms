@@ -19,7 +19,8 @@ class ProductNewsController extends Controller
 
         $news_products = \DB::table('news_products')
                         ->whereNull('deleted_at')
-                        ->paginate(5);
+                        ->orderBy('book_date', 'desc')
+                        ->paginate(10);
 
         return view('admin.product_news.home',[
              'news_products' => $news_products,
@@ -82,9 +83,34 @@ class ProductNewsController extends Controller
 
     public function update(Request $request, $id){
         
-        $news_product = $request -> all();
+        $news_product_update= $request -> all();
         $product = ProductNews::findOrFail($id);
-        $product->fill($news_product)->save();
+
+        $news_product_update['book_date'] = Carbon::createFromFormat('Y-m-d\TH:i', $news_product_update['book_date']);
+        
+        if($file = $request->file('main_visual'))
+        {
+            $name = uniqid() . $file -> getClientOriginalName();
+            $file -> move('images/product_news/', $name);
+            $news_product_update['main_visual'] = $name;
+        }
+        else 
+        {
+            $news_product_update['main_visual'] = 'noimage.png';
+        };
+
+        if($file = $request->file('pdf'))
+        {
+            $name = uniqid() . $file -> getClientOriginalName();
+            $file -> move('images/product_news/', $name);
+            $news_product_update['pdf'] = $name;
+        }
+        else
+        {
+            $news_product_update['pdf'] = "";
+        }
+
+        $product->fill($news_product_update)->save();
         return redirect() -> to(route('product_news'));
     }
 

@@ -48,11 +48,11 @@
             <hr>
             <p>公開設定<span class="req">*</span>  ※非公開にした場合、投稿日時を指定していても表示されません。</p>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="release" id="release" value="1" required>
+                <input class="form-check-input" type="radio" name="release" id="release" value="1" required {{ old('release') == "1" ? 'checked' : '' }}>
                 <label class="form-check-label" for="release">公開</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="release" id="close" value="0">
+                <input class="form-check-input" type="radio" name="release" id="close" value="0" {{ old('release') == "0" ? 'checked' : '' }}>
                 <label class="form-check-label" for="close">非公開</label>    
             </div>
             <hr>

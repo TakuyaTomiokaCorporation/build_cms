@@ -116,7 +116,7 @@
                     <li><a href="{{ route('compensation') }}">交換保障</a></li>
                     <li><a href="{{ route('manual') }}">説明書<span class="ifpc">ダウンロード</span></a></li>
                 </ul>
-                <ul>
+                <ul class="ifpc">
                     <li><a href="{{ route('shoplist') }}">取扱店舗</a></li>
                     <li><a href="https://www.amazon.co.jp/s?me=ABRZDPOGTSWO1" target="_blank">amazon店</a></li>
                     <li><a href="https://www.rakuten.co.jp/mobileselect/" target="_blank">楽天店</a></li>

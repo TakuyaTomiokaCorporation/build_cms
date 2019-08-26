@@ -6,35 +6,6 @@
 
 @section('css')
 
-<style type="text/css">
-.product_name {
-    width: 320px;
-    font-size: 1.4em;
-    display: flex;
-    align-items: center; 
-}
-
-.product_name img {
-	width: 30%;	
-	margin-left: 10px;
-}
-
-.artist_name {
-	background: #000;
-	padding: 8px 4px;
-	font-weight: bold;
-	position: absolute;
-	color: #fff;
-}
-.artist_list {
-	position: relative;
-}
-
-.artist_list img{
-	width: 340px;
-}
-</style>
-
 @endsection
 
 @section('body_id', 'artist')
@@ -47,13 +18,13 @@
     <h2 class="pt20 border_b mb20">アーティストインタビュー</h2>
     <section class="">
         <div class="mt40">
-            <h3 class="product_name">TE-BD21f-pnk<img src="{{ asset('images/artists/artistmovie_TE-BD21f-pnk.png') }}" alt="TE-D01g"></h3>
+            <h3 class="product_name">TE-BD21f-pnk<img src="{{ asset('images/artists/artistmovie_TE-BD21f-pnk.png') }}" alt="TE-BD21f-pnk"></h3>
             <div>
                 <ul class="flex">
                     <li class="artist_list">
-                        <a href="{{ route('pnk.show') }}">
+                        <a href="{{ route('pnk_f.show') }}">
                             <span class="artist_name">凛として時雨ドラマー<br>ピエール中野</span>
-                            <img src="{{ asset('images/artists/pnk_mv.jpg') }}">
+                            <img src="{{ asset('images/artists/pnk_f_mv.jpg') }}">
                         </a>
                     </li>
                 </ul>

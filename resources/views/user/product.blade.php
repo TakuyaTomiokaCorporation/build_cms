@@ -35,7 +35,7 @@
 <div id="" class="main" role="main">
     <article class="w1020 w98 m_auto">
     <h2 class="pt20 mb20">製品一覧</h2>
-    <section>
+    {{-- <section>
         <ul class="product_category">
             <li><a href="">全商品</a></li>
             <li><a href="">完全ワイヤレス</a></li>
@@ -43,7 +43,7 @@
             <li><a href="">ハイブリッドドライバー</a></li>
             <li><a href="">aptX HD</a></li>
         </ul>
-    </section>
+    </section> --}}
     
     <section class="product_content">
         <div class="flex">

@@ -59,10 +59,11 @@ class ProductController extends Controller
 
         if(isset($product_confirm['link_detail']))
         {
-            $product_confirm['link_detail'] = "aviot.jp/product/" . $product_confirm['link_detail'];
+            // $product_confirm['link_detail'] = "aviot.jp/product/" . $product_confirm['link_detail'];
+            $product_confirm['link_detail'] = "./product/" . $product_confirm['link_detail'];
         }else
         {
-            $product_confirm['link_detail'] = "aviot.jp/product/" . $product_confirm['product_name'];
+            $product_confirm['link_detail'] = "./product/" . $product_confirm['product_name'];
         }
 
         return view('admin.product.confirm')->with($product_confirm);
@@ -95,10 +96,10 @@ class ProductController extends Controller
             $file -> move('images/thumbnails/', $name);
             $product_update['thumbnail'] = $name;
         }
-        else
-        {
-            $product_update['thumbnail'] = 'noimage.png';    
-        }
+        // else
+        // {
+        //     $product_update['thumbnail'] = 'noimage.png';    
+        // }
 
         if($file = $request->file('pdf'))
         {
@@ -106,17 +107,14 @@ class ProductController extends Controller
             $file -> move('images/product_news/', $name);
             $product_update['pdf'] = $name;
         }
-        else
-        {
-            $product_update['pdf'] = "";
-        }
 
         if(isset($product_update['link_detail']))
         {
-            $product_update['link_detail'] = "aviot.jp/product/" . $product_update['link_detail'];
+            // $product_update['link_detail'] = "aviot.jp/product/" . $product_update['link_detail'];
+            $product_update['link_detail'] = "./product/" . $product_confirm['link_detail'];
         }else
         {
-            $product_update['link_detail'] = "aviot.jp/product/" . $product_update['product_name'];
+            $product_update['link_detail'] = "./product/" . $product_update['product_name'];
         }
 
         $product->fill($product_update)->save();

@@ -99,13 +99,13 @@
                     <li><a href="{{ route('about') }}">AVIOTについて</a></li>
                     <li><a href="{{ route('news.show') }}">最新情報</a></li>
                     <li><a href="{{ route('product_news.list') }}">製品に関するお知らせ</a></li>
-                    <li><a href="{{ route('artists.show') }}">アーティストインタビュー</a></li>
+                    <li><a href="{{ route('artists.show') }}">アーティスト動画</a></li>
                     <li><a href="{{ route('movies') }}">動画レビュー</a></li>
                 </ul>
                 <ul>
                     <li><a href="{{ route('product.show') }}">製品一覧</a></li>
                     <li><a href="{{ route('codec') }}">コーデック</a></li>
-                    <li><a href="{{ route('qualcomm') }}">Qualcomm QCC3026/3020</a></li>
+                    <li><a href="{{ route('qualcomm') }}">Qualcomm <span class="ifpc"> QCC3026/3020</span></a></li>
                     <li><a href="{{ route('waterproof') }}">防水性能</a></li>
                 </ul>
                 <ul>
@@ -114,7 +114,7 @@
                     <li><a href="{{ route('inqury') }}">お問い合わせ</a></li>
                     <li><a href="{{ route('product_regiser') }}">製品保証</a></li>
                     <li><a href="{{ route('compensation') }}">交換保障</a></li>
-                    <li><a href="{{ route('manual') }}">説明書ダウンロード</a></li>
+                    <li><a href="{{ route('manual') }}">説明書<span class="ifpc">ダウンロード</span></a></li>
                 </ul>
                 <ul>
                     <li><a href="{{ route('shoplist') }}">取扱店舗</a></li>

@@ -52,6 +52,7 @@ Route::get('/artists/e-nakamura', 'UserController@getNakamura')->name('nakamura.
 Route::get('/artists/gesu', 'UserController@getGesu')->name('gesu.show');
 Route::get('/artists/maisonbookgirl', 'UserController@getMaison')->name('maison.show');
 Route::get('/artists/pnk', 'UserController@getPnk')->name('pnk.show');
+Route::get('/artists/pnk_f', 'UserController@getPnkF')->name('pnk_f.show');
 Route::get('/artists/passcode', 'UserController@getPass')->name('pass.show');
 Route::get('/artists/uijin', 'UserController@getUijin')->name('uijin.show');
 Route::get('/artists/wagamamarakia', 'UserController@getWagamama')->name('wagamama.show');
@@ -73,7 +74,7 @@ Route::get('/inqury/thanks', 'UserController@getInquryThanks')->name('inqury.tha
 |############################
 */
 Route::get('/product', 'UserController@getProductInfo')->name('product.show');
-Route::get('/product/TE-BD21f-pnk', 'UserController@getTebd21fpnk');
+Route::get('/product/TE-BD21f-pnk', 'UserController@getTebd21fpnk')->name('tebd21fpnk');
 Route::get('/product/TE-BD21f', 'UserController@getTebd21f');
 Route::get('/product/TE-D01a', 'UserController@getTed01a');
 Route::get('/product/TE-D01b', 'UserController@getTed01b');

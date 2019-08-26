@@ -20,14 +20,13 @@
 
     <section class="compensation_price mt20">
         <h3 class="border_l mb20">ご負担いただく金額</h3>
-        <p class="txtRed mt10">※金額は全て税込み、送料込みになります。</p>
         <table class="m_auto mt10">
             <tr>
                 <th></th>
                 <th>イヤホン本体</th>
                 <th>充電ケース</th>
             </tr>
-            <tr>
+            {{-- <tr>
                 <td>TE-D01a</td>
                 <td>4,320円</td>
                 <td>5,400円</td>
@@ -36,7 +35,7 @@
                 <td>TE-D01b</td>
                 <td>7,380円</td>
                 <td>8,200円</td>
-            </tr>
+            </tr> --}}
             <tr>
                 <td>TE-D01c</td>
                 <td>3,780円</td>
@@ -68,6 +67,8 @@
                 <td>4,880円</td>
             </tr>
         </table>
+        <p class="txtRed mt20">※金額は全て税込み、送料込みになります。</p>
+        <p class="txtRed mt10">※TE-D01a・TE-D01bに関しましては生産完了製品となっておりますので、交換保証サービスの対象外となっております。ご不便をお掛け致しますがご理解のほど何卒宜しくお願い申し上げます。</p>
     </section>
 
     <section class="mt40">

@@ -26,7 +26,7 @@
 
         <div class="support_center">
             <h3 class="mt40 mb20 border_l">カスタマーサポートセンター</h3>
-            <p class="fll ifpc"><img src="{{ asset('images/user/support.png') }}"></p>
+            <p class="fll ifpc mt20"><img src="{{ asset('images/user/support.png') }}"></p>
             <dl>
                 <dt class="bold">カスタマーサポートセンター</dt>
                 <dd>電話：<a href="050-2018-3909">050-2018-3909</a></dd>
@@ -279,6 +279,26 @@
                     <li>
                         <p>一部機種（TE-D01b,d）では、ファームアップデートで音量の改善ができる場合がございます。<br>
                             製品登録（リンク：<a href="https://v-trade.co.jp/registration" target="_brank"> https://v-trade.co.jp/registration</a>）をお済ませ頂いた上、お手数お掛けしますがカスタマーサポートセンターまでお問い合わせをお願いいたします。</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p class="ac">音量調整ができない。（TE-BD21f／TE-BD21f-pnk）<i class="accordion_icon ifpc"><span></span><span></span></i></p>
+                <ul class="inner">
+                    <li>
+                        <p>「TE-BD21f」「TE-BD21f-pnk」では、一部のAndroid端末と接続された際、<br>
+                                端末側とイヤホンの音量がそれぞれ独立しているため、<br>
+                                音量調整ができない場合がございます。<br>
+                                このような問題が起きた場合は、下記方法をお試しください。<br>
+                                <br>
+                                [音量を上げる場合]<br>
+                                ・イヤホンのL側を、3回連続で押してください。<br>
+                                <br>
+                                [音量を下げる場合]<br>
+                                ・イヤホンのL側を、2回連続で押してください。<br>
+                                <br>
+                                上記にて問題が解消しない場合、お手数ではございますが<br>
+                                カスタマーサポートセンターまでお問い合わせをお願いいたします。</p>
                     </li>
                 </ul>
             </li>

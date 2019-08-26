@@ -49,11 +49,11 @@
         <div class="flex">
         @foreach ($continuedProducts as $continuedProduct)
             <ul class="product_box mt20 mb20">
-                <li class="alc"><a href="">
+                <li class="alc"><a href="{{ $continuedProduct->link_detail }}">
                     <img src="{{ asset('images/thumbnails') }}/{{ $continuedProduct->thumbnail }}" alt="{{ $continuedProduct->product_name }}">
                 </a></li>
                 <li class="mt10 mb10"><h3>
-                    <a harf="">{{ $continuedProduct->product_name }}</a>
+                    <a href="{{ $continuedProduct->link_detail }}">{{ $continuedProduct->product_name }}</a>
                 </h3></li>
                 <li>
                     <p class="fs12">{!! Str::limit($continuedProduct->overview, 120) !!}</p>

@@ -111,7 +111,7 @@ class ProductController extends Controller
         if(isset($product_update['link_detail']))
         {
             // $product_update['link_detail'] = "aviot.jp/product/" . $product_update['link_detail'];
-            $product_update['link_detail'] = "./product/" . $product_confirm['link_detail'];
+            $product_update['link_detail'] = "./product/" . $product_update['link_detail'];
         }else
         {
             $product_update['link_detail'] = "./product/" . $product_update['product_name'];

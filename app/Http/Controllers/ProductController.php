@@ -108,14 +108,11 @@ class ProductController extends Controller
             $product_update['pdf'] = $name;
         }
 
-        if(isset($product_update['link_detail']))
-        {
-            // $product_update['link_detail'] = "aviot.jp/product/" . $product_update['link_detail'];
-            $product_update['link_detail'] = "./product/" . $product_update['link_detail'];
-        }else
-        {
-            $product_update['link_detail'] = "./product/" . $product_update['product_name'];
-        }
+        // if(isset($product_update['link_detail']))
+        // {
+        //     // $product_update['link_detail'] = "aviot.jp/product/" . $product_update['link_detail'];
+        //     $product_update['link_detail'] = "./product/" . $product_update['link_detail'];
+        // }
 
         $product->fill($product_update)->save();
         return redirect() -> to(route('product'));

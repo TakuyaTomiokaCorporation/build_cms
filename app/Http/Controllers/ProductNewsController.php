@@ -94,20 +94,12 @@ class ProductNewsController extends Controller
             $file -> move('images/product_news/', $name);
             $news_product_update['main_visual'] = $name;
         }
-        else 
-        {
-            $news_product_update['main_visual'] = 'noimage.png';
-        };
-
+        
         if($file = $request->file('pdf'))
         {
             $name = uniqid() . $file -> getClientOriginalName();
             $file -> move('images/product_news/', $name);
             $news_product_update['pdf'] = $name;
-        }
-        else
-        {
-            $news_product_update['pdf'] = "";
         }
 
         $product->fill($news_product_update)->save();

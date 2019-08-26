@@ -113,10 +113,6 @@ class NewsController extends Controller
             $file -> move('images/news/', $name);
             $news_update['image'] = $name;
         }
-        else 
-        {
-            $news_update['image'] = 'noimage.png';
-        };
         
         if($file = $request->file('pdf'))
         {

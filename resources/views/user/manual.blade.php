@@ -26,114 +26,115 @@
     </div>
     <p class="mt10 mb10"><a href="{{ route('movies') }}" class="btn_Blk">ペアリング動画はこちら</a></p>
     
-        <!--<section class="manual_product">
-                <div class="manual_photo"><img src="../product/WE-D01b/img/WE-D01b_02.png"></div>
-                <div class="manual_pdf">
-                    <h3 class="mt20 mb20">TE-BD21f-pnk</h3>
-                    <p><a href="./pdf/" target="_blank"><i class="far fa-file-pdf"></i> 説明書ダウンロード</a></p>
+        <section class="manual_product">
+                <div class="manual_photo"><img src="{{ asset('images/manuals/TE-BD21-f-pnk-black.png') }}"></div>
+                <div class="manual_pdf mb20">
+                    <h3 class="mt10 mb20">TE-BD21f-pnk</h3>
+                    <p><a href="{{ asset('pdf/AVIOT-TE-BD21f-pnk-Manual-v1.01.pdf') }}" target="_blank"><i class="far fa-file-pdf"></i> 説明書ダウンロード</a></p>
                 </div>
         </section>
     
         <section class="manual_product">
-                <div class="manual_photo"><img src="../product/WE-D01b/img/WE-D01b_02.png"></div>
-                <div class="manual_pdf">
-                    <h3 class="mt20 mb20">TE-BD21f</h3>
-                    <p><a href="./pdf/" target="_blank"><i class="far fa-file-pdf"></i> 説明書ダウンロード</a></p>
+                <div class="manual_photo"><img src="{{ asset('images/manuals/te-bd21f_violet.png') }}"></div>
+                <div class="manual_pdf mb20">
+                    <h3 class="mt10 mb20">TE-BD21f</h3>
+                    <p><a href="{{ asset('pdf/AVIOT-TE-BD21f-Manual-v1.01.pdf') }}" target="_blank"><i class="far fa-file-pdf"></i> 説明書ダウンロード</a></p>
                 </div>
-        </section>-->
+        </section>
+
         
         <section class="manual_product">
                 <div class="manual_photo"><img src="{{ asset('images/manuals/WE-BD21d.png') }}"></div>
-                <div class="manual_pdf">
-                    <h3 class="mt20 mb20">WE-BD21d</h3>
+                <div class="manual_pdf mb20">
+                    <h3 class="mt10 mb20">WE-BD21d</h3>
                     <p><a href="{{ asset('pdf/WE-BD21d_v1.01.pdf') }}" target="_blank"><i class="far fa-file-pdf"></i> 説明書ダウンロード</a></p>
                 </div>
         </section>
     
         <section class="manual_product">
                 <div class="manual_photo"><img src="{{ asset('images/manuals/TE-D01g.png') }}"></div>
-                <div class="manual_pdf">
-                    <h3 class="mt20 mb20">TE-D01g</h3>
+                <div class="manual_pdf mb20">
+                    <h3 class="mt10 mb20">TE-D01g</h3>
                     <p><a href="{{ asset('pdf/TE-D01g_v1.01.pdf') }}" target="_blank"><i class="far fa-file-pdf"></i> 説明書ダウンロード</a></p>
                 </div>
         </section>
     
         <section class="manual_product">
                 <div class="manual_photo"><img src="{{ asset('images/manuals/TE-D01d.png') }}"></div>
-                <div class="manual_pdf">
-                    <h3 class="mt20 mb20">TE-D01d</h3>
+                <div class="manual_pdf mb20">
+                    <h3 class="mt10 mb20">TE-D01d</h3>
                     <p><a href="{{ asset('pdf/TE-D01d_v1.03.pdf') }}" target="_blank"><i class="far fa-file-pdf"></i> 説明書ダウンロード</a></p>
                 </div>
         </section>
     
         <section class="manual_product">
                 <div class="manual_photo"><img src="{{ asset('images/manuals/TE-D01a.png') }}"></div>
-                <div class="manual_pdf">
-                    <h3 class="mt20 mb20">TE-D01a</h3>
+                <div class="manual_pdf mb20">
+                    <h3 class="mt10 mb20">TE-D01a</h3>
                     <p><a href="{{ asset('pdf/TE-D01a_v1.01.pdf') }}" target="_blank"><i class="far fa-file-pdf"></i> 説明書ダウンロード</a></p>
                 </div>
         </section>
     
         <section class="manual_product">
                 <div class="manual_photo"><img src="{{ asset('images/manuals/TE-D01b.png') }}"></div>
-                <div class="manual_pdf">
-                    <h3 class="mt20 mb20">TE-D01b</h3>
+                <div class="manual_pdf mb20">
+                    <h3 class="mt10 mb20">TE-D01b</h3>
                     <p><a href="{{ asset('pdf/TE-D01b_v1.02.pdf') }}" target="_blank"><i class="far fa-file-pdf"></i> 説明書ダウンロード</a></p>
                 </div>
         </section>
     
         <section class="manual_product">
                 <div class="manual_photo"><img src="{{ asset('images/manuals/TE-D01c.png') }}"></div>
-                <div class="manual_pdf">
-                    <h3 class="mt20 mb20">TE-D01c</h3>
+                <div class="manual_pdf mb20">
+                    <h3 class="mt10 mb20">TE-D01c</h3>
                     <p><a href="{{ asset('pdf/TE-D01c_v1.01.pdf') }}" target="_blank"><i class="far fa-file-pdf"></i> 説明書ダウンロード</a></p>
                 </div>
         </section>
     
         <section class="manual_product">
                 <div class="manual_photo"><img src="{{ asset('images/manuals/TE-D01d-kzn.png') }}"></div>
-                <div class="manual_pdf">
-                    <h3 class="mt20 mb20">TE-D01d-kzn</h3>
+                <div class="manual_pdf mb20">
+                    <h3 class="mt10 mb20">TE-D01d-kzn</h3>
                     <p><a href="{{ asset('pdf/TE-D01d-kzn_v1.01.pdf') }}" target="_blank"><i class="far fa-file-pdf"></i> 説明書ダウンロード</a></p>
                 </div>
         </section>
     
         <section class="manual_product">
                 <div class="manual_photo"><img src="{{ asset('images/manuals/TE-D01e.png') }}"></div>
-                <div class="manual_pdf">
-                    <h3 class="mt20 mb20">TE-D01e</h3>
+                <div class="manual_pdf mb20">
+                    <h3 class="mt10 mb20">TE-D01e</h3>
                     <p><a href="{{ asset('pdf/TE-D01e_v1.02.pdf') }}" target="_blank"><i class="far fa-file-pdf"></i> 説明書ダウンロード</a></p>
                 </div>
         </section>
     
         <section class="manual_product">
                 <div class="manual_photo"><img src="{{ asset('images/manuals/TE-D01h.png') }}"></div>
-                <div class="manual_pdf">
-                    <h3 class="mt20 mb20">TE-D01h</h3>
+                <div class="manual_pdf mb20">
+                    <h3 class="mt10 mb20">TE-D01h</h3>
                     <p><a href="{{ asset('pdf/TE-D01h_v1.01.pdf') }}" target="_blank"><i class="far fa-file-pdf"></i> 説明書ダウンロード</a></p>
                 </div>
         </section>
     
         <section class="manual_product">
                 <div class="manual_photo"><img src="{{ asset('images/manuals/WE-D01c-kzn.png') }}"></div>
-                <div class="manual_pdf">
-                    <h3 class="mt20 mb20">WE-D01c-kzn</h3>
+                <div class="manual_pdf mb20">
+                    <h3 class="mt10 mb20">WE-D01c-kzn</h3>
                     <p><a href="{{ asset('pdf/WE-D01c-kzn_v1.01.pdf') }}" target="_blank"><i class="far fa-file-pdf"></i> 説明書ダウンロード</a></p>
                 </div>
         </section>
     
         <section class="manual_product">
                 <div class="manual_photo"><img src="{{ asset('images/manuals/WE-D01c.png') }}"></div>
-                <div class="manual_pdf">
-                    <h3 class="mt20 mb20">WE-D01c</h3>
+                <div class="manual_pdf mb20">
+                    <h3 class="mt10 mb20">WE-D01c</h3>
                     <p><a href="{{ asset('pdf/WE-D01c_v1.01.pdf') }}" target="_blank"><i class="far fa-file-pdf"></i> 説明書ダウンロード</a></p>
                 </div>
         </section>
     
         <section class="manual_product">
                 <div class="manual_photo"><img src="{{ asset('images/manuals/WE-D01b.png') }}"></div>
-                <div class="manual_pdf">
-                    <h3 class="mt20 mb20">WE-D01b</h3>
+                <div class="manual_pdf mb20">
+                    <h3 class="mt10 mb20">WE-D01b</h3>
                     <p><a href="{{ asset('pdf/WE-D01b_v1.01.pdf') }}" target="_blank"><i class="far fa-file-pdf"></i> 説明書ダウンロード</a></p>
                 </div>
         </section>

@@ -34,7 +34,7 @@
 <div id="container" class="both mb60">
 <div id="" class="main" role="main">
     <article class="w1020 w98 m_auto">
-    <h2 class="pt20 mb20">製品一覧</h2>
+    <h2 class="pt20 border_b mb20">製品一覧</h2>
     {{-- <section>
         <ul class="product_category">
             <li><a href="">全商品</a></li>
@@ -88,7 +88,6 @@
         </div>
     </section>
     
-    
     </article>
         
 </div><!--/main-->
@@ -96,6 +95,5 @@
 @endsection
 
 @section('javascript-footer')
-
     
 @endsection

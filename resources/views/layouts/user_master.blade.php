@@ -26,6 +26,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="{{ asset('js/greedynav.js') }}"></script>
     <script src="{{ asset('js/swiper.js') }}"></script>
+    
+    @yield('javascript-in-head')
 
     <!-- Fonts -->
     @yield('fonts')

@@ -39,7 +39,7 @@
         </div>
         <div class="mt40">
             <h4>IPX4</h4>
-            <ul class="mt40">
+            <ul class="mt10">
                 <li><img src="{{ asset('images/user/IPX4.png') }}" alt="IPX4"></li>
                 <li>日常生活防水。あらゆる方向からの飛沫にも影響を受けにくい、防沫型。スポーツの汗やにわか雨などには十分な防水性能です。</li>
             </ul>

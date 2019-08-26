@@ -75,7 +75,7 @@
                     <img src="{{ asset('images/thumbnails') }}/{{ $discontinuedProduct->thumbnail }}" alt="{{ $discontinuedProduct->product_name }}">
                 </a></li>
                 <li class="mt10 mb10"><h3>
-                    <a harf="">{{ $discontinuedProduct->product_name }}</a>
+                    <a href="">{{ $discontinuedProduct->product_name }}</a>
                 </h3></li>
                 <li>
                     <p class="fs12">{!! Str::limit($discontinuedProduct->overview, 120) !!}</p>

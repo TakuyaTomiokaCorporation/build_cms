@@ -10,10 +10,11 @@
     <div class="mv w1020 m_auto">
     <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="{{ asset('images/user/mv_01.gif') }}" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('images/user/mv_02.png') }}" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('images/user/mv_03.png') }}" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('images/user/mv_04.png') }}" alt=""></div>
+            <div class="swiper-slide"><a href="{{ route('pnk_f.show') }}"><img src="{{ asset('images/user/pnk_youtubevisual.jpg') }}" alt=""></a></div>
+            <div class="swiper-slide"><a href="{{ route('gesu.show') }}"><img src="{{ asset('images/user/mv_01.gif') }}" alt=""></a></div>
+            <div class="swiper-slide"><a href="{{ route('pnk.show') }}"><img src="{{ asset('images/user/mv_02.png') }}" alt=""></a></div>
+            <div class="swiper-slide"><a href="{{ route('nakamura.show') }}"><img src="{{ asset('images/user/mv_03.png') }}" alt=""></a></div>
+            <div class="swiper-slide"><a href="{{ route('movies') }}"><img src="{{ asset('images/user/mv_04.png') }}" alt=""></a></div>
         </div>
         <!-- Add Arrows -->
         {{-- <img src="./img/mv.png"> --}}

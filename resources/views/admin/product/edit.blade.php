@@ -122,7 +122,7 @@
             <label class="form-check-label" for="discontinued">廃盤</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="discontinued" id="continued" value="0" {{ $product->discontinued == "1" ? 'checked' : ''}}>
+            <input class="form-check-input" type="radio" name="discontinued" id="continued" value="0" {{ $product->discontinued == "0" ? 'checked' : ''}}>
             <label class="form-check-label" for="continued">現行品</label>
         </div>
         {{-- <p>カラー</p>

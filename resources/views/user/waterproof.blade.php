@@ -15,11 +15,11 @@
 <div id="container" class="both mb60">
 <div id="" class="main w1020 w98 m_auto" role="main">
     <h2 class="pt20 border_b mb20">防水性能について</h2>
-    <section id="" class="mb20">
-        <p class="mt20">AVIOTのイヤホンは全機種生活防水（IPX4）を取り付けており、日常生活における範囲内であれば気にすることなくAVIOTのイヤホンをお楽しみいただけます。</p>
-        <p class="txtRed">※チャージングケースは非防水です。</p>
-        <p>IPXとは防水規格で数字は防水規格の等級となります。等級が上がれば上がるほど防水の性能が上がります。</p>
-    </section>
+	<section id="" class="mb20">
+		<p class="mt20">AVIOTのイヤホンは全機種生活防水（IPX4）に対応しており、日常生活における範囲内であれば汗や雨など気にすることなくお使いいただけます。</p>
+		<p class="txtRed">※チャージングケースは非防水です。</p>
+		<p>IPXとは防水規格で数字は防水規格の等級となります。等級が上がるほど防水性能もアップします。</p>
+	</section>
 
     <section class="mt10 IPX">
         <h3 class="border_l mb20">防水性能の種類</h3>

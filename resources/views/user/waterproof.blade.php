@@ -21,16 +21,15 @@
         <p>IPXとは防水規格で数字は防水規格の等級となります。等級が上がれば上がるほど防水の性能が上がります。</p>
     </section>
 
-    <section class="mt10">
+    <section class="mt10 IPX">
         <h3 class="border_l mb20">防水性能の種類</h3>
         <div class="mt10">
-            <h4>IPX4</h4>
+            <h4>IPX7</h4>
             <ul class="mt10">
-                <li><img src="{{ asset('images/user/IPX4.png') }}" alt="IPX4"></li>
-                <li>日常生活防水。あらゆる方向からの飛沫にも影響を受けにくい、防沫型。スポーツの汗やにわか雨などには十分な防水性能です。</li>
+                <li><img src="{{ asset('images/user/IPX7.png') }}" alt="IPX4"></li>
+                <li>より高いレベルの防水。一時的（30分以内）なら、ある程度の浸水（1m未満）にも耐えられます。雨の中をランニングしたり、シャワーを浴びても大丈夫な防水レベルです。</li>
             </ul>
         </div>
-
         <div class="mt40">
             <h4>IPX5</h4>
             <ul class="mt10">
@@ -38,12 +37,11 @@
                 <li>あらゆる方向からの噴流水による有害な影響がない（防噴流形）、ゲリラ豪雨などにも耐えられるほどの防水性能です。</li>
             </ul>
         </div>
-
         <div class="mt40">
-            <h4>IPX7</h4>
-            <ul class="mt10">
-                <li><img src="{{ asset('images/user/IPX7.png') }}" alt="IPX4"></li>
-                <li>より高いレベルの防水。一時的（30分以内）なら、ある程度の浸水（1m未満）にも耐えられます。雨の中をランニングしたり、シャワーを浴びても大丈夫な防水レベルです。</li>
+            <h4>IPX4</h4>
+            <ul class="mt40">
+                <li><img src="{{ asset('images/user/IPX4.png') }}" alt="IPX4"></li>
+                <li>日常生活防水。あらゆる方向からの飛沫にも影響を受けにくい、防沫型。スポーツの汗やにわか雨などには十分な防水性能です。</li>
             </ul>
         </div>
     </section>

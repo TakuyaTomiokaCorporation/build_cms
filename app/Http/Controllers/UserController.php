@@ -204,6 +204,19 @@ class UserController extends Controller
         ]);
     }
 
+    public function getProductAptxHD()
+    {
+        $aptXhdProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')
+                        ->where('discontinued', 0)
+                        ->where('compression_method', 'aptX HD')
+                        ->orderBy('release_date', 'desc')
+                        ->get();
+        
+        return view('user.products.aptxhd', [
+            'aptXhdProducts' => $aptXhdProducts
+        ]);
+    }
+
     public function getTebd21fpnk()
     {
         return view('user.products.TE-BD21f-pnk');

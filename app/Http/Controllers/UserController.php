@@ -153,11 +153,11 @@ class UserController extends Controller
     {
         $continuedProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail', 'discontinued')
                         ->where('discontinued', 0)
-                        ->orderBy('id', 'desc')
+                        ->orderBy('release_date', 'desc')
                         ->get();
         $discontinuedProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail', 'discontinued')
                         ->where('discontinued', 1)
-                        ->orderBy('id', 'desc')
+                        ->orderBy('release_date', 'desc')
                         ->get();
         return view('user.product', [
             'continuedProducts' => $continuedProducts,

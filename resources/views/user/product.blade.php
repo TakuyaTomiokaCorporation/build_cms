@@ -73,7 +73,7 @@
     </section>
 
     <div id="app">
-    <p class="alc"><button v-on:click="isShown" class="btn_buy" >もっとみる</button></p>
+    {{-- <p class="alc"><button v-on:click="isShown" class="btn_buy" >もっとみる</button></p> --}}
     <transition>
     <section class="product_content" v-show="show">
         <h2 class="border_b">生産完了製品</h2>
@@ -97,6 +97,7 @@
         </div>
     </section>
     </transition>
+    <p class="alc"><button v-on:click="isShown" class="btn_buy" >もっとみる</button></p>
     </div>
     
     </article>

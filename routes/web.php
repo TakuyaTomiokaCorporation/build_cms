@@ -75,6 +75,7 @@ Route::get('/inqury/thanks', 'UserController@getInquryThanks')->name('inqury.tha
 */
 Route::get('/product', 'UserController@getProductInfo')->name('product.show');
 Route::get('/product-wireless', 'UserController@getProductWireless')->name('wireless');
+Route::get('/product-entry', 'UserController@getProductForBeginner')->name('beginner');
 Route::get('/product/TE-BD21f-pnk', 'UserController@getTebd21fpnk')->name('tebd21fpnk');
 Route::get('/product/TE-BD21f', 'UserController@getTebd21f');
 Route::get('/product/TE-D01a', 'UserController@getTed01a');

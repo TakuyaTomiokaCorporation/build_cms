@@ -178,6 +178,19 @@ class UserController extends Controller
         ]);
     }
 
+    public function getProductForBeginner()
+    {
+        $forBeginnerProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')
+                        ->where('discontinued', 0)
+                        ->where('category', 'エントリーモデル')
+                        ->orderBy('release_date', 'desc')
+                        ->get();
+        
+        return view('user.products.beginner', [
+            'forBeginnerProducts' => $forBeginnerProducts
+        ]);
+    }
+
     public function getTebd21fpnk()
     {
         return view('user.products.TE-BD21f-pnk');

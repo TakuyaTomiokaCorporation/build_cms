@@ -41,15 +41,15 @@
 <div id="" class="main" role="main">
     <article class="w1020 w98 m_auto">
     <h2 class="pt20 border_b mb20">製品一覧</h2>
-    {{-- <section>
+    <section>
         <ul class="product_category">
-            <li><a href="">全商品</a></li>
-            <li><a href="">完全ワイヤレス</a></li>
-            <li><a href="">エントリーモデル</a></li>
-            <li><a href="">ハイブリッドドライバー</a></li>
-            <li><a href="">aptX HD</a></li>
+            <li><a href="{{ route('product.show') }}">全商品</a></li>
+            <li><a href="{{ route('wireless') }}">完全ワイヤレス</a></li>
+            <li><a href="{{ route('beginner') }}">エントリーモデル</a></li>
+            <li><a href="{{ route('hybrid') }}">ハイブリッドドライバー</a></li>
+            <li><a href="{{ route('aptxhd') }}">aptX HD</a></li>
         </ul>
-    </section> --}}
+    </section>
     
     <section class="product_content">
         <div class="flex">

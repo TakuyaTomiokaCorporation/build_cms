@@ -165,6 +165,19 @@ class UserController extends Controller
         ]);
     }
 
+    public function getProductWireless()
+    {
+        $wirelessProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')
+                        ->where('discontinued', 0)
+                        ->where('transmission_method', '完全ワイヤレス')
+                        ->orderBy('release_date', 'desc')
+                        ->get();
+        
+        return view('user.products.wireless', [
+            'wirelessProducts' => $wirelessProducts
+        ]);
+    }
+
     public function getTebd21fpnk()
     {
         return view('user.products.TE-BD21f-pnk');

@@ -19,6 +19,7 @@ class ProductController extends Controller
 
         $products = \DB::table('products')
                     ->whereNull('deleted_at')
+                    ->orderBy('release_date', 'desc')
                     ->paginate(5);
         return view('admin.product.home',[
             'products' => $products,

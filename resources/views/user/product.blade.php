@@ -74,6 +74,7 @@
 
     <div id="app">
     <p class="alc"><button v-on:click="isShow" class="btn_buy" >もっとみる</button></p>
+    <transition>
     <section class="product_content" v-show="show">
         <h2 class="border_b">生産完了製品</h2>
         <div class="flex">
@@ -95,6 +96,7 @@
         @endforeach
         </div>
     </section>
+    </transition>
     </div>
     
     </article>
@@ -114,10 +116,22 @@
         },
         methods: {
             isShow: function(){
-                this.show = true
+                this.show = !this.show
             }
         }
     });
 </script>
+
+<style scoped>
+
+.v-enter-active, .v-leave-active {
+  transition: opacity 1.5s
+}
+
+.v-enter, .v-leave-to {
+  opacity: 0
+}
+
+</style>
     
 @endsection

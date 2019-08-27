@@ -6,6 +6,12 @@
 
 @section('body_id', '')
 
+@section('javascript-in-head')
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+@endsection
+
 @section('css')
 
 <style type="text/css">
@@ -66,7 +72,9 @@
         </div>
     </section>
 
-    <section class="product_content">
+    <div id="app">
+    <p class="alc"><button v-on:click="isShow" class="btn_buy" >もっとみる</button></p>
+    <section class="product_content" v-show="show">
         <h2 class="border_b">生産完了製品</h2>
         <div class="flex">
         @foreach ($discontinuedProducts as $discontinuedProduct)
@@ -87,13 +95,29 @@
         @endforeach
         </div>
     </section>
+    </div>
     
     </article>
         
 </div><!--/main-->
 </div><!--/container-->
+
 @endsection
 
 @section('javascript-footer')
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            show:false
+        },
+        methods: {
+            isShow: function(){
+                this.show = true
+            }
+        }
+    });
+</script>
     
 @endsection

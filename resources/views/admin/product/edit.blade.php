@@ -106,6 +106,9 @@
             <label class="form-check-label" for="hybrid">ハイブリッド型</label>
         </div>
         <hr>
+        <hr>
+        <p>発売日<span class="req">*</span></p>
+        <input id="date" type="date" name="release_date" required value="{{ \Carbon\Carbon::parse($product->release_date)->format('Y-m-d') }}">
         <p>公開設定</p>
         <div class="form-check">
             <input class="form-check-input" type="radio" name="release" id="release" value="1" {{ $product->release == "1" ? 'checked' : '' }}>

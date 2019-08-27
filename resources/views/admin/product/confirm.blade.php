@@ -43,6 +43,9 @@
             @isset($discontinued)
             <input type="hidden" name="discontinued" value="{{ $discontinued }}">    
             @endisset
+            @isset($release_date)
+            <input type="hidden" name="release_date" value="{{ $release_date }}">
+            @endisset
             
             {{-- <input type="hidden" name="transmission_method" value="{{ $color }}"> --}}
 
@@ -112,6 +115,12 @@
                 <label class="col-sm-4">音声出力方式</label>
                 @isset($sound_method)
                 <div class="col-sm-8">{{  $sound_method }}</div>
+                @endisset
+            </div>
+            <div class="row">
+                <div class="col-sm-4">発売日</div>
+                @isset($release_date)
+                <div class="col-sm-8">{{ $release_date }}</div>
                 @endisset
             </div>
             <div class="row">

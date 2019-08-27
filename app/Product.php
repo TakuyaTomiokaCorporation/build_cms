@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Product extends Model
 {
     use SoftDeletes;
-    protected $dates = ['deleted_at'];
+    protected $dates = ['deleted_at', 'release_date'];
     protected $table = 'products';
 
     protected $fillable = [
@@ -25,7 +25,8 @@ class Product extends Model
         'sound_method',
         'color',
         'release',
-        'discontinued'
+        'discontinued',
+        'release_date'
     ];
 
 

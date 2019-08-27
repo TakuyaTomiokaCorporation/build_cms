@@ -115,6 +115,9 @@
             <label class="form-check-label" for="hybrid">ハイブリッド型</label>
         </div>
         <hr>
+        <p>発売日<span class="req">*</span></p>
+        <input id="date" type="date" name="release_date" required>
+        <hr>
         <p>公開設定<span class="req">*</span></p>
         <div class="form-check">
             <input class="form-check-input" type="radio" name="release" id="release" value="1" required {{ old('release') == "1" ? 'checked' : '' }}>

@@ -191,6 +191,19 @@ class UserController extends Controller
         ]);
     }
 
+    public function getProductHybrid()
+    {
+        $hybridProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')
+                        ->where('discontinued', 0)
+                        ->where('sound_method', 'ハイブリッド型')
+                        ->orderBy('release_date', 'desc')
+                        ->get();
+        
+        return view('user.products.hybrid', [
+            'hybridProducts' => $hybridProducts
+        ]);
+    }
+
     public function getTebd21fpnk()
     {
         return view('user.products.TE-BD21f-pnk');

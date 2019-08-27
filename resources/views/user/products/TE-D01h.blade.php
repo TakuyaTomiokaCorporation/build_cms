@@ -1,6 +1,6 @@
 @extends('layouts.user_master')
 
-@section('title', 'WE-D01b |')
+@section('title', 'TE-D01h |')
 
 @section('description', '日本のサウンドを熟知した日本人オーディオエキスパートが携わる日本発のオーディオビジュアルブランド')
 
@@ -15,7 +15,7 @@
 <div id="container" class="both">
 <div id="" class="main" role="main">
     <article class="w1020 w98 m_auto">
-        <h2 class="pt20 border_b mb20">WE-D01b</h2>
+        <h2 class="pt20 border_b mb20">TE-D01h</h2>
     
         <section class="product_phot"><!--MV・商品画像-->
             <div class="swiper-container gallery-top">

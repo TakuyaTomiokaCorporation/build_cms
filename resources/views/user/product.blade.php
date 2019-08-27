@@ -73,7 +73,7 @@
     </section>
 
     <div id="app">
-    <p class="alc"><button v-on:click="isShow" class="btn_buy" >もっとみる</button></p>
+    <p class="alc"><button v-on:click="isShown" class="btn_buy" >もっとみる</button></p>
     <transition>
     <section class="product_content" v-show="show">
         <h2 class="border_b">生産完了製品</h2>
@@ -115,7 +115,7 @@
             show:false
         },
         methods: {
-            isShow: function(){
+            isShown: function(){
                 this.show = !this.show
             }
         }
@@ -126,6 +126,10 @@
 
 .v-enter-active, .v-leave-active {
   transition: opacity 1.5s
+}
+
+.v-leave-active {
+  transition: opacity 0.5s
 }
 
 .v-enter, .v-leave-to {

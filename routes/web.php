@@ -61,15 +61,6 @@ Route::get('/artists/CY8ER', 'UserController@getCy8er')->name('cy8er.show');
 
 /*
 |############################
-| set routes of Inquries bellow.
-|############################
-*/
-Route::get('/inqury', 'UserController@getInqury')->name('inqury');
-Route::get('/inqury/confirm', 'UserController@getInquryConfirm');
-Route::get('/inqury/thanks', 'UserController@getInquryThanks')->name('inqury.thanks');
-
-/*
-|############################
 | set routes of products bellow.
 |############################
 */
@@ -105,7 +96,14 @@ Route::get('/support/registration/thanks', 'UserRegisterController@getProductTha
 Route::get('/pnk_reservation', 'UserController@getPnkReservation');
 
 
-
+/*
+|############################
+| set routes of Inquries bellow.
+|############################
+*/
+Route::get('/inquiry', 'ContactController@create')->name('inquiry');
+Route::patch('/inquriy/confirm', 'ContactController@confirm')->name('inquiry.confirm');
+Route::post('/inquriy/thanks', 'ContactController@sent')->name('inquiry.sent');
 
 
 

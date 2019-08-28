@@ -30,50 +30,94 @@
         <p class="read">お問い合わせ内容にお間違いがないかご確認ください。</p>
     
         <div class="confirm_item bgGray mt20">
+            <form action="{{ route('inquiry.sent') }}" method="POST" enctype='multipart/form-data'>
+            @csrf
+            @method('POST')
+            <input type="hidden" name="last_name" value="{{ $last_name }}">
+            <input type="hidden" name="first_name" value="{{ $first_name }}">
+            <input type="hidden" name="last_name_ja" value="{{ $last_name_ja }}">
+            <input type="hidden" name="first_name_ja" value="{{ $first_name_ja }}">
+            <input type="hidden" name="sex" value="{{ $sex }}">
+            <input type="hidden" name="zip" value="{{ $zip }}">
+            <input type="hidden" name="state" value="{{ $state }}">
+            <input type="hidden" name="city" value="{{ $city }}">
+            <input type="hidden" name="street" value="{{ $street }}">
+            <input type="hidden" name="phone" value="{{ $phone }}">
+            <input type="hidden" name="product" value="{{ $product }}">
+            <input type="hidden" name="email" value="{{ $email }}">
+            <input type="hidden" name="color" value="{{ $color }}">
+            <input type="hidden" name="purchase_date" value="{{ $purchase_date }}">
+            <input type="hidden" name="shop_miraporta" value="{{ $shop_miraporta }}">
+            <input type="hidden" name="shop_other" value="{{ $shop_other }}">
+            <input type="hidden" name="category" value="{{ $category }}">
+            <input type="hidden" name="content" value="{{ $content }}">
             <dl>
                 <dt>お名前</dt>
-                <dd>池袋　南</dd>
+                <dd>{{ $last_name.$first_name }}</dd>
     
                 <dt>フリガナ</dt>
-                <dd>イケブクロ　ミナミ</dd>
+                <dd>{{ $last_name_ja.$first_name_ja }}</dd>
     
                 <dt>性別</dt>
-                <dd>男</dd>
+                <dd>{{ $sex }}</dd>
     
                 <dt>ご住所</dt>
-                <dd>123-4568</dd>
-                <dd>東京都</dd>
-                <dd>豊島区</dd>
-                <dd>池袋123-5-202</dd>
+                <dd>{{ $zip }}</dd>
+                <dd>{{ $state }}</dd>
+                <dd>{{ $city }}</dd>
+                <dd>{{ $street }}</dd>
                 
                 <dt>電話番号</dt>
-                <dd>090-444-4444</dd>
+                <dd>{{ $phone }}</dd>
                 
                 <dt>メールアドレス</dt>
-                <dd>qwer@ucou.co.jp</dd>
+                <dd>{{ $email }}</dd>
     
                 <dt>機種名</dt>
-                <dd>WE-BD21d</dd>
+                <dd>{{ $product }}</dd>
     
                 <dt>色</dt>
-                <dd>あお</dd>
+                <dd>
+                    @isset($color)
+                    {{ $color }}
+                    @endisset
+                </dd>
     
                 <dt>購入日</dt>
-                <dd>2019/07/16</dd>
+                <dd>
+                    @isset($purchase_date)
+                    {{ $purchase_date }}
+                    @endisset
+                </dd>
     
                 <dt>購入店（miraporta）</dt>
-                <dd>なし</dd>
+                <dd>
+                    @isset($shop_miraporta)
+                    {{ $shop_miraporta }}    
+                    @endisset
+                </dd>
     
                 <dt>購入店（AVIOT公式ストア/miraporta以外）</dt>
-                <dd>ヤマダ電機</dd>
+                <dd>
+                    @isset($shop_other)
+                    {{ $shop_other }}        
+                    @endisset
+                </dd>
     
                 <dt>お問い合わせ分類</dt>
-                <dd>修理</dd>
+                <dd>{{ $category }}</dd>
     
                 <dt>お問い合わせ内容</dt>
-                <dd>ボタンが取れた</dd>
+                <dd>{{ $content }}</dd>
             </dl>
-            <p class="alc mt20"><input type="submit" name="submit" class="btn_Blk"></p>
+            
+            {{-- <p class="alc mt20"><input type="submit" name="action" value="back" class="btn_back"></p>
+            <p class="alc mt20"><input type="submit" name="action" value="sent" class="btn_Blk"></p> --}}
+            <div class="alc">
+                <button type="submit" name="action" class="btn_back" value="back">戻る</button>
+                <button type="submit" name="action" class="btn_conf" value="sent">送信</button>
+            </div>
+            </form>
         </div>
         
         

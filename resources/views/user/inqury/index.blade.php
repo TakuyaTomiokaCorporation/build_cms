@@ -29,26 +29,42 @@
         <p class="read mt10">製品保証登録をお済みでない場合は、ご案内をスムーズに行う為に、製品保証登録をお願いしております。<br class="ifpc">お手数をおかけしますが、「<a href="../support/registration/">製品保証登録フォーム</a>」よりご登録をお願いします。</p>
         <div class="registration_form mt40">
             <p>※<span class="required">必須</span>は入力必須項目となります。</p>
-            <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" accept="confirmation" method="POST">
-            <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'>
-            <input type=hidden name="orgid" value="00D6F000002Kz08">
-            <input type=hidden name="retURL" value="{{ route('inqury.thanks') }}">
+            {{-- <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" accept="confirmation" method="POST"> --}}
+            {{-- <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'> --}}
+            {{-- <input type=hidden name="orgid" value="00D6F000002Kz08"> --}}
+            {{-- <input type=hidden name="retURL" value="{{ route('inqury.thanks') }}"> --}}
+            <form action="{{ route('inquiry.confirm') }}" accept="confirmation" method="POST">
             @csrf
-            @method('POST')
+            @method('PATCH')
                 <dl>
                     <dt><span class="required">必須</span>お名前</dt>
-                    <dd><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="姓"  required="true"/>
-                        <input  id="first_name" maxlength="40" name="first_name" size="20" type="text"  placeholder="名"  required="true"/>
+                    <dd>
+                        <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="姓"  required="true" value="{{ old('last_name') }}">
+                        <input  id="first_name" maxlength="40" name="first_name" size="20" type="text"  placeholder="名"  required="true" value="{{ old('first_name') }}">
                     </dd>
     
+                    {{-- <dt><span class="required">必須</span>フリガナ</dt>
+                    <dd><input  id="00N6F00000SUcrR" maxlength="255" name="00N6F00000SUcrR" size="20" type="text" placeholder="セイ"  required="true" value="{{ old('00N6F00000SUcrR') }}">
+                        <input  id="00N6F00000SUcso" maxlength="255" name="00N6F00000SUcso" size="20" type="text" placeholder="メイ"  required="true" value="{{ old('00N6F00000SUcso') }}">
+                    </dd> --}}
                     <dt><span class="required">必須</span>フリガナ</dt>
-                    <dd><input  id="00N6F00000SUcrR" maxlength="255" name="00N6F00000SUcrR" size="20" type="text" placeholder="セイ"  required="true"/>
-                        <input  id="00N6F00000SUcso" maxlength="255" name="00N6F00000SUcso" size="20" type="text" placeholder="メイ"  required="true"/>
+                    <dd>
+                        <input  id="00N6F00000SUcrR" maxlength="255" name="last_name_ja" size="20" type="text" placeholder="セイ"  required="true" value="{{ old('last_name_ja') }}">
+                        <input  id="00N6F00000SUcso" maxlength="255" name="first_name_ja" size="20" type="text" placeholder="メイ"  required="true" value="{{ old('first_name_ja') }}">
                     </dd>
     
+                    {{-- <dt><span class="required">必須</span>性別</dt>
+                    <dd>
+                        <select  id="00N6F00000MmEeS" name="00N6F00000MmEeS" title="性別"  required="true" value="{{ old('00N6F00000MmEeS') }}">
+                            <option value="">--なし--</option>
+                            <option value="男">男</option>
+                            <option value="女">女</option>
+                        </select>
+                    </dd> --}}
+
                     <dt><span class="required">必須</span>性別</dt>
                     <dd>
-                        <select  id="00N6F00000MmEeS" name="00N6F00000MmEeS" title="性別"  required="true" />
+                        <select  id="00N6F00000MmEeS" name="sex" title="性別"  required="true" value="{{ old('sex') }}">
                             <option value="">--なし--</option>
                             <option value="男">男</option>
                             <option value="女">女</option>
@@ -56,26 +72,26 @@
                     </dd>
     
                     <dt><span class="required">必須</span><label for="zip">郵便番号</label></dt>
-                    <dd><input  id="zip" maxlength="10" name="zip" size="20" type="text" required="true" required="true" placeholder="1234567"/></dd>
+                    <dd><input  id="zip" maxlength="10" name="zip" size="20" type="text" required="true" required="true" placeholder="1234567" value="{{ old('zip') }}"></dd>
     
                     <dt><span class="required">必須</span><label for="state">都道府県</label></dt>
-                    <dd><input  id="state" maxlength="20" name="state" size="20" type="text" id="00N6F00000Mmgan" name="00N6F00000Mmgan" required="true" placeholder="東京都"/></dd>
+                    <dd><input  id="state" maxlength="20" name="state" size="20" type="text" id="00N6F00000Mmgan" required="true" placeholder="東京都" value="{{ old('state') }}"></dd>
     
                     <dt><span class="required">必須</span><label for="city">市区郡</label></dt>
-                    <dd><input  id="city" maxlength="40" name="city" size="20" type="text" id="00N6F00000Mmgas" name="00N6F00000Mmgas" required="true" placeholder="豊島区"/></dd>
+                    <dd><input  id="city" maxlength="40" name="city" size="20" type="text" id="00N6F00000Mmgas" required="true" placeholder="豊島区" value="{{ old('city') }}"></dd>
     
                     <dt><span class="required">必須</span><label for="city">町名・番地</label></dt>
-                    <dd><input type="text" name="N6F00000Mmgax" value="" size="40" id="N6F00000Mmgax" name="N6F00000Mmgax"></dd>
+                    <dd><input type="text" name="street" size="40" id="N6F00000Mmgax" value="{{ old('street') }}"></dd>
     
                     <dt><label for="phone">電話番号</label></dt>
-                    <dd><input  id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="090-0000-0000" pattern="^\d{2,4}[-]\d{2,4}[-]\d{2,4}$" title="正式な電話番号をご入力ください。" /></dd>
+                    <dd><input  id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="090-0000-0000" pattern="^\d{2,4}[-]\d{2,4}[-]\d{2,4}$" title="正式な電話番号をご入力ください。" value="{{ old('phone') }}"></dd>
     
                     <dt><span class="required">必須</span><label for="email">メールアドレス</label></dt>
-                    <dd><input  id="email" maxlength="80" name="email" size="60" type="text"  required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="メールアドレスをご確認ください。"　required="true"/></dd>
+                    <dd><input  id="email" maxlength="80" name="email" size="60" type="text"  required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="メールアドレスをご確認ください。"　required="true" value="{{ old('email') }}"></dd>
     
                     <dt><span class="required">必須</span><label>機種名</label></dt>
                     <dd>
-                    <select  id="00N6F00000O5eSa" name="00N6F00000O5eSa" title="機種名">
+                    <select  id="00N6F00000O5eSa" name="product" title="機種名" value="{{ old('product') }}">
                         <option value="">--なし--</option>
                         <option value="Aeromax2">Aeromax2</option>
                         <option value="Aeromax6">Aeromax6</option>
@@ -125,14 +141,14 @@
                     </dd>
     
                     <dt>色</dt>
-                    <dd><input  id="00N6F00000Mmgcy" maxlength="255" name="00N6F00000Mmgcy" size="20" type="text" /></dd>
+                    <dd><input  id="00N6F00000Mmgcy" maxlength="255" name="color" size="20" type="text" value="{{ old('color') }}"></dd>
     
                     <dt>購入日</dt>
-                    <dd><input type="date" value="2019-01-01" min="2015-01-01" id="00N6F00000Mmgd8" name="00N6F00000Mmgd8"></dd>
+                    <dd><input type="date" value="2019-01-01" min="2015-01-01" id="" name="purchase_date" value="{{ old('purchase_date') }}"></dd>
     
                     <dt><label for="email">購入店（miraporta）</label></dt>
                     <dd>
-                    <select  id="00N6F00000MmgdD" name="00N6F00000MmgdD" required="true">
+                    <select  id="00N6F00000MmgdD" name="shop_miraporta" value="{{ old('shop_miraporta') }}">
                         <option value="">--なし--</option>
                         <option value="楽天">楽天</option>
                         <option value="yahoo">yahoo</option>
@@ -142,11 +158,11 @@
     
                     <dt>購入店（AVIOT公式ストア/miraporta以外）<br>
                         <small>※キャンペーンコードをお持ちの方は、こちらにご記入ください</small></dt>
-                    <dd><input  id="00N6F00000MmgdI" maxlength="255" name="00N6F00000MmgdI" size="20" type="text" /></dd>
+                    <dd><input  id="00N6F00000MmgdI" maxlength="255" name="shop_other" size="20" type="text" value="{{ old('shop_other') }}"></dd>
     
-                    <dt><label for="email">問い合わせ分類</label></dt>
+                    <dt><span class="required">必須</span>問い合わせ分類</dt>
                     <dd>
-                    <select  id="00N6F00000MmgdD" name="00N6F00000MmgdD" required="true">
+                    <select  id="00N6F00000MmgdD" name="category" required="true" value="{{ old('category') }}">
                         <option value="">---</option>
                         <option value="購入前">購入前</option>
                         <option value="使い方">使い方</option>
@@ -158,7 +174,7 @@
                     </dd>
     
                     <dt><span class="required">必須</span>問い合わせ内容</dt>
-                    <dd><textarea  id="00N6F00000MmhYx" name="00N6F00000MmhYx" cols="50" rows="4" wrap="soft" type="text" required="true"></textarea></dd>
+                    <dd><textarea  id="00N6F00000MmhYx" name="content" cols="50" rows="4" wrap="soft" type="text" required="true" value="">{{ old('content') }}</textarea></dd>
     
                     <div class="boxes">
                         <input type="checkbox" id="box-1">
@@ -166,7 +182,9 @@
                         <p>※こちらの『<a href="https://v-trade.co.jp/company/#cap1" target="_blank">PRIVACY POLICY</a>』の内容をご確認の上ご同意ください。</p>
                     </div>
                     {{-- <div class="g-recaptcha" data-sitekey="6Ldnm68UAAAAAIHuRLurfVAazlDVc4aJw_f-CLG2"></div><br> --}}
-                    <p class="alc mt20"><input type="submit" name="submit"></p>
+                    <div class="alc">
+                        <button type="submit" class="btn_conf">確認</button>
+                    </div>
                 </dl>
             </form>
         </div>

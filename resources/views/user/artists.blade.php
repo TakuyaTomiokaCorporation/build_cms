@@ -72,7 +72,7 @@
         </div>
 
         <div class="mt40">
-            <h3 class="product_name">TE-D01g<img src="{{ asset('images/artists/artistmovie_TE-D01d.png') }}" alt="TE-D01g"></h3>
+            <h3 class="product_name">TE-D01d<img src="{{ asset('images/artists/artistmovie_TE-D01d.png') }}" alt="TE-D01g"></h3>
             <div>
                 <ul class="flex">
                     <li class="artist_list">

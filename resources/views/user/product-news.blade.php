@@ -6,6 +6,8 @@
 
 @section('css')
 
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 @endsection
 
 @section('body_id', 'product-news')

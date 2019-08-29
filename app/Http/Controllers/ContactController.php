@@ -38,7 +38,7 @@ class ContactController extends Controller
 
         $request->session()->regenerateToken();
         
-        Mail::to('t-tomioka@v-trade.co.jp')->send(new Contact($contact_sent));
+        Mail::to('support@v-trade.co.jp')->send(new Contact($contact_sent));
         
         return view('user.inqury.thanks');
     }

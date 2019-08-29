@@ -93,6 +93,20 @@
                     <dd>
                     <select  id="00N6F00000O5eSa" name="product" title="機種名" value="{{ old('product') }}">
                         <option value="">--なし--</option>
+                        <option value="TE-BD21f">TE-BD21f</option>
+                        <option value="TE-BD21f-pnk">TE-BD21f-pnk</option>
+                        <option value="WE-BD21d">WE-BD21d</option>
+                        <option value="TE-D01g">TE-D01g</option>
+                        <option value="TE-D01d">TE-D01d</option>
+                        <option value="TE-D01a">TE-D01a</option>
+                        <option value="TE-D01b">TE-D01b</option>
+                        <option value="TE-D01c">TE-D01c</option>
+                        <option value="TE-D01d-kzn">TE-D01d-kzn</option>
+                        <option value="TE-D01e">TE-D01e</option>
+                        <option value="TE-D01h">TE-D01h</option>
+                        <option value="WE-D01c">WE-D01c</option>
+                        <option value="WE-D01b">WE-D01b</option>
+
                         <option value="Aeromax2">Aeromax2</option>
                         <option value="Aeromax6">Aeromax6</option>
                         <option value="BT100">BT100</option>
@@ -132,11 +146,6 @@
                         <option value="NU-PI">NU-PI</option>
                         <option value="HEM1">HEM1</option>
                         <option value="HEM Dynamic">HEM Dynamic</option>
-                        <option value="WE-D01a">WE-D01a</option>
-                        <option value="WE-D01b">WE-D01b</option>
-                        <option value="TE-D01a">TE-D01a</option>
-                        <option value="TE-D01b">TE-D01b</option>
-                        <option value="TE-D01c">TE-D01c</option>
                     </select>
                     </dd>
     

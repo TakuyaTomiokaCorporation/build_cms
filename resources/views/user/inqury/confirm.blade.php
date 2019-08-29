@@ -122,7 +122,7 @@
                 <dd>{{ $content }}</dd>
             </dl>
             
-            <div class="g-recaptcha" data-sitekey="6Ldnm68UAAAAAIHuRLurfVAazlDVc4aJw_f-CLG2"></div><br>
+            <div class="g-recaptcha m_auto mt20" data-sitekey="6Ldnm68UAAAAAIHuRLurfVAazlDVc4aJw_f-CLG2"></div><br>
             <div class="alc">
                 <button type="submit" name="action" class="btn_back" value="back">戻る</button>
                 <button type="submit" name="action" class="btn_conf" value="sent">送信</button>

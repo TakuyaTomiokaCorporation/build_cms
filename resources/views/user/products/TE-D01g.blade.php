@@ -71,7 +71,7 @@
             <p class="txtS">付属品：USB Type-Cケーブル 1本、標準イヤーピース（各サイズ1色1ペア S/M/L）、ウレタンフォーム（各サイズ1色1ペア S/M）、ユーザーマニュアル、製品保証登録カード</p>
         </div>
     </div>
-    <div class="alc btn_area"><a href="https://www.amazon.co.jp/AVIOT-TE-D01g-Bluetooth-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3-%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0/dp/B07QXLMXD7/ref=sr_1_9?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=VES9M6PHTO4O&keywords=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&s=gateway&sprefix=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3%E3%80%80A%2Caps%2C238&sr=8-9&th=1" class="btn_buy">ご購入はこちら</a></div>
+    <div class="alc btn_area"><a href="https://www.amazon.co.jp/AVIOT-TE-D01g-Bluetooth-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3-%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0/dp/B07QXLMXD7/ref=sr_1_9?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=VES9M6PHTO4O&keywords=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&s=gateway&sprefix=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3%E3%80%80A%2Caps%2C238&sr=8-9&th=1" target="_blank" class="btn_buy">ご購入はこちら</a></div>
     </div>
 
     <h3 class="mt80">手のひらのジュークボックス</h3>
@@ -215,7 +215,7 @@
         <div class="alc mt20">
             <a href="{{ route('product.show') }}" class="btn_back mt10">製品一覧へ戻る</a>
 
-            <a href="https://www.amazon.co.jp/AVIOT-TE-D01g-Bluetooth-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3-%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0/dp/B07QXLMXD7/ref=sr_1_9?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=VES9M6PHTO4O&keywords=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&s=gateway&sprefix=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3%E3%80%80A%2Caps%2C238&sr=8-9&th=1" class="btn_buy mt10">ご購入はこちら</a>
+            <a href="https://www.amazon.co.jp/AVIOT-TE-D01g-Bluetooth-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3-%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0/dp/B07QXLMXD7/ref=sr_1_9?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=VES9M6PHTO4O&keywords=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&s=gateway&sprefix=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3%E3%80%80A%2Caps%2C238&sr=8-9&th=1" target="_blank" class="btn_buy mt10">ご購入はこちら</a>
         </div>
     </section>
 

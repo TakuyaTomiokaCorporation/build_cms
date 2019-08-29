@@ -77,7 +77,7 @@
             <p class="txtS">付属品：MicroUSBケーブル、標準イヤーピース（各サイズ1色1ペア S/M/L）、イヤーウイング、（各サイズ1色1ペア S/M）、SpinFit CP100Z（各サイズ1色1ペア SS/S/M）、収納ポーチ、ユーザーマニュアル、製品保証登録カード</p>
         </div>
     </div>
-    <div class="alc btn_area"><a href="https://www.amazon.co.jp/dp/B07MG34M8C/ref=cm_sw_em_r_mt_awdo_PeZzDbNJXRJ43" class="btn_buy">ご購入はこちら</a></div>
+    <div class="alc btn_area"><a href="https://www.amazon.co.jp/dp/B07MG34M8C/ref=cm_sw_em_r_mt_awdo_PeZzDbNJXRJ43" target="_blank" class="btn_buy">ご購入はこちら</a></div>
     </div>
 
     <h3 class="mt80">もっと、日本の音へ</h3>
@@ -227,7 +227,7 @@
         <div class="alc mt20">
             <a href="{{ route('product.show') }}" class="btn_back mt10">製品一覧へ戻る</a>
 
-            <a href="https://www.amazon.co.jp/dp/B07MG34M8C/ref=cm_sw_em_r_mt_awdo_PeZzDbNJXRJ43" class="btn_buy mt10">ご購入はこちら</a>
+            <a href="https://www.amazon.co.jp/dp/B07MG34M8C/ref=cm_sw_em_r_mt_awdo_PeZzDbNJXRJ43" target="_blank" class="btn_buy mt10">ご購入はこちら</a>
         </div>
     </section>
 

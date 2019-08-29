@@ -141,7 +141,7 @@
                         <label><input type="checkbox" name="" value="【プライバシーポリシーに同意する】" /><span class="label">プライバシーポリシーに同意する</span></label>
                     </p>
                     <p>※こちらの『<a href="https://v-trade.co.jp/company/#cap1" target="_blank">PRIVACY POLICY</a>』の内容をご確認の上ご同意ください。</p>
-                    {{-- <div class="g-recaptcha" data-sitekey="6Ldnm68UAAAAAIHuRLurfVAazlDVc4aJw_f-CLG2"></div><br> --}}
+                    <div class="g-recaptcha" data-sitekey="6Ldnm68UAAAAAIHuRLurfVAazlDVc4aJw_f-CLG2"></div><br>
                         <p class="form_submit alc"><input type="submit" value="送信する" class="" /></p>
                 </div>
                 </dl>

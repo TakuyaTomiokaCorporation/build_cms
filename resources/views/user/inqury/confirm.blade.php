@@ -19,6 +19,17 @@
 
 @endsection
 
+@section('javascript-head')
+
+    <!-- Google ReCapcha -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function timestamp() 
+        { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+    </script>
+
+@endsection
+
 @section('body_id', 'confirm')
 
 @section('content')
@@ -111,8 +122,7 @@
                 <dd>{{ $content }}</dd>
             </dl>
             
-            {{-- <p class="alc mt20"><input type="submit" name="action" value="back" class="btn_back"></p>
-            <p class="alc mt20"><input type="submit" name="action" value="sent" class="btn_Blk"></p> --}}
+            <div class="g-recaptcha" data-sitekey="6Ldnm68UAAAAAIHuRLurfVAazlDVc4aJw_f-CLG2"></div><br>
             <div class="alc">
                 <button type="submit" name="action" class="btn_back" value="back">戻る</button>
                 <button type="submit" name="action" class="btn_conf" value="sent">送信</button>

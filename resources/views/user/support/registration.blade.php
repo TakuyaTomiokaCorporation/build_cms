@@ -75,9 +75,119 @@
         <p class="read">弊社商品の保証登録は下記項目をご入力の上、送信をお願い致します。必要事項をご記入の上、送信ボタンを押してください。</p>
         <div class="registration_form mt40">
             <p>※<span class="required">必須</span>は入力必須項目となります。</p>
-                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+            <!--  ----------------------------------------------------------------------  -->
+<!--  次の <FORM> 要素をページに追加してください。                                              -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+    <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'>
+    <input type=hidden name="oid" value="00D6F000002Kz08">
+    <input type=hidden name="retURL" value="http://">
+    
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  注意: これらの項目は、省略可能なデバッグ用要素です。デバッグモードでテストを行う場合は、これらの行をコメント解除してください。        -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail" value="aviot@v-trade.co.jp">     -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <label for="last_name">姓</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+    
+    <label for="first_name">名</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+    
+    姓(カナ):<input  id="00N6F00000SUcr2" maxlength="255" name="00N6F00000SUcr2" size="20" type="text" /><br>
+    
+    名(カナ):<input  id="00N6F00000SUcr7" maxlength="255" name="00N6F00000SUcr7" size="20" type="text" /><br>
+    
+    性別:<select  id="00N6F00000MmEeS" name="00N6F00000MmEeS" title="性別"><option value="">--なし--</option><option value="男">男</option>
+    <option value="女">女</option>
+    </select><br>
+    
+    <label for="zip">郵便番号</label><input  id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
+    
+    <label for="state">都道府県</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
+    
+    <label for="city">市区郡</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+    
+    <label for="street">町名・番地</label><textarea name="street"></textarea><br>
+    
+    <label for="phone">電話</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+    
+    <label for="email">メール</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+    
+    機種名:<select  id="00N6F00000O5eOx" name="00N6F00000O5eOx" title="機種名"><option value="">--なし--</option><option value="Aeromax2">Aeromax2</option>
+    <option value="Aeromax6">Aeromax6</option>
+    <option value="BT100">BT100</option>
+    <option value="CP1">CP1</option>
+    <option value="CP2">CP2</option>
+    <option value="CXA60">CXA60</option>
+    <option value="CXA80">CXA80</option>
+    <option value="CXN">CXN</option>
+    <option value="CXS">CXS</option>
+    <option value="CXU">CXU</option>
+    <option value="CXUHD">CXUHD</option>
+    <option value="DacMagicPlus">DacMagicPlus</option>
+    <option value="DacMagicXS">DacMagicXS</option>
+    <option value="DacMagic100">DacMagic100</option>
+    <option value="Min12">Min12</option>
+    <option value="Min22">Min22</option>
+    <option value="SX50">SX50</option>
+    <option value="SX60">SX60</option>
+    <option value="TOPAZ AM5">TOPAZ AM5</option>
+    <option value="TOPAZ AM10">TOPAZ AM10</option>
+    <option value="TOPAZ CD5">TOPAZ CD5</option>
+    <option value="TOPAZ CD10">TOPAZ CD10</option>
+    <option value="YOYO(S)">YOYO(S)</option>
+    <option value="YOYO(M)">YOYO(M)</option>
+    <option value="その他">その他</option>
+    <option value="VERSE">VERSE</option>
+    <option value="Apollo7ｓ">Apollo7ｓ</option>
+    <option value="Apollo7">Apollo7</option>
+    <option value="MUSE5">MUSE5</option>
+    <option value="RIO3">RIO3</option>
+    <option value="BeSport4">BeSport4</option>
+    <option value="BeFree5">BeFree5</option>
+    <option value="BeFree8">BeFree8</option>
+    <option value="BeSport3">BeSport3</option>
+    <option value="Be6i">Be6i</option>
+    <option value="Belite3">Belite3</option>
+    <option value="NU-PI">NU-PI</option>
+    <option value="HEM1">HEM1</option>
+    <option value="HEM Dynamic">HEM Dynamic</option>
+    <option value="WE-D01a">WE-D01a</option>
+    <option value="WE-D01b">WE-D01b</option>
+    <option value="TE-D01a">TE-D01a</option>
+    <option value="TE-D01b">TE-D01b</option>
+    <option value="TE-D01c">TE-D01c</option>
+    <option value="pnk">pnk</option>
+    <option value="TE-BD21f">TE-BD21f</option>
+    <option value="TE-BD21f-pnk">TE-BD21f-pnk</option>
+    <option value="WE-BD21d">WE-BD21d</option>
+    <option value="TE-D01g">TE-D01g</option>
+    <option value="TE-D01d">TE-D01d</option>
+    </select><br>
+    
+    色:<input  id="00N6F00000MmEeh" maxlength="255" name="00N6F00000MmEeh" size="20" type="text" /><br>
+    
+    シリアルナンバー:<input  id="00N6F00000MmEem" maxlength="255" name="00N6F00000MmEem" size="20" type="text" /><br>
+    
+    購入日:<span class="dateInput dateOnlyInput"><input  id="00N6F00000MmEer" name="00N6F00000MmEer" size="12" type="text" /></span><br>
+    
+    購入店（miraporta）:<select  id="00N6F00000MmEew" name="00N6F00000MmEew" title="購入店（miraporta）"><option value="">--なし--</option><option value="Amazon">Amazon</option>
+    <option value="楽天">楽天</option>
+    <option value="yahoo">yahoo</option>
+    <option value="その他">その他</option>
+    </select><br>
+    
+    購入店（miraporta以外）:<input  id="00N6F00000MmEf1" maxlength="255" name="00N6F00000MmEf1" size="20" type="text" /><br>
+    
+    <div class="g-recaptcha" data-sitekey="6Ldnm68UAAAAAIHuRLurfVAazlDVc4aJw_f-CLG2"></div><br>
+    <input type="submit" name="submit">
+    
+    </form>
+                {{--  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                 <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'>
-                {{-- <input type=hidden name="oid" value="00D6F000002Kz08"> --}}
+                {{-- <input type=hidden name="oid" value="00D6F000002Kz08">
                 <input type=hidden name="retURL" value="aviot.jp/support/registration/thanks">
                 <input type="hidden" name="00N6F00000WyN80" value="A" />
                 @csrf
@@ -185,7 +295,7 @@
                     <div class="g-recaptcha m_auto mt20" data-sitekey="6Ldnm68UAAAAAIHuRLurfVAazlDVc4aJw_f-CLG2"></div>
                     <p class="alc mt20"><input type="submit" name="submit"></p>
                 </dl>
-            </form>
+            </form>--}}
         </div>
     </article>
         

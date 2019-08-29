@@ -82,7 +82,7 @@
             </div>
           </div>
           <div class="cv__btn btn btn-metallic btn-shadow">
-            <a href="https://www.amazon.co.jp/AVIOT-TE-D01g-Bluetooth-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3-%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0/dp/B07R1Y2ZXJ"><img src="dist/img/btn-cv.png" alt="AVIOTのご購入はこちらから"></a>
+            <a href="https://www.amazon.co.jp/AVIOT-TE-D01g-Bluetooth-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3-%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0/dp/B07R1Y2ZXJ"><img src="{{ asset('lp/img/btn-cv.png') }}" alt="AVIOTのご購入はこちらから"></a>
           </div>
         </div>
       </div>

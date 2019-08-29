@@ -77,7 +77,7 @@
             <p>※<span class="required">必須</span>は入力必須項目となります。</p>
                 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                 <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'>
-                <input type=hidden name="oid" value="00D6F000002Kz08">
+                {{-- <input type=hidden name="oid" value="00D6F000002Kz08"> --}}
                 <input type=hidden name="retURL" value="aviot.jp/support/registration/thanks">
                 <input type="hidden" name="00N6F00000WyN80" value="A" />
                 @csrf

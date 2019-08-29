@@ -32,7 +32,7 @@ class Contact extends Mailable
     {
 
         // dd($this);
-        return $this->subject('【AVIOT 問い合わせ】'.$this->contact_sent['category'])
+        return $this->subject('【AVIOTホームページよりお問い合わせがあります。】'.$this->contact_sent['category'])
                     ->view('mails.contact'); 
     }
 }

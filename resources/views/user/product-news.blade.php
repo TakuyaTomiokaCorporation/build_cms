@@ -7,6 +7,26 @@
 @section('css')
 
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<style>
+.pagination {
+    margin-top: 20px;
+    justify-content: center; 
+}
+
+.page-item.active .page-link{
+    background-color: #464646;
+    border-color: #464646;
+}
+
+.page-link{
+    color: #464646;
+    border-color: #c4c4c4;
+}
+
+.page-link:hover{
+    color: #878787;
+}
+</style>
 
 @endsection
 

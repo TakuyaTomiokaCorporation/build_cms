@@ -359,25 +359,6 @@ class UserController extends Controller
     }
 
     // 
-    // Inqury functions
-    //
-
-    public function getInqury()
-    {
-        return view('user.inqury.index');
-    }
-
-    public function getInquryConfirm()
-    {
-        return view('user.inqury.confirm');
-    }
-
-    public function getInquryThanks()
-    {
-        return view('user.inqury.thanks');
-    }
-
-    // 
     // Operation function
     //
 

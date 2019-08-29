@@ -44,7 +44,7 @@
     <section>
         <ul class="product_category">
             <li><a href="{{ route('product.show') }}">全商品</a></li>
-            <li><a href="{{ route('beginner') }}">エントリーモデル</a></li>
+            {{-- <li><a href="{{ route('beginner') }}">エントリーモデル</a></li> --}}
             <li><a href="{{ route('hybrid') }}">ハイブリッドドライバー</a></li>
             <li><a href="{{ route('aptxhd') }}">aptX HD</a></li>
         </ul>

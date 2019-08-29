@@ -278,7 +278,7 @@
                 <ul class="inner">
                     <li>
                         <p>一部機種（TE-D01b,d）では、ファームアップデートで音量の改善ができる場合がございます。<br>
-                            製品登録（リンク：<a href="https://v-trade.co.jp/registration" target="_brank"> https://v-trade.co.jp/registration</a>）をお済ませ頂いた上、お手数お掛けしますがカスタマーサポートセンターまでお問い合わせをお願いいたします。</p>
+                            製品登録（リンク：<a href="{{ route('product_regiser') }}" target="_brank"> https://aviot.jp/support/registration</a>）をお済ませ頂いた上、お手数お掛けしますがカスタマーサポートセンターまでお問い合わせをお願いいたします。</p>
                     </li>
                 </ul>
             </li>

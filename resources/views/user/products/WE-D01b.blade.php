@@ -58,7 +58,7 @@
                 <p class="txtS">付属品：MicroUSBケーブル、標準イヤーピース（各サイズ1色1ペア S/M/L）、スポーツ用イヤーウィング（各サイズ1色1ペア S/M/L）、SpinFit®イヤピース（各サイズ1色1ペア S/M/L）、収納ポーチ、ユーザーマニュアル、製品保証登録カード</p>
             </div>
         </div>
-        <div class="alc btn_area"><a href="https://www.amazon.co.jp/AVIOT-%E6%97%A5%E6%9C%AC%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC-WE-D01b-Bluetooth-Android/dp/B07HCJHMSW/ref=sr_1_14?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&keywords=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&s=gateway&sr=8-14&th=1" class="btn_buy">ご購入はこちら</a></div>
+        <div class="alc btn_area"><a href="https://www.amazon.co.jp/AVIOT-%E6%97%A5%E6%9C%AC%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC-WE-D01b-Bluetooth-Android/dp/B07HCJHMSW/ref=sr_1_14?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&keywords=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&s=gateway&sr=8-14&th=1" target="_blank" class="btn_buy">ご購入はこちら</a></div>
         </div>
     
         <h3 class="mt80">-Japan Tuned-</h3>
@@ -172,7 +172,7 @@
             <div class="alc mt20">
                 <a href="{{ route('product.show') }}" class="btn_back mt10">製品一覧へ戻る</a>
     
-                <a href="https://www.amazon.co.jp/AVIOT-%E6%97%A5%E6%9C%AC%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC-WE-D01b-Bluetooth-Android/dp/B07HCJHMSW/ref=sr_1_14?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&keywords=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&s=gateway&sr=8-14&th=1" class="btn_buy mt10">ご購入はこちら</a>
+                <a href="https://www.amazon.co.jp/AVIOT-%E6%97%A5%E6%9C%AC%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC-WE-D01b-Bluetooth-Android/dp/B07HCJHMSW/ref=sr_1_14?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&keywords=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&s=gateway&sr=8-14&th=1" target="_blank" class="btn_buy mt10">ご購入はこちら</a>
             </div>
         </section>
     

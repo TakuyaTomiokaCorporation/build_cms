@@ -15,25 +15,34 @@
 <div id="container" class="both">
 <div id="" class="main" role="main">
     <article class="w1020 w98 m_auto mb60">
-        <h2 class="pt20 border_b mb20">送信いたしました。</h2>
+        <h2 class="pt20 border_b mb20">製品登録を受け付けました。</h2>
         <div class="tanks_item">
-            <p>送信が完了いたしました。</p>
-            <p>お問い合わせに関しましては、24時間以内に順次ご案内させて頂きます。<br>
-            ※土日祝日にお問い合わせをいただいた場合、翌営業日より順次ご対応させていただきますのでお待ちください。</p>
+            <p>製品登録を受け付けました。</p>
+            <p>メールにてご案内をお送りしますのでご確認ください。</p>
+            <p class="mt10">最長3日ほどでご案内のメールをお送りしていますが、ご案内のメールが届かない場合は正常に製品登録できていないことがございます。<br>
+            その際は下記カスタマーサポートセンターへ直接ご連絡ください。</p>
     
-            <h3 class="border_l mt20 mb10">製品保証登録がお済みでないお客様へ</h3>
-            <p>お客様の問題をスムーズに解決させて頂く為にも製品保証登録をお願い申し上げます。<br class="ifpc">製品保証登録を以下のURLよりご登録をお願いします。</p>
-            <p><a href="{{ route('product_regiser') }}">https://aviot.co.jp/support/registration/</a></p>
-            <p>お手数をおかけますが、何卒よろしくお願い申し上げます。</p>
+            <div class="support_center">
+                <h3 class="mt20 mb20 border_l">カスタマーサポートセンター</h3>
+                <dl>
+                    <dt class="bold">カスタマーサポートセンター</dt>
+                    <dd>電話：<a href="050-2018-3909">050-2018-3909</a></dd>
+                    <dd>※営業時間：10:00〜17:00（土日祝除く）</dd>
+                    <dd class="mt10"><a href="{{ route('inquiry') }}">メールでお問い合わせ</a></dd>
+                </dl>
+            </div>
+    
+            <h3 class="border_l mt20 mb10">安心の紛失保証サービス</h3>
+            <p>ご使用にあたり、片耳イヤホンの紛失や充電ケースの落下などによって破損した場合など、保証期間内に一回限り、特別価格にて、新品への交換、又は代替品のご提供をいたします。</p>
+            <p class="mt10"><a href="{{ route('compensation') }}">詳しくはこちら</a></p>
         </div>
     
         <ul class="mt20">
-            <li><a href="{{ route('support') }}#QA">>よくある質問へ</a></li>
-            <li><a href="{{ route('product.show') }}">>製品一覧へ</a></li>
+            <li><a href="{{ route('support') }}#QA"> >よくある質問へ</a></li>
+            <li><a href="{{ route('product.show') }}"> >製品一覧へ</a></li>
             <li><a href=""></a></li>
             <li><a href=""></a></li>
         </ul>
-    
     
     </article>
         

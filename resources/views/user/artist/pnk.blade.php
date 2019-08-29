@@ -33,7 +33,7 @@
             </ul>
     
             <div class="alc mt20">
-                <a href="../../product/TE-D01d/" target="_blank" class="btn_back mt10">製品詳細はこちら</a>
+                <a href="{{ route('ted01d') }}" target="_blank" class="btn_back mt10">製品詳細はこちら</a>
             </div>
         </section>
     </article>

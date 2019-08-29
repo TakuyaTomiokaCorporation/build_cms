@@ -156,8 +156,8 @@
                 </dd>
 
                 <dt><span class="required">必須</span>シリアルナンバー</dt>
-                <dd><input  id="00N6F00000MmEem" maxlength="255" name="00N6F00000MmEem" size="20" type="text" required pattern="^[WT][A-Z]{2,4}\d{7,8}$"/></dd>
-
+                <dd><input  id="00N6F00000MmEem" maxlength="255" name="00N6F00000MmEem" size="20" type="text" required pattern="^[WT][A-Z]{2,4}\d{7,8}$"/><br>
+                    &nbsp;&nbsp;WまたはTから始まるアルファベットと数字を入力してください。</dd>
                 <dt>購入日</dt>
                 <dd><input type="date" value="2019-01-01" min="2015-01-01" id="00N6F00000MmEer" name="00N6F00000MmEer"></dd>
 

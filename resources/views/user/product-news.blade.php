@@ -8,6 +8,11 @@
 
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <style>
+
+.id_top{
+    margin-top: -67px;
+    padding-top: 67px;
+}
 .pagination {
     margin-top: 20px;
     justify-content: center; 
@@ -34,7 +39,7 @@
 
 @section('content')
     
-<div id="container" class="both">
+<div id="container" class="both bg-white">
 <div id="" class="main w1020 w98 m_auto" role="main">
     
     <h2 class="pt20 border_b mb20">製品に関するお知らせ</h2>

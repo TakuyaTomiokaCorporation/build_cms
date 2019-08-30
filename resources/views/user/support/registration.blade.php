@@ -75,7 +75,6 @@
         <p class="read">弊社商品の保証登録は下記項目をご入力の上、送信をお願い致します。必要事項をご記入の上、送信ボタンを押してください。</p>
         <div class="registration_form mt40">
             <p>※<span class="required">必須</span>は入力必須項目となります。</p>
-    </form>
             <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
             <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'>
             <input type=hidden name="oid" value="00D6F000002Kz08">

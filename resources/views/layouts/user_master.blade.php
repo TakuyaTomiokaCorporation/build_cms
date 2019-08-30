@@ -21,6 +21,13 @@
 
     <title>@yield('title') AVIOT</title>
 
+    <!-- OGP -->
+    <meta property="og:title" content="AVIOT" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="日本のサウンドを熟知した日本人オーディオエキスパートが携わる日本発のオーディオビジュアルブランド。" />
+    <meta property="og:url" content="https://aviot.jp/" />
+    <meta property="og:image" content="https://aviot.jp/images/user/ogp.png" />
+
     <!-- Scripts -->
     <link rel="icon" href="{{ asset('images/user/favicon.ico') }}"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

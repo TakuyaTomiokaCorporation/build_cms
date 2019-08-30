@@ -81,7 +81,7 @@
             <dd class="mt10">1500円+当日1D</dd>
 
             <dt class="fll mt10 both">チケット販売サイト：</dt>
-            <dd class="mt10">イープラス（リンクは後日発表）　9月4日(水)10:00から発売開始。</dd>
+            <dd class="mt10">イープラス(<a href="https://eplus.jp/sf/detail/3079740001-P0030001" target="_blank">https://eplus.jp/sf/detail/3079740001-P0030001</a>)　9月4日(水)10:00から発売開始。</dd>
         </dl>
     </section>
 

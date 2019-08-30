@@ -66,8 +66,7 @@
 <div id="container" class="both mb60">
 <div id="" class="main" role="main">
 <article class="w1020 w98 m_auto">
-    <h2 class="pt20 border_b mb20">AVIOT LIVE:02</h2>
-    <p><img src="{{ asset('images/events/2019/AVIOTLIVE02.jpg') }}"></p>
+    <h2 class="mt20"><img src="{{ asset('images/events/2019/AVIOTLIVE02.jpg') }}"></h2>
 
         <section>
         <h3 class="alc mt40">イベント詳細</h3>

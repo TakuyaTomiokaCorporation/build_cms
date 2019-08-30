@@ -34,7 +34,7 @@
                     <dt class="bold">カスタマーサポートセンター</dt>
                     <dd>電話：<a href="050-2018-3909">050-2018-3909</a></dd>
                     <dd>※営業時間：10:00〜17:00（土日祝除く）</dd>
-                    <dd class="mt10"><a href="{{ route('inquiry') }}">メールでお問い合わせ</a></dd>
+                    <dd class="mt10"><a href="https://v-trade.co.jp/contact_individual/">お問い合わせ</a></dd>
                 </dl>
             </div>
     

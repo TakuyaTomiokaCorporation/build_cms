@@ -66,10 +66,10 @@
 <div id="container" class="both mb60">
 <div id="" class="main" role="main">
 <article class="w1020 w98 m_auto">
-    <h2 class="mt20"><img src="{{ asset('images/events/2019/AVIOTLIVE02.jpg') }}"></h2>
+    <h2 class="mt20 pt20"><img src="{{ asset('images/events/2019/AVIOTLIVE02.jpg') }}"></h2>
 
         <section>
-        <h3 class="alc mt40">イベント詳細</h3>
+        <h3 class="alc">イベント詳細</h3>
         <dl class="mt40">
             <dt class="fll">開催場所：</dt>
             <dd>会場TOKYO FM ホール（アクセス:<a href="http://www.tfmhall.jp/accsess.html" target="_brank">http://www.tfmhall.jp/accsess.html</a>）</dd>

@@ -108,7 +108,13 @@ Route::patch('/inquriy/confirm', 'ContactController@confirm')->name('inquiry.con
 Route::post('/inquriy/thanks', 'ContactController@sent')->name('inquiry.sent');
 */
 
+/*
+|############################
+| set routes of Events bellow.
+|############################
+*/
 
+Route::get('/events/aviot_live_02', 'EventsController@getAviotLive02');
 
 
 

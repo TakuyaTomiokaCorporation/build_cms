@@ -98,6 +98,7 @@
                     <p class="text">シグネチャー・スネアやスティックの年間売上トップクラスをキープするなど、ドラマーとして高い注目を集めている。また、著名ミュージシャンのレコーディングへの参加や、ドラムチューナー、テレビ出演、番組MC、DJ、ドラムDJ、音楽監修、フェス主催、ビバラポップ プレゼンター、インタビュアー、コラム連載など、ドラマーの枠を超えた幅広い活動を展開している。</p>
                 </div>
             </div>
+            <p class="alc mt20"><a href="https://www.pinakano.jp/" target="_blank" class="btn_Blk">公式サイト</a></p>
 
             <div class="mt40 both">
             <h4 class="mb10">ヤなことそっとミュート</h4>
@@ -109,6 +110,7 @@
                 </div>
                 
             </div>
+            <p class="alc mt20"><a href="http://yanakotosottomute.com/" target="_blank" class="btn_Blk">公式サイト</a></p>
 
         <div class="both mt40">
             <h4 class="mb10">Maison book girl</h4>
@@ -120,6 +122,7 @@
                     <p>2019年は3月より名古屋・大阪・福岡でワンマンライブを行なった後、4月3日にシングル「SOUP」をリリース。4月には自身最大規模となるワンマンライブ「Solitude HOTEL 7F」を昭和女子大学・人見記念講堂で開催し大成功を収めた。</p>
                 </div>
             </div>
+            <p class="alc mt20"><a href="https://www.maisonbookgirl.com/" target="_blank" class="btn_Blk">公式サイト</a></p>
     </section>
     
 </article>

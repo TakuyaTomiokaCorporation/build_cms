@@ -102,10 +102,11 @@ Route::get('/pnk_reservation/thanks', 'UserRegisterController@getPnkThanks');
 | set routes of Inquries bellow.
 |############################
 */
+/*
 Route::get('/inquiry', 'ContactController@create')->name('inquiry');
 Route::patch('/inquriy/confirm', 'ContactController@confirm')->name('inquiry.confirm');
 Route::post('/inquriy/thanks', 'ContactController@sent')->name('inquiry.sent');
-
+*/
 
 
 

@@ -33,6 +33,7 @@ class Contact extends Mailable
 
         // dd($this);
         return $this->subject('【AVIOTホームページよりお問い合わせがあります。】'.$this->contact_sent['category'])
+                    // ->from('info@v-trade.co.jp')
                     ->view('mails.contact'); 
     }
 }

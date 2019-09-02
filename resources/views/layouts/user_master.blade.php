@@ -121,6 +121,8 @@
                     <li><a href="{{ route('support') }}">カスタマーサポート</a></li>
                     <li><a href="{{ route('support') }}#QA">よくある質問</a></li>
                     <li><a href="https://v-trade.co.jp/contact_individual/">お問い合わせ</a></li>
+                </ul>
+                <ul>
                     <li><a href="{{ route('product_regiser') }}">製品保証</a></li>
                     <li><a href="{{ route('compensation') }}">交換保障</a></li>
                     <li><a href="{{ route('manual') }}">説明書<span class="ifpc">ダウンロード</span></a></li>

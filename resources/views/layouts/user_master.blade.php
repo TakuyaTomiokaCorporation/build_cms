@@ -87,7 +87,7 @@
             <ul class='links'>
                 <li><a href='{{ route('about') }}'>AVIOTとは</a></li>
                 <li><a href='{{ route('product.show') }}'>製品一覧</a></li>
-                <li><a href='{{ route('artists.show') }}'>インタビュー動画</a></li>
+                <li><a href='{{ route('artists.show') }}'>アーティストボイス</a></li>
                 <li><a href='{{ route('shoplist') }}'>取扱店舗</a></li>
                 <li><a href='{{ route('support') }}'>製品サポート</a></li>
             </ul>
@@ -107,9 +107,9 @@
                 <ul>
                     <li><a href="{{ route('about') }}">AVIOTについて</a></li>
                     <li><a href="{{ route('news.show') }}">最新情報</a></li>
-                    <li><a href="{{ route('product_news.list') }}">製品に関するお知らせ</a></li>
-                    <li><a href="{{ route('artists.show') }}">アーティスト動画</a></li>
-                    <li><a href="{{ route('movies') }}">動画レビュー</a></li>
+                    <li><a href="{{ route('product_news.list') }}">お知らせ</a></li>
+                    <li><a href="{{ route('artists.show') }}">アーティストボイス</a></li>
+                    <li><a href="{{ route('movies') }}">レビュー動画</a></li>
                 </ul>
                 <ul>
                     <li><a href="{{ route('product.show') }}">製品一覧</a></li>

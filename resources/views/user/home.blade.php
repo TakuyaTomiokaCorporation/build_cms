@@ -42,7 +42,7 @@
     </div><!--area_news-->
     </article>     
     <article class="notice w1020 w98 m_auto">
-        <h3 class="mt20 mb10">製品に関するお知らせ</h3>
+        <h3 class="mt20 mb10">お知らせ</h3>
         <div>
             <dl>
                 @foreach ($news_products as $news_product)

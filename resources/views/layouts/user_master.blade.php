@@ -102,7 +102,7 @@
     </main>
 
     <footer>
-            <article class="w1020 w98 m_auto">
+            <article class="w1020 w98 m_auto ifpc">
             <div class="foot_menu">
                 <ul>
                     <li><a href="{{ route('about') }}">AVIOTについて</a></li>

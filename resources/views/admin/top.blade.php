@@ -35,8 +35,8 @@
                     <div class="card img-thumbnail">
                         <img class="card-img-top" src="{{ asset('images/admin/information.jpg') }}" alt="お知らせの画像">
                         <div class="card-body px-2 py-3">
-                        <h5 class="card-title">製品に関するお知らせ</h5>
-                        <p class="card-text">製品に関するお知らせはこちらから行えます。</p>
+                        <h5 class="card-title">お知らせ</h5>
+                        <p class="card-text">お知らせの投稿はこちらから行えます。</p>
                         <p class="mb-0"><a href="{{ route('product_news')}}" class="btn btn-primary stretched-link">表示</a></p>
                         </div>
                     </div>

@@ -5,7 +5,7 @@
         <h1 class="text-center jumbotron">ゴミ箱</h1>
     </div>
     <div class="container">
-        <a href="{{ route('product_news')}}" class="btn btn-primary">製品に関するお知らせのトップページに戻る</a> 
+        <a href="{{ route('product_news')}}" class="btn btn-primary">お知らせのトップに戻る</a> 
     </div>  
     <div class="container mt-5">
         <table class="table table-striped table-hover">

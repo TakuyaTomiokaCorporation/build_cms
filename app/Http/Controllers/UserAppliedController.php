@@ -33,7 +33,7 @@ class UserAppliedController extends Controller
     {
         $submit = $request->all();
 
-        if ($request->action ==='修正する') 
+        if ($request->action ==='修正') 
         {
             return redirect()->route('form.top')->withInput($submit);
         }

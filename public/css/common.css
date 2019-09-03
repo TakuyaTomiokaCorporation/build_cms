@@ -258,6 +258,23 @@ button {
   z-index: 1;
 }
 
+.btn_conf {
+  display: inline-block;
+  width: 260px;
+  height:60px;
+  text-align: center;
+  background-color: #37DC93;
+  font-size: 16px;
+  line-height: 58px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #37DC93;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
 /* --------------
  common
 -------------- */

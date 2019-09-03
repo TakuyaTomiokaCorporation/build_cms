@@ -23,6 +23,7 @@ class CreateAppliedForEvents extends Migration
             $table->text('purchased_product')->nullable();
             $table->text('purchased_from')->nullable();
             $table->text('exception')->nullable();
+            $table->timestamps();
         });
     }
 

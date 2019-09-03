@@ -81,6 +81,29 @@ footer img {
 		font-size: 14px;
 	}
 }
+
+/* error messasges */
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
 		
 </style>
 
@@ -111,6 +134,11 @@ footer img {
 				<dl class="">
 					<dt class="">メールアドレス</dt>
 					<dd class="mt10"><input type="text" name="email" size="40" value="{{ old('email') }}"></dd>
+					@error('email')
+						<div class="alert mt10">
+							{{ $message }}
+						</div>
+					@enderror
 				</dl>
 
 				<h4 class="mt40">サービス向上のため是非アンケートにご協力ください　<small>※必須ではありません</small></h4>

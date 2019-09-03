@@ -33,7 +33,7 @@ class UserController extends Controller
                     ['release', '=', '1'],
                     ['book_date', '<=', $now],
                 ])->whereNull('deleted_at')
-                ->orderBy('book_date', 'desc')->take(9)->get();
+                ->orderBy('book_date', 'desc')->take(6)->get();
 
         $news_products = \DB::table('news_products')->where([
                             ['release', '=', '1'],
@@ -65,7 +65,7 @@ class UserController extends Controller
                 ->where('release', '=', '1')
                 ->where('book_date', '<=', $now)
                 ->whereNull('deleted_at')
-                ->orderBy('book_date', 'desc')->paginate(9);
+                ->orderBy('book_date', 'desc')->paginate(6);
 
         return view('user.news', compact('posts'));
     }

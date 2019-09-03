@@ -172,7 +172,6 @@ footer img {
 							<option value="SNS" {{ old('recognition_from') == "SNS" ? 'selected' : '' }}>SNS</option>
 							<option value="You Tube" {{ old('recognition_from') == "YouTube" ? 'selected' : '' }}>YouTube</option>
 							<option value="アーティスト" {{ old('recognition_from') == "アーティスト" ? 'selected' : '' }}>アーティスト</option>
-							<option value="アイドル" {{ old('recognition_from') == "アイドル" ? 'selected' : '' }}>アイドル</option>
 							<option value="その他" {{ old('recognition_from') == "その他" ? 'selected' : '' }}>その他</option>
 						</select>
 					</dd>

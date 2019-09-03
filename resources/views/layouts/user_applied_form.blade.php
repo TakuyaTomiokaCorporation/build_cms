@@ -91,7 +91,7 @@
     {{-- 個別のjavaScript読み込み --}}
     @yield('javascript-footer')
 
-<footer class="alc mb20">
+<footer class="alc pb10 pt10">
     <a href="https://aviot.jp"><img src="{{ asset('images/user/logo_w.png') }}" alt="AVIOT"></a>
 </footer>
 </body>

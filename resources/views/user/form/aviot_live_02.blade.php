@@ -9,7 +9,7 @@
 <style type="text/css">
 
 #event #container ::selection {
-	background: #ffff01;
+    background: #72bbff;
 }
 
 #event #container { margin-top: 0px;}
@@ -17,13 +17,17 @@
 	font-size: 2rem;
 	padding: 12px 0;
 	color: #fff;
-	background: #000;
-	}
+	background: -moz-linear-gradient(top left, #221e4a, #0b59a0);
+	background: -webkit-linear-gradient(top left, #221e4a, #0b59a0); 
+	background: linear-gradient(to bottom right, #221e4a, #0b59a0);
+ }
 #event h4 { 
 	font-size: 1.4rem;
 	padding: 12px 4px;
-	background: #ffff01;
-	color: #000;
+	background: -moz-linear-gradient(top left, #221e4a, #0b59a0);
+	background: -webkit-linear-gradient(top left, #221e4a, #0b59a0); 
+	background: linear-gradient(to bottom right, #221e4a, #0b59a0);
+	color: #fff;
 }
 
 .date { font-size: 1.5rem; }
@@ -39,7 +43,7 @@
 #event dl dt {
 	padding: 8px 2px;
 	font-weight: bold;
-	background: #000;
+	background: #0965a9;
 	color: #fff;
 }
 
@@ -58,7 +62,8 @@ input[type="number"] {
 }
 
 input[type="submit"] {
-	background: #ffff01;
+	background: #193064;
+	color: #fff;
 	padding: 18px 100px;
 	font-weight: bold;
 	font-size: 1.2rem;

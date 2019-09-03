@@ -9,7 +9,6 @@ class AppliedForEvents extends Model
     protected $table = 'applied_for_events';
 
     protected $fillable = [
-        'user_name',
         'email',
         'sex',
         'Age',

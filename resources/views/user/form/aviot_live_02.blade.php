@@ -105,10 +105,12 @@ footer img {
 	</div>
 
 		<section>
-			<form>
+			<form action="{{ route('form.confirm') }}" method="POST">
+			@csrf
+			@method('PATCH')
 				<dl class="">
 					<dt class="">メールアドレス</dt>
-					<dd class="mt10"><input type="text" name="email" size="40"></dd>
+					<dd class="mt10"><input type="text" name="email" size="40" value="{{ old('email') }}"></dd>
 				</dl>
 
 				<h4 class="mt40">サービス向上のため是非アンケートにご協力ください　<small>※必須ではありません</small></h4>
@@ -116,54 +118,55 @@ footer img {
 					<dt>性別</dt>
 					<dd class="mt10">
 						<select name="sex">
-							<option>---</option>
-							<option>男性</option>
-							<option>女性</option>
-							<option>その他</option>
+							<option value="">---</option>
+							<option value="男性" {{ old('sex') == "男性" ? 'selected' : '' }}>男性</option>
+							<option value="女性" {{ old('sex') == "女性" ? 'selected' : '' }}>女性</option>
+							<option value="その他" {{ old('sex') == "その他" ? 'selected' : '' }}>その他</option>
 						</select>
 					</dd>
 				</dl>
 
 				<dl class="mb40">
 					<dt>年齢</dt>
-					<dd class="mt10"><input type="number" name="age" min="12" max="100"></dd>
+					<dd class="mt10"><input type="number" name="age" min="12" max="100" value="{{ old('age') }}"></dd>
 				</dl>
 
 				<dl class="mb40">
 					<dt>AVIOTの製品を知ったきっかけは何ですか？</dt>
 					<dd class="mt10">
 						<select name="recognition_from">
-							<option value="-----">-----</option>
-							<option value="友人・知人">友人・知人</option>
-							<option value="インターネットバナー">インターネットバナー</option>
-							<option value="広告">広告</option>
-							<option value="イベント">イベント</option>
-							<option value="SNS">SNS</option>
-							<option value="You Tube">You Tube</option>
-							<option value="アーティスト">アーティスト</option>
-							<option value="アイドル">アイドル</option>
-							<option value="その他">その他</option>
+							<option value="">-----</option>
+							<option value="友人・知人" {{ old('recognition_from') == "友人・知人" ? 'selected' : '' }}>友人・知人</option>
+							<option value="インターネットバナー" {{ old('recognition_from') == "インターネットバナー" ? 'selected' : '' }}>インターネットバナー</option>
+							<option value="広告" {{ old('recognition_from') == "広告" ? 'selected' : '' }}>広告</option>
+							<option value="イベント" {{ old('recognition_from') == "イベント" ? 'selected' : '' }}>イベント</option>
+							<option value="SNS" {{ old('recognition_from') == "SNS" ? 'selected' : '' }}>SNS</option>
+							<option value="You Tube" {{ old('recognition_from') == "YouTube" ? 'selected' : '' }}>YouTube</option>
+							<option value="アーティスト" {{ old('recognition_from') == "アーティスト" ? 'selected' : '' }}>アーティスト</option>
+							<option value="アイドル" {{ old('recognition_from') == "アイドル" ? 'selected' : '' }}>アイドル</option>
+							<option value="その他" {{ old('recognition_from') == "その他" ? 'selected' : '' }}>その他</option>
 						</select>
 					</dd>
 				</dl>
 
 				<dl class="mb40">
-					<dt>最近ご購入いただいた製品はどちらですか？</dt>
+					<dt>最近ご購入いただいたAVIOTの製品はどちらですか？</dt>
 					<dd class="mt10">
 						<select name="purchased_product">
-							<option value="-----">-----</option>
-							<option value="TE-BD21f-pnk">TE-BD21f-pnk</option>
-							<option value="WE-BD21d">WE-BD21d</option>
-							<option value="TE-D01g">TE-D01g</option>
-							<option value="TE-D01d">TE-D01d</option>
-							<option value="TE-D01a">TE-D01a</option>
-							<option value="TE-D01b">TE-D01b</option>
-							<option value="TE-D01c">TE-D01c</option>
-							<option value="TE-D01d-kzn">TE-D01d-kzn</option>
-							<option value="TE-D01e">TE-D01e</option>
-							<option value="TE-D01h">TE-D01h</option>
-							<option value="WE-D01c">WE-D01c</option>
-							<option value="WE-D01b">WE-D01b</option>
+							<option value="">-----</option>
+							<option value="TE-BD21f-pnk" {{ old('purchased_product') == "TE-BD21f-pnk" ? 'selected' : '' }}>TE-BD21f-pnk</option>
+							<option value="WE-BD21d" {{ old('purchased_product') == "WE-BD21d" ? 'selected' : '' }}>WE-BD21d</option>
+							<option value="TE-D01g" {{ old('purchased_product') == "TE-D01g" ? 'selected' : '' }}>TE-D01g</option>
+							<option value="TE-D01d" {{ old('purchased_product') == "TE-D01d" ? 'selected' : '' }}>TE-D01d</option>
+							<option value="TE-D01a" {{ old('purchased_product') == "TE-D01a" ? 'selected' : '' }}>TE-D01a</option>
+							<option value="TE-D01b" {{ old('purchased_product') == "TE-D01b" ? 'selected' : '' }}>TE-D01b</option>
+							<option value="TE-D01c" {{ old('purchased_product') == "TE-D01c" ? 'selected' : '' }}>TE-D01c</option>
+							<option value="TE-D01d-kzn" {{ old('purchased_product') == "TE-D01d-kzn" ? 'selected' : '' }}>TE-D01d-kzn</option>
+							<option value="TE-D01e" {{ old('purchased_product') == "TE-D01e" ? 'selected' : '' }}>TE-D01e</option>
+							<option value="TE-D01h" {{ old('purchased_product') == "TE-D01h" ? 'selected' : '' }}>TE-D01h</option>
+							<option value="WE-D01c" {{ old('purchased_product') == "WE-D01c" ? 'selected' : '' }}>WE-D01c</option>
+							<option value="WE-D01b" {{ old('purchased_product') == "WE-D01b" ? 'selected' : '' }}>WE-D01b</option>
+							<option value="WE-D01b" {{ old('purchased_product') == "その他" ? 'selected' : '' }}>その他</option>
 						</select>
 					</dd>
 				</dl>
@@ -171,21 +174,21 @@ footer img {
 				<dl class="mb40">
 					<dt class="mt10">上記製品ご購入のさい他にご検討されていたものはありますか？または、ご使用されていた製品はありますか？</dt>
 					<dd class="mt10">
-						<select name="purchased_product">
-							<option value="-----">-----</option>
-							<option value="特にない">特にない</option>
-							<option value="TE-BD21f-pnk">TE-BD21f-pnk</option>
-							<option value="WE-BD21d">WE-BD21d</option>
-							<option value="TE-D01g">TE-D01g</option>
-							<option value="TE-D01d">TE-D01d</option>
-							<option value="TE-D01a">TE-D01a</option>
-							<option value="TE-D01b">TE-D01b</option>
-							<option value="TE-D01c">TE-D01c</option>
-							<option value="TE-D01d-kzn">TE-D01d-kzn</option>
-							<option value="TE-D01e">TE-D01e</option>
-							<option value="TE-D01h">TE-D01h</option>
-							<option value="WE-D01c">WE-D01c</option>
-							<option value="WE-D01b">WE-D01b</option>
+						<select name="considered_product">
+							<option value="">-----</option>
+							<option value="特にない" {{ old('considered_product') == "特にない" ? 'selected' : '' }}>特にない</option>
+							<option value="TE-BD21f-pnk" {{ old('considered_product') == "TE-BD21f-pnk" ? 'selected' : '' }}>TE-BD21f-pnk</option>
+							<option value="WE-BD21d" {{ old('considered_product') == "WE-BD21d" ? 'selected' : '' }}>WE-BD21d</option>
+							<option value="TE-D01g" {{ old('considered_product') == "TE-D01g" ? 'selected' : '' }}>TE-D01g</option>
+							<option value="TE-D01d" {{ old('considered_product') == "TE-D01d" ? 'selected' : '' }}>TE-D01d</option>
+							<option value="TE-D01a" {{ old('considered_product') == "TE-D01a" ? 'selected' : '' }}>TE-D01a</option>
+							<option value="TE-D01b" {{ old('considered_product') == "TE-D01b" ? 'selected' : '' }}>TE-D01b</option>
+							<option value="TE-D01c" {{ old('considered_product') == "TE-D01c" ? 'selected' : '' }}>TE-D01c</option>
+							<option value="TE-D01d-kzn" {{ old('considered_product') == "TE-D01d-kzn" ? 'selected' : '' }}>TE-D01d-kzn</option>
+							<option value="TE-D01e" {{ old('considered_product') == "TE-D01e" ? 'selected' : '' }}>TE-D01e</option>
+							<option value="TE-D01h" {{ old('considered_product') == "TE-D01h" ? 'selected' : '' }}>TE-D01h</option>
+							<option value="WE-D01c" {{ old('considered_product') == "WE-D01c" ? 'selected' : '' }}>WE-D01c</option>
+							<option value="WE-D01b" {{ old('considered_product') == "WE-D01b" ? 'selected' : '' }}>WE-D01b</option>
 						</select>
 					</dd>
 				</dl>
@@ -194,12 +197,12 @@ footer img {
 					<dt>上記製品のご購入はどちらでされましたか？</dt>
 					<dd class="mt10">
 						<select name="purchased_from">
-							<option value="-----">-----</option>
-							<option value="AVIOT公式ストア">AVIOT公式ストア</option>
-							<option value="家電量販店（インターネット通販）">家電量販店（インターネット通販）</option>
-							<option value="家電量販店（実店舗）">家電量販店（実店舗）</option>
-							<option value="イヤホン専門店（インターネット通販）">イヤホン専門店（インターネット通販）</option>
-							<option value="その他">その他</option>
+							<option value="">-----</option>
+							<option value="AVIOT公式ストア" {{ old('purchased_from') == "AVIOT公式ストア" ? 'selected' : '' }}>AVIOT公式ストア</option>
+							<option value="家電量販店（インターネット通販）{{ old('purchased_from') == "家電量販店（インターネット通販）" ? 'selected' : '' }}">家電量販店（インターネット通販）</option>
+							<option value="家電量販店（実店舗）{{ old('purchased_from') == "家電量販店（実店舗）" ? 'selected' : '' }}">家電量販店（実店舗）</option>
+							<option value="イヤホン専門店（インターネット通販）{{ old('purchased_from') == "イヤホン専門店（インターネット通販）" ? 'selected' : '' }}">イヤホン専門店（インターネット通販）</option>
+							<option value="その他" {{ old('purchased_from') == "その他" ? 'selected' : '' }}>その他</option>
 						</select>
 					</dd>
 				</dl>

@@ -42,7 +42,7 @@
 <div id="container" class="both bg-white">
 <div id="" class="main w1020 w98 m_auto" role="main">
     
-    <h2 class="pt20 border_b mb20">製品に関するお知らせ</h2>
+    <h2 class="pt20 border_b mb20">お知らせ</h2>
     @foreach ($news_products as $news_product)
     <section id="{{ $news_product->id }}" class="news_TL m_auto mb40 id_top">
         <div class="news_title mb20">

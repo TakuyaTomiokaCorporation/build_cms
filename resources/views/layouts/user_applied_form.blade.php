@@ -92,7 +92,7 @@
     @yield('javascript-footer')
 
 <footer class="alc pb10 pt10">
-    <a href="https://aviot.jp"><img src="{{ asset('images/user/logo_w.png') }}" alt="AVIOT"></a>
+    <a href="{{ route('top') }}"><img src="{{ asset('images/user/logo_w.png') }}" alt="AVIOT"></a>
 </footer>
 </body>
 </html>

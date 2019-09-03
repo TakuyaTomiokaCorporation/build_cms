@@ -55,6 +55,10 @@
 }
 }
 
+.green{
+    color: #37dc93;
+}
+
 @media screen and (max-width: 640px) {
 
 }
@@ -87,6 +91,19 @@
             <dd class="mt10">イープラス(<a href="https://eplus.jp/sf/detail/3079740001-P0030001" target="_blank">https://eplus.jp/sf/detail/3079740001-P0030001</a>)　9月4日(水)10:00から発売開始。</dd>
         </dl>
     </section>
+
+    @if ($now > $open)
+        <h3 class="alc mb20 mt20">AVIOT製品登録者を抽選で無料招待！</h3>
+        <div class="text">
+            <p class="date alc bold mb20">応募期間：2019/09/03 19:00 ～ 2019/09/05 18:00</p>
+            <p>製品登録をお済のお客様の中から抽選で250名様をAVIOT LIVE：02に招待いたします！</p>
+            <p>メールアドレスを入力して送信するだけで応募完了！</p>
+            <p>下記よりみなさまのご応募お待ちしています！</p>
+            <a href="https://aviot.jp/aviot_live_02" target="_blank" class="green">https://aviot.jp/aviot_live_02</a>
+            <p class="mt20">※当選発表は2019年9月9日以降に当選された方のみメールにて順次お送りいたします。</p>
+            <p class="mb10 txtRed">※会場へのご入場は一般チケット購入者の方を優先とさせていただきますので、予めご了承ください。</p>
+        </div>
+    @endif
 
     <section class="">
         <h3 class="alc mt40">出演アーテスト</h3>

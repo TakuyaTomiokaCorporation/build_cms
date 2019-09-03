@@ -117,14 +117,14 @@ footer img {
 <div id="" class="main" role="main">
 <article class="w1020 w98 m_auto">
 	<h2 class="alc"><img src="{{ asset('images/forms/aviotlive02/top_img.jpg') }}"></h2>
-	<h3 class="alc mb20">AVIOT LIVE：02無料招待！</h3>
+	<h3 class="alc mb20">AVIOT製品登録者を抽選で無料招待！</h3>
 	<div class="text">
-		<p class="date alc bold mb20">応募期間：2019/09/00 ～ 2019/09/00</p>
-		<p>製品登録をお済のお客様の中から抽選で???名様をAVIOT LIVE：02に招待いたします！</p>
+		<p class="date alc bold mb20">応募期間：2019/09/03 19:00 ～ 2019/09/05 18:00</p>
+		<p>製品登録をお済のお客様の中から抽選で250名様をAVIOT LIVE：02に招待いたします！</p>
 		<p>メールアドレスを入力して送信するだけで応募完了！</p>
 		<p>みなさまのご応募お待ちしています！</p>
-		<p class="mt20">※ご応募は製品登録で使用しているメールアドレスでお願いいたします。</p>
-		<p class="mb20">※発表は2019年9月00日以降に当選された方のみメールにて順次お送りいたします。</p>
+		<p class="mt20">※当選発表は2019年9月9日以降に当選された方のみメールにて順次お送りいたします。</p>
+		<p class="mb10 txtRed">※会場へのご入場は一般チケット購入者の方を優先とさせていただきますので、予めご了承ください。</p>
 	</div>
 
 		<section>
@@ -132,7 +132,7 @@ footer img {
 			@csrf
 			@method('PATCH')
 				<dl class="">
-					<dt class="">メールアドレス</dt>
+					<dt class="">製品登録時のメールアドレス</dt>
 					<dd class="mt10"><input type="text" name="email" size="40" value="{{ old('email') }}"></dd>
 					@error('email')
 						<div class="alert mt10">
@@ -140,6 +140,7 @@ footer img {
 						</div>
 					@enderror
 				</dl>
+				<p class="mt10 txtRed">※ご応募は製品登録で使用しているメールアドレスでお願いいたします。</p>
 
 				<h4 class="mt40">サービス向上のため是非アンケートにご協力ください　<small>※必須ではありません</small></h4>
 				<dl class="mb40">

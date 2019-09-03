@@ -7,6 +7,14 @@
 @section('css')
 
 <style type="text/css">
+
+#event{
+	height: 100vh;
+}
+
+#container{
+	margin-top: 10px;
+}
 section {
 	background: #f1f1f1;
 	padding: 20px 20px;

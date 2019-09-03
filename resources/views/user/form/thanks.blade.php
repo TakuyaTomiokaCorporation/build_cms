@@ -8,6 +8,12 @@
 
 <style type="text/css">
 
+
+#container{
+	margin-top: 10px;
+	height: 100vh;
+}
+
 footer img {
 	width: 10%;
 }
@@ -33,8 +39,12 @@ footer img {
 <article class="w1020 w98 m_auto">
 	<h2 class="pt20 mb20">ご応募ありがとうございました。</h2>
 	<p class="">送信いたしました。</p>
-	<p>当選はメールにてご連絡させていただきますので、しばらくお待ちください。</p>
+	<p>当選は9月9日以降にメールにてご連絡させていただきますので、しばらくお待ちください。</p>
 	<div class="mt40">
+		<p>AVIOT LIVE: 02参加アーティストのムービーも！</p>
+		<p class="mt10 alc"><a href="{{ route('artists.show') }}" target="_blank" class="btn_Blk">アーティストボイス</a></p>
+	</div>
+	<div class="mt20">
 		<p>AVIOT YouTubeチャンネル『バリュトレ！』</p>
 		<p class="mt10 alc"><a href="https://www.youtube.com/channel/UChHmHYsAGNVZJEhN8yl7H9g" target="_blank" class="btn_Blk">チャンネルはこちら</a></p>
 	</div>

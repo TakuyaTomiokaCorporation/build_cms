@@ -79,7 +79,7 @@ footer img {
 				<input type="hidden" name="sex" value="{{ $sex }}">
 			@endisset 
 			@isset($age)
-				<input type="hidden" name="age" value="{{ $age }}">
+				<input type="hidden" name="age" value={{ $age }}>
 			@endisset
 			@isset($recognition_from)
 				<input type="hidden" name="recognition_from" value="{{ $recognition_from }}">

@@ -8,6 +8,9 @@
 
 <style type="text/css">
 
+footer img {
+	width: 10%;
+}
 
 @media screen and (min-width:1024px) {
 

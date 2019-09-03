@@ -121,8 +121,9 @@ Route::get('/events/aviot_live_02', 'EventsController@getAviotLive02');
 | set routes of Events below.
 |############################
 */
-Route::get('/aviot_live_02', 'UserAppliedController@createAviotLive02Form');
-
+Route::get('/aviot_live_02', 'UserAppliedController@createAviotLive02Form')->name('form.top');
+Route::patch('/aviot_live_02/confirm', 'UserAppliedController@confirmAviotLive02Form')->name('form.confirm');
+Route::post('/aviot_live_02/thanks', 'UserAppliedController@storeAviotLive02Form')->name('form.thanks');
 
 
 /*

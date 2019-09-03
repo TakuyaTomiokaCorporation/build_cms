@@ -3,7 +3,7 @@
 /*
 |############################
 |############################
-| set routes of USERS bellow.
+| set routes of USERS below.
 |############################
 |############################
 */
@@ -21,7 +21,7 @@ Route::get('/lp1', 'UserController@getLp')->name('lp1');
 
 /*
 |############################
-| set routes of Shops bellow.
+| set routes of Shops below.
 |############################
 */
 
@@ -29,14 +29,14 @@ Route::get('/shoplist',  'UserShopController')->name('shoplist');
 
 /*
 |############################
-| set routes of News bellow.
+| set routes of News below.
 |############################
 */
 Route::get('/news', 'UserController@getNewsInfo')->name('news.show');
 
 /*
 |############################
-| set routes of Product News bellow.
+| set routes of Product News below.
 |############################
 */
 Route::get('/product-news', 'UserController@showProductNewsList')->name('product_news.list');
@@ -44,7 +44,7 @@ Route::get('/product-news', 'UserController@showProductNewsList')->name('product
 
 /*
 |############################
-| set routes of Artists bellow.
+| set routes of Artists below.
 |############################
 */
 Route::get('/artists', 'UserController@getArtistsInfo')->name('artists.show');
@@ -61,7 +61,7 @@ Route::get('/artists/CY8ER', 'UserController@getCy8er')->name('cy8er.show');
 
 /*
 |############################
-| set routes of products bellow.
+| set routes of products below.
 |############################
 */
 Route::get('/product', 'UserController@getProductInfo')->name('product.show');
@@ -85,7 +85,7 @@ Route::get('/product/WE-D01c', 'UserController@getWed01c');
 
 /*
 |############################
-| set routes of Support bellow.
+| set routes of Support below.
 |############################
 */
 
@@ -99,7 +99,7 @@ Route::get('/pnk_reservation/thanks', 'UserRegisterController@getPnkThanks');
 
 /*
 |############################
-| set routes of Inquries bellow.
+| set routes of Inquries below.
 |############################
 */
 /*
@@ -110,21 +110,25 @@ Route::post('/inquriy/thanks', 'ContactController@sent')->name('inquiry.sent');
 
 /*
 |############################
-| set routes of Events bellow.
+| set routes of Events below.
 |############################
 */
 
 Route::get('/events/aviot_live_02', 'EventsController@getAviotLive02');
 
-
-
+/*
+|############################
+| set routes of Events below.
+|############################
+*/
+Route::get('/aviot_live_02', 'UserAppliedController@createAviotLive02Form');
 
 
 
 /*
 |############################
 |############################
-| set routes of ADMIN bellow.
+| set routes of ADMIN below.
 |############################
 |############################
 */

@@ -16,9 +16,12 @@
 }
 
 #event h3 {
-    font-size: 2.5em;
-    background-color: #fff100;
-    padding: 12px;
+	font-size: 2.5em;
+	color: #fff;
+	background: -moz-linear-gradient(top left, #221e4a, #0b59a0);
+	background: -webkit-linear-gradient(top left, #221e4a, #0b59a0); 
+	background: linear-gradient(to bottom right, #221e4a, #0b59a0);
+	padding: 12px;
 }
 
 #event h4 {

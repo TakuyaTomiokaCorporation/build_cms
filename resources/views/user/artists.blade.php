@@ -15,7 +15,7 @@
 <div id="container" class="both mb60">
 <div id="" class="main" role="main">
 <article class="w1020 w98 m_auto">
-    <h2 class="pt20 border_b mb20">アーティストインタビュー</h2>
+    <h2 class="pt20 border_b mb20">アーティストボイス</h2>
     <section class="">
         <div class="mt40">
             <h3 class="product_name">TE-BD21f-pnk<img src="{{ asset('images/artists/artistmovie_TE-BD21f-pnk.png') }}" alt="TE-BD21f-pnk"></h3>

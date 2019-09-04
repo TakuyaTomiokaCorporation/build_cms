@@ -10,11 +10,14 @@
     <div class="mv w1020 m_auto">
     <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href="{{ route('pnk_f.show') }}"><img src="{{ asset('images/user/pnk_youtubevisual.jpg') }}" alt=""></a></div>
-            <div class="swiper-slide"><a href="{{ route('gesu.show') }}"><img src="{{ asset('images/user/mv_01.gif') }}" alt=""></a></div>
-            <div class="swiper-slide"><a href="{{ route('pnk.show') }}"><img src="{{ asset('images/user/mv_02.png') }}" alt=""></a></div>
-            <div class="swiper-slide"><a href="{{ route('nakamura.show') }}"><img src="{{ asset('images/user/mv_03.png') }}" alt=""></a></div>
-            <div class="swiper-slide"><a href="{{ route('movies') }}"><img src="{{ asset('images/user/mv_04.png') }}" alt=""></a></div>
+            <div class="swiper-slide"><a href="{{ route('pnk_f.show') }}"><img src="{{ asset('images/user/mv_01.jpg') }}" alt=""></a></div>
+            <div class="swiper-slide"><a href="{{ route('gesu.show') }}"><img src="{{ asset('images/user/mv_02.gif') }}" alt=""></a></div>
+            <div class="swiper-slide"><a href="{{ route('pass.show') }}"><img src="{{ asset('images/user/mv_03.jpg') }}" alt=""></a></div>
+            <div class="swiper-slide"><a href="{{ route('wagamama.show') }}"><img src="{{ asset('images/user/mv_04.jpg') }}" alt=""></a></div>
+            <div class="swiper-slide"><a href="{{ route('cy8er.show') }}"><img src="{{ asset('images/user/mv_05.jpg') }}" alt=""></a></div>
+            <div class="swiper-slide"><a href="{{ route('yanakoto.show') }}"><img src="{{ asset('images/user/mv_06.jpg') }}" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=28Llr3ufuTw&t=6s" target="_blank"><img src="{{ asset('images/user/mv_07.jpg') }}" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=JymnbbtjOZE" target="_blank"><img src="{{ asset('images/user/mv_08.jpg') }}" alt=""></a></div>
         </div>
         <!-- Add Arrows -->
         {{-- <img src="./img/mv.png"> --}}

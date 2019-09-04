@@ -35,12 +35,12 @@
             <h3 class="product_name">TE-D01g<img src="{{ asset('images/artists/artistmovie_TE-D01g.png') }}" alt="TE-D01g"></h3>
             <div>
                 <ul class="flex">
-                    <!--<li class="artist_list">
-                        <a href="./CY8ER/">
+                    <li class="artist_list">
+                        <a href="{{ route('cy8er.show') }}">
                             <span class="artist_name">CY8ER</span>
-                            <img src="./img/CY8ER_mv.jpg">
+                            <img src="{{ asset('images/artists/CY8ER_mv.jpg') }}">
                         </a>
-                    </li>-->
+                    </li>
                     <li class="artist_list">
                         <a href="{{ route('yanakoto.show') }}">
                             <span class="artist_name">ヤなことそっとミュート</span>

@@ -29,7 +29,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="inner">
-        <h1 class="header__logo"><img src="{{ asset('lp/svg/logo.svg') }}" alt="AVIOT"></h1>
+        <h1 class="header__logo"><img src="{{ asset('lp/img/svg/logo.svg') }}" alt="AVIOT"></h1>
         <p class="header__btn">
           <a href="https://www.amazon.co.jp/AVIOT-TE-D01g-Bluetooth-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3-%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0/dp/B07R1Y2ZXJ">ご購入はこちら</a>
         </p>
@@ -213,7 +213,7 @@
           </figure>
           <div class="cv__contents cv__contents-02">
             <p class="cv__contents--title">日本の完全ワイヤレスイヤホン市場をリードする、<br>日本のブランド</p>
-            <p class="cv__contents--logo"><img src="{{ asset('lp/svg/logo.svg') }}" alt="AVIOT"></p>
+            <p class="cv__contents--logo"><img src="{{ asset('lp/img/svg/logo.svg') }}" alt="AVIOT"></p>
             <p class="cv__contents--lead">AVIOTが目指しているのは「日本の音」。</p>
           </div>
           <div class="cv__btn btn btn-metallic btn-shadow">
@@ -258,7 +258,7 @@
           <div class="analysis__contents">
             <h2 class="analysis__contents__title">言語の分析から考えられた<br class="for-sp">音響の世界</h2>
             <figure class="analysis__thumb for-sp">
-              <img src="{{ asset('lp/sp/analysis-thumb.jpg') }}">
+              <img src="{{ asset('lp/img/sp/analysis-thumb.jpg') }}">
             </figure>
             <p class="analysis__contents__text">「Disney」を「ディズニー」と発音できるじゃないですか。しかし、お年寄りのなかには「ディズニー」ではなく「デズニー」と発音する方もいらっしゃる。なぜかといえば、実際そのように聞こえているから。つまり、もともと日本人の耳は、母音節を中心とする日本語が聞き取りやすいようになっているのです。そこに着目して開発したのがAVIOTシリーズです。具体的には、日本人がもっとも聞き取りやすい周波数帯域に合わせたチューニングを徹底的に施しています。</p>
             <p class="analysis__contents__lead">日本語は母音節中心。<br class="for-sp">だから日本人向けの音がある。</p>
@@ -319,7 +319,7 @@
           </figure>
           <div class="cv__contents cv__contents-02">
             <p class="cv__contents--title">日本の完全ワイヤレスイヤホン市場をリードする、<br>日本のブランド</p>
-            <p class="cv__contents--logo"><img src="{{ asset('lp/svg/logo.svg') }}" alt="AVIOT"></p>
+            <p class="cv__contents--logo"><img src="{{ asset('lp/img/svg/logo.svg') }}" alt="AVIOT"></p>
             <p class="cv__contents--lead">AVIOTが目指しているのは「日本の音」。</p>
           </div>
           <div class="cv__btn btn btn-metallic btn-shadow">

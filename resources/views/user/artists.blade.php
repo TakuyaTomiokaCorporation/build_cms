@@ -1,6 +1,6 @@
 @extends('layouts.user_master')
 
-@section('title', 'アーティストインタビュー |')
+@section('title', 'アーティストボイス |')
 
 @section('description', 'アーティストによるインタビュー動画、AVIOT製品のレビュー、操作方法')
 
@@ -36,6 +36,27 @@
             <div>
                 <ul class="flex">
                     <li class="artist_list">
+                        <a href="{{ route('gesu.show') }}">
+                            <span class="artist_name">ゲスの極み乙女。</span>
+                            <img src="{{ asset('images/artists/gesu_mv.jpg') }}">
+                        </a>
+                    </li>
+                    <li class="artist_list">
+                        <a href="{{ route('wagamama.show') }}">
+                            <span class="artist_name">我儘ラキア</span>
+                            <img src="{{ asset('images/artists/wagamama_mv.jpg') }}">
+                        </a>
+                    </li>
+                    <li class="artist_list">
+                        <a href="{{ route('uijin.show') }}">
+                            <span class="artist_name">uijin</span>
+                            <img src="{{ asset('images/artists/uijin_mv.jpg') }}">
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="flex">
+                    <li class="artist_list">
                         <a href="{{ route('cy8er.show') }}">
                             <span class="artist_name">CY8ER</span>
                             <img src="{{ asset('images/artists/CY8ER_mv.jpg') }}">
@@ -48,26 +69,6 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="flex">
-                    <li class="artist_list">
-                        <a href="{{ route('uijin.show') }}">
-                            <span class="artist_name">uijin</span>
-                            <img src="{{ asset('images/artists/uijin_mv.jpg') }}">
-                        </a>
-                    </li>
-                    <li class="artist_list">
-                        <a href="{{ route('wagamama.show') }}">
-                            <span class="artist_name">我儘ラキア</span>
-                            <img src="{{ asset('images/artists/wagamama_mv.jpg') }}">
-                        </a>
-                    </li>
-                    <li class="artist_list">
-                        <a href="{{ route('gesu.show') }}">
-                            <span class="artist_name">ゲスの極み乙女。</span>
-                            <img src="{{ asset('images/artists/gesu_mv.jpg') }}">
-                        </a>
-                    </li>
-                </ul>
             </div>
         </div>
 
@@ -76,26 +77,26 @@
             <div>
                 <ul class="flex">
                     <li class="artist_list">
+                        <a href="{{ route('pnk.show') }}">
+                            <span class="artist_name">凛として時雨ドラマー<br>ピエール中野</span>
+                            <img src="{{ asset('images/artists/pnk_mv.jpg') }}">
+                        </a>
+                    </li>
+                    <li class="artist_list">
                         <a href="{{ route('pass.show') }}">
                             <span class="artist_name">PassCode</span>
                             <img src="{{ asset('images/artists/passcode_mv.jpg') }}">
                         </a>
                     </li>
-                </ul>
-                
-                <ul class="flex">
                     <li class="artist_list">
                         <a href="{{ route('maison.show') }}">
                             <span class="artist_name">Maison book girl</span>
                             <img src="{{ asset('images/artists/maisonbookgirl_mv.jpg') }}">
                         </a>
                     </li>
-                    <li class="artist_list">
-                        <a href="{{ route('pnk.show') }}">
-                            <span class="artist_name">凛として時雨ドラマー<br>ピエール中野</span>
-                            <img src="{{ asset('images/artists/pnk_mv.jpg') }}">
-                        </a>
-                    </li>
+                </ul>
+                
+                <ul class="flex">
                     <li class="artist_list">
                         <a href="{{ route('nakamura.show') }}">
                             <span class="artist_name">声優 中村繪里子</span>

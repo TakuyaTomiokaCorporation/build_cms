@@ -53,11 +53,15 @@
             <input type="hidden" name="state" value="{{ $state }}">
             <input type="hidden" name="city" value="{{ $city }}">
             <input type="hidden" name="street" value="{{ $street }}">
+            @isset($phone)
             <input type="hidden" name="phone" value="{{ $phone }}">
+            @endisset
             <input type="hidden" name="product" value="{{ $product }}">
             <input type="hidden" name="email" value="{{ $email }}">
             <input type="hidden" name="color" value="{{ $color }}">
+            @isset($purchase_date)
             <input type="hidden" name="purchase_date" value="{{ $purchase_date }}">
+            @endisset
             <input type="hidden" name="shop_miraporta" value="{{ $shop_miraporta }}">
             <input type="hidden" name="shop_other" value="{{ $shop_other }}">
             <input type="hidden" name="category" value="{{ $category }}">

@@ -91,8 +91,8 @@ Route::get('/product/WE-D01c', 'UserController@getWed01c');
 
 Route::get('/support', 'UserRegisterController@getSupport')->name('support');
 Route::get('/support/registration', 'UserRegisterController@getProductRegistration')->name('product_regiser');
-Route::post('/support/registration/confirm', 'UserRegisterController@getConfirm')->name('product_regiser.confirm');
-Route::get('/support/registration/thanks', 'UserRegisterController@getProductThanks')->name('product_register.thanks');
+Route::patch('/support/registration/confirm', 'UserRegisterController@getConfirm')->name('product_regiser.confirm');
+Route::post('/support/registration/thanks', 'UserRegisterController@getProductThanks')->name('product_register.thanks');
 Route::get('/pnk_reservation', 'UserController@getPnkReservation');
 Route::get('/pnk_reservation/thanks', 'UserRegisterController@getPnkThanks');
 
@@ -122,8 +122,8 @@ Route::get('/events/aviot_live_02', 'EventsController@getAviotLive02');
 |############################
 */
 Route::get('/aviot_live_02', 'UserAppliedController@createAviotLive02Form')->name('form.top');
-Route::patch('/aviot_live_02/confirm', 'UserAppliedController@confirmAviotLive02Form')->name('form.confirm');
-Route::post('/aviot_live_02/thanks', 'UserAppliedController@storeAviotLive02Form')->name('form.thanks');
+// Route::patch('/aviot_live_02/confirm', 'UserAppliedController@confirmAviotLive02Form')->name('form.confirm');
+// Route::post('/aviot_live_02/thanks', 'UserAppliedController@storeAviotLive02Form')->name('form.thanks');
 
 
 /*

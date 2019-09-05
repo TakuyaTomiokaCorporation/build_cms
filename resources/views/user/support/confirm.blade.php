@@ -26,8 +26,35 @@
     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
     <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'>
     <input type=hidden name="oid" value="00D6F000002Kz08">
-    <input type=hidden name="retURL" value="{{ route('product_register.thanks') }}">
+    <input type=hidden name="retURL" value="aviot.jp/support/registration/thanks">
     <input type="hidden" name="00N6F00000WyN80" value="A" />
+    @csrf
+    @method('POST')
+
+    <input type="hidden" name="last_name" value="{{ $last_name }}">
+    <input type="hidden" name="first_name" value="{{ $first_name }}">
+    <input type="hidden" name="00N6F00000SUcr2" value="{{ $last_name_ja }}">
+    <input type="hidden" name="00N6F00000SUcr7" value="{{ $first_name_ja }}">
+    <input type="hidden" name="00N6F00000MmEeS" value="{{ $gender }}">
+    <input type="hidden" name="zip" value="{{ $zip }}">
+    <input type="hidden" name="state" value="{{ $state }}">
+    <input type="hidden" name="city" value="{{ $city }}">
+    <input type="hidden" name="N6F00000Mmgax" value="{{ $street }}">
+    <input type="hidden" name="phone" value="{{ $phone }}">
+    <input type="hidden" name="email" value="{{ $email }}">
+    <input type="hidden" name="00N6F00000O5eOx" value="{{ $product }}">
+    <input type="hidden" name="00N6F00000MmEeh" value="{{ $color }}">
+    <input type="hidden" name="00N6F00000MmEem" value="{{ $serial }}">
+    @isset($date)
+    <input type="hidden" name="00N6F00000MmEer" value="{{ $date }}">
+    @endisset
+    @isset($from_aviot)
+    <input type="hidden" name="00N6F00000MmEew" value="{{ $from_aviot }}">
+    @endisset
+    @isset($from_other)
+    <input type="hidden" name="00N6F00000MmEf1" value="{{ $from_other }}">
+    @endisset
+
     <article class="w1020 w98 m_auto mb60">
         <h2 class="pt20 border_b mb20">ご確認</h2>
         <p class="read">製品保証登録情報ににお間違いがないかご確認ください。</p>
@@ -35,45 +62,60 @@
         <div class="confirm_item bgGray mt20">
             <dl>
                 <dt>お名前</dt>
-                <dd></dd>
+                <dd>{{ $last_name.$first_name }}</dd>
     
                 <dt>フリガナ</dt>
-                <dd></dd>
+                <dd>{{ $last_name_ja.$first_name_ja }}</dd>
     
                 <dt>性別</dt>
-                <dd></dd>
+                <dd>{{ $gender }}</dd>
     
                 <dt>ご住所</dt>
-                <dd>123-4568</dd>
-                <dd>東京都</dd>
-                <dd>豊島区</dd>
-                <dd>池袋123-5-202</dd>
+                <dd>{{ $zip }}</dd>
+                <dd>{{ $state }}</dd>
+                <dd>{{ $city }}</dd>
+                <dd>{{ $street }}</dd>
                 
                 <dt>電話番号</dt>
-                <dd>090-444-4444</dd>
+                <dd>{{ $phone }}</dd>
                 
                 <dt>メールアドレス</dt>
-                <dd>qwer@ucou.co.jp</dd>
+                <dd>{{ $email }}</dd>
     
                 <dt>機種名</dt>
-                <dd>WE-BD21d</dd>
+                <dd>{{ $product }}</dd>
     
                 <dt>色</dt>
-                <dd>あお</dd>
+                <dd>{{ $color }}</dd>
     
                 <dt>シリアルナンバー</dt>
-                <dd>T48657882</dd>
+                <dd>{{ $serial }}</dd>
     
                 <dt>購入日</dt>
-                <dd>2019/07/16</dd>
+                <dd>
+                    @isset($date)
+                    {{ $date }}        
+                    @endisset
+                </dd>
     
                 <dt>購入店（miraporta）</dt>
-                <dd>なし</dd>
+                <dd>
+                    @isset($from_aviot)
+                    {{ $from_aviot }}        
+                    @endisset
+                </dd>
     
                 <dt>購入店（AVIOT公式ストア/miraporta以外）</dt>
-                <dd>ヤマダ電機</dd>
+                <dd>
+                    @isset($record)
+                    {{ $from_other }}
+                    @endisset
+                </dd>
             </dl>
+            <div class="g-recaptcha m_auto mt20" data-sitekey="6Ldnm68UAAAAAIHuRLurfVAazlDVc4aJw_f-CLG2"></div>
             <p class="alc mt20"><input type="submit" name="submit" class="btn_Blk"></p>
+        
+        </form>
         </div>
         
         

@@ -119,14 +119,16 @@ footer img {
 	<h2 class="alc"><img src="{{ asset('images/forms/aviotlive02/top_img.jpg') }}"></h2>
 	<h3 class="alc mb20">AVIOT製品登録者を抽選で無料招待！</h3>
 	<div class="text">
-		<p class="date alc bold mb20">応募期間：2019/09/03 19:00 ～ 2019/09/05 18:00</p>
+		<p class="date alc bold mb20">受付終了いたしました。</p>
+		{{--  
 		<p>製品登録をお済のお客様の中から抽選で250名様をAVIOT LIVE：02に招待いたします！</p>
 		<p>メールアドレスを入力して送信するだけで応募完了！</p>
 		<p>みなさまのご応募お待ちしています！</p>
 		<p class="mt20">※当選発表は2019年9月9日以降に当選された方のみメールにて順次お送りいたします。</p>
 		<p class="mb10 txtRed">※会場へのご入場は一般チケット購入者の方を優先とさせていただきますので、予めご了承ください。</p>
+		--}}
 	</div>
-
+		{{-- 
 		<section>
 			<form action="{{ route('form.confirm') }}" method="POST">
 			@csrf
@@ -239,7 +241,7 @@ footer img {
 			</form>
 			
 		</section>
-
+		--}}
 	
 </article>
 </div><!--/main-->

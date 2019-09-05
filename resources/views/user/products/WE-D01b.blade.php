@@ -77,19 +77,19 @@
         <p class="alc"><img src="{{ asset('images/products/WE-D01b/WE-D01b-0.jpg') }}"></p>
         <div class="flex_ImgR">
                 <div class="flex_ImgLogo"><img src="{{ asset('images/products/WE-D01b/codec16-9.jpg') }}"></div>
-                <div><p class="product_text">日本の音を知り尽くしたオーディオのエキスパート達が、クラシックから最新ヒット曲まで約1,000曲の楽曲を、延べ3,000時間以上も掛けてじっくりと聴き込み、チューニングをしました。</p>
-                <p  class="alc mt20"><a href="{{ route('codec') }}" class="btn_Blk">詳細をみる</a></p></div>
+                <div><p class="product_text">日本の音を知り尽くしたオーディオのエキスパート達が、クラシックから最新ヒット曲まで約1,000曲の楽曲を、延べ3,000時間以上も掛けてじっくりと聴き込み、チューニングをしました。</p></div>
         </div>
-    
+        <p  class="alc mt20"><a href="{{ route('codec') }}" class="btn_Blk">詳細をみる</a></p></div>
+
         <h3 class="mt80">汗、雨に強い</h3>
         <p class="alc"><img src="{{ asset('images/products/WE-D01b/WE-D01b-04.jpg') }}"></p>
         <div class="flex_ImgR">
                 <div class="flex_ImgLogo"><img src="{{ asset('images/products/WE-D01b/IPX716-9.png') }}"></div>
                 <div>
                     <p class="product_text">外装パーツのシーリングの強化し、IPX7相当の防滴性能の実現しました。ジムでのハードなワークアウトや、ランニングでの大量の汗も大丈夫。急な雨に降られても平気です。</p>
-                    <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
                 </div>
         </div>
+        <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
     
         <h3 class="mt80"></h3>
     
@@ -188,7 +188,7 @@
 <script>
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
-        slidesPerView: 4,
+        slidesPerView: 10,
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,

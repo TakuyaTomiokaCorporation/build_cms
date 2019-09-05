@@ -65,9 +65,9 @@
             <div class="flex_ImgR">
                 <div class="flex_ImgLogo"><img src="{{ asset('images/user/JAPANtuned_logo.png') }}"></div>
                 <div><p class="product_text">日本の音を知り尽くした、AVIOTのオーディオエキスパートが、日本市場の為だけに徹底的に音質を磨き上げました。東京ー大阪を往復したって、まだまだ余裕の最大9時間再生。無数の電波やノイズが飛び交う新幹線の車内だって、信号が途切れない高性能チップとAVIOT独自のアンテナ設計。いい音は、もう時と場所を選びません。</p>
-                    <p  class="alc mt20"><a href="{{ route('about') }}/#japansound" class="btn_Blk">詳細をみる</a></p>
                 </div>
             </div>
+            <p  class="alc mt20"><a href="{{ route('about') }}/#japansound" class="btn_Blk">詳細をみる</a></p>
     
         <h3 class="mt80">Qualcomm社最新SoC QCC3026を搭載</h3>
         <p class="alc"><img src="{{ asset('images/products/TE-D01h/TE-D01h-02.jpg') }}"></p>
@@ -96,9 +96,9 @@
                 <div class="flex_ImgLogo"><img src="{{ asset('images/user/codec_logo.jpg') }}"></div>
                 <div>
                     <p class="product_text">Bluetoothのコーデックは、一般的なSBC、AACの他、高音質・低遅延なaptXにも対応。より原音に近い再生が可能です。その上遅延が極めて少ないため、YouTubeなどの動画再生にも最適です。</p>
-                    <p  class="alc mt20"><a href="{{ route('codec') }}" class="btn_Blk">詳細をみる</a></p>
                 </div>
         </div>
+        <p  class="alc mt20"><a href="{{ route('codec') }}" class="btn_Blk">詳細をみる</a></p>
     
     
         <h3 class="mt80">シャワーも浴びても平気。スポーツ時も安心な防水性能。</h3>
@@ -107,9 +107,9 @@
                 <div class="flex_ImgLogo"><img src="{{ asset('images/user/IPX7_logo.png') }}"></div>
                 <div>
                     <p class="product_text">ハードなワークアウトな大量の汗や、イヤホンを着けたままシャワーを浴びても平気。外出時の急な雨にも安心です。 どんな時でも、オンガクを快適に楽しめます。</p>
-                    <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
                 </div>
         </div>
+        <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
     
         <h3 class="mt80">AVIOTならもっと安心</h3>
         <p class="alc"><img src="{{ asset('images/products/TE-D01h/TE-D01h-07.jpg') }}"></p>
@@ -220,7 +220,7 @@
 <script>
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
-        slidesPerView: 4,
+        slidesPerView: 10,
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,

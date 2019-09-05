@@ -72,9 +72,9 @@
         <div class="flex_ImgR">
             <div class="flex_ImgLogo"><img src="{{ asset('images/user/JAPAN-tuned.png') }}"></div>
             <div><p class="product_text">日本の音を知り尽くしたオーディオのエキスパート達が、クラシックから最新ヒット曲まで約1,000曲の楽曲じっくりと聴き込み、徹底したチューニングを行いました。誇張の少ないフラットでナチュラルな音調に整えた上で、サウンドバランスを低域がふくよかに響くよう調整。これにより小型でありながら大編成のクラシックから、最新ヒット曲まで、ワイドレンジで、心地良く響くようになりました。</p>
-                <p  class="alc mt20"><a href="{{ route('about') }}#japansound" class="btn_Blk">詳細をみる</a></p>
             </div>
         </div>
+        <p  class="alc mt20"><a href="{{ route('about') }}#japansound" class="btn_Blk">詳細をみる</a></p>
     </div>
     
         <h3 class="mt80">ライブの熱を伝える新設計ハウジング</h3>
@@ -96,9 +96,9 @@
             <div class="flex_ImgLogo"><img src="{{ asset('images/user/IPX7_logo.png') }}"></div>
             <div>
                 <p class="product_text">リモコンやハウジングケース部品のシーリングを強化して、IPX７レベルの防滴性能を実現しました。ジムでのハードなワークアウトやランニングでの汗や、急な雨でも平気です。</p>
-                <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
             </div>
     </div>
+    <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
 
     <h3 class="mt80"></h3>
 
@@ -203,7 +203,7 @@
 <script>
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
-        slidesPerView: 4,
+        slidesPerView: 10,
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,

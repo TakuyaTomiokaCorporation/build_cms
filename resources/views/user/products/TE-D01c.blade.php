@@ -72,9 +72,9 @@
         <div class="flex_ImgR">
             <div class="flex_ImgLogo"><img src="{{ asset('images/user/JAPANtuned_logo.png') }}"></div>
             <div><p class="product_text">日本の音を知り尽くしたオーディオのエキスパート達が、クラシックから最新のアニソンまで1,000を超える楽曲を、専用のサウンドルームでじっくりと試聴をし、徹底したチューニングを行いました。</p>
-                <p  class="alc mt20"><a href="{{ route('about') }}" class="btn_Blk">詳細をみる</a></p>
             </div>
         </div>
+        <p  class="alc mt20"><a href="{{ route('about') }}" class="btn_Blk">詳細をみる</a></p>
 
     <h3 class="mt80">全てをJapan Firstで考えました。</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01c/TE-D01c-02.jpg') }}"></p>
@@ -111,9 +111,9 @@
             <div class="flex_ImgLogo"><img src="{{ asset('images/user/IPX4_logo.png') }}"></div>
             <div>
                 <p class="product_text">イヤホン側面のボタンで、曲の再生、停止、ボリュームなどの基本操作が可能。また、マイクが搭載されているので、通話やSiri＆Googleアシスタントにも簡単にアクセスできます。</p>
-                <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
             </div>
     </div>
+    <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
 
 
     <!--製品仕様テーブル-->
@@ -200,7 +200,7 @@
 <script>
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
-        slidesPerView: 4,
+        slidesPerView: 10,
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,

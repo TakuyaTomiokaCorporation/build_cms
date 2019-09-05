@@ -74,19 +74,16 @@
         <div class="flex_ImgR">
             <div class="flex_ImgLogo"><img src="{{ asset('images/user/JAPANtuned_logo.png') }}"></div>
             <div><p class="product_text">日本の音を知り尽くしたオーディオの日本人エキスパート達が、クラシックから最新のアニソンまで1,000を超える楽曲を聴き込んで、日本市場専用の徹底したチューニングを施しました。</p>
-                <p  class="alc mt20"><a href="{{ route('about') }}#japansound" class="btn_Blk">詳細をみる</a></p>
             </div>
         </div>
+        <p  class="alc mt20"><a href="{{ route('about') }}#japansound" class="btn_Blk">詳細をみる</a></p>
 
     <h3 class="mt80">トゥルーワイヤレスイヤホン専用最新チップ搭載</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01b/TE-D01b-02.jpg') }}"></p>
-    <div class="flex_ImgR">
-            <div class="flex_ImgLogo"><img src="{{ asset('images/user/Qualcomm_logo.png') }}"></div>
             <div>
                 <p class="product_text">AVIOT TE-D01ｂには、Qualcomm社の最新チップ、QCC3026を搭載。ハイスピード＆ワイドレンジの高品位スピーカーユニットや"Japan Tuned"との相乗効果で、従来のトゥルーワイヤレスイヤホンの概念を覆す、圧倒的解像度と高音質を実現しました。</p>
                 <p  class="alc mt20"><a href="{{ route('qualcomm') }}" class="btn_Blk">詳細をみる</a></p>
             </div>
-    </div>
 
     <h3 class="mt80">高音質コーデックaptX対応</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01b/TE-D01b-03.jpg') }}"></p>
@@ -94,9 +91,9 @@
             <div class="flex_ImgLogo"><img src="{{ asset('images/user/codec_logo.jpg') }}"></div>
             <div>
                 <p class="product_text">Bluetoothのコーデックは、一般的なSBCの他、AACとaptXにも対応。aptXに対応するAndoroid端末との組み合わせで、SBCやAACのようにマスキングによる圧縮を行わない為、より情報量が多く、ワイドレンジな音を楽しめます。音の遅延も、SBCの約1/3（理論値）と少なめです。</p>
-                <p  class="alc mt20"><a href="{{ route('codec') }}" class="btn_Blk">詳細をみる</a></p>
             </div>
     </div>
+    <p  class="alc mt20"><a href="{{ route('codec') }}" class="btn_Blk">詳細をみる</a></p>
 
     <h3 class="mt80">最大9時間のスタミナ再生。</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01b/TE-D01b-04.jpg') }}"></p>
@@ -118,9 +115,9 @@
             <div class="flex_ImgLogo"><img src="{{ asset('images/user/IPX7_logo.png') }}"></div>
             <div>
                 <p class="product_text">外装パーツのシーリングの強化し、IPX7相当の防滴性能の実現しました。ジムでのハードなワークアウトや、ランニングでの大量の汗も大丈夫。急な雨に降られても平気です。</p>
-                <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
             </div>
     </div>
+    <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
 
     <h3 class="mt80">音切れに強い。</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01b/TE-D01b-07.jpg') }}"></p>
@@ -242,7 +239,7 @@
 <script>
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
-        slidesPerView: 4,
+        slidesPerView: 10,
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,

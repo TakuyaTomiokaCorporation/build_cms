@@ -86,9 +86,9 @@
         <div class="flex_ImgR">
             <div class="flex_ImgLogo"><img src="{{ asset('images/user/JAPANtuned_logo.png') }}"></div>
             <div><p class="product_text">日本の音を知り尽くしたオーディオのエキスパート達が、クラシックから最新のアニソンまで1,000を超える楽曲を、延べ2,000時間以上掛けて試聴し0.1dbレベルの徹底したチューニングにより、コストが許す限り一切の妥協なく完成させました。</p>
-                <p  class="alc mt20"><a href="{{ route('about') }}#japansound" class="btn_Blk">詳細をみる</a></p>
             </div>
         </div>
+        <p  class="alc mt20"><a href="{{ route('about') }}#japansound" class="btn_Blk">詳細をみる</a></p>
 
     <h3 class="mt80">高音質をギュッと詰め込んだ5gの軽量ボディ</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01a/TE-D01a-02.png') }}"></p>
@@ -214,7 +214,7 @@
 <script>
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
-        slidesPerView: 4,
+        slidesPerView: 10,
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,

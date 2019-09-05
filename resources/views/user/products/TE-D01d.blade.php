@@ -86,18 +86,15 @@
             <div class="flex_ImgR">
                 <div class="flex_ImgLogo"><img src="{{ asset('images/user/JAPANtuned_logo.png') }}"></div>
                 <div><p class="product_text">好評をいただいている先行モデルへ頂いたフィードバックを参考に、AVIOTが誇るオーディオエキスパートチームが、じっくりと時間を掛けてチューニングを行いました。低音域の一部を単純にブーストし、聴感を必要以上に刺激するような”トリック“を使わず、あくまでハイエンドオーディオと同じ思想で原音再生を目指し、フラットなトーンバランスをベースにして、更に真っ直ぐな日本の音を追求しました。</p>
-                <p  class="alc mt20"><a href="{{ route('about') }}#japansound" class="btn_Blk">詳細をみる</a></p></div>
             </div>
+            <p  class="alc mt20"><a href="{{ route('about') }}#japansound" class="btn_Blk">詳細をみる</a></p></div>
 
     <h3 class="mt80">最新の技術で、最高のオーディオ体験を</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01d/TE-D01d-02.jpg') }}"></p>
-    <div class="flex_ImgR">
-        <div class="flex_ImgLogo"><img src="{{ asset('images/user/Qualcomm_logo.png') }}"></div>
             <div>
                 <p class="product_text">従来型より圧倒的に高いDA（Digital to Analog) 変換性能を誇る、最新SoC QCC3026を採用。また、DSP（デジタルシグナルプロセッサ）を多用することなく、軽量且つハイスピードなグラフェン振動版を採用したスピーカードライバーの中から素性の良いものを厳選し、使用する事で、深く沈み込むような低音域と、音像定位に優れた美しいボーカルを奏でる中音域、伸びやかながら耳に刺さらない高音域を実現しました。</p>
                 <p  class="alc mt20"><a href="{{ route('qualcomm') }}" class="btn_Blk">詳細をみる</a></p>
             </div>
-    </div>
 
     <h3 class="mt80">合計100時間を超える再生時間</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01d/TE-D01d-03.jpg') }}"></p>
@@ -118,9 +115,9 @@
         <div class="flex_ImgLogo"><img src="{{ asset('images/user/codec_logo.jpg') }}"></div>
             <div>
                 <p class="product_text">Bluetoothのコーデックは、一般的なSBCの他、より高音質なAACとaptXにも対応。aptXに対応するAndroid端末との組み合わせで、より情報量が多く、ワイドレンジな音を楽しめます。音の遅延も、SBCの約1/3（理論値）と少なめです。また、音声信号の処理スピードを高め、SBCやAACコーデック時での低遅延化も実現。YouTubeなどの動画再生時もストレスなくお楽しみいただけます。</p>
-                <p  class="alc mt20"><a href="{{ route('codec') }}" class="btn_Blk">詳細をみる</a></p>
             </div>
     </div>
+    <p  class="alc mt20"><a href="{{ route('codec') }}" class="btn_Blk">詳細をみる</a></p>
 
     <h3 class="mt80">スポーツにも最適、快適な装着感</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01d/TE-D01d-06.jpg') }}"></p>
@@ -128,9 +125,9 @@
         <div class="flex_ImgLogo"><img src="{{ asset('images/user/IPX4_logo.png') }}"></div>
             <div>
                 <p class="product_text">エルゴノミックなデザインによりフィット感を高め、また付属のイヤーウイングと装着することで、スポーツなどの激しい動きにも対応します。ナノコーティングにより、汗や雨へのシールディングを強化することで、IPX4レベルの防滴性能を実現しました。</p>
-                <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
             </div>
     </div>
+    <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
 
     <h3 class="mt80">AVIOTなら、もっとつながる。</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01d/TE-D01d-07.jpg') }}"></p>
@@ -245,7 +242,7 @@
 <script>
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
-        slidesPerView: 4,
+        slidesPerView: 10,
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,

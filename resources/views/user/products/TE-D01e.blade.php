@@ -72,19 +72,16 @@
         <div class="flex_ImgR">
             <div class="flex_ImgLogo"><img src="{{ asset('images/user/JAPANtuned_logo.png') }}"></div>
             <div><p class="product_text">現在日本で販売されている多くのワイヤレスイヤホンは、実は日本よりも大きな米国や中国市場向けの音造りがされています。比較的音の強弱が少なく、また世界でも類例の少ない母音語を多用する言語である日本語がはっきりと美しく聞こえるようにトーンバランスを整えるなど、純粋な日本仕様としてチューニングを行いました。</p>
-                <p  class="alc mt20"><a href="{{ route('about') }}#japansound" class="btn_Blk">詳細をみる</a></p>
             </div>
         </div>
+        <p  class="alc mt20"><a href="{{ route('about') }}#japansound" class="btn_Blk">詳細をみる</a></p>
 
     <h3 class="mt80">日本の音に、卓越した接続性能をプラス</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01e/TE-D01e-02.jpg') }}"></p>
-    <div class="flex_ImgR">
-            <div class="flex_ImgLogo"><img src="{{ asset('images/user/Qualcomm_logo.png') }}"></div>
             <div>
                 <p class="product_text">米国Qualcomm(クアルコム）社の最新SoC QCC3020を搭載。無数の電波が飛び交う混雑した駅の構内や都会のスクランブル交差点でも音が途切れ難い、高い接続安定性を確保しました。また、今後普及が期待されるQualcomm TrueWireless Stereo Plusにも対応。対応スマホとの組み合わせで、秘めたる高性能が開花します。</p>
                 <p  class="alc mt20"><a href="{{ route('qualcomm') }}" class="btn_Blk">詳細をみる</a></p>
             </div>
-    </div>
 
     <h3 class="mt80">いい音をより長く</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01e/TE-D01e-03.jpg') }}"></p>
@@ -113,9 +110,9 @@
             <div class="flex_ImgLogo"><img src="{{ asset('images/user/IPX4_logo.png') }}"></div>
             <div>
                 <p class="product_text">これまで高額な完全ワイヤレスイヤホンにしか採用されていなかった、高音質・低遅延のコーデック、aptXに対応。より原音に近い再生が可能です。その上遅延が極めて少なく、YouTubeなどの動画再生にも最適。また、IPX4レベルの防水性能により、スポーツの汗や急な雨にも安心です。</p>
-                <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
             </div>
     </div>
+    <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
 
 
     <!--製品仕様テーブル-->
@@ -217,7 +214,7 @@
 <script>
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
-        slidesPerView: 4,
+        slidesPerView: 10,
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,

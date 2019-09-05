@@ -66,9 +66,9 @@
             <div><p class="product_text">aptX HD対応ワイヤレスイヤホンとしては世界初*のハイブリッド・トリプルドライバーを搭載。SBCやAACなど既存コーデックの256倍（理論値）の高解像度を誇るaptX HDコーデックによる音楽情報を余すところなく忠実に再現します。<br>
                 *2019年6月現在、当社調べ<br>
             特に現在海外ブランドのワイヤレスイヤホンをご使用中の皆様は、ボーカル帯域を含む中高音域の情報量の多さに驚かれることでしょう。（ハイブリッドドライバー本来の性能を引き出す為に、少なくとも30時間程度のエージングをお勧めします。音の成長を楽しんで頂ける筈です。）</p>
-                <p  class="alc mt20"><a href="{{ route('about') }}#japansound" class="btn_Blk">詳細をみる</a></p>
             </div>
         </div>
+        <p  class="alc mt20"><a href="{{ route('about') }}#japansound" class="btn_Blk">詳細をみる</a></p>
 
     <h3 class="mt80">ハイブリッドドライバーのメリット</h3>
     <p class="alc"><img src="{{ asset('images/products/WE-BD21d/WE-BD21d-02.jpg') }}"></p>
@@ -199,7 +199,7 @@
 <script>
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
-        slidesPerView: 4,
+        slidesPerView: 10,
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,

@@ -85,16 +85,13 @@
     <p class="alc"><img src="{{ asset('images/products/TE-D01g/TE-D01g-02.png') }}"></p>
     <div>
             <p class="product_text">イヤホンは耳を飾るアクセサリーのひとつだと、AVIOTは考えています。だからデザインやマテリアルにも徹底的にこだわりました。4種類のカラーの中から、大好きな１色をお選びください。羽のように軽くて、ケーブルがないから、まるでオンガクの翼。イヤホンを着けたまま、スキップしたり、ダンスだって踊れちゃいます。</p>
-        </div>
+    </div>
 
     <h3 class="mt80">クラス最高の音質を実現</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01g/TE-D01g-03.jpg') }}"></p>
-        <div class="flex_ImgR">
-        <div class="flex_ImgLogo"><img src="{{ asset('images/user/Qualcomm_logo.png') }}"></div>
-            <div>
-                <p class="product_text">ものにします。最新技術がぎっしり詰まった最新SoC、QCC3020と、厳選したグラフェンコーテッドスピーカーを採用し、日本人の聴覚特性に合わせ、時間を掛けて丁寧にチューニングしました。もう良い音にケーブルは必要ありません。</p>
-                <p  class="alc mt20"><a href="{{ route('qualcomm') }}" class="btn_Blk">詳細をみる</a></p>
-            </div>
+    <div>
+            <p class="product_text">ものにします。最新技術がぎっしり詰まった最新SoC、QCC3020と、厳選したグラフェンコーテッドスピーカーを採用し、日本人の聴覚特性に合わせ、時間を掛けて丁寧にチューニングしました。もう良い音にケーブルは必要ありません。</p>
+            <p  class="alc mt20"><a href="{{ route('qualcomm') }}" class="btn_Blk">詳細をみる</a></p>
     </div>
 
     <h3 class="mt80">1日中オンガクが途切れない、驚異のスタミナ</h3>
@@ -115,9 +112,9 @@
         <div class="flex_ImgLogo"><img src="{{ asset('images/user/IPX7_logo.png') }}"></div>
             <div>
                 <p class="product_text">ジムでのワークアウトでかいた大量の汗や、外出中の急な雨などはもちろん、装着したままシャワーを浴びても平気なIPX7レベル*の高い防水性能を実現しました。もうオンガクは時と場所を選びません。*イヤホン本体のみ（チャージングケースは非防水です。）</p>
-                <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
             </div>
     </div>
+    <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
 
     <h3 class="mt80">AVIOTならもっと安心</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01g/TE-D01g-07.jpg') }}"></p>
@@ -232,7 +229,7 @@
 <script>
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
-        slidesPerView: 4,
+        slidesPerView: 10,
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,

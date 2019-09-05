@@ -132,7 +132,7 @@
         
                 <div class="button_area">
                     <p class="checkbox_text">
-                        <label><input  id="00N6F00000WyM0A" name="00N6F00000WyM0A" type="checkbox" value="1" /><span class="label">こちらはTE-BD21f-pnk専用の予約受付フォームです。お間違いなければチェックを入れてください。</span></label>
+                        <label><input  id="00N6F00000WytAD" name="00N6F00000WytAD" type="checkbox" value="1" /><span class="label">こちらはTE-BD21f-pnk専用の予約受付フォームです。お間違いなければチェックを入れてください。</span></label>
                     </p>
                     <p class="checkbox_text mt10">
                         <label><input type="checkbox" name="" value="確認画面は表示されません。上記内容にて送信しますので、よろしければチェックを入れてください。" /><span class="label">確認画面は表示されません。上記内容にて送信されます。</span></label>

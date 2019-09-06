@@ -18,16 +18,29 @@
 </style>
 @endsection
 
+@section('javascript-head')
+
+<!-- Google ReCapcha -->
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+    function timestamp() 
+    { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+</script>
+
+@endsection
+
 @section('body_id', 'confirm')
 
 @section('content')
 <div id="container" class="both">
-<div id="" class="main" role="main">
+    <div id="" class="main" role="main">
     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
     <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'>
     <input type=hidden name="oid" value="00D6F000002Kz08">
     <input type=hidden name="retURL" value="aviot.jp/support/registration/thanks">
     <input type="hidden" name="00N6F00000WyN80" value="A" />
+    <input type="hidden" name="debug" value=1>
+    <input type="hidden" name="debugEmail" value="aviot@v-trade.co.jp">
     @csrf
     @method('POST')
 

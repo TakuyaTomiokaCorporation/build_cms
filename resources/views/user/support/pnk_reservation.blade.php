@@ -95,7 +95,6 @@
                     <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'>
                     <input type=hidden name="oid" value="00D6F000002Kz08">
                     <input type=hidden name="retURL" value="aviot.jp/pnk_reservation/thanks">
-                    <input type="hidden" name="00N6F00000WyN80" value="B" />
                 <dl>
                     <dt><span class="required">必須</span> お名前(姓・名)</dt>
                     <dd>

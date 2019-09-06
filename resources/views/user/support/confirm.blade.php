@@ -39,8 +39,6 @@
     <input type=hidden name="oid" value="00D6F000002Kz08">
     <input type=hidden name="retURL" value="aviot.jp/support/registration/thanks">
     <input type="hidden" name="00N6F00000WyN80" value="A" />
-    <input type="hidden" name="debug" value=1>
-    <input type="hidden" name="debugEmail" value="aviot@v-trade.co.jp">
     @csrf
     @method('POST')
 

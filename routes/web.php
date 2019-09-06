@@ -92,7 +92,7 @@ Route::get('/product/WE-D01c', 'UserController@getWed01c');
 Route::get('/support', 'UserRegisterController@getSupport')->name('support');
 Route::get('/support/registration', 'UserRegisterController@getProductRegistration')->name('product_regiser');
 Route::patch('/support/registration/confirm', 'UserRegisterController@getConfirm')->name('product_regiser.confirm');
-Route::post('/support/registration/thanks', 'UserRegisterController@getProductThanks')->name('product_register.thanks');
+Route::get('/support/registration/thanks', 'UserRegisterController@getProductThanks')->name('product_register.thanks');
 Route::get('/pnk_reservation', 'UserController@getPnkReservation');
 Route::get('/pnk_reservation/thanks', 'UserRegisterController@getPnkThanks');
 
@@ -105,7 +105,7 @@ Route::get('/pnk_reservation/thanks', 'UserRegisterController@getPnkThanks');
 /*
 Route::get('/inquiry', 'ContactController@create')->name('inquiry');
 Route::patch('/inquriy/confirm', 'ContactController@confirm')->name('inquiry.confirm');
-Route::post('/inquriy/thanks', 'ContactController@sent')->name('inquiry.sent');
+Route::get('/inquriy/thanks', 'ContactController@sent')->name('inquiry.sent');
 */
 
 /*

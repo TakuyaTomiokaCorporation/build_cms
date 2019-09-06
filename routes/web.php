@@ -105,7 +105,7 @@ Route::get('/pnk_reservation/thanks', 'UserRegisterController@getPnkThanks');
 /*
 Route::get('/inquiry', 'ContactController@create')->name('inquiry');
 Route::patch('/inquriy/confirm', 'ContactController@confirm')->name('inquiry.confirm');
-Route::post('/inquriy/thanks', 'ContactController@sent')->name('inquiry.sent');
+Route::get('/inquriy/thanks', 'ContactController@sent')->name('inquiry.sent');
 */
 
 /*

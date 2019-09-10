@@ -14,7 +14,7 @@
     <div class="mv w1020 m_auto">
     <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
-            <div class="swiper-slide movie-wrap"><video src="{{ asset('images/user/vedeo_mv01.mp4') }}" playsinline muted autoplay controls width="1020"></video></div>
+            <div class="swiper-slide movie-wrap"><video src="{{ asset('images/user/mv_video.mp4') }}" playsinline autoplay muted controls width="1020"></video></div>
             <div class="swiper-slide"><a href="{{ route('pnk_f.show') }}"><img src="{{ asset('images/user/mv_01.jpg') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="{{ route('gesu.show') }}"><img src="{{ asset('images/user/mv_02.gif') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="{{ route('pass.show') }}"><img src="{{ asset('images/user/mv_03.jpg') }}" alt=""></a></div>
@@ -83,7 +83,7 @@
         },
         loop: true,
         autoplay: {
-            delay: 5000,
+            delay: 30000,
             disableOnInteraction: true
         },
     });

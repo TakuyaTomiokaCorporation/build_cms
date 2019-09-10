@@ -19,7 +19,7 @@
         @endif
             <div class="swiper-slide"><a href="{{ route('pnk_f.show') }}"><img src="{{ asset('images/user/mv_01.jpg') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="{{ route('gesu.show') }}"><img src="{{ asset('images/user/mv_02.gif') }}" alt=""></a></div>
-            <div class="swiper-slide"><a href="{{ route('pass.show') }}"><img src="{{ asset('images/user/mv_03.jpg') }}" alt=""></a></div>
+            {{-- <div class="swiper-slide"><a href="{{ route('pass.show') }}"><img src="{{ asset('images/user/mv_03.jpg') }}" alt=""></a></div> --}}
             <div class="swiper-slide"><a href="{{ route('wagamama.show') }}"><img src="{{ asset('images/user/mv_04.jpg') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="{{ route('cy8er.show') }}"><img src="{{ asset('images/user/mv_05.jpg') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="{{ route('yanakoto.show') }}"><img src="{{ asset('images/user/mv_06.jpg') }}" alt=""></a></div>

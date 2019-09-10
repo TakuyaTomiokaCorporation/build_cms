@@ -28,7 +28,7 @@ class UserController extends Controller
     public function getAllInfo(){
 
         $now = Carbon::now()->format('Y-m-d H:i:s');
-        $open = Carbon::parse('2019-09-10 19:00:00');
+        $open = Carbon::parse('2019-09-10 20:00:00');
 
         $posts = \DB::table('news')->where([
                     ['release', '=', '1'],

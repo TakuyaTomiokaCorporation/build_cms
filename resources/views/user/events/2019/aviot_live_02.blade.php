@@ -91,8 +91,6 @@
             <dd class="mt10">イープラス(<a href="https://eplus.jp/sf/detail/3079740001-P0030001" target="_blank">https://eplus.jp/sf/detail/3079740001-P0030001</a>)　9月4日(水)10:00から発売開始。</dd>
         </dl>
     </section>
-
-    @if ($now > $open)
         <h3 class="alc mb20 mt20">AVIOT製品登録者を抽選で無料招待！</h3>
         <div class="text">
             <p class="date alc bold mb20">受付終了いたしました。</p>
@@ -104,7 +102,6 @@
             <p class="">当選発表は2019年9月9日以降に当選された方のみメールにて順次お送りいたします。</p>
             <p class="mt20 mb10 txtRed">※会場へのご入場は一般チケット購入者の方を優先とさせていただきますので、予めご了承ください。</p>
         </div>
-    @endif
 
     <section class="">
         <h3 class="alc mt40">出演アーテスト</h3>

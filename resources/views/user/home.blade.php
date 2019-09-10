@@ -5,26 +5,7 @@
 @section('content')
 
 @section('css')
-<<<<<<< HEAD
-<style>
-.movie-wrap {
-    position: relative;
-    padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
-    height: 0;
-    overflow: hidden;
-}
 
-.movie-wrap iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-</style>
-=======
-
->>>>>>> feature/main-visual
 @endsection
 
 <div id="container" class="both">
@@ -33,11 +14,7 @@
     <div class="mv w1020 m_auto">
     <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
-<<<<<<< HEAD
-            <div class="swiper-slide movie-wrap"><iframe src="https://www.youtube.com/embed/UChuwxiIPlg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-=======
             <div class="swiper-slide movie-wrap"><video src="{{ asset('images/user/vedeo_mv01.mp4') }}" autoplay muted width="1020"></video></div>
->>>>>>> feature/main-visual
             <div class="swiper-slide"><a href="{{ route('pnk_f.show') }}"><img src="{{ asset('images/user/mv_01.jpg') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="{{ route('gesu.show') }}"><img src="{{ asset('images/user/mv_02.gif') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="{{ route('pass.show') }}"><img src="{{ asset('images/user/mv_03.jpg') }}" alt=""></a></div>

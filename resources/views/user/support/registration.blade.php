@@ -57,11 +57,11 @@
 @section('javascript-head')
 
     <!-- Google ReCapcha -->
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    {{-- <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
         function timestamp() 
         { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-    </script>
+    </script> --}}
 
 @endsection
 
@@ -92,7 +92,7 @@
                 <dd><input  id="00N6F00000SUcr2" maxlength="255" name="last_name_ja" size="20" type="text" placeholder="セイ"  required value="{{ old('last_name_ja') }}">
                     <input  id="00N6F00000SUcr7" maxlength="255" name="first_name_ja" size="20" type="text" placeholder="メイ"  required value="{{ old('first_name_ja') }}">
                 </dd>
-
+{{-- 
                 <dt><span class="required">必須</span>性別</dt>
                 <dd>
                     <select  id="00N6F00000MmEeS" name="gender" title="性別"  required>
@@ -116,10 +116,11 @@
 
                 <dt><label for="phone">電話番号</label></dt>
                 <dd><input  id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="090-0000-0000" pattern="^\d{2,4}[-]\d{2,4}[-]\d{2,4}$" title="ハイフンを含めて半角数字でご入力ください。" value="{{ old('phone') }}"></dd>
-
+--}}
                 <dt><span class="required">必須</span><label for="email">メールアドレス</label></dt>
+                
                 <dd><input  id="email" maxlength="80" name="email" size="60" type="text"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="メールアドレスをご確認ください。"　required value="{{ old('email') }}"></dd>
-
+                {{--
                 <dt><span class="required">必須</span><label for="prduct">機種名</label></dt>
                 <dd>
                 <select  id="00N6F00000O5eOx" name="product" title="機種名" required>
@@ -173,6 +174,7 @@
                 <dt>購入店（AVIOT公式ストア/miraporta以外）<br>
                     <small>※キャンペーンコードをお持ちの方は、こちらにご記入ください</small></dt>
                 <dd><input  id="00N6F00000MmEf1" maxlength="255" name="from_other" size="20" type="text" value="{{ old('from_other') }}"></dd>
+                --}}
 
                 <div class="boxes">
                     <input type="checkbox" id="box-1">

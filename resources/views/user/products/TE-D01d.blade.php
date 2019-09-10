@@ -66,7 +66,7 @@
     </section>
 
     <section class="example"><!--商品説明-->
-        <div class="flex">
+    <div class="flex">
 
     <div class="mt20">
         <div>
@@ -77,7 +77,7 @@
             <p class="txtS">付属品：MicroUSBケーブル、標準イヤーピース（各サイズ1色1ペア S/M/L）、イヤーウイング、（各サイズ1色1ペア S/M）、SpinFit CP100Z（各サイズ1色1ペア SS/S/M）、収納ポーチ、ユーザーマニュアル、製品保証登録カード</p>
         </div>
     </div>
-    <div class="alc btn_area"><a href="https://www.amazon.co.jp/dp/B07MG34M8C/ref=cm_sw_em_r_mt_awdo_PeZzDbNJXRJ43" target="_blank" class="btn_buy">ご購入はこちら</a></div>
+        <div class="alc btn_area"><a href="https://www.amazon.co.jp/dp/B07MG34M8C/ref=cm_sw_em_r_mt_awdo_PeZzDbNJXRJ43" target="_blank" class="btn_buy">ご購入はこちら</a></div>
     </div>
 
     <h3 class="mt80">もっと、日本の音へ</h3>
@@ -87,7 +87,8 @@
                 <div class="flex_ImgLogo"><img src="{{ asset('images/user/JAPANtuned_logo.png') }}"></div>
                 <div><p class="product_text">好評をいただいている先行モデルへ頂いたフィードバックを参考に、AVIOTが誇るオーディオエキスパートチームが、じっくりと時間を掛けてチューニングを行いました。低音域の一部を単純にブーストし、聴感を必要以上に刺激するような”トリック“を使わず、あくまでハイエンドオーディオと同じ思想で原音再生を目指し、フラットなトーンバランスをベースにして、更に真っ直ぐな日本の音を追求しました。</p>
             </div>
-            <p  class="alc mt20"><a href="{{ route('about') }}#japansound" class="btn_Blk">詳細をみる</a></p></div>
+    </div>
+            <p  class="alc mt20"><a href="{{ route('about') }}#japansound" class="btn_Blk">詳細をみる</a></p>
 
     <h3 class="mt80">最新の技術で、最高のオーディオ体験を</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01d/TE-D01d-02.jpg') }}"></p>

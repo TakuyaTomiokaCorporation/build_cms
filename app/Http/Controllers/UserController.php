@@ -28,6 +28,7 @@ class UserController extends Controller
     public function getAllInfo(){
 
         $now = Carbon::now()->format('Y-m-d H:i:s');
+        // $open = Carbon::parse('2019-09-10 20:00:00');
 
         $posts = \DB::table('news')->where([
                     ['release', '=', '1'],
@@ -46,7 +47,12 @@ class UserController extends Controller
             $news_product->book_date = Carbon::createFromFormat('Y-m-d H:i:s', $news_product->book_date)->format('Y-m-d');
         }
 
-        return view('user.home', compact('posts', 'news_products'));
+        return view('user.home',[
+            'posts' => $posts,
+            'news_products' => $news_products,
+            // 'now' => $now,
+            // 'open' => $open,
+        ]);
     }
 
     public function getPnkReservation()

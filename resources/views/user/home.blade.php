@@ -5,6 +5,22 @@
 @section('content')
 
 @section('css')
+<style>
+.movie-wrap {
+    position: relative;
+    padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+    height: 0;
+    overflow: hidden;
+}
+
+.movie-wrap video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
 
 @endsection
 
@@ -14,10 +30,12 @@
     <div class="mv w1020 m_auto">
     <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
+        {{-- @if ($now > $open) --}}
             <div class="swiper-slide movie-wrap"><video src="{{ asset('images/user/mv_video.mp4') }}" playsinline autoplay muted controls width="1020"></video></div>
+        {{-- @endif --}}
             <div class="swiper-slide"><a href="{{ route('pnk_f.show') }}"><img src="{{ asset('images/user/mv_01.jpg') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="{{ route('gesu.show') }}"><img src="{{ asset('images/user/mv_02.gif') }}" alt=""></a></div>
-            <div class="swiper-slide"><a href="{{ route('pass.show') }}"><img src="{{ asset('images/user/mv_03.jpg') }}" alt=""></a></div>
+            {{-- <div class="swiper-slide"><a href="{{ route('pass.show') }}"><img src="{{ asset('images/user/mv_03.jpg') }}" alt=""></a></div> --}}
             <div class="swiper-slide"><a href="{{ route('wagamama.show') }}"><img src="{{ asset('images/user/mv_04.jpg') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="{{ route('cy8er.show') }}"><img src="{{ asset('images/user/mv_05.jpg') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="{{ route('yanakoto.show') }}"><img src="{{ asset('images/user/mv_06.jpg') }}" alt=""></a></div>
@@ -26,6 +44,8 @@
         </div>
         <!-- Add Arrows -->
         {{-- <img src="./img/mv.png"> --}}
+        <div class="swiper-button-next swiper-button"></div>
+        <div class="swiper-button-prev swiper-button"></div>
     </div>
     </div>
     </article>
@@ -82,10 +102,10 @@
             prevEl: '.swiper-button-prev',
         },
         loop: true,
-        autoplay: {
-            delay: 30000,
-            disableOnInteraction: true
-        },
+        // autoplay: {
+        //     delay: 30000,
+        //     disableOnInteraction: true
+        // },
     });
 </script>
 

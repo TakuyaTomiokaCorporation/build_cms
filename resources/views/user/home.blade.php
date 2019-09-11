@@ -44,8 +44,8 @@
         </div>
         <!-- Add Arrows -->
         {{-- <img src="./img/mv.png"> --}}
-        <div class="swiper-button-next swiper-button"></div>
-        <div class="swiper-button-prev swiper-button"></div>
+        {{-- <div class="swiper-button-next swiper-button"></div>
+        <div class="swiper-button-prev swiper-button"></div> --}}
     </div>
     </div>
     </article>
@@ -102,10 +102,10 @@
             prevEl: '.swiper-button-prev',
         },
         loop: true,
-        // autoplay: {
-        //     delay: 30000,
-        //     disableOnInteraction: true
-        // },
+        autoplay: {
+            delay: 30000,
+            disableOnInteraction: true
+        },
     });
 </script>
 

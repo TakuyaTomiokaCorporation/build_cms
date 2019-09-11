@@ -10,14 +10,21 @@
 
 Route::get('/', 'UserController@getAllInfo')->name('top');
 Route::get('/about', 'UserController@getAbout')->name('about');
-Route::get('/codec', 'UserController@getCodec')->name('codec');
 Route::get('/compensation', 'UserController@getCompensation')->name('compensation');
 Route::get('/operation', 'UserController@getOperation')->name('operation');
-Route::get('/waterproof', 'UserController@getWaterproof')->name('waterproof');
-Route::get('/qualcomm', 'UserController@getQualcomm')->name('qualcomm');
 Route::get('/manual', 'UserController@getManual')->name('manual');
 Route::get('/movies', 'UserController@getMovies')->name('movies');
 Route::get('/lp1', 'UserController@getLp')->name('lp1');
+
+/*
+|############################
+| set routes of Technologies below.
+|############################
+*/
+Route::get('/technologies', 'UserController@getTechnologies')->name('technologies');
+Route::get('/technologies/codec', 'UserController@getCodec')->name('codec');
+Route::get('/technologies/waterproof', 'UserController@getWaterproof')->name('waterproof');
+Route::get('/technologies/qualcomm', 'UserController@getQualcomm')->name('qualcomm');
 
 /*
 |############################

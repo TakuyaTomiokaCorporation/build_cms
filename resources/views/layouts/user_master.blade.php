@@ -42,9 +42,9 @@
     <!-- Styles -->
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('css/common.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/pc.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/pc.css') }}" rel="stylesheet">
     <link href="{{ asset('css/sp.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/tb.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/tb.css') }}" rel="stylesheet"> --}}
     <link href="{{ asset('css/swiper.css') }}" rel="stylesheet">
 
     @yield('css')
@@ -82,73 +82,17 @@
 <body id="@yield('body_id')">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8XKQ5F"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <header>
-        <nav class='greedy'>
-            <h1><a href="{{ route('top') }}"><img src="{{ asset('images/user/logo_w.png') }}" alt="AVIOT"></a></h1>
-            <ul class='links'>
-                <li><a href='{{ route('about') }}'>AVIOTとは</a></li>
-                <li><a href='{{ route('product.show') }}'>製品一覧</a></li>
-                <li><a href='{{ route('artists.show') }}'>アーティストボイス</a></li>
-                <li><a href='{{ route('shoplist') }}'>取扱店舗</a></li>
-                <li><a href='{{ route('support') }}'>製品サポート</a></li>
-            </ul>
-            <button>MENU</button>
-            <ul class='hidden-links hidden'></ul>
-        </nav>
-    </header>
+    
+    @include('include.user_header')
             
     <main class="">
         {{-- コンテンツ部分読み込み --}}
         @yield('content')
     </main>
 
-    <footer>
-            <article class="w1020 w98 m_auto">
-            <div class="foot_menu ifpc">
-                <ul>
-                    <li><a href="{{ route('about') }}">AVIOTについて</a></li>
-                    <li><a href="{{ route('news.show') }}">最新情報</a></li>
-                    <li><a href="{{ route('product_news.list') }}">お知らせ</a></li>
-                    <li><a href="{{ route('artists.show') }}">アーティストボイス</a></li>
-                    <li><a href="{{ route('movies') }}">レビュー動画</a></li>
-                </ul>
-                <ul>
-                    <li><a href="{{ route('product.show') }}">製品一覧</a></li>
-                    <li><a href="{{ route('codec') }}">コーデック</a></li>
-                    <li><a href="{{ route('qualcomm') }}">Qualcomm <span class="ifpc"> QCC3026/3020</span></a></li>
-                    <li><a href="{{ route('waterproof') }}">防水性能</a></li>
-                </ul>
-                <ul>
-                    <li><a href="{{ route('support') }}">カスタマーサポート</a></li>
-                    <li><a href="{{ route('support') }}#QA">よくある質問</a></li>
-                    <li><a href="https://v-trade.co.jp/contact_individual/">お問い合わせ</a></li>
-                </ul>
-                <ul>
-                    <li><a href="{{ route('product_regiser') }}">製品保証</a></li>
-                    <li><a href="{{ route('compensation') }}">交換保障</a></li>
-                    <li><a href="{{ route('manual') }}">説明書<span class="ifpc">ダウンロード</span></a></li>
-                </ul>
-                <ul class="ifpc">
-                    <li><a href="{{ route('shoplist') }}">取扱店舗</a></li>
-                    <li><a href="https://www.amazon.co.jp/s?me=ABRZDPOGTSWO1" target="_blank">amazon店</a></li>
-                    <li><a href="https://www.rakuten.co.jp/mobileselect/" target="_blank">楽天店</a></li>
-                    <li><a href="https://store.shopping.yahoo.co.jp/mobileselect/" target="_blank">yahoo!店</a></li>
-                </ul>
-            </div>
-            <div class="foot_menu ifsp alc">
-                <ul>
-                    <li><a href="{{ route('news.show') }}">最新情報</a></li>
-                    <li><a href="{{ route('product_news.list') }}">お知らせ</a></li>
-                    <li><a href="{{ route('shoplist') }}">取扱店舗</a></li>
-                    <li><a href="{{ route('support') }}#QA">よくある質問</a></li>
-                    <li><a href="https://v-trade.co.jp/contact_individual/">お問い合わせ</a></li>
-                </ul>
-            </div>
-            </article>
-            <div id="copyright">
-                <p>&copy;2019 AIOT</p>
-            </div>
-    </footer>
+    
+    @include('include.user_footer')
+
     {{-- 個別のjavaScript読み込み --}}
     @yield('javascript-footer')
 </body>

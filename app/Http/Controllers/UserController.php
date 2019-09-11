@@ -115,12 +115,19 @@ class UserController extends Controller
     }
 
     // 
+    // Technologies function
+    // 
+    public function getTechnologies()
+    {
+        return view('user.technologies.index');
+    }
+    // 
     // Waterproof function
     // 
 
     public function getWaterproof()
     {
-        return view('user.waterproof');
+        return view('user.technologies.waterproof');
     }
 
     // 
@@ -129,7 +136,7 @@ class UserController extends Controller
 
     public function getQualcomm()
     {
-        return view('user.qualcomm');
+        return view('user.technologies.qualcomm');
     }
 
     // 
@@ -352,7 +359,7 @@ class UserController extends Controller
 
     public function getCodec()
     {
-        return view('user.codec');
+        return view('user.technologies.codec');
     }
 
     // 

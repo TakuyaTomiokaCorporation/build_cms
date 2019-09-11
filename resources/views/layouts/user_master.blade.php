@@ -42,9 +42,9 @@
     <!-- Styles -->
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('css/common.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/pc.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/pc.css') }}" rel="stylesheet">
     <link href="{{ asset('css/sp.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/tb.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/tb.css') }}" rel="stylesheet"> --}}
     <link href="{{ asset('css/swiper.css') }}" rel="stylesheet">
 
     @yield('css')

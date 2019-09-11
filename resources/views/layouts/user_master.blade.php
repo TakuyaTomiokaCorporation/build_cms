@@ -114,9 +114,7 @@
                 </ul>
                 <ul>
                     <li><a href="{{ route('product.show') }}">製品一覧</a></li>
-                    <li><a href="{{ route('codec') }}">コーデック</a></li>
-                    <li><a href="{{ route('qualcomm') }}">Qualcomm <span class="ifpc"> QCC3026/3020</span></a></li>
-                    <li><a href="{{ route('waterproof') }}">防水性能</a></li>
+                    <li><a href="{{ route('technologies') }}">技術情報</a></li>
                 </ul>
                 <ul>
                     <li><a href="{{ route('support') }}">カスタマーサポート</a></li>

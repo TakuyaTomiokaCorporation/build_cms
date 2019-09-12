@@ -30,13 +30,13 @@
             <h3 class="mt40 mb20 border_l">Qualcomm</h3>
             <div class="mt20 index_qualcomm">
                 <p>Qualcomm社のSoC、SoCとはSystem-on-a-chipの略称で、プロセッサコアや様々な機能を集積、連携してシステムとして機能するよう設計集積回路のことです。</p>
-                <p class="mt20 alc"><a href="{{ route('waterproof') }}" class="btn_Gray">詳しくはこちら</a></p>
+                <p class="mt20 alc"><a href="{{ route('qualcomm') }}" class="btn_Gray">詳しくはこちら</a></p>
             </div>
 
             <h3 class="mt40 mb20 border_l">防水性能</h3>
             <div class="mt20 index_waterproof">
                 <p>AVIOTのイヤホンは全機種生活防水（IPX4）に対応しており、日常生活における範囲内であれば汗や雨など気にすることなくお使いいただけます。</p>
-                <p class="mt20 alc"><a href="{{ route('qualcomm') }}" class="btn_Gray">詳しくはこちら</a></p>
+                <p class="mt20 alc"><a href="{{ route('waterproof') }}" class="btn_Gray">詳しくはこちら</a></p>
             </div>
     </section>
     

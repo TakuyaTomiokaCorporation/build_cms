@@ -88,7 +88,7 @@
                     <input  id="first_name" maxlength="40" name="first_name" size="20" type="text"  placeholder="名"  required value="{{ old('first_name') }}">
                 </dd>
 
-                {{-- <dt><span class="required">必須</span>フリガナ</dt>
+                <dt><span class="required">必須</span>フリガナ</dt>
                 <dd><input  id="00N6F00000SUcr2" maxlength="255" name="last_name_ja" size="20" type="text" placeholder="セイ"  required value="{{ old('last_name_ja') }}">
                     <input  id="00N6F00000SUcr7" maxlength="255" name="first_name_ja" size="20" type="text" placeholder="メイ"  required value="{{ old('first_name_ja') }}">
                 </dd>
@@ -115,13 +115,13 @@
                 <dd><input type="text" name="street" size="40" required placeholder="南池袋2-14-10" value="{{ old('street') }}"><dd>
 
                 <dt><label for="phone">電話番号</label></dt>
-                <dd><input  id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="090-0000-0000" pattern="^\d{2,4}[-]\d{2,4}[-]\d{2,4}$" title="ハイフンを含めて半角数字でご入力ください。" value="{{ old('phone') }}"></dd> --}}
+                <dd><input  id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="090-0000-0000" pattern="^\d{2,4}[-]\d{2,4}[-]\d{2,4}$" title="ハイフンを含めて半角数字でご入力ください。" value="{{ old('phone') }}"></dd>
 
                 <dt><span class="required">必須</span><label for="email">メールアドレス</label></dt>
                 
                 <dd><input  id="email" maxlength="80" name="email" size="60" type="text"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="メールアドレスをご確認ください。"　required value="{{ old('email') }}"></dd>
                 
-                {{-- <dt><span class="required">必須</span><label for="prduct">機種名</label></dt>
+                <dt><span class="required">必須</span><label for="prduct">機種名</label></dt>
                 <dd>
                 <select  id="00N6F00000O5eOx" name="product" title="機種名" required>
                     <option value="">--なし--</option>
@@ -174,7 +174,7 @@
                 <dt>購入店（AVIOT公式ストア/miraporta以外）<br>
                     <small>※キャンペーンコードをお持ちの方は、こちらにご記入ください</small></dt>
                 <dd><input  id="00N6F00000MmEf1" maxlength="255" name="from_other" size="20" type="text" value="{{ old('from_other') }}"></dd>
-                --}}
+               
                 <div class="boxes">
                     <input type="checkbox" id="box-1">
                     <label for="box-1">【製品保証や修理対応、製品のご案内に関するDMメール送信に同意する】</label>

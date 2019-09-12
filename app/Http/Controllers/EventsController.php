@@ -13,8 +13,8 @@ class EventsController extends Controller
         // $open = Carbon::parse('2019-09-03 19:00:00');
 
         return view('user.events.2019.aviot_live_02',[
-            'now' => $now,
-            'open' => $open,
+            // 'now' => $now,
+            // 'open' => $open,
         ]);
     }
 }

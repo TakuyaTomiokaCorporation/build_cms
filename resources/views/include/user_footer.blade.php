@@ -29,13 +29,17 @@
             <li><a href="https://store.shopping.yahoo.co.jp/mobileselect/" target="_blank">yahoo!店</a></li>
         </ul>
     </div>
+    
     <div class="foot_menu ifsp alc">
         <ul>
             <li><a href="{{ route('news.show') }}">最新情報</a></li>
             <li><a href="{{ route('product_news.list') }}">お知らせ</a></li>
             <li><a href="{{ route('shoplist') }}">取扱店舗</a></li>
+        </ul>
+        <ul>
+            <li><a href="{{ route('support') }}">カスタマーサポート</a></li>
             <li><a href="{{ route('support') }}#QA">よくある質問</a></li>
-            <li><a href="https://v-trade.co.jp/contact_individual/">お問い合わせ</a></li>
+            <li><a href="https://v-trade.co.jp/contact_individual/" target="_blank">お問い合わせ</a></li>
         </ul>
     </div>
     </article>

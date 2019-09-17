@@ -46,7 +46,7 @@
             </div>  
         </section>
 
-        <h2 id="TE-BD21f" class="pt20 border_b mb20 id_top">PassCode×TE-BD21f</h2>
+        <h2 id="TE-BD21f" class="border_b mb20 id_top">PassCode×TE-BD21f</h2>
         <section class="artist_movie">
             <div><img src="{{ asset('images/artists/passcode_mv02.jpg') }}" alt="PassCode"></div>
             <div>

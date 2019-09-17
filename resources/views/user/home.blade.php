@@ -30,17 +30,14 @@
     <div class="mv w1020 m_auto">
     <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
-        {{-- @if ($now > $open) --}}
             <div class="swiper-slide movie-wrap"><video src="{{ asset('images/user/mv_video.mp4') }}" playsinline autoplay muted controls width="1020"></video></div>
-        {{-- @endif --}}
-            <div class="swiper-slide"><a href="{{ route('pnk_f.show') }}"><img src="{{ asset('images/user/mv_01.jpg') }}" alt=""></a></div>
-            <div class="swiper-slide"><a href="{{ route('gesu.show') }}"><img src="{{ asset('images/user/mv_02.gif') }}" alt=""></a></div>
-            {{-- <div class="swiper-slide"><a href="{{ route('pass.show') }}"><img src="{{ asset('images/user/mv_03.jpg') }}" alt=""></a></div> --}}
+            <div class="swiper-slide"><a href="https://youtu.be/5s2B5fy94Qk" target="_blank"><img src="{{ asset('images/user/mv_01.jpg') }}" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://youtu.be/8Bw7rNG72Tc" target="_blank"><img src="{{ asset('images/user/mv_02.jpg') }}" alt=""></a></div>
+            <div class="swiper-slide"><a href="{{ route('pnk_f.show') }}"><img src="{{ asset('images/user/mv_03.jpg') }}" alt=""></a></div>
+            <div class="swiper-slide"><a href="{{ route('gesu.show') }}"><img src="{{ asset('images/user/gesu.gif') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="{{ route('wagamama.show') }}"><img src="{{ asset('images/user/mv_04.jpg') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="{{ route('cy8er.show') }}"><img src="{{ asset('images/user/mv_05.jpg') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="{{ route('yanakoto.show') }}"><img src="{{ asset('images/user/mv_06.jpg') }}" alt=""></a></div>
-            <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=28Llr3ufuTw&t=6s" target="_blank"><img src="{{ asset('images/user/mv_07.jpg') }}" alt=""></a></div>
-            <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=JymnbbtjOZE" target="_blank"><img src="{{ asset('images/user/mv_08.jpg') }}" alt=""></a></div>
         </div>
         <!-- Add Arrows -->
         {{-- <img src="./img/mv.png"> --}}

@@ -17,7 +17,7 @@
     <article class="w1020 w98 m_auto">
         <h2 class="pt20 border_b mb20">Maison book girl 和田輪×TE-BD21f</h2>
         <section class="artist_movie">
-            <div><img src="{{ asset('images/artists/moritakumiko_mv.jpg') }}" alt="和田輪"></div>
+            <div><img src="{{ asset('images/artists/wadarin_mv.jpg') }}" alt="和田輪"></div>
             <div>
                 <h3 class="mt20">Maison book girl（和田輪さん）</h3>
                 <p class="mt10">矢川葵、井上唯、和田輪、コショージメグミ、による4人組グループ。通称「ブクガ」。音楽家サクライケンタが楽曲から世界観の構築まで、トータルでプロデュースを行う。その独特且つ前衛的な音楽性、他には類を見ないパフォーマンスが話題となり2016年にメジャーデビュー。2018年よりポニーキャニオンに移籍し、「ビバラポップ」への出演や、イギリス・ブライトンでの国際音楽フェス「THE GREAT ESCAPE FESTIVAL2018」に日本代表として出演、「ピッコマ」のCMタイアップ獲得、NHK「シブヤノオト」での初歌唱パフォーマンス披露、など活動の幅を拡げる。</p>

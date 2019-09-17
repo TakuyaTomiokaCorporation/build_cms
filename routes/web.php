@@ -66,6 +66,7 @@ Route::get('/artists/wagamamarakia', 'UserController@getWagamama')->name('wagama
 Route::get('/artists/yanakotosottomute', 'UserController@getYanakoto')->name('yanakoto.show');
 Route::get('/artists/CY8ER', 'UserController@getCy8er')->name('cy8er.show');
 Route::get('/artists/moritakumiko', 'UserController@getMorita')->name('morita.show');
+Route::get('/artists/wadarin', 'UserController@getWadarin')->name('wadarin.show');
 
 /*
 |############################

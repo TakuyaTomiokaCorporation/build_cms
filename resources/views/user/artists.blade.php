@@ -32,7 +32,33 @@
         </div>
 
         <div class="mt40">
-            <h3 class="product_name">TE-D01g<img src="{{ asset('images/artists/artistmovie_TE-D01g.png') }}" alt="TE-D01g"></h3>
+            <h3 class="product_name">TE-BD21f<img src="{{ asset('images/artists/artistmovie_TE-BD21f.png') }}" alt="TE-BD21f"></h3>
+            <div>
+                <ul class="flex">
+                    <li class="artist_list">
+                        <a href="{{ route('pass.show') }}#TE-BD21f">
+                            <span class="artist_name">PassCode</span>
+                            <img src="{{ asset('images/artists/passcode_mv02.jpg') }}">
+                        </a>
+                    </li>
+                    <li class="artist_list">
+                        <a href="{{ route('wadarin.show') }}">
+                            <span class="artist_name">和田輪</span>
+                            <img src="{{ asset('images/artists/wadarin_mv.jpg') }}">
+                        </a>
+                    </li>
+                    <li class="artist_list">
+                        <a href="{{ route('morita.show') }}">
+                            <span class="artist_name">森田くみこ</span>
+                            <img src="{{ asset('images/artists/moritakumiko_mv.jpg') }}">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt40">
+             <h3 class="product_name">TE-D01g<img src="{{ asset('images/artists/artistmovie_TE-D01g.png') }}" alt="TE-D01g"></h3>
             <div>
                 <ul class="flex">
                     <li class="artist_list">
@@ -54,6 +80,7 @@
                         </a>
                     </li>
                 </ul>
+                
 
                 <ul class="flex">
                     <li class="artist_list">

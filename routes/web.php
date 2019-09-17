@@ -65,6 +65,7 @@ Route::get('/artists/uijin', 'UserController@getUijin')->name('uijin.show');
 Route::get('/artists/wagamamarakia', 'UserController@getWagamama')->name('wagamama.show');
 Route::get('/artists/yanakotosottomute', 'UserController@getYanakoto')->name('yanakoto.show');
 Route::get('/artists/CY8ER', 'UserController@getCy8er')->name('cy8er.show');
+Route::get('/artists/moritakumiko', 'UserController@getMorita')->name('morita.show');
 
 /*
 |############################
@@ -77,7 +78,7 @@ Route::get('/product-entry', 'UserController@getProductForBeginner')->name('begi
 Route::get('/product-hybrid', 'UserController@getProductHybrid')->name('hybrid');
 Route::get('/product-aptxhd', 'UserController@getProductAptxHD')->name('aptxhd');
 Route::get('/product/TE-BD21f-pnk', 'UserController@getTebd21fpnk')->name('tebd21fpnk');
-Route::get('/product/TE-BD21f', 'UserController@getTebd21f');
+Route::get('/product/TE-BD21f', 'UserController@getTebd21f')->name('tebd21f');
 Route::get('/product/TE-D01a', 'UserController@getTed01a');
 Route::get('/product/TE-D01b', 'UserController@getTed01b');
 Route::get('/product/TE-D01c', 'UserController@getTed01c');

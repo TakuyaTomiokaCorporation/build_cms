@@ -15,6 +15,7 @@ Route::get('/operation', 'UserController@getOperation')->name('operation');
 Route::get('/manual', 'UserController@getManual')->name('manual');
 Route::get('/movies', 'UserController@getMovies')->name('movies');
 Route::get('/lp1', 'UserController@getLp')->name('lp1');
+Route::get('/tokushou', 'UserController@getTokushou')->name('tokushou');
 
 /*
 |############################

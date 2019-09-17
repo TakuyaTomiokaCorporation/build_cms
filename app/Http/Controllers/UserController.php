@@ -359,6 +359,11 @@ class UserController extends Controller
         return view('user.artist.moritakumiko');
     }
 
+    public function getWadarin()
+    {
+        return view('user.artist.wadarin');
+    }
+
     // 
     // Codec function
     //

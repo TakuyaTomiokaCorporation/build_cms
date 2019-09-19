@@ -586,33 +586,16 @@ ul.product_category li a:hover {
   margin: 20px 10px;
 }
 
-.product_content div {
+.product_content {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
-.product_content div ul {
-  width: 22%;
-  padding: 10px;
-  margin-right: 12px;
-}
-
-.product_content div::before{
-  content:"";
-  display: block;
-  width:22%;
-  order:1;
-}
-.product_content div::after{
-  content:"";
-  display: block;
-  width:21%;
-}
-
 .btn_product {
   background: #000;
+  padding: 8px 0;
   color: #fff;
-  padding: 10px 40px;
+  display: block;
 }
 
 /*--AVIOTについて--*/
@@ -1311,6 +1294,25 @@ nav.greedy {
   margin-right: 148px;
 }
 
+.product_content div.product_box {
+  width: 22%;
+  padding: 10px;
+  margin-right: 12px;
+}
+
+.product_content div.product_box::before{
+  content:"";
+  display: block;
+  width:22%;
+  order:1;
+}
+
+.product_content div.product_box::after{
+  content:"";
+  display: block;
+  width:21%;
+}
+
 
 }
 
@@ -1427,6 +1429,10 @@ ul.product_category li {
   margin: 0 auto;
   margin-top: 16px;
   margin-bottom: 16px;
+}
+
+#product .product_content h3 a {
+  color: #222;
 }
 
 /*--アーティストインタビュー--*/
@@ -1564,10 +1570,6 @@ ul.product_category li {
 /*--製品一覧・製品詳細--*/
 .product_phot  {
   width: 90%;
-}
-
-.product_content div {
-  display: flex;
 }
 
 .product_content div ul {

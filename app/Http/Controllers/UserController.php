@@ -173,71 +173,87 @@ class UserController extends Controller
 
     public function getProductInfo()
     {
-        $continuedProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail', 'discontinued')
-                        ->where('discontinued', 0)
+        $trueWiressProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail', 'discontinued')
+                        ->where([
+                            ['discontinued', 0],
+                            ['transmission_method', '完全ワイヤレス']
+                        ])
+                        // ->where('discontinued', 0)
                         ->orderBy('release_date', 'desc')
                         ->get();
+
+        $wiressProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail', 'discontinued')
+                        ->where([
+                            ['discontinued', 0],
+                            ['transmission_method', 'ワイヤレス']
+                        ])
+                        // ->where('discontinued', 0)
+                        ->orderBy('release_date', 'desc')
+                        ->get();
+
         $discontinuedProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail', 'discontinued')
                         ->where('discontinued', 1)
                         ->orderBy('release_date', 'desc')
                         ->get();
+
         return view('user.product', [
-            'continuedProducts' => $continuedProducts,
+            'trueWiressProducts' => $trueWiressProducts,
+            'wiressProducts' => $wiressProducts,
             'discontinuedProducts' => $discontinuedProducts,
         ]);
     }
 
-    public function getProductWireless()
-    {
-        $wirelessProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')
-                        ->where('discontinued', 0)
-                        ->where('transmission_method', '完全ワイヤレス')
-                        ->orderBy('release_date', 'desc')
-                        ->get();
+    // public function getProductWireless()
+    // {
+    //     $wirelessProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')
+    //                     ->where('discontinued', 0)
+    //                     ->where('transmission_method', '完全ワイヤレス')
+    //                     ->orderBy('release_date', 'desc')
+    //                     ->get();
         
-        return view('user.products.wireless', [
-            'wirelessProducts' => $wirelessProducts
-        ]);
-    }
+    //     return view('user.products.wireless', [
+    //         'wirelessProducts' => $wirelessProducts
+    //     ]);
+    // }
 
-    public function getProductForBeginner()
-    {
-        $forBeginnerProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')
-                        ->where('discontinued', 0)
-                        ->where('category', 'エントリーモデル')
-                        ->orderBy('release_date', 'desc')
-                        ->get();
+    // public function getProductForBeginner()
+    // {
+    //     $forBeginnerProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')
+    //                     ->where('discontinued', 0)
+    //                     ->where('category', 'エントリーモデル')
+    //                     ->orderBy('release_date', 'desc')
+    //                     ->get();
         
-        return view('user.products.beginner', [
-            'forBeginnerProducts' => $forBeginnerProducts
-        ]);
-    }
+    //     return view('user.products.beginner', [
+    //         'forBeginnerProducts' => $forBeginnerProducts
+    //     ]);
+    // }
 
-    public function getProductHybrid()
-    {
-        $hybridProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')
-                        ->where('discontinued', 0)
-                        ->where('sound_method', 'ハイブリッド型')
-                        ->orderBy('release_date', 'desc')
-                        ->get();
+    // public function getProductHybrid()
+    // {
+    //     $hybridProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')
+    //                     ->where('discontinued', 0)
+    //                     ->where('sound_method', 'ハイブリッド型')
+    //                     ->orderBy('release_date', 'desc')
+    //                     ->get();
         
-        return view('user.products.hybrid', [
-            'hybridProducts' => $hybridProducts
-        ]);
-    }
+    //     return view('user.products.hybrid', [
+    //         'hybridProducts' => $hybridProducts
+    //     ]);
+    // }
 
-    public function getProductAptxHD()
-    {
-        $aptXhdProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')
-                        ->where('discontinued', 0)
-                        ->where('compression_method', 'aptX HD')
-                        ->orderBy('release_date', 'desc')
-                        ->get();
+    // public function getProductAptxHD()
+    // {
+    //     $aptXhdProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')
+    //                     ->where('discontinued', 0)
+    //                     ->where('compression_method', 'aptX HD')
+    //                     ->orderBy('release_date', 'desc')
+    //                     ->get();
         
-        return view('user.products.aptxhd', [
-            'aptXhdProducts' => $aptXhdProducts
-        ]);
-    }
+    //     return view('user.products.aptxhd', [
+    //         'aptXhdProducts' => $aptXhdProducts
+    //     ]);
+    // }
 
     public function getTebd21fpnk()
     {

@@ -1153,6 +1153,12 @@ nav.greedy {
   margin: 10px;
 }
 
+.product_content div.product_box {
+  width: 22%;
+  padding: 10px;
+  margin-right: 12px;
+}
+
 
 }
 

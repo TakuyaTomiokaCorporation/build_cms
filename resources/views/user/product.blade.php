@@ -48,13 +48,13 @@
                         <li>
                             <p>
                                 <div class="flex product_content">
-                                    @foreach ($trueWiressProducts as $trueWiressProduct)
+                                    @foreach ($trueWirlessProducts as $trueWirlessProduct)
                                     <div class="product_box mt20 mb20">
-                                        <p><a href="{{ $trueWiressProduct->link_detail }}"><img src="{{ asset('images/thumbnails') }}/{{ $trueWiressProduct->thumbnail }}" alt="{{ $trueWiressProduct->product_name }}"></a></p>
-                                        <h3><a harf="{{ $trueWiressProduct->link_detail }}">{{ $trueWiressProduct->product_name }}</a></h3>
+                                        <p><a href="{{ $trueWirlessProduct->link_detail }}"><img src="{{ asset('images/thumbnails') }}/{{ $trueWirlessProduct->thumbnail }}" alt="{{ $trueWirlessProduct->product_name }}"></a></p>
+                                        <h3><a harf="{{ $trueWirlessProduct->link_detail }}">{{ $trueWirlessProduct->product_name }}</a></h3>
                                         <hr>
-                                        <span>{!! Str::limit($trueWiressProduct->overview, 120) !!}</span>
-                                        <a href="{{ $trueWiressProduct->link_detail }}" class="btn_product alc mt10">詳細をみる</a>
+                                        <span>{!! Str::limit($trueWirlessProduct->overview, 120) !!}</span>
+                                        <a href="{{ $trueWirlessProduct->link_detail }}" class="btn_product alc mt10">詳細をみる</a>
                                     </div>
                                     @endforeach
                                 </div>
@@ -68,13 +68,13 @@
                     <ul class="inner">
                         <li>
                             <div class="flex product_content">
-                                @foreach ($wiressProducts as $wiressProduct)        
+                                @foreach ($wirlessProducts as $wirlessProduct)        
                                 <div class="product_box mt20 mb20">
-                                    <p><a href="{{ $wiressProduct->link_detail }}"><img src="{{ asset('images/thumbnails') }}/{{ $wiressProduct->thumbnail }}" alt="{{ $wiressProduct->product_name }}"></a></p>
-                                    <h3><a harf="{{ $wiressProduct->link_detail }}">{{ $wiressProduct->product_name }}</a></h3>
+                                    <p><a href="{{ $wirlessProduct->link_detail }}"><img src="{{ asset('images/thumbnails') }}/{{ $wirlessProduct->thumbnail }}" alt="{{ $wirlessProduct->product_name }}"></a></p>
+                                    <h3><a harf="{{ $wirlessProduct->link_detail }}">{{ $wirlessProduct->product_name }}</a></h3>
                                     <hr>
-                                    <span>{!! Str::limit($wiressProduct->overview, 120) !!}</span>
-                                    <a href="{{ $wiressProduct->link_detail }}" class="btn_product alc mt10">詳細をみる</a>
+                                    <span>{!! Str::limit($wirlessProduct->overview, 120) !!}</span>
+                                    <a href="{{ $wirlessProduct->link_detail }}" class="btn_product alc mt10">詳細をみる</a>
                                 </div>
                                 @endforeach
                             </div>

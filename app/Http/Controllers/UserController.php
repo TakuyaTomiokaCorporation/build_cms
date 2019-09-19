@@ -173,7 +173,7 @@ class UserController extends Controller
 
     public function getProductInfo()
     {
-        $trueWiressProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail', 'discontinued')
+        $trueWirlessProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail', 'discontinued')
                         ->where([
                             ['discontinued', 0],
                             ['transmission_method', '完全ワイヤレス']
@@ -182,7 +182,7 @@ class UserController extends Controller
                         ->orderBy('release_date', 'desc')
                         ->get();
 
-        $wiressProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail', 'discontinued')
+        $wirlessProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail', 'discontinued')
                         ->where([
                             ['discontinued', 0],
                             ['transmission_method', 'ワイヤレス']
@@ -197,8 +197,8 @@ class UserController extends Controller
                         ->get();
 
         return view('user.product', [
-            'trueWiressProducts' => $trueWiressProducts,
-            'wiressProducts' => $wiressProducts,
+            'trueWirlessProducts' => $trueWirlessProducts,
+            'wirlessProducts' => $wirlessProducts,
             'discontinuedProducts' => $discontinuedProducts,
         ]);
     }

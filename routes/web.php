@@ -19,6 +19,15 @@ Route::get('/tokushou', 'UserController@getTokushou')->name('tokushou');
 
 /*
 |############################
+| set routes of App help page below.
+|############################
+*/
+
+Route::get('/aviotapp/help/ja', 'UserController@showAppHelp')->name('app.help');
+Route::get('/aviotapp/help/ja-droid', 'UserController@showAndroidAppHelp')->name('app.android.help');
+
+/*
+|############################
 | set routes of Technologies below.
 |############################
 */

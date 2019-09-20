@@ -1,0 +1,179 @@
+body {
+	background-color: #F9F9F9;
+	color: #303030;
+}
+
+.header {
+	display: none;
+	height: 80px;
+	width: 100%;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.header h1 {
+	color: #5c5c5c;
+	line-height: 80px;
+	padding-left: 10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.back{
+	display:none;
+}
+
+.top-button {
+	padding-top:20px;
+}
+
+.li-dec {
+  list-style-type: decimal;
+}
+
+.bottom-button {
+	padding-bottom:20px;
+}
+
+.nav {
+    position: static;
+	margin: 20px 0 20px;
+	background-color: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/* ä¸€ç•ªä¸Šã®ãƒ©ãƒ™ãƒ«ã ã‘ä¸Šéƒ¨ã‚’è§’ä¸¸ã«*/
+.nav_label:nth-of-type(1) {
+	-webkit-border-radius: 4px 4px 0px 0px;
+	-moz-border-radius: 4px 4px 0px 0px;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.nav_label {
+	padding: 12px 16px 8px;
+	font-size: 140%;
+	background-color: #eee;
+}
+
+.list-group {
+	margin-bottom: 0;
+}
+
+.list-group-item .badge {
+  background-color: transparent;
+}
+
+.list-group-item .badge .glyphicon {
+  color: #777;
+}
+
+.article {
+	display: none;
+	padding: 0;
+	margin: 20px 0px 20px;
+	border: #ddd 1px solid;
+	background-color :#fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.article h2 {
+	padding:10px 20px 10px;
+  font-size: 30px;
+}
+
+.section {
+	padding: 0px 20px 10px;
+	display: none;
+}
+
+.section h3{
+	border-bottom : dotted 1px #dddddd;
+	padding-bottom: 8px;
+  padding-top: 8px;
+  font-size: 130%;
+}
+
+.section h4{
+	margin-top: 20px;
+}
+
+.sec-img {
+	border: 1px solid #ccc;
+	display:block;
+	margin: 10px auto;
+}
+
+.li-img {
+	width: 24px;
+	height: 24px;
+}
+
+.section ul{
+	padding-left:20px;
+}
+
+.hosoku{
+	font-size: 13px;
+}
+
+/* PCç”¨ */
+@media screen and (min-width: 992px) {
+
+  .nav_label {
+    font-size: 100%;
+    padding: 8px 15px;
+  }
+
+  .list-group-item {
+    padding: 5px 15px;
+    font-size: 90%;
+    border: none;
+  }
+
+  .list-group-item .badge {
+    padding: 2px 4px;
+    font-size: 80%;
+  }
+
+	.header {
+		display: block;
+	}
+
+	.nav {
+		width: 300px;
+	}
+
+	.affix {
+		position: fixed;
+		top: 20px;
+	}
+
+	.back{
+		display: none;
+	}
+
+	.article {
+		display:block;
+	}
+
+	.section {
+		display: block;
+		position: static;
+	}
+
+	.sec-img{
+    max-width: 300px;
+	}
+
+	.li-img {
+		width: 24px;
+		height: 24px;
+		vertical-align: bottom;
+	}
+}

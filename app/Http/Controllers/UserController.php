@@ -185,6 +185,39 @@ class UserController extends Controller
     // Products functions
     //
 
+    // public function getProductInfo()
+    // {
+    //     $trueWirlessProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail', 'discontinued')
+    //                     ->whereNull('deleted_at')                
+    //                     ->where([
+    //                         ['discontinued', 0],
+    //                         ['transmission_method', '完全ワイヤレス']
+    //                     ])
+    //                     ->orderBy('release_date', 'desc')
+    //                     ->get();
+
+    //     $wirlessProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail', 'discontinued')
+    //                     ->whereNull('deleted_at')
+    //                     ->where([
+    //                         ['discontinued', 0],
+    //                         ['transmission_method', 'ワイヤレス']
+    //                     ])
+    //                     ->orderBy('release_date', 'desc')
+    //                     ->get();
+
+    //     $discontinuedProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail', 'discontinued')
+    //                     ->whereNull('deleted_at')
+    //                     ->where('discontinued', 1)
+    //                     ->orderBy('release_date', 'desc')
+    //                     ->get();
+
+    //     return view('user.product', [
+    //         'trueWirlessProducts' => $trueWirlessProducts,
+    //         'wirlessProducts' => $wirlessProducts,
+    //         'discontinuedProducts' => $discontinuedProducts,
+    //     ]);
+    // }
+
     public function getProductInfo()
     {
         $continuedProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail', 'discontinued')
@@ -195,7 +228,7 @@ class UserController extends Controller
                         ->where('discontinued', 1)
                         ->orderBy('release_date', 'desc')
                         ->get();
-        return view('user.product', [
+        return view('user.product2', [
             'continuedProducts' => $continuedProducts,
             'discontinuedProducts' => $discontinuedProducts,
         ]);
@@ -214,18 +247,18 @@ class UserController extends Controller
         ]);
     }
 
-    public function getProductForBeginner()
-    {
-        $forBeginnerProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')
-                        ->where('discontinued', 0)
-                        ->where('category', 'エントリーモデル')
-                        ->orderBy('release_date', 'desc')
-                        ->get();
+    // public function getProductForBeginner()
+    // {
+    //     $forBeginnerProducts = \DB::table('products')->select('thumbnail', 'product_name', 'overview', 'link_detail')
+    //                     ->where('discontinued', 0)
+    //                     ->where('category', 'エントリーモデル')
+    //                     ->orderBy('release_date', 'desc')
+    //                     ->get();
         
-        return view('user.products.beginner', [
-            'forBeginnerProducts' => $forBeginnerProducts
-        ]);
-    }
+    //     return view('user.products.beginner', [
+    //         'forBeginnerProducts' => $forBeginnerProducts
+    //     ]);
+    // }
 
     public function getProductHybrid()
     {

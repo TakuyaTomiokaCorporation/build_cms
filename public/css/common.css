@@ -16,9 +16,9 @@ iframe {max-width:100% !important; border:0;}
 div:after,ul:after,ol:after,dl:after,
 header:after,footer:after,
 nav:after,section:after,article:after {
-	content: ""; 
-	display: block;
-	clear: both;
+  content: ""; 
+  display: block;
+  clear: both;
 }
 
 section {margin: 0 0;}
@@ -27,31 +27,32 @@ section {margin: 0 0;}
  base
 -------------- */
 body {
-	/* width: 100%;
-	height: auto; */
-	color: #222;
+  /* width: 100%;
+  height: auto; */
+  color: #222;
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 16px;
 }
 
 h1,h2,h3,h4,h5,h6 {
-	line-height: 1.2;
+  line-height: 1.2;
 }
-	
+  
 /* link */
 a {
-	color: #000;
-	text-decoration: none;
-	word-break: break-all;
+  color: #000;
+  text-decoration: none;
+  word-break: break-all;
 }
 a:hover {
-	opacity: 0.6;
-	text-decoration: none;
+  opacity: 0.6;
+  text-decoration: none;
 }
 a:hover img {
-	-moz-opacity:0.8;
-	opacity:0.8;
+  -moz-opacity:0.8;
+  opacity:0.8;
   transition-duration: 1s;
 }
 
@@ -81,9 +82,9 @@ a:hover img {
 .fs15 { font-size:116%;}
 
 /* ----- text */
-.txtS { color: #666;	font-size: 85%;}
+.txtS { color: #666;  font-size: 85%;}
 /* ---------- font weight */
-.bold {	font-weight: bold;}
+.bold { font-weight: bold;}
 .txtRed {color: #f53b3b}
 
 /* ---------- align */
@@ -103,62 +104,62 @@ a:hover img {
 /* ---------- margin,padding */
 .m_auto {margin: 0 auto;}
 
-.mb0 {	margin-bottom: 0px !important;}
-.mb5 {	margin-bottom: 5px !important;}
-.mb10 {	margin-bottom: 10px !important;}
-.mb15 {	margin-bottom: 15px !important;}
-.mb20 {	margin-bottom: 20px !important;}
+.mb0 {  margin-bottom: 0px !important;}
+.mb5 {  margin-bottom: 5px !important;}
+.mb10 { margin-bottom: 10px !important;}
+.mb15 { margin-bottom: 15px !important;}
+.mb20 { margin-bottom: 20px !important;}
 .mb40 { margin-bottom: 40px !important;}
 .mb60 { margin-bottom: 60px !important;}
 
-.ml0 {	margin-left: 0px !important;}
-.ml5 {	margin-left: 5px !important;}
-.ml10 {	margin-left: 10px !important;}
-.ml15 {	margin-left: 15px !important;}
-.ml20 {	margin-left: 20px !important;}
+.ml0 {  margin-left: 0px !important;}
+.ml5 {  margin-left: 5px !important;}
+.ml10 { margin-left: 10px !important;}
+.ml15 { margin-left: 15px !important;}
+.ml20 { margin-left: 20px !important;}
 
-.mr0 {	margin-right: 0px !important;}
-.mr5 {	margin-right: 5px !important;}
-.mr10 {	margin-right: 10px !important;}
-.mr15 {	margin-right: 15px !important;}
-.mr20 {	margin-right: 20px !important;}
+.mr0 {  margin-right: 0px !important;}
+.mr5 {  margin-right: 5px !important;}
+.mr10 { margin-right: 10px !important;}
+.mr15 { margin-right: 15px !important;}
+.mr20 { margin-right: 20px !important;}
 
-.mt0 {	margin-top: 0px !important;}
-.mt5 {	margin-top: 5px !important;}
-.mt10 {	margin-top: 10px !important;}
-.mt15 {	margin-top: 15px !important;}
-.mt20 {	margin-top: 20px !important;}
+.mt0 {  margin-top: 0px !important;}
+.mt5 {  margin-top: 5px !important;}
+.mt10 { margin-top: 10px !important;}
+.mt15 { margin-top: 15px !important;}
+.mt20 { margin-top: 20px !important;}
 .mt40 { margin-top: 40px !important;}
 .mt60 { margin-top: 60px !important;}
 .mt80 { margin-top: 80px !important;}
 .mt100 { margin-top: 100px !important;}
 
-.pb0 {	padding-bottom: 0px !important;}
-.pb5 {	padding-bottom: 5px !important;}
-.pb10 {	padding-bottom: 10px !important;}
-.pb15 {	padding-bottom: 15px !important;}
-.pb20 {	padding-bottom: 20px !important;}
+.pb0 {  padding-bottom: 0px !important;}
+.pb5 {  padding-bottom: 5px !important;}
+.pb10 { padding-bottom: 10px !important;}
+.pb15 { padding-bottom: 15px !important;}
+.pb20 { padding-bottom: 20px !important;}
 
-.pt0 {	padding-top: 0px !important;}
-.pt5 {	padding-top: 5px !important;}
-.pt10 {	padding-top: 10px !important;}
-.pt15 {	padding-top: 15px !important;}
-.pt20 {	padding-top: 20px !important;}
+.pt0 {  padding-top: 0px !important;}
+.pt5 {  padding-top: 5px !important;}
+.pt10 { padding-top: 10px !important;}
+.pt15 { padding-top: 15px !important;}
+.pt20 { padding-top: 20px !important;}
 
 /* ----- list */
 .ulDisc {
-	margin-left: 22px;
-	line-height: 1.4;
-	list-style: outside disc;
+  margin-left: 22px;
+  line-height: 1.4;
+  list-style: outside disc;
 }
 
 .olDecimal {
-	margin-left: 22px;
-	list-style: outside decimal;
+  margin-left: 22px;
+  list-style: outside decimal;
 }
 
 .ulDisc li, .olDecimal li {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* ----- decoration (button, etc...) */
@@ -173,15 +174,6 @@ a:hover img {
 
 /* ----- button */
 
-button {
-	background: none;
-	border: none;
-	outline: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-}
-
 .btn_Blk {
   display: inline-block;
   width: 260px;
@@ -193,6 +185,22 @@ button {
   color: #FFF;
   text-decoration: none;
   border: 2px solid #000;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn_Gray {
+  display: inline-block;
+  width: 260px;
+  height:54px;
+  text-align: center;
+  background-color: #666666;
+  font-size: 16px;
+  line-height: 50px;
+  color: #FFF;
+  text-decoration: none;
+  border: 2px solid #666666;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -258,6 +266,8 @@ button {
   z-index: 1;
 }
 
+
+/*-- みどりボタン --*/
 .btn_conf {
   display: inline-block;
   width: 260px;
@@ -282,7 +292,7 @@ button {
 /* =header
 -------------------------------------------------------------- **/
 header {
-	position: fixed;
+  position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -310,7 +320,7 @@ nav.greedy h1 {
 }
 
 nav.greedy h1 img {
-	width: 46%;
+  width: 46%;
   padding-left: 12px;
 }
 
@@ -351,8 +361,8 @@ nav.greedy ul.links li a {
 }
 
 nav.greedy ul.links li a:hover {
-	text-decoration: none;
-	opacity: 0.4;
+  text-decoration: none;
+  opacity: 0.4;
 }
 
 nav.greedy ul.hidden-links {
@@ -369,7 +379,22 @@ nav.greedy ul.hidden-links li {
 }
 
 nav.greedy ul.hidden-links li a {
-	color: #fff;
+  color: #fff;
+}
+
+.movie-wrap {
+     position: relative;
+     padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+     height: 0;
+     overflow: hidden;
+}
+ 
+.movie-wrap video {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
 }
 
 #container {
@@ -382,9 +407,9 @@ nav.greedy ul.hidden-links li a {
 }
 
 .news {
-	display : flex;
-	flex-wrap : wrap;
-	justify-content:space-between;
+  display : flex;
+  flex-wrap : wrap;
+  justify-content:space-between;
 }
 
 .news::after{
@@ -394,42 +419,44 @@ nav.greedy ul.hidden-links li a {
 }
 
 .news_box{
-	width: 300px;
-	margin-top: 16px;
-	box-sizing:border-box;
-	position: relative;
+  width: 480px;
+  margin-top: 16px;
+  box-sizing:border-box;
+  position: relative;
 }
 
 .area_news {
-	padding: 20px;
+  /*padding: 20px;*/
+  padding-bottom: 20px;
 }
 
+
 .news_box a {
-	color: #222;
+  color: #222;
 }
 .news_box a:hover {
-	opacity: 0.8;
+  opacity: 0.8;
 }
 
 .news_box img {
-	width: 300px;
-	height: 300px;
-	object-fit: cover;
+/*  width: 300px;
+  height: 300px;*/
+  object-fit: cover;
 }
 
 .news_box h4 {
-	position: absolute;
-	bottom: 0;
-	background-color: rgba(255,255,255,0.7);
-	width: 100%;
-	text-align: center;
-	padding: 10px 4px;
+  /*position: absolute;*/
+  bottom: 0;
+  background-color: rgba(255,255,255,0.7);
+  width: 100%;
+  text-align: center;
+  padding: 10px 4px;
 }
 
 .news_box span {
-	position: absolute;
-	top: 0;
-	left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .tag_product { 
@@ -473,22 +500,22 @@ nav.greedy ul.hidden-links li a {
 }
 
 .notice h3 {
-	border-bottom: 1px solid #444;
-	padding-bottom: 5px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
 }
 
 .notice dd {
-	padding: 5px 0;
+  padding: 5px 0;
 }
 
 .notice dt {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 
 /*--最新情報一覧--*/
 .news_TL {
-    width: 94%;
+    /*width: 94%;*/
     border-bottom: solid 1px #c1c1c1;
   }
 
@@ -513,7 +540,7 @@ nav.greedy ul.hidden-links li a {
   }
 
   .news_img {
-    width: 90%;
+    /*width: 90%;*/
     text-align: center;
   }
 
@@ -531,7 +558,7 @@ nav.greedy ul.hidden-links li a {
 /*製品一覧*/
 
 #product article {
-	margin-top: 64px;
+  margin-top: 64px;
 }
 
 
@@ -559,33 +586,16 @@ ul.product_category li a:hover {
   margin: 20px 10px;
 }
 
-.product_content div {
+.product_content {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
-.product_content div ul {
-  width: 22%;
-  padding: 10px;
-  margin-right: 12px;
-}
-
-.product_content div::before{
-  content:"";
-  display: block;
-  width:22%;
-  order:1;
-}
-.product_content div::after{
-  content:"";
-  display: block;
-  width:21%;
-}
-
 .btn_product {
   background: #000;
+  padding: 8px 0;
   color: #fff;
-  padding: 10px 40px;
+  display: block;
 }
 
 /*--AVIOTについて--*/
@@ -661,7 +671,7 @@ ul.product_category li a:hover {
 
 
 .product_phot  {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 .col-head-type1 {
   border-collapse: collapse;
@@ -1090,22 +1100,22 @@ ul.inner {
 /* =breadcrumb
 ---------------------------------------------------- */
 #breadcrumb {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 #breadcrumb li {
-	color: #AAA;
-	font-size: 12px;
-	display: inline-table;
+  color: #AAA;
+  font-size: 12px;
+  display: inline-table;
 }
 #breadcrumb li a {
-	color: #CCC;
-	padding-right: 5px;
+  color: #CCC;
+  padding-right: 5px;
 }
 #breadcrumb li a:after {
-	content: "　>"; 
+  content: "　>"; 
 }
 #breadcrumb li a:hover {
-	color: #999;
+  color: #999;
 }
 
 /* =headline / titles
@@ -1121,40 +1131,37 @@ ul.inner {
 /* =footer
 -------------------------------------------------------------- **/
 footer {
-	background: #000;
-	font-size: 10px;
+  background: #000;
+  font-size: 12px;
 }
 
 footer article {
-	display: flex;
-	border-bottom: 1px #fff solid;
+  display: flex;
+  border-bottom: 1px #fff solid;
 }
 
 .footer_logo {
-	vertical-align: middle;
-	margin-top: 40px;
+  vertical-align: middle;
+  margin-top: 40px;
 }
 
 .foot_menu {
-	display: flex;
-	flex: 1;
-	margin: 20px 0;
-}
-
-.foot_menu ul {
-	margin-right: 25px;
+  display: flex;
+  flex: 1;
+  margin: 20px 0;
 }
 
 .foot_menu ul:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 
 .foot_menu ul li a {
-	display: block;
-	padding: 5px 0;
-	color: #fff;
+  display: block;
+  padding: 5px 0;
+  color: #fff;
 }
+
 
 
 /* =siteFooter
@@ -1163,23 +1170,23 @@ footer article {
 /* =copyright
 ---------------------------------------------------- */
 #copyright {
-	margin-top: 10px;
-	text-align: center;
-	color: #fff;
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
 }
 
 
 /* =pageTop
 ---------------------------------------------------- */
 #pageTop {
-	display: block;
-	position: fixed;
+  display: block;
+  position: fixed;
 }
 
 #pageTop a {
-	text-indent: -9999px;
-	background: url(../img/pageTop.png) no-repeat;
-	display: block;
+  text-indent: -9999px;
+  background: url(../img/pageTop.png) no-repeat;
+  display: block;
 }
 
 @media screen and (min-width:1024px) {
@@ -1187,34 +1194,34 @@ footer article {
 .w1020 {width: 1020px;}
 .ifsp { display: none; }
 .flex { display: flex; }
-.flex_ImgLogo { width: 30%; display: flex; align-items: center; justify-content: center; }
+.flex_ImgLogo { width: 30%; display: flex; align-items: start; justify-content: center; }
 .flex_ImgR { display: flex; flex-direction: row-reverse; }
 .flex_ImgL { display: flex; }
 .clm2_img { width: 50%; }
 .clm2_imgLogo { width: 20%; padding: 10px;}
 
 nav.greedy {
-	width: 1080px;
-	margin: 0 auto;
+  width: 1080px;
+  margin: 0 auto;
 }
 
 .mv {
-	margin-top: 63px;
+  margin-top: 63px;
 }
 
 .notice {
-	margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .notice dt {
-	float: left;
-	clear: left;
-	padding: 5px 0;
-	margin-right: 20px;
+  float: left;
+  clear: left;
+  padding: 5px 0;
+  margin-right: 20px;
 }
 
 .notice dl {
-	padding: 10px 40px;
+  padding: 10px 0;
 }
 
 .japansound_logo {
@@ -1228,7 +1235,7 @@ nav.greedy {
 }
 
 /*.product_phot  {
-	width: 800px;
+  width: 800px;
 }*/
 
 .product_text {
@@ -1283,43 +1290,69 @@ nav.greedy {
   margin: 10px;
 }
 
+.foot_menu ul {
+  margin-right: 148px;
+}
+
+.product_content div.product_box {
+  width: 22%;
+  padding: 10px;
+  margin-right: 12px;
+}
+
+.product_content div.product_box::before{
+  content:"";
+  display: block;
+  width:22%;
+  order:1;
+}
+
+.product_content div.product_box::after{
+  content:"";
+  display: block;
+  width:21%;
+}
+
 
 }
 
 @media screen and (max-width: 640px) {
 /*ここにスマホ用スタイルを記述*/
+body {
+  font-size: 14px;
+}
 .w98 {width: 96%;}
 .SPw {width: 96%;}
 .ifpc { display: none; }
 .Sp_alc { text-align: center !important;}
 .area_news {
-	padding: 0 0 40px 0;
+  padding: 0 0 40px 0;
 }
 
 .mv {
-	margin-top: 64px;
+  margin-top: 64px;
 }
-.news_box{
-	width: 180px;
-	height: 180px;
+/*.news_box{
+  width: 180px;
+  height: 180px;
 }
 
 .news_box img {
-	width: 180px;
-	height: 180px;
+  width: 180px;
+  height: 180px;
 }
 
 .news_box:last-child {
   display: none;
-}
+}*/
 
 .notice dl {
-	margin-bottom: 60px;
-	padding: 0 10px;
+  margin-bottom: 60px;
+  padding: 0 10px;
 }
 
 .notice dd {
-	padding-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 #news .news_title p {
@@ -1343,11 +1376,11 @@ nav.greedy {
 
 /*--製品一覧・製品詳細--*/
 .product_phot  {
-	width: 90%;
+  width: 90%;
 }
 
 .swiper-my-pagination {
-	display: none;
+  display: none;
 }
 
 ul.product_category li {
@@ -1396,6 +1429,10 @@ ul.product_category li {
   margin: 0 auto;
   margin-top: 16px;
   margin-bottom: 16px;
+}
+
+#product .product_content h3 a {
+  color: #222;
 }
 
 /*--アーティストインタビュー--*/
@@ -1496,18 +1533,21 @@ ul.product_category li {
     margin-top: 0;
   }
 
-
-
 .registration_form form input,
 .registration_form form textarea {
   width: 90%;
 }
 
+.foot_menu {
+  justify-content: center;
+}
 
-
+.foot_menu ul {
+  margin-right: 80px;
 }
 
 
+}
 
 
 @media only screen and (min-width:640px) and (max-width:1023px) {
@@ -1516,20 +1556,20 @@ ul.product_category li {
 .ifpc { display: none; }
 .flex { display: flex; }
 .mv {
-	margin-top: 64px;
+  margin-top: 64px;
 }
 
-.news_box:last-child {
-  display: none;
+.news_box {
+  width: 360px;
 }
+
+/*.news_box:last-child {
+  display: none;
+}*/
   
 /*--製品一覧・製品詳細--*/
 .product_phot  {
   width: 90%;
-}
-
-.product_content div {
-  display: flex;
 }
 
 .product_content div ul {
@@ -1561,6 +1601,16 @@ ul.product_category li {
     width: 28%;
     }
 
+.foot_menu ul {
+  margin-right: 106px;
+}
 
+}
 
+@media screen and (max-width: 374px) {
+  .news_box{
+  width: 170px;
+  height: 170px;
+  margin: 0 auto;
+}
 }

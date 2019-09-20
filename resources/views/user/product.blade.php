@@ -4,7 +4,7 @@
 
 @section('description', '日本のサウンドを熟知した日本人オーディオエキスパートが携わる日本発のオーディオビジュアルブランド')
 
-@section('body_id', '')
+@section('body_id', 'product')
 
 @section('javascript-in-head')
 
@@ -15,20 +15,18 @@
 @section('css')
 
 <style type="text/css">
-    ul.product_category li {
-        display: inline-block;
-    }
-    
-    ul.product_category li a {
-        display: block;
-        background: #000;
+   #product .accordion p.ac { 
+        padding: 120px 10px;
+        
         color: #fff;
-        padding: 10px;
-    }
-    
-    ul.product_category li a:hover {
-        background: #555;
-    }
+        }
+
+    #product .product_content a { color: #fff; }
+    #product .product_content h3 a { color: #222; }
+
+    #product .TWbg { background: url({{ url('images/products/TWbg.jpg') }}) center center no-repeat; }
+    #product .Wbg { background: url({{ url('images/products/Wbg.jpg') }}) center center no-repeat; }
+    #product .Compleatbg { background: #666666; }
     
     
 </style>
@@ -37,71 +35,75 @@
 
 @section('content')
 
-<div id="container" class="both mb60">
+<div id="container" class="both">
 <div id="" class="main" role="main">
     <article class="w1020 w98 m_auto">
-    <h2 class="pt20 border_b mb20">製品一覧</h2>
+    <h2 class="pt20 mb20">製品一覧</h2>
     <section>
-        <ul class="product_category">
-            <li><a href="{{ route('product.show') }}">全商品</a></li>
-            <li><a href="{{ route('wireless') }}">完全ワイヤレス</a></li>
-            {{-- <li><a href="{{ route('beginner') }}">エントリーモデル</a></li> --}}
-            <li><a href="{{ route('hybrid') }}">ハイブリッドドライバー</a></li>
-            <li><a href="{{ route('aptxhd') }}">aptX HD</a></li>
-        </ul>
-    </section>
-    
-    <section class="product_content">
-        <div class="flex">
-        @foreach ($continuedProducts as $continuedProduct)
-            <ul class="product_box mt20 mb20">
-                <li class="alc"><a href="{{ $continuedProduct->link_detail }}">
-                    <img src="{{ asset('images/thumbnails') }}/{{ $continuedProduct->thumbnail }}" alt="{{ $continuedProduct->product_name }}">
-                </a></li>
-                <li class="mt10 mb10"><h3>
-                    <a href="{{ $continuedProduct->link_detail }}">{{ $continuedProduct->product_name }}</a>
-                </h3></li>
+        <div>
+            <ul class="accordion">
                 <li>
-                    <p class="fs12">{!! Str::limit($continuedProduct->overview, 120) !!}</p>
+                    <p class="ac alc TWbg">TRUE WIRELESS EARPHONE</p>
+                    <ul class="inner">
+                        <li>
+                            <p>
+                                <div class="flex product_content">
+                                    @foreach ($trueWirlessProducts as $trueWirlessProduct)
+                                    <div class="product_box mt20 mb20">
+                                        <p><a href="{{ $trueWirlessProduct->link_detail }}"><img src="{{ asset('images/thumbnails') }}/{{ $trueWirlessProduct->thumbnail }}" alt="{{ $trueWirlessProduct->product_name }}"></a></p>
+                                        <h3>{{ $trueWirlessProduct->product_name }}</h3>
+                                        <hr>
+                                        <span>{!! Str::limit($trueWirlessProduct->overview, 120) !!}</span>
+                                        <a href="{{ $trueWirlessProduct->link_detail }}" class="btn_product alc mt10">詳細をみる</a>
+                                    </div>
+                                    @endforeach
+                                </div>
+                            </p>
+                        </li>
+                    </ul>
                 </li>
-                <li class="alc mt20">
-                    <a href="{{ $continuedProduct->link_detail }}" class="btn_product">詳細をみる</a>
+    
+                <li class="mt20">
+                    <p class="ac alc Wbg">WIRELESS EARPHONE</p>
+                    <ul class="inner">
+                        <li>
+                            <div class="flex product_content">
+                                @foreach ($wirlessProducts as $wirlessProduct)        
+                                <div class="product_box mt20 mb20">
+                                    <p><a href="{{ $wirlessProduct->link_detail }}"><img src="{{ asset('images/thumbnails') }}/{{ $wirlessProduct->thumbnail }}" alt="{{ $wirlessProduct->product_name }}"></a></p>
+                                    <h3>{{ $wirlessProduct->product_name }}</h3>
+                                    <hr>
+                                    <span>{!! Str::limit($wirlessProduct->overview, 120) !!}</span>
+                                    <a href="{{ $wirlessProduct->link_detail }}" class="btn_product alc mt10">詳細をみる</a>
+                                </div>
+                                @endforeach
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="mt20">
+                    <p class="ac alc Compleatbg">生産完了製品</p>
+                    <ul class="inner">
+                        <li>
+                            <div class="flex product_content">
+                                @foreach ($discontinuedProducts as $discontinuedProduct)
+                                <div class="product_box mt20 mb20">
+                                    <p><a href="{{ $discontinuedProduct->link_detail }}"><img src="{{ asset('images/thumbnails') }}/{{ $discontinuedProduct->thumbnail }}" alt="{{ $discontinuedProduct->product_name }}"></a></p>
+                                    <h3>{{ $discontinuedProduct->product_name }}</h3>
+                                    <hr>
+                                    <span>{!! Str::limit($discontinuedProduct->overview, 120) !!}</span>
+                                    <a href="{{ $discontinuedProduct->link_detail }}" class="btn_product alc mt10">詳細をみる</a>
+                                </div>
+                                @endforeach
+                            </div>
+                        </li>
+                    </ul>
                 </li>
             </ul>
-            @endforeach
         </div>
     </section>
-
-    <div id="app">
-    {{-- <p class="alc"><button v-on:click="isShown" class="btn_buy" >もっとみる</button></p> --}}
-    <transition>
-    <section class="product_content" v-show="show">
-        <h2 class="border_b">生産完了製品</h2>
-        <div class="flex">
-        @foreach ($discontinuedProducts as $discontinuedProduct)
-            <ul class="product_box mt20 mb20">
-                <li class="alc"><a href="{{ $discontinuedProduct->link_detail }}">
-                    <img src="{{ asset('images/thumbnails') }}/{{ $discontinuedProduct->thumbnail }}" alt="{{ $discontinuedProduct->product_name }}">
-                </a></li>
-                <li class="mt10 mb10"><h3>
-                    <a href="{{ $discontinuedProduct->link_detail }}">{{ $discontinuedProduct->product_name }}</a>
-                </h3></li>
-                <li>
-                    <p class="fs12">{!! Str::limit($discontinuedProduct->overview, 120) !!}</p>
-                </li>
-                <li class="alc mt20">
-                    <a href="{{ $discontinuedProduct->link_detail }}" class="btn_product">詳細をみる</a>
-                </li>
-            </ul>
-        @endforeach
-        </div>
-    </section>
-    </transition>
-    <p class="alc"><button v-on:click="isShown" class="btn_buy" >もっとみる</button></p>
-    </div>
-    
     </article>
-        
 </div><!--/main-->
 </div><!--/container-->
 
@@ -109,34 +111,32 @@
 
 @section('javascript-footer')
 
-<script>
-    new Vue({
-        el: '#app',
-        data: {
-            show:false
-        },
-        methods: {
-            isShown: function(){
-                this.show = !this.show
-            }
+<script type="text/javascript">
+    $(function(){
+
+    //.accordionの中のp要素がクリックされたら
+    $('.accordion p').click(function(){
+        $(this).next().slideToggle();   
+        // activeが存在する場合
+        if ($(this).children(".accordion_icon").hasClass('active')) {           
+            // activeを削除
+            $(this).children(".accordion_icon").removeClass('active');              
         }
+        else {
+            // activeを追加
+            $(this).children(".accordion_icon").addClass('active');         
+        }   
+        //クリックされた.accordionの中のp要素に隣接するul要素が開いたり閉じたりする。
     });
+
+        //.accordionの中の.innerの中のli要素の中のp要素がクリックされたら
+    $('.accordion .inner li p').click(function() {
+
+        //クリックされた.accordionの中の.innerの中のli要素の中のp要素の子要素のul要素が開いたり閉じたりする。
+        $(this).children('ul').slideToggle();
+
+  });
+});
 </script>
-
-<style scoped>
-
-.v-enter-active, .v-leave-active {
-  transition: opacity 1.5s
-}
-
-.v-leave-active {
-  transition: opacity 0.5s
-}
-
-.v-enter, .v-leave-to {
-  opacity: 0
-}
-
-</style>
     
 @endsection

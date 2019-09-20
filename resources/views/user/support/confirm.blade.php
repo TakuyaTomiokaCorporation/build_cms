@@ -34,12 +34,7 @@
 @section('content')
 <div id="container" class="both">
     <div id="" class="main" role="main">
-    {{-- <form action="https://info.aviot.jp/l/781993/2019-07-23/9j" method="POST"> --}}
-    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-    <input type=hidden name='captcha_settings' value='{"keyname":"aviotcap","fallback":"true","orgId":"00D6F000002Kz08","ts":""}'>
-    <input type=hidden name="oid" value="00D6F000002Kz08">
-    <input type=hidden name="retURL" value="aviot.jp/support/registration/thanks">
-    <input type="hidden" name="00N6F00000WyN80" value="A" />
+    <form action="https://info.aviot.jp/l/781993/2019-07-23/9j" method="POST">
     @csrf
     @method('POST')
 

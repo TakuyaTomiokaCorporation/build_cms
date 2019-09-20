@@ -166,6 +166,20 @@ class UserController extends Controller
         return view('user.tokushou');
     }
 
+    //
+    // App help function 
+    // 
+
+    public function showAppHelp()
+    {
+        return view('app.help');
+    }
+
+    public function showAndroidAppHelp()
+    {
+        return view('app.android_help');
+    }
+
 
     // 
     // Products functions

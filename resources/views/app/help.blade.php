@@ -101,10 +101,10 @@
 			<div class="section">
 				<h3 id="00">AVIOTアプリについて</h3>
 				<p>「AVIOTアプリ」とは、読んで、聴いて、買える ミュージック・ストア「AVIOT」がお届けする音楽や情報を視聴できるアプリです。フリー・ダウンロード作品や新譜の視聴、楽曲にまつわる特集記事とニュースを読むなど、スマートフォンで手軽にAVIOTを楽しむことができます。</p>
-				<p>さらに、AVIOTアカウントを作成・ログインするとすべての機能が使用可能になります</p>
+				<p>さらに、OTOTOYアカウントを作成・ログインするとすべての機能が使用可能になります</p>
 				<ul>
 					<li>フリー・ダウンロード曲を「ライブラリに登録」することが可能になり、配信期間後も楽曲を楽しめます。</li>
-					<li>AVIOTで購入した楽曲を聴けます。</li>
+					<li>OTOTOYで購入した楽曲を聴けます。</li>
 					<li>「きになる」に新譜やランキングの楽曲を追加できます。あとで購入したい、というときに便利です。</li>
 					<li>プレイリストを作成し、お気に入りの楽曲を集めることができます。</li>
 					<li>同期したiTunesライブラリの楽曲が聴けます。</li>
@@ -113,8 +113,8 @@
 
 			<div class="section">
 				<h3 id="01">ログインなしで使用する</h3>
-				<p>AVIOTのアカウントと一緒に使用すると便利なAVIOTアプリですが、新規登録やログインを後回しにしてひとまず使ってみる、ということも可能です。</p>
-				<p>まずアプリを起動し、「初めてAVIOTを使う」をタップします。</p>
+				<p>OTOTOYのアカウントと一緒に使用すると便利なAVIOTアプリですが、新規登録やログインを後回しにしてひとまず使ってみる、ということも可能です。</p>
+				<p>まずアプリを起動し、「初めてOTOTOYを使う」をタップします。</p>
 				<img src="{{ asset('images/app/ios-login01.jpg') }}" alt="ios-login01" class="sec-img img-responsive">
 				<p>次に「スキップ」をタップします。ユーザー登録のスキップについて確認がありますので、OKをタップしてください。</p>
 				<img src="{{ asset('images/app/ios-login02.jpg') }}" alt="ios-login02" class="sec-img img-responsive">
@@ -204,7 +204,7 @@
 				<h4>プレイリストの名前変更と削除</h4>
 				<ul>
 					<li>名前を変更する : プレイリストをタップして開き「名前変更」ボタンを押して新しい名前を入力しOKをタップします。</li>
-					<li>プレイリストを削除する : プレイリスト一覧で「編集」ボタンをタップし、削除したいプレイリストの<img src="{{ asset('images/app/') }}../img/del_7.jpg" alt="del" class="li-img">をタップします。</li>
+					<li>プレイリストを削除する : プレイリスト一覧で「編集」ボタンをタップし、削除したいプレイリストの<img src="{{ asset('images/app/del_7.jpg') }}" alt="del" class="li-img">をタップします。</li>
 				</ul>
 				<h4>再生画面から追加する</h4>
 				<p>「プレイリスト追加」ボタンをタップすと現在作成されているプレイリストの一覧が表示されます。タップしたプレイリストに再生中の楽曲が追加されます。</p>
@@ -219,7 +219,7 @@
 				<h4>シャッフル再生</h4>
 				<p>再生画面からと曲の選択画面からシャッフル再生できます。</p>
 				<ul>
-					<li>再生画面の<img src="{{ asset('images/app/shuffle_off.jpg') }}" alt="shuffle_off" class="li-img">をタップすると再生順がシャッフルされます。<img src="../img/shuffle_on.jpg" alt="shuffle_on" class="li-img">は既にシャッフル再生中です。タップすると通常の再生順に戻ります。</li>
+					<li>再生画面の<img src="{{ asset('images/app/shuffle_off.jpg') }}" alt="shuffle_off" class="li-img">をタップすると再生順がシャッフルされます。<img src="{{ asset('images/app/shuffle_on.jpg') }}" alt="shuffle_on" class="li-img">は既にシャッフル再生中です。タップすると通常の再生順に戻ります。</li>
 					<li>プレイリスト、「曲」タブの上部にある「シャッフル」をタップするとシャッフル再生がはじまります。</li>
 					<li>アルバムの楽曲一覧画面にある<img src="{{ asset('images/app/album_shuffle_button.jpg') }}" alt="album_shuffle_button" class="li-img">をタップするとアルバムのシャッフル再生ができます。</li>
 				</ul>
@@ -234,7 +234,7 @@
 
 			<div class="section">
 				<h3 id="17">特典ファイルの表示</h3>
-				<p>購入特典のあるアルバムには、プレゼントの箱のような「特典アイコン <img src="../img/special_icon.jpg" alt="special_icon" class="li-img"> 」が表示されるので、それをタップします。</p>
+				<p>購入特典のあるアルバムには、プレゼントの箱のような「特典アイコン <img src="{{ asset('images/app/special_icon.jpg') }}" alt="special_icon" class="li-img"> 」が表示されるので、それをタップします。</p>
 				<img src="{{ asset('images/app/ios-bonus01.jpg') }}" alt="ios-bonus01" class="sec-img img-responsive">
 				<p>すると、特典ファイルの一覧が表示されます。</p>
 				<img src="{{ asset('images/app/ios-bonus03.jpg') }}" alt="ios-bonus03" class="sec-img img-responsive">

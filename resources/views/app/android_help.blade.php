@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="{{ asset('css/index.css') }}" rel="stylesheet" media="screen" />
-	<title>AVIOTアプリAndroid版 ヘルプ</title>
+	<title>AVIOT PLAYER Android版 ヘルプ</title>
 </head>
 <body>
 
@@ -14,7 +14,7 @@
 
 	<!-- ヘッダ -->
 	<div id="header" class="header">
-		<h1>AVIOTアプリAndroid版 ヘルプ</h1>
+		<h1>AVIOT PLAYER Android版 ヘルプ</h1>
 	</div>
 
 
@@ -28,7 +28,7 @@
 				<div class="nav_label">ようこそ</div>
 				    <a href="#00" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						AVIOTアプリについて</a>
+						AVIOT PLAYERについて</a>
 						<a href="#01" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
 						QRコードでログインする</a>
@@ -78,8 +78,8 @@
 		<div class="article">
 			<h2>ようこそ</h2>
 			<div class="section">
-				<h3 id="00">AVIOTアプリについて</h3>
-				<p>「AVIOTアプリ」とは、読んで、聴いて、買える ミュージック・ストア「OTOTOY」がお届けする音楽や情報を視聴できるアプリです。フリー・ダウンロード作品や新譜の視聴、楽曲にまつわる特集記事とニュースを読むなど、スマートフォンで手軽にOTOTOYを楽しむことができます。</p>
+				<h3 id="00">AVIOT PLAYERについて</h3>
+				<p>「AVIOT PLAYER」とは、読んで、聴いて、買える ミュージック・ストア「OTOTOY」がお届けする音楽や情報を視聴できるアプリです。フリー・ダウンロード作品や新譜の視聴、楽曲にまつわる特集記事とニュースを読むなど、スマートフォンで手軽にOTOTOYを楽しむことができます。</p>
 				<p>アプリ起動画面でOTOTOYアカウントにログイン後、お楽しみください。</p>
 
 				<h3 id="01">QRコードでログインする</h3>
@@ -111,7 +111,7 @@
 			<div class="section">
 				<h3 id="11">各アイコンについて</h3>
 				<h4>詳細アイコン</h4>
-				<p>AVIOTアプリのさまざまな場面でパッケージに<img src="{{ asset('images/app/android-syousai-icon.png') }}" alt="android-syousai-icon" class="li-img">「詳細アイコン」が表示されます。</p>
+				<p>AVIOT PLAYERのさまざまな場面でパッケージに<img src="{{ asset('images/app/android-syousai-icon.png') }}" alt="android-syousai-icon" class="li-img">「詳細アイコン」が表示されます。</p>
 				<img src="{{ asset('images/app/android-syousai01.jpg') }}" alt="android-syousai01" class="sec-img img-responsive">
 				<p><img src="{{ asset('images/app/android-syousai-icon.png') }}" alt="android-syousai-icon" class="li-img">「詳細アイコン」を押すと、「アルバムを再生する」「記事を読む」「あとで買うに追加する」「ライブラリに追加」などのメニューががでてきます。</p>
 				<img src="{{ asset('images/app/android-syousai02.jpg') }}" alt="android-syousai02" class="sec-img img-responsive">
@@ -125,7 +125,7 @@
 
 			<div class="section">
 				<h3 id="12">楽曲を再生する</h3>
-				<p>AVIOTアプリでは試聴、およびマイライブラリにある音源の再生など、音源再生はすべてほぼすべて同じ操作方法で行えます。</p>
+				<p>AVIOT PLAYERでは試聴、およびマイライブラリにある音源の再生など、音源再生はすべてほぼすべて同じ操作方法で行えます。</p>
 				<p><img src="{{ asset('images/app/android-syousai-icon.png') }}" alt="android-syousai-icon" class="li-img">「詳細アイコン」から、「アルバムを再生する」を選択すると、縮小化されている再生プレイヤーが画面最下方に出現します。また各パッケージの詳細から聴きたい楽曲をタップすることでも同様の再生がなされます。</p>
 				<p>縮小化されている下方の再生プレイヤーで音源を再生したままでも、ダブ・メニューを切り替え、ニュースやチャート、他の音源のチェックを行えます。
 				</p>

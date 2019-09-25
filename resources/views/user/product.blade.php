@@ -51,7 +51,7 @@
                                     @foreach ($trueWirlessProducts as $trueWirlessProduct)
                                     <div class="product_box mt20 mb20">
                                         <p><a href="{{ $trueWirlessProduct->link_detail }}"><img src="{{ asset('images/thumbnails') }}/{{ $trueWirlessProduct->thumbnail }}" alt="{{ $trueWirlessProduct->product_name }}"></a></p>
-                                        <h3><a harf="{{ $trueWirlessProduct->link_detail }}">{{ $trueWirlessProduct->product_name }}</a></h3>
+                                        <h3>{{ $trueWirlessProduct->product_name }}</h3>
                                         <hr>
                                         <span>{!! Str::limit($trueWirlessProduct->overview, 120) !!}</span>
                                         <a href="{{ $trueWirlessProduct->link_detail }}" class="btn_product alc mt10">詳細をみる</a>
@@ -71,7 +71,7 @@
                                 @foreach ($wirlessProducts as $wirlessProduct)        
                                 <div class="product_box mt20 mb20">
                                     <p><a href="{{ $wirlessProduct->link_detail }}"><img src="{{ asset('images/thumbnails') }}/{{ $wirlessProduct->thumbnail }}" alt="{{ $wirlessProduct->product_name }}"></a></p>
-                                    <h3><a harf="{{ $wirlessProduct->link_detail }}">{{ $wirlessProduct->product_name }}</a></h3>
+                                    <h3>{{ $wirlessProduct->product_name }}</h3>
                                     <hr>
                                     <span>{!! Str::limit($wirlessProduct->overview, 120) !!}</span>
                                     <a href="{{ $wirlessProduct->link_detail }}" class="btn_product alc mt10">詳細をみる</a>
@@ -90,7 +90,7 @@
                                 @foreach ($discontinuedProducts as $discontinuedProduct)
                                 <div class="product_box mt20 mb20">
                                     <p><a href="{{ $discontinuedProduct->link_detail }}"><img src="{{ asset('images/thumbnails') }}/{{ $discontinuedProduct->thumbnail }}" alt="{{ $discontinuedProduct->product_name }}"></a></p>
-                                    <h3><a harf="{{ $discontinuedProduct->link_detail }}">{{ $discontinuedProduct->product_name }}</a></h3>
+                                    <h3>{{ $discontinuedProduct->product_name }}</h3>
                                     <hr>
                                     <span>{!! Str::limit($discontinuedProduct->overview, 120) !!}</span>
                                     <a href="{{ $discontinuedProduct->link_detail }}" class="btn_product alc mt10">詳細をみる</a>

@@ -77,7 +77,17 @@
 						iTunesの曲とプレイリストについて</a>
 					<a href="#32" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						「再生情報を送信」について</a>
+						「再生情報を送信」について
+					</a>
+					<a href="#33" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>イコライザー機能について
+					</a>
+					<a href="#34" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>ハイレゾ再生について
+					</a>
+					<a href="#35" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>製品登録について
+					</a>
 					<!--
 <a href="#8" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>

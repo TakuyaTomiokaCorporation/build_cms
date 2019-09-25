@@ -28,40 +28,60 @@
 				<div class="nav_label">ようこそ</div>
 				    <a href="#00" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						AVIOT PLAYERについて</a>
-						<a href="#01" class="list-group-item">
+						AVIOT PLAYERについて
+					</a>
+					<a href="#01" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						QRコードでログインする</a>
+						QRコードでログインする
+					</a>
 				<div class="nav_label">おもな操作方法</div>
 				    <a href="#10" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						各メニューについて</a>
-						<a href="#11" class="list-group-item">
+						各メニューについて
+					</a>
+					<a href="#11" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						各アイコンについて</a>
-						<a href="#12" class="list-group-item">
+						各アイコンについて
+					</a>
+					<a href="#12" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						楽曲を再生する</a>
+						楽曲を再生する
+					</a>
+					<a href="#13" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>イコライザー機能について
+					</a>
+					<a href="#14" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>ハイレゾ再生について
+					</a>
+					<a href="#15" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>製品登録について
+					</a>
 
 				<div class="nav_label">アプリでできること</div>
-				  <a href="#20" class="list-group-item">
+					<a href="#20" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						フル試聴、フリーDL楽曲を無料で聴く</a>
+						フル試聴、フリーDL楽曲を無料で聴く
+					</a>
 					<a href="#21" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						ニュースを読む</a>
+						ニュースを読む
+					</a>
 				    <a href="#22" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						新着配信楽曲を試聴する</a>
+						新着配信楽曲を試聴する
+					</a>
 					<a href="#23" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						チャートを見る</a>
+						チャートを見る
+					</a>
 					<a href="#24" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						過去にOTOTOYで買った楽曲を聴く</a>
+						過去にOTOTOYで買った楽曲を聴く
+					</a>
 					<a href="#25" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						あとで買うリスト</a>
+						あとで買うリスト
+					</a>
 			</div>
 		</div>
 

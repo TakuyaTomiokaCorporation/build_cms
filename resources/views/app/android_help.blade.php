@@ -161,6 +161,25 @@
 					<li>すべて、本アプリで再生されるストリーミング音源は、MP３ファイルによって提供されています。ハイレゾ音源においてもMP3に変換され再生されています。</li>
 				</ul>
 			</div>
+			{{-- 製品保証登録 --}}
+			<div class="section">
+				<h3 id="15">製品登録について</h3>
+				<p>AVIOT PLAYERをご使用いただくにあたって、ご購入いただいたAVIOT製品の登録をお願いいたします。</p>
+				
+				<img src="{{ asset('images/app/android-login01.jpg') }}" alt="android-player02" class="sec-img img-responsive">
+				</p>
+				<p>縮小化されている下方の再生プレイヤーでは、再生、一時停止の操作の他に、左右にスワイプすることで前後の楽曲を選択、再生することができます。</p>
+				<img src="{{ asset('images/app/android-player01.jpg') }}" alt="android-player01" class="sec-img img-responsive">
+				<p>さらに再生プレイヤーをタップすると、全画面表示になります。再生位置の変更、楽曲の選択などの操作が行えます。<br/>
+				画面上部の再生プレイヤーやジャケット写真を左右にスワイプすることで楽曲の選択を行えます。<br/>
+				画面上部の再生プレイヤーをタップすると縮小化され、下部に戻ります。</p>
+				<img src="{{ asset('images/app/android-player02.jpg') }}" alt="android-player02" class="sec-img img-responsive">
+				<h4>注意</h4>
+				<ul class="li-dec">
+					<li>本アプリの音源再生は全てストリーミングによって行っております。通信料にご注意ください。</li>
+					<li>すべて、本アプリで再生されるストリーミング音源は、MP３ファイルによって提供されています。ハイレゾ音源においてもMP3に変換され再生されています。</li>
+				</ul>
+			</div>
 		</div>
 
 		<div class="article">

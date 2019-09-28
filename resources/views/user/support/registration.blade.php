@@ -167,6 +167,7 @@
                     <option value="">--なし--</option>
                     <option value="楽天" {{ old('from_aviot') == '楽天' ? 'selected' : '' }}>楽天</option>
                     <option value="yahoo" {{ old('from_aviot') == 'yahoo' ? 'selected' : '' }}>yahoo</option>
+                    <option value="Amazon" {{ old('from_aviot') == 'Amazon' ? 'selected' : '' }}>yahoo</option>
                     <option value="その他" {{ old('from_aviot') == 'その他' ? 'selected' : '' }}>その他</option>
                 </select>
                 </dd> 

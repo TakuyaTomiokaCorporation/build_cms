@@ -178,8 +178,8 @@
                 <div class="boxes">
                     <input type="checkbox" id="box-1" required>
                     <label for="box-1"><span class="required">必須</span>【製品保証や修理対応、製品のご案内に関するDMメール送信に同意する】</label>
-                    <input type="checkbox" id="box-2">
-                    <label for="box-2">【プライバシーポリシーに同意する】</label>
+                    <input type="checkbox" id="box-2" required>
+                    <label for="box-2"><span class="required">必須</span>【プライバシーポリシーに同意する】</label>
                     <p>※こちらの『<a href="https://v-trade.co.jp/company/#cap1" target="_blank">PRIVACY POLICY</a>』の内容をご確認の上ご同意ください。</p>
                     <p>※製品登録可能な正規販売店についての詳細は、『<a href="{{ route('shoplist') }}" target="_blank">こちら</a>』をご覧ください。</p>
                 </div>

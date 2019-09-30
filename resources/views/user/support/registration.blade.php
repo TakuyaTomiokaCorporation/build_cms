@@ -167,6 +167,7 @@
                     <option value="">--なし--</option>
                     <option value="楽天" {{ old('from_aviot') == '楽天' ? 'selected' : '' }}>楽天</option>
                     <option value="yahoo" {{ old('from_aviot') == 'yahoo' ? 'selected' : '' }}>yahoo</option>
+                    <option value="Amazon" {{ old('from_aviot') == 'Amazon' ? 'selected' : '' }}>yahoo</option>
                     <option value="その他" {{ old('from_aviot') == 'その他' ? 'selected' : '' }}>その他</option>
                 </select>
                 </dd> 
@@ -176,10 +177,10 @@
                 <dd><input  id="00N6F00000MmEf1" maxlength="255" name="from_other" size="20" type="text" value="{{ old('from_other') }}"></dd>
                
                 <div class="boxes">
-                    <input type="checkbox" id="box-1">
+                    <input type="checkbox" id="box-1" checked>
                     <label for="box-1">【製品保証や修理対応、製品のご案内に関するDMメール送信に同意する】</label>
-                    <input type="checkbox" id="box-2">
-                    <label for="box-2">【プライバシーポリシーに同意する】</label>
+                    <input type="checkbox" id="box-2" required checked>
+                    <label for="box-2"><span class="required">必須</span>【プライバシーポリシーに同意する】</label>
                     <p>※こちらの『<a href="https://v-trade.co.jp/company/#cap1" target="_blank">PRIVACY POLICY</a>』の内容をご確認の上ご同意ください。</p>
                     <p>※製品登録可能な正規販売店についての詳細は、『<a href="{{ route('shoplist') }}" target="_blank">こちら</a>』をご覧ください。</p>
                 </div>

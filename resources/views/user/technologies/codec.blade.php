@@ -26,19 +26,20 @@
         <dl>
             <dt class="bold mt10 both"></dt>
             <dd class="fll codec_logo mt10 mb20 alc"><img src="{{ asset('images/user/logo_aptXHD.png') }}"></dd>
-            <dd class="codec_txt mt10">Bluetooth機器が標準で使用するコーデック。Subband Codecの略です。音声を扱う全てのBluetooth機器が対応しています。</dd>
+            <dd class="codec_txt mt10">最大48kHz/24bitで、44.1kHz/16bitのCD音質をも上回るハイレゾオーディオ信号をワイヤレスで伝送できるaptXの上位コーデックです。元々はプロオーディオ向けに開発された技術ですが、これによりハイレゾ音源をワイヤレスイヤホンでもより気軽に楽しめるようになりました。</dd>
 
             <dt class="bold mt10 both"></dt>
             <dd class="fll codec_logo mt10 mb20 alc"><img src="{{ asset('images/user/logo_aptX.png') }}"></dd>
-            <dd class="codec_txt mt10">iOS対応機器、つまりアップル社製品で使われているコーデック。Advanced Audio Codingの略です。SBCより圧縮レベルが低いため、情報量が多く、より高音質だと言われています。 </dd>
-
-            <dt class="bold mt10 both"></dt>
-            <dd class="fll codec_logo logo_small mt10 mb20 alc"><img src="{{ asset('images/user/logo_AAC.png') }}"></dd>
             <dd class="codec_txt mt10">CSR社（現Qualcomm社）が開発した圧縮技術です。SBCより圧縮レベルが低いため、情報量が多く高音質です。標準コーデックに比べ遅延が少ないのも特徴です。</dd>
 
             <dt class="bold mt10 both"></dt>
+            <dd class="fll codec_logo logo_small mt10 mb20 alc"><img src="{{ asset('images/user/logo_AAC.png') }}"></dd>
+            <dd class="codec_txt mt10">iOS対応機器、つまりアップル社製品で使われているコーデック。Advanced Audio Codingの略です。SBCより圧縮レベルが低いため、情報量が多く、より高音質だと言われています。 </dd>
+            
+
+            <dt class="bold mt10 both"></dt>
             <dd class="fll codec_logo logo_small mt10 mb20 alc"><img src="{{ asset('images/user/logo_SBC.png') }}"></dd>
-            <dd class="codec_txt mt10">最大48kHz/24bitで、44.1kHz/16bitのCD音質をも上回るハイレゾオーディオ信号をワイヤレスで伝送できるaptXの上位コーデックです。元々はプロオーディオ向けに開発された技術ですが、これによりハイレゾ音源をワイヤレスイヤホンでもより気軽に楽しめるようになりました。</dd>
+            <dd class="codec_txt mt10">Bluetooth機器が標準で使用するコーデック。Subband Codecの略です。音声を扱う全てのBluetooth機器が対応しています。</dd>
         </dl>
     </section>
 </div><!--/main-->

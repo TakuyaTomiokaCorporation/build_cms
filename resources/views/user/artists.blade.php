@@ -134,7 +134,7 @@
             </div>
         </div>
 
-        <div class="mt40">
+        {{-- <div class="mt40">
             <h3 class="product_name">WE-BD21d<img src="{{ asset('images/artists/artistmovie_WE-BD21d.png') }}" alt="WE-BD21d"></h3>
             <div>
                 <ul class="flex">
@@ -146,7 +146,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> --}}
     </section>
     
 </article>

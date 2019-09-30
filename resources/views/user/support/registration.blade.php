@@ -83,6 +83,14 @@
             @csrf
             @method('PATCH')
             <dl>
+                <dt><span class="required">必須</span><label for="email">メールアドレス</label></dt>
+                <dd><input  id="email" maxlength="80" name="email" size="60" type="text"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="メールアドレスをご確認ください。"　required value="{{ old('email') }}"></dd>
+
+                <dt><span class="required">必須</span>シリアルナンバー</dt>
+                <dd><input  id="00N6F00000MmEem" maxlength="255" name="serial" size="20" type="text" required pattern="^[WT][A-Z]{2,4}\d{7,8}$" value="{{ old('serial') }}"><br>
+                    &nbsp;&nbsp;WまたはTから始まるアルファベットと数字を入力してください。
+                </dd>
+
                 <dt><span class="required">必須</span>お名前</dt>
                 <dd><input  id="last_name" maxlength="40" name="last_name" size="20" type="text" placeholder="姓"  required value="{{ old('last_name') }}">
                     <input  id="first_name" maxlength="40" name="first_name" size="20" type="text"  placeholder="名"  required value="{{ old('first_name') }}">
@@ -96,13 +104,13 @@
                 <dt><span class="required">必須</span>性別</dt>
                 <dd>
                     <select  id="00N6F00000MmEeS" name="gender" title="性別"  required>
-                        <option value="">--なし--</option>
+                        <option value="">------</option>
                         <option value="男">男</option>
                         <option value="女">女</option>
                     </select>
                 </dd>
 
-                <dt><span class="required">必須</span><label for="zip">郵便番号</label></dt>
+                {{-- <dt><span class="required">必須</span><label for="zip">郵便番号</label></dt>
                 <dd><input  id="zip" maxlength="10" name="zip" size="20" type="text" required placeholder="171-0022" value="{{ old('zip') }}"></dd>
 
                 <dt><span class="required">必須</span><label for="state">都道府県</label></dt>
@@ -112,19 +120,15 @@
                 <dd><input  id="city" maxlength="40" name="city" size="20" type="text" required placeholder="豊島区" value="{{ old('city') }}"></dd>
 
                 <dt><span class="required">必須</span><label for="street">町名・番地</label></dt>
-                <dd><input type="text" name="street" size="40" required placeholder="南池袋2-14-10" value="{{ old('street') }}"><dd>
+                <dd><input type="text" name="street" size="40" required placeholder="南池袋2-14-10" value="{{ old('street') }}"><dd> --}}
 
                 <dt><label for="phone">電話番号</label></dt>
                 <dd><input  id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="090-0000-0000" pattern="^\d{2,4}[-]\d{2,4}[-]\d{2,4}$" title="ハイフンを含めて半角数字でご入力ください。" value="{{ old('phone') }}"></dd>
-
-                <dt><span class="required">必須</span><label for="email">メールアドレス</label></dt>
-                
-                <dd><input  id="email" maxlength="80" name="email" size="60" type="text"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="メールアドレスをご確認ください。"　required value="{{ old('email') }}"></dd>
                 
                 <dt><span class="required">必須</span><label for="prduct">機種名</label></dt>
                 <dd>
                 <select  id="00N6F00000O5eOx" name="product" title="機種名" required>
-                    <option value="">--なし--</option>
+                    <option value="">------</option>
                     <option value="TE-BD21f" {{ old('product') == 'TE-BD21f' ? 'selected' : ''}}>TE-BD21f</option>
                     <option value="TE-BD21f-pnk" {{ old('product') == 'TE-BD21f-pnk' ? 'selected' : ''}}>TE-BD21f-pnk</option>
                     <option value="WE-BD21d" {{ old('product') == 'WE-BD21d' ? 'selected' : ''}}>WE-BD21d</option>
@@ -145,39 +149,57 @@
                 <dt><span class="required">必須</span>色</dt>
                 <dd>
                 <select  id="00N6F00000MmEeh" name="color" title="カラー" required>
-                    <option value="">--なし--</option>
+                    <option value="">------</option>
                     <option value="ネイビー" {{ old('color') == 'ネイビー' ? 'selected' : '' }}>ネイビー</option>
                     <option value="ピンク" {{ old('color') == 'ピンク' ? 'selected' : ''}}>ピンク</option>
+                    <option value="ヴァイオレット" {{ old('color') == 'ヴァイオレット' ? 'selected' : ''}}>ヴァイオレット</option>
+                    <option value="ローズゴールド" {{ old('color') == 'ローズゴールド' ? 'selected' : ''}}>ローズゴールド</option>
                     <option value="シルバー" {{ old('color') == 'シルバー' ? 'selected' : ''}}>シルバー</option>
+                    <option value="ガンメタル" {{ old('color') == 'ガンメタル' ? 'selected' : ''}}>ガンメタル</option>
                     <option value="ブラック" {{ old('color') == 'ブラック' ? 'selected' : ''}}>ブラック</option>
-                    <option value="ホワイト" {{ old('color') == 'ホワイト' ? 'selected' : ''}}>ホワイト</option>
-                    <option value="レッド" {{ old('color') == 'レッド' ? 'selected' : ''}}>レッド</option>
+                    <option value="パールホワイト" {{ old('color') == 'パールホワイト' ? 'selected' : ''}}>パールホワイト</option>
+                    <option value="アイボリー" {{ old('color') == 'アイボリー' ? 'selected' : ''}}>アイボリー</option>
+                    <option value="ダークルージュ" {{ old('color') == 'ダークルージュ' ? 'selected' : ''}}>ダークルージュ</option>
+                    <option value="ダークメタリックブラウン" {{ old('color') == 'ダークメタリックブラウン' ? 'selected' : ''}}>ダークメタリックブラウン</option>
                 </select>
                 </dd>
 
-                <dt><span class="required">必須</span>シリアルナンバー</dt>
-                <dd><input  id="00N6F00000MmEem" maxlength="255" name="serial" size="20" type="text" required pattern="^[WT][A-Z]{2,4}\d{7,8}$" value="{{ old('serial') }}"><br>
-                    &nbsp;&nbsp;WまたはTから始まるアルファベットと数字を入力してください。</dd>
-                <dt>購入日</dt>
+                <dt>ご購入日</dt>
                 <dd><input type="date" value="2019-01-01" min="2015-01-01" id="00N6F00000MmEer" name="date" value="{{ old('date') }}"></dd>
 
-                <dt><label for="email">購入店（miraporta）</label></dt>
+                <dt><label for="email">ご購入店（AVIOT公式ストア）</label></dt>
                 <dd>
                 <select  id="00N6F00000MmEew" name="from_aviot">
-                    <option value="">--なし--</option>
+                    <option value="">------</option>
+                    <option value="AVIOT公式ストア" {{ old('from_aviot') == 'AVIOT公式ストア' ? 'selected' : '' }}>AVIOT公式ストア</option>
+                    <option value="Amazon" {{ old('from_aviot') == 'Amazon' ? 'selected' : '' }}>Amazon</option>
                     <option value="楽天" {{ old('from_aviot') == '楽天' ? 'selected' : '' }}>楽天</option>
                     <option value="yahoo" {{ old('from_aviot') == 'yahoo' ? 'selected' : '' }}>yahoo</option>
-                    <option value="Amazon" {{ old('from_aviot') == 'Amazon' ? 'selected' : '' }}>yahoo</option>
+                    <option value="ヤマダ電気" {{ old('from_aviot') == 'ヤマダ電気' ? 'selected' : '' }}>ヤマダ電気</option>
+                    <option value="ビックカメラ" {{ old('from_aviot') == 'ビックカメラ' ? 'selected' : '' }}>ビックカメラ</option>
+                    <option value="ヨドバシカメラ" {{ old('from_aviot') == 'ヨドバシカメラ' ? 'selected' : '' }}>ヨドバシカメラ</option>
+                    <option value="ソフマップ" {{ old('from_aviot') == 'ソフマップ' ? 'selected' : '' }}>ソフマップ</option>
+                    <option value="エディオン" {{ old('from_aviot') == 'エディオン' ? 'selected' : '' }}>エディオン</option>
+                    <option value="eイヤホン" {{ old('from_aviot') == 'eイヤホン' ? 'selected' : '' }}>eイヤホン</option>
+                    <option value="東急ハンズ" {{ old('from_aviot') == '東急ハンズ' ? 'selected' : '' }}>東急ハンズ</option>
+                    <option value="上新電気" {{ old('from_aviot') == '上新電気' ? 'selected' : '' }}>上新電気</option>
+                    <option value="フジヤカメラ店" {{ old('from_aviot') == 'フジヤカメラ店' ? 'selected' : '' }}>フジヤカメラ店</option>
+                    <option value="山野楽器" {{ old('from_aviot') == '山野楽器' ? 'selected' : '' }}>山野楽器</option>
+                    <option value="二子玉川 蔦屋家電" {{ old('from_aviot') == '二子玉川 蔦屋家電' ? 'selected' : '' }}>二子玉川 蔦屋家電</option>
+                    <option value="コストコ" {{ old('from_aviot') == 'コストコ' ? 'selected' : '' }}>コストコ</option>
+                    <option value="ロフト" {{ old('from_aviot') == 'ロフト' ? 'selected' : '' }}>ロフト</option>
+                    <option value="au Shop" {{ old('from_aviot') == 'au Shop' ? 'selected' : '' }}>au Shop</option>
                     <option value="その他" {{ old('from_aviot') == 'その他' ? 'selected' : '' }}>その他</option>
                 </select>
                 </dd> 
 
-                <dt>購入店（AVIOT公式ストア/miraporta以外）<br>
+                <dt>その他のご購入店
+                    <br>
                     <small>※キャンペーンコードをお持ちの方は、こちらにご記入ください</small></dt>
                 <dd><input  id="00N6F00000MmEf1" maxlength="255" name="from_other" size="20" type="text" value="{{ old('from_other') }}"></dd>
                
                 <div class="boxes">
-                    <input type="checkbox" id="box-1" checked>
+                    <input type="checkbox" name="dm" id="box-1" value="1" checked>
                     <label for="box-1">【製品保証や修理対応、製品のご案内に関するDMメール送信に同意する】</label>
                     <input type="checkbox" id="box-2" required checked>
                     <label for="box-2"><span class="required">必須</span>【プライバシーポリシーに同意する】</label>

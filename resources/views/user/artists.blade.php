@@ -133,6 +133,20 @@
                 </ul>
             </div>
         </div>
+
+        <div class="mt40">
+            <h3 class="product_name">WE-BD21d<img src="{{ asset('images/artists/artistmovie_WE-BD21d.png') }}" alt="WE-BD21d"></h3>
+            <div>
+                <ul class="flex">
+                    <li class="artist_list">
+                        <a href="{{ route('pass.show') }}">
+                            <span class="artist_name">PassCode</span>
+                            <img src="{{ asset('images/artists/passcode_mv.jpg') }}">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
     
 </article>

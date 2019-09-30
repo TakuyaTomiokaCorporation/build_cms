@@ -26,17 +26,17 @@
 
         <div class="support_center">
             <h3 class="mt40 mb20 border_l">カスタマーサポートセンター</h3>
-            <p class="fll ifpc mt20"><img src="{{ asset('images/user/support.png') }}"></p>
+            <p class="fll ifpc mt20 mb40"><img src="{{ asset('images/user/support.png') }}"></p>
             <dl>
                 <dt class="bold">カスタマーサポートセンター</dt>
-                <dd>電話：<a href="050-2018-3909">050-2018-3909</a></dd>
+                <dd class="mt10"><a href="https://v-trade.co.jp/contact_individual/" class="btn_Blk">メールでお問合わせ</a></dd>
+                <dd class="fsTel mt10 bold">電話：<a href="050-2018-3909">050-2018-3909</a></dd>
                 <dd>※営業時間：10:00〜17:00（土日祝除く）</dd>
-                <dd class="mt10"><a href="https://v-trade.co.jp/contact_individual/" class="btn_Blk">お問い合わせ</a></dd>
             </dl>
         </div>
     </section>
 
-    <h2 id="QA" class="pt20 border_b mb20">よくあるご質問</h2>
+    <h2 id="QA" class="pt20 border_b mb20 mt40">よくあるご質問</h2>
     <section>
         <h3 class="mb20 border_l">操作方法、製品について</h3>
 

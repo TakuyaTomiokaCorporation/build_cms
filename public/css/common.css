@@ -80,6 +80,9 @@ a:hover img {
 .fs13 { font-size:100%;}
 .fs14 { font-size:108%;}
 .fs15 { font-size:116%;}
+.fs16 { font-size:124%;}
+
+.fsTel { font-size:164%;}
 
 /* ----- text */
 .txtS { color: #666;  font-size: 85%;}
@@ -321,7 +324,7 @@ nav.greedy h1 {
 
 nav.greedy h1 img {
   width: 46%;
-  padding-left: 12px;
+  /*padding-left: 12px;*/
 }
 
 nav.greedy button {
@@ -586,16 +589,33 @@ ul.product_category li a:hover {
   margin: 20px 10px;
 }
 
-.product_content {
+.product_content div {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
+.product_content div ul {
+  width: 22%;
+  padding: 10px;
+  margin-right: 12px;
+}
+
+.product_content div::before{
+  content:"";
+  display: block;
+  width:22%;
+  order:1;
+}
+.product_content div::after{
+  content:"";
+  display: block;
+  width:21%;
+}
+
 .btn_product {
   background: #000;
-  padding: 8px 0;
   color: #fff;
-  display: block;
+  padding: 10px 40px;
 }
 
 /*--AVIOTについて--*/
@@ -1209,6 +1229,10 @@ nav.greedy {
   margin-top: 63px;
 }
 
+nav.greedy h1 img {
+  padding-left: 12px;
+}
+
 .notice {
   margin-bottom: 60px;
 }
@@ -1254,11 +1278,11 @@ nav.greedy {
 }
 
 .genuine_01, .genuine_02, .genuine_03 {
-  font-size: 0.94em;
+  font-size: 1.06em;
 }
 
-.genuine_01, .genuine_02 {
-  margin-right: 12px;
+.genuine_01 {
+  margin-right: 60px;
 }
 
 #manual .manual_product {
@@ -1292,25 +1316,6 @@ nav.greedy {
 
 .foot_menu ul {
   margin-right: 148px;
-}
-
-.product_content div.product_box {
-  width: 22%;
-  padding: 10px;
-  margin-right: 12px;
-}
-
-.product_content div.product_box::before{
-  content:"";
-  display: block;
-  width:22%;
-  order:1;
-}
-
-.product_content div.product_box::after{
-  content:"";
-  display: block;
-  width:21%;
 }
 
 
@@ -1429,10 +1434,6 @@ ul.product_category li {
   margin: 0 auto;
   margin-top: 16px;
   margin-bottom: 16px;
-}
-
-#product .product_content h3 a {
-  color: #222;
 }
 
 /*--アーティストインタビュー--*/
@@ -1572,6 +1573,10 @@ ul.product_category li {
   width: 90%;
 }
 
+.product_content div {
+  display: flex;
+}
+
 .product_content div ul {
   margin-left: 10px;
   width: 44%;
@@ -1609,8 +1614,5 @@ ul.product_category li {
 
 @media screen and (max-width: 374px) {
   .news_box{
-  width: 170px;
-  height: 170px;
-  margin: 0 auto;
 }
 }

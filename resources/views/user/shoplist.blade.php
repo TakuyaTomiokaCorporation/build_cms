@@ -22,24 +22,21 @@
             <ul class="genuine_01">
                 <li>ヤマダ電機（<a href="https://www.yamada-denkiweb.com/" target="_blank">ヤマダウェブコム</a>含む）</li>
                 <li>コジマ（<a href="https://www.kojima.net/ec/top/CSfTop.jsp" target="_blank"> コジマネット</a>含む）</li>
-                <li>上新電機（<a href="https://joshinweb.jp/" target="_blank">Joshin Web</a>含む）</li>
-                <li>フジヤカメラ店<br>
-                （<a href="https://www.fujiya-avic.jp/" target="_blank">フジヤエービックオンラインショップ</a>）</li>
-                <li>au Shop</li>
-            </ul>
-            <ul class="genuine_02">
                 <li>ビックカメラ（<a href="https://www.biccamera.com/bc/main/" target="_blank">ビックカメラ.com</a>、<a href="https://biccamera.rakuten.co.jp/" target="_blank">楽天ビック</a>含む）</li>
                 <li>ヨドバシカメラ（<a href="https://www.yodobashi.com/" target="_blank"> ヨドバシカメラ.com</a>含む）</li>
-                <li>コストコ</li>
-                <li>ロフト</li>
+                <li>上新電機（<a href="https://joshinweb.jp/" target="_blank">Joshin Web</a>含む）</li>
+                <li>フジヤカメラ店（<a href="https://www.fujiya-avic.jp/" target="_blank">フジヤエービックオンラインショップ</a>）</li>
                 <li>山野楽器</li>
+                <li>二子玉川 蔦屋家電</li>
             </ul>
-            <ul class="genuine_03">
+            <ul class="genuine_02">
                 <li>ソフマップ（<a href="https://www.sofmap.com/" target="_blank">ソフマップ・ドットコム</a>含む）</li>
                 <li>エディオン</li>
                 <li>eイヤホン（<a href="https://www.e-earphone.jp/" target="_blank">eイヤホンWEB</a>本店）</li>
                 <li>東急ハンズ</li>
-                <li>二子玉川 蔦屋家電</li>
+                <li>コストコ</li>
+                <li>ロフト</li>
+                <li>au Shop</li>
             </ul>
         </div>
     </section>

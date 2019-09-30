@@ -28,10 +28,9 @@
             <h3 class="mt40 mb20 border_l">カスタマーサポートセンター</h3>
             <p class="fll ifpc mt20 mb40"><img src="{{ asset('images/user/support.png') }}"></p>
             <dl>
-                <dt class="bold">カスタマーサポートセンター</dt>
-                <dd class="mt10"><a href="https://v-trade.co.jp/contact_individual/" class="btn_Blk">メールでお問合わせ</a></dd>
                 <dd class="fsTel mt10 bold">電話：<a href="050-2018-3909">050-2018-3909</a></dd>
-                <dd>※営業時間：10:00〜17:00（土日祝除く）</dd>
+                <dd class="fs12">※営業時間：10:00〜17:00（土日祝除く）</dd>
+                <dd class="mt10"><a href="https://v-trade.co.jp/contact_individual/" class="btn_Blk">メールでお問合わせ</a></dd>
             </dl>
         </div>
     </section>

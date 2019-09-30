@@ -194,8 +194,7 @@
                 </dd> 
 
                 <dt>その他のご購入店
-                    <br>
-                    <small>※キャンペーンコードをお持ちの方は、こちらにご記入ください</small></dt>
+                    
                 <dd><input  id="00N6F00000MmEf1" maxlength="255" name="from_other" size="20" type="text" value="{{ old('from_other') }}"></dd>
                
                 <div class="boxes">

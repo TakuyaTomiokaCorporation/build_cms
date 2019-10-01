@@ -175,7 +175,7 @@
                     <option value="Amazon(AVIOT公式ストア)" {{ old('from_aviot') == 'Amazon' ? 'selected' : '' }}>Amazon</option>
                     <option value="楽天(AVIOT公式ストア)" {{ old('from_aviot') == '楽天' ? 'selected' : '' }}>楽天</option>
                     <option value="yahoo(AVIOT公式ストア)" {{ old('from_aviot') == 'yahoo' ? 'selected' : '' }}>yahoo</option>
-                    <option value="AVIOT専用予約フォーム" {{ old('from_aviot') == 'AVIOT公式ストア' ? 'selected' : '' }}>AVIOT公式ストア</option>
+                    <option value="AVIOT専用予約フォーム" {{ old('from_aviot') == 'AVIOT専用予約フォーム' ? 'selected' : '' }}>AVIOT専用予約フォーム</option>
                     <option value="ヤマダ電機グループ" {{ old('from_aviot') == 'ヤマダ電気' ? 'selected' : '' }}>ヤマダ電気</option>
                     <option value="ビックカメラ" {{ old('from_aviot') == 'ビックカメラ' ? 'selected' : '' }}>ビックカメラ</option>
                     <option value="ヨドバシカメラ" {{ old('from_aviot') == 'ヨドバシカメラ' ? 'selected' : '' }}>ヨドバシカメラ</option>

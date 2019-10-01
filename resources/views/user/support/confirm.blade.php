@@ -116,7 +116,7 @@
                 </dd>
                 @endisset
                 
-                @isset($record)
+                @isset($from_other)
                 <dt>その他のご購入店</dt>
                 <dd>
                     {{ $from_other }}

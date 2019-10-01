@@ -164,30 +164,34 @@
                 </select>
                 </dd>
 
-                <dt>ご購入日</dt>
+                <dt><span class="required">必須</span>ご購入日</dt>
                 <dd><input type="date" value="2019-01-01" min="2015-01-01" id="00N6F00000MmEer" name="date" value="{{ old('date') }}"></dd>
+                    <small>※ご購入日が記載されているレシートの日付をお選びください。</small>
 
-                <dt><label for="email">ご購入店（AVIOT公式ストア）</label></dt>
+                <dt><label for="email"><span class="required">必須</span>ご購入店（AVIOT公式ストア/正規代理店）</label></dt>
                 <dd>
                 <select  id="00N6F00000MmEew" name="from_aviot">
                     <option value="">------</option>
-                    <option value="AVIOT公式ストア" {{ old('from_aviot') == 'AVIOT公式ストア' ? 'selected' : '' }}>AVIOT公式ストア</option>
-                    <option value="Amazon" {{ old('from_aviot') == 'Amazon' ? 'selected' : '' }}>Amazon</option>
-                    <option value="楽天" {{ old('from_aviot') == '楽天' ? 'selected' : '' }}>楽天</option>
-                    <option value="yahoo" {{ old('from_aviot') == 'yahoo' ? 'selected' : '' }}>yahoo</option>
-                    <option value="ヤマダ電気" {{ old('from_aviot') == 'ヤマダ電気' ? 'selected' : '' }}>ヤマダ電気</option>
+                    <option value="Amazon(AVIOT公式ストア)" {{ old('from_aviot') == 'Amazon' ? 'selected' : '' }}>Amazon</option>
+                    <option value="楽天(AVIOT公式ストア)" {{ old('from_aviot') == '楽天' ? 'selected' : '' }}>楽天</option>
+                    <option value="yahoo(AVIOT公式ストア)" {{ old('from_aviot') == 'yahoo' ? 'selected' : '' }}>yahoo</option>
+                    <option value="AVIOT専用予約フォーム" {{ old('from_aviot') == 'AVIOT公式ストア' ? 'selected' : '' }}>AVIOT公式ストア</option>
+                    <option value="ヤマダ電機グループ" {{ old('from_aviot') == 'ヤマダ電気' ? 'selected' : '' }}>ヤマダ電気</option>
                     <option value="ビックカメラ" {{ old('from_aviot') == 'ビックカメラ' ? 'selected' : '' }}>ビックカメラ</option>
                     <option value="ヨドバシカメラ" {{ old('from_aviot') == 'ヨドバシカメラ' ? 'selected' : '' }}>ヨドバシカメラ</option>
+                    <option value="コジマ" {{ old('from_aviot') == 'コジマ' ? 'selected' : '' }}>コジマ</option>
                     <option value="ソフマップ" {{ old('from_aviot') == 'ソフマップ' ? 'selected' : '' }}>ソフマップ</option>
                     <option value="エディオン" {{ old('from_aviot') == 'エディオン' ? 'selected' : '' }}>エディオン</option>
-                    <option value="eイヤホン" {{ old('from_aviot') == 'eイヤホン' ? 'selected' : '' }}>eイヤホン</option>
-                    <option value="東急ハンズ" {{ old('from_aviot') == '東急ハンズ' ? 'selected' : '' }}>東急ハンズ</option>
                     <option value="上新電気" {{ old('from_aviot') == '上新電気' ? 'selected' : '' }}>上新電気</option>
+                    <option value="eイヤホン" {{ old('from_aviot') == 'eイヤホン' ? 'selected' : '' }}>eイヤホン</option>
+                    <option value="ロフト" {{ old('from_aviot') == 'ロフト' ? 'selected' : '' }}>ロフト</option>
+                    <option value="東急ハンズ" {{ old('from_aviot') == '東急ハンズ' ? 'selected' : '' }}>東急ハンズ</option>
                     <option value="フジヤカメラ店" {{ old('from_aviot') == 'フジヤカメラ店' ? 'selected' : '' }}>フジヤカメラ店</option>
                     <option value="山野楽器" {{ old('from_aviot') == '山野楽器' ? 'selected' : '' }}>山野楽器</option>
                     <option value="二子玉川 蔦屋家電" {{ old('from_aviot') == '二子玉川 蔦屋家電' ? 'selected' : '' }}>二子玉川 蔦屋家電</option>
+                    <option value="代官山 蔦屋書店" {{ old('from_aviot') == '代官山 蔦屋書店' ? 'selected' : '' }}>代官山 蔦屋書店</option>
+                    <option value="ツタヤ　トウキョウ　ロッポンギ" {{ old('from_aviot') == 'ツタヤ　トウキョウ　ロッポンギ' ? 'selected' : '' }}>ツタヤ　トウキョウ　ロッポンギ</option>
                     <option value="コストコ" {{ old('from_aviot') == 'コストコ' ? 'selected' : '' }}>コストコ</option>
-                    <option value="ロフト" {{ old('from_aviot') == 'ロフト' ? 'selected' : '' }}>ロフト</option>
                     <option value="au Shop" {{ old('from_aviot') == 'au Shop' ? 'selected' : '' }}>au Shop</option>
                     <option value="その他" {{ old('from_aviot') == 'その他' ? 'selected' : '' }}>その他</option>
                 </select>

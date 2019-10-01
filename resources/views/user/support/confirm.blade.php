@@ -35,6 +35,8 @@
 <div id="container" class="both">
     <div id="" class="main" role="main">
     <form action="https://info.aviot.jp/l/781993/2019-07-23/9j" method="POST">
+    <input type=hidden name="oid" value="00D6F000002Kz08">
+    <input type=hidden name="retURL" value="https://aviot.jp/support/registration/thanks">
     @csrf
     @method('POST')
 
@@ -43,11 +45,13 @@
     <input type="hidden" name="00N6F00000SUcr2" value="{{ $last_name_ja }}">
     <input type="hidden" name="00N6F00000SUcr7" value="{{ $first_name_ja }}">
     <input type="hidden" name="00N6F00000MmEeS" value="{{ $gender }}">
-    <input type="hidden" name="zip" value="{{ $zip }}">
-    <input type="hidden" name="state" value="{{ $state }}">
-    <input type="hidden" name="city" value="{{ $city }}">
-    <input type="hidden" name="N6F00000Mmgax" value="{{ $street }}">
+    <input type="hidden" name="zip" value="000-0000">
+    <input type="hidden" name="state" value="state">
+    <input type="hidden" name="city" value="city">
+    <input type="hidden" name="N6F00000Mmgax" value="street">
+    @isset($phone)
     <input type="hidden" name="phone" value="{{ $phone }}">
+    @endisset
     <input type="hidden" name="email" value="{{ $email }}">
     <input type="hidden" name="00N6F00000O5eOx" value="{{ $product }}">
     <input type="hidden" name="00N6F00000MmEeh" value="{{ $color }}">
@@ -61,6 +65,10 @@
     @isset($from_other)
     <input type="hidden" name="00N6F00000MmEf1" value="{{ $from_other }}">
     @endisset
+    @isset($dm)
+    <input type="hidden" name="00N6F00000TDFas" value="{{ $dm }}">
+    @endisset
+    <input type="hidden" name="00N6F00000O5eOY" value="AVIOT">
 
     <article class="w1020 w98 m_auto mb60">
         <h2 class="pt20 border_b mb20">ご確認</h2>
@@ -68,6 +76,12 @@
     
         <div class="confirm_item bgGray mt20">
             <dl>
+                <dt>メールアドレス</dt>
+                <dd>{{ $email }}</dd>
+
+                <dt>シリアルナンバー</dt>
+                <dd>{{ $serial }}</dd>
+
                 <dt>お名前</dt>
                 <dd>{{ $last_name.$first_name }}</dd>
     
@@ -76,48 +90,39 @@
     
                 <dt>性別</dt>
                 <dd>{{ $gender }}</dd>
-    
-                <dt>ご住所</dt>
-                <dd>{{ $zip }}</dd>
-                <dd>{{ $state }}</dd>
-                <dd>{{ $city }}</dd>
-                <dd>{{ $street }}</dd>
                 
-                <dt>電話番号</dt>
-                <dd>{{ $phone }}</dd>
-                
-                <dt>メールアドレス</dt>
-                <dd>{{ $email }}</dd>
+                @isset($phone)
+                    <dt>電話番号</dt>
+                    <dd>{{ $phone }}</dd>
+                @endisset
     
                 <dt>機種名</dt>
                 <dd>{{ $product }}</dd>
     
                 <dt>色</dt>
                 <dd>{{ $color }}</dd>
-    
-                <dt>シリアルナンバー</dt>
-                <dd>{{ $serial }}</dd>
-    
-                <dt>購入日</dt>
+                
+                @isset($date)
+                <dt>ご購入日</dt>
                 <dd>
-                    @isset($date)
                     {{ $date }}        
-                    @endisset
                 </dd>
-    
-                <dt>購入店（miraporta）</dt>
+                @endisset
+                
+                @isset($from_aviot)
+                <dt>ご購入店（AVIOT公式ストア/正規代理店）</dt>
                 <dd>
-                    @isset($from_aviot)
                     {{ $from_aviot }}        
-                    @endisset
                 </dd>
-    
-                <dt>購入店（AVIOT公式ストア/miraporta以外）</dt>
+                @endisset
+                
+                @isset($from_other)
+                <dt>その他のご購入店</dt>
                 <dd>
-                    @isset($record)
                     {{ $from_other }}
-                    @endisset
                 </dd>
+                @endisset
+
             </dl>
             <div class="g-recaptcha m_auto mt20" data-sitekey="6Ldnm68UAAAAAIHuRLurfVAazlDVc4aJw_f-CLG2"></div>
             <p class="alc mt20"><input type="submit" name="submit" class="btn_Blk"></p>

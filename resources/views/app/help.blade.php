@@ -29,17 +29,17 @@
 				<div class="nav_label">ようこそ</div>
 				    <a href="#00" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						AVIOT PLAYERについて</a>
-						<a href="#01" class="list-group-item">
-						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						ログインなしで使用する</a>
-						<a href="#02" class="list-group-item">
-						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						QRコードでログインする</a>
+						AVIOT PLAYERについて
+					</a>
 				<div class="nav_label">おもな操作方法</div>
-				  <a href="#10" class="list-group-item">
+					<a href="#18" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						各タブについて</a>
+						製品保証登録について
+					</a>
+					<a href="#10" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
+						各タブについて
+					</a>
 					<a href="#11" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
 						今週のフリーダウンロード曲を聴く</a>
@@ -68,7 +68,7 @@
 					<a href="#21" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
 						AirPlayで聴く</a>
-				<div class="nav_label">よくある質問</div>
+				<div class="nav_label">よくあるご質問</div>
 					<a href="#30" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
 						再生できない</a>
@@ -77,7 +77,17 @@
 						iTunesの曲とプレイリストについて</a>
 					<a href="#32" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						「再生情報を送信」について</a>
+						「再生情報を送信」について
+					</a>
+					<a href="#33" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>イコライザー機能について
+					</a>
+					<a href="#34" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>ハイレゾ再生について
+					</a>
+					<a href="#35" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>製品登録について
+					</a>
 					<!--
 <a href="#8" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
@@ -100,6 +110,7 @@
 			<h2>ようこそ</h2>
 			<div class="section">
 				<h3 id="00">AVIOT PLAYERについて</h3>
+				<img src="{{ asset('images/user/ogp.png') }}" class=" img-responsive" alt="AVIOT">
 				<p>「AVIOT PLAYER」とは、読んで、聴いて、買える ミュージック・ストア「AVIOT」がお届けする音楽や情報を視聴できるアプリです。フリー・ダウンロード作品や新譜の視聴、楽曲にまつわる特集記事とニュースを読むなど、スマートフォンで手軽にAVIOTを楽しむことができます。</p>
 				<p>さらに、OTOTOYアカウントを作成・ログインするとすべての機能が使用可能になります</p>
 				<ul>
@@ -110,35 +121,37 @@
 					<li>同期したiTunesライブラリの楽曲が聴けます。</li>
 				</ul>
 			</div>
-
-			<div class="section">
-				<h3 id="01">ログインなしで使用する</h3>
-				<p>OTOTOYのアカウントと一緒に使用すると便利なAVIOT PLAYERですが、新規登録やログインを後回しにしてひとまず使ってみる、ということも可能です。</p>
-				<p>まずアプリを起動し、「初めてOTOTOYを使う」をタップします。</p>
-				<img src="{{ asset('images/app/ios-login01.jpg') }}" alt="ios-login01" class="sec-img img-responsive">
-				<p>次に「スキップ」をタップします。ユーザー登録のスキップについて確認がありますので、OKをタップしてください。</p>
-				<img src="{{ asset('images/app/ios-login02.jpg') }}" alt="ios-login02" class="sec-img img-responsive">
-				<p>これで、配信中の楽曲を視聴できます！</p>
-
-				<p>アカウントの登録およびログインは、設定画面や「ライブラリ」タブ内設置されている「無料アカウントを作成」ボタンであとからでも可能です。</p>
-			</div>
-
-			<div class="section">
-				<h3 id="02">QRコードでログインする</h3>
-				<p>OTOTOYウェブサイト(<a href="https://ototoy.jp/">https://ototoy.jp/</a>)で購入した楽曲をスマホで簡単に聴くために、「ウェブとアプリの連携機能」を使ってQRコードでアプリにログインすることができます。</p>
-				<p>OTOTOYのウェブページで楽曲をチェックアウトした後の購入完了画面、CollectionsのCampaignタブ(ゲストモードのみ)などに、「ウェブとアプリの連携」画面へのリンクがあります。このリンクから連携ページを表示します。
-				</p>
-				<img src="{{ asset('images/app/2app01.png') }}" alt="2app01" class="sec-img img-responsive">
-				<p>連携ページに表示されるQRコードをログイン画面「QRコードでログインする」ボタンタップ後に読み取ることで連携が完了します。</p>
-				<img src="{{ asset('images/app/2app02.png') }}" alt="2app02" class="sec-img img-responsive">
-				<p>連携ページをスマホで表示した場合、QRコードではなく連携リンクが表示されます。アクセスするだけで端末内でアプリが開き連携が完了します。</p>
-				<p>連携ページは<a href="https://OTOTOY.jp/auth/2app.php">こちら</a></p>
-				<p>ウェブとアプリの連携機能について詳しくは<a href="https://OTOTOY.jp/feature/2app">こちら</a></p>
-			</div>
 		</div>
 
 		<div class="article">
 			<h2>おもな操作方法</h2>
+			{{-- 製品保証登録 --}}
+			<div class="section">
+				<h3 id="18">製品保証登録について</h3>
+				<img src="{{ asset('images/app/ios-login01.jpg') }}" alt="ios-player02" class="sec-img img-responsive">
+				<br>
+				<p>AVIOT PLAYERをご使用いただくにあたり、ご購入いただいたAVIOT製品の登録が必要です。<br>
+				ご購入いただいたAVIOT製品のシリアルナンバーをお控えの上、<br>
+				<br>
+				<span class="glyphicon glyphicon-ok-circle"></span> <strong>AVIOT製品保証登録がお済みの方 </strong><br>
+				<span class="glyphicon glyphicon-ok-circle"></span> <strong>AVIOT製品保証登録が済んでいない方</strong> <br>
+				<span class="glyphicon glyphicon-ok-circle"></span> <strong>AVIOT PLAYERログイン済みの方</strong><br>
+				<br>
+				いずれか該当する項目をご選択ください。
+				</p>
+				<small>※シリアルナンバーの確認は下図をご参考ください</small>
+				<img class=" img-responsive" src="{{ asset('images/user/serial_illustration.png') }}" alt="シリアルナンバーの説明図">
+
+				<h4>AVIOT製品保証登録がお済みの方</h4>
+				<img src="{{ asset('images/app/ios-login03.jpg') }}" alt="ios-player02" class="sec-img img-responsive">
+				<p>既に<a href="{{ route('top') }}">aviot.jp</a>等でAVIOT製品保証登録がお済みの方はこちらをご選択いただき、ご登録時に使用された【シリアルナンバー】と【メールアドレス】をご入力ください。</p>
+				<h4>AVIOT製品保証登録が済んでいない方</h4>
+				<img src="{{ asset('images/app/ios-login02.jpg') }}" alt="ios-player02" class="sec-img img-responsive">
+				<p>まだ<a href="{{ route('top') }}">aviot.jp</a>等でAVIOT製品保証登録がお済みでない方はこちらをご選択ください。<br></p>
+				<h4>AVIOT PLAYERログイン済みの方</h4>
+				<img src="{{ asset('images/app/ios-login04.jpg') }}" alt="ios-player02" class="sec-img img-responsive">
+				<p>既にAVIOT PLAYERのご登録がお済みの方は、こちらを選択していただき、OTOTOYアカウントのメールアドレスとパスワードを入力してログインしてください。</p>
+			</div>
 			<div class="section">
 			  <h3 id="10">各タブについて</h3>
 			  <img src="{{ asset('images/app/ios-tab.png') }}" alt="ios-tab" class="sec-img img-responsive">
@@ -266,7 +279,7 @@
 		</div>
 
 		<div class="article">
-			<h2>よくある質問</h2>
+			<h2>よくあるご質問</h2>
 			<div class="section">
 				<h3 id="30">再生できない</h3>
 				<ul>
@@ -303,7 +316,7 @@
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="../js/index.js"></script>
+<script src="{{ asset('js/aviot_player.js') }}"></script>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
 	<script src="../js/html5shiv.js"></script>

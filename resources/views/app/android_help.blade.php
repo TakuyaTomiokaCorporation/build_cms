@@ -28,40 +28,60 @@
 				<div class="nav_label">ようこそ</div>
 				    <a href="#00" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						AVIOT PLAYERについて</a>
-						<a href="#01" class="list-group-item">
+						AVIOT PLAYERについて
+					</a>
+					<a href="#01" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						QRコードでログインする</a>
+						QRコードでログインする
+					</a>
 				<div class="nav_label">おもな操作方法</div>
+					<a href="#15" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>製品保証登録について
+					</a>
 				    <a href="#10" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						各メニューについて</a>
-						<a href="#11" class="list-group-item">
+						各メニューについて
+					</a>
+					<a href="#11" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						各アイコンについて</a>
-						<a href="#12" class="list-group-item">
+						各アイコンについて
+					</a>
+					<a href="#12" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						楽曲を再生する</a>
+						楽曲を再生する
+					</a>
+					<a href="#13" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>イコライザー機能について
+					</a>
+					<a href="#14" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>ハイレゾ再生について
+					</a>
 
 				<div class="nav_label">アプリでできること</div>
-				  <a href="#20" class="list-group-item">
+					<a href="#20" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						フル試聴、フリーDL楽曲を無料で聴く</a>
+						フル試聴、フリーDL楽曲を無料で聴く
+					</a>
 					<a href="#21" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						ニュースを読む</a>
+						ニュースを読む
+					</a>
 				    <a href="#22" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						新着配信楽曲を試聴する</a>
+						新着配信楽曲を試聴する
+					</a>
 					<a href="#23" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						チャートを見る</a>
+						チャートを見る
+					</a>
 					<a href="#24" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						過去にOTOTOYで買った楽曲を聴く</a>
+						過去にOTOTOYで買った楽曲を聴く
+					</a>
 					<a href="#25" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
-						あとで買うリスト</a>
+						あとで買うリスト
+					</a>
 			</div>
 		</div>
 
@@ -79,32 +99,52 @@
 			<h2>ようこそ</h2>
 			<div class="section">
 				<h3 id="00">AVIOT PLAYERについて</h3>
+				<img src="{{ asset('images/user/ogp.png') }}" class=" img-responsive" alt="AVIOT">
 				<p>「AVIOT PLAYER」とは、読んで、聴いて、買える ミュージック・ストア「OTOTOY」がお届けする音楽や情報を視聴できるアプリです。フリー・ダウンロード作品や新譜の視聴、楽曲にまつわる特集記事とニュースを読むなど、スマートフォンで手軽にOTOTOYを楽しむことができます。</p>
 				<p>アプリ起動画面でOTOTOYアカウントにログイン後、お楽しみください。</p>
-
-				<h3 id="01">QRコードでログインする</h3>
-				<p>OTOTOYウェブサイト(<a href="https://ototoy.jp/">https://ototoy.jp/</a>)で購入した楽曲をスマホで簡単に聴くために、「ウェブとアプリの連携機能」を使ってQRコードでアプリにログインすることができます。</p>
-				<p>OTOTOYのウェブページで楽曲をチェックアウトした後の購入完了画面、CollectionsのCampaignタブ(ゲストモードのみ)などに、「ウェブとアプリの連携」画面へのリンクがあります。このリンクから連携ページを表示します。
-				</p>
-				<img src="{{ asset('images/app/2app01.png') }}" alt="2app01" class="sec-img img-responsive">
-				<p>連携ページに表示されるQRコードをログイン画面「QRコードでログインする」ボタンタップ後に読み取ることで連携が完了します。</p>
-				<img src="{{ asset('images/app/2app02.png') }}" alt="2app02" class="sec-img img-responsive">
-				<p>連携ページをスマホで表示した場合、QRコードではなく連携リンクが表示されます。アクセスするだけで端末内でアプリが開き連携が完了します。</p>
-				<p>連携ページは<a href="https://ototoy.jp/auth/2app.php">こちら</a></p>
-				<p>ウェブとアプリの連携機能について詳しくは<a href="https://ototoy.jp/feature/2app">こちら</a></p>
-      </div>
+			</div>
 		</div>
 
 		<div class="article">
 			<h2>おもな操作方法</h2>
+			{{-- 製品保証登録 --}}
+			<div class="section">
+				<h3 id="15">製品保証登録について</h3>
+				<img src="{{ asset('images/app/android-login01.jpg') }}" alt="android-player02" class="sec-img img-responsive">
+				<br>
+				<p>AVIOT PLAYERをご使用いただくにあたり、ご購入いただいたAVIOT製品の登録が必要です。<br>
+				ご購入いただいたAVIOT製品のシリアルナンバーをお控えの上、<br>
+				<br>
+				<span class="glyphicon glyphicon-ok-circle"></span> <strong>AVIOT製品保証登録がお済みの方 </strong><br>
+				<span class="glyphicon glyphicon-ok-circle"></span> <strong>AVIOT製品保証登録が済んでいない方</strong> <br>
+				<span class="glyphicon glyphicon-ok-circle"></span> <strong>AVIOT PLAYERログイン済みの方</strong><br>
+				<br>
+				いずれか該当する項目をご選択ください。
+				</p>
+				<small>※シリアルナンバーの確認は下図をご参考ください</small>
+				<img class=" img-responsive" src="{{ asset('images/user/serial_illustration.png') }}" alt="シリアルナンバーの説明図">
+
+				<h4>AVIOT製品保証登録がお済みの方</h4>
+				<br>
+				<img src="{{ asset('images/app/android-login03.jpg') }}" alt="android-player02" class="sec-img img-responsive">
+				<p>既に<a href="{{ route('top') }}">aviot.jp</a>等でAVIOT製品保証登録がお済みの方はこちらを選択いただき、ご登録時に使用された【シリアルナンバー】と【メールアドレス】をご入力ください。</p>
+				<h4>AVIOT製品保証登録が済んでいない方</h4>
+				<br>
+				<img src="{{ asset('images/app/android-login02.jpg') }}" alt="android-player02" class="sec-img img-responsive">
+				<p>まだ<a href="{{ route('top') }}">aviot.jp</a>等でAVIOT製品保証登録がお済みでない方はこちらをご選択し、シリアルナンバーを入力ください。<br></p>
+				<h4>AVIOT PLAYERログイン済みの方</h4>
+				<br>
+				<img src="{{ asset('images/app/android-login04.jpg') }}" alt="android-player02" class="sec-img img-responsive">
+				<p>既にAVIOT PLAYERのご登録がお済みの方はこちらを選択していただき、OTOTOYアカウントのメールアドレスとパスワードを入力してログインしてください。</p>
+			</div>
 			<div class="section">
 				<h3 id="10">各メニューについて</h3>
 				<img src="{{ asset('images/app/android-menu.jpg') }}" alt="android-menu" class="sec-img img-responsive">
 				<ul>
-					<li><strong>OTOTOY NOW</strong> : 「今週の無料曲」「ニュース」「新譜」「ランキング」などが表示できます。最新の音楽情報がゲットできます</li>
+					<li><strong>OTOTOY NOW</strong> : 「今週の無料曲」「ニュース」「新譜」「ランキング」などが表示できます。最新の音楽情報がゲットできます。</li>
 					<li><strong>ライブラリ</strong> : OTOTOYアカウントで購入した楽曲が表示されます。PCからの転送いらずで、すぐスマホでストリーミング再生できます。</li>
 					<li><strong>あとで買う</strong> : 「あとで買う」に登録した楽曲が表示されます。気になった音源を「あとで買う」でチェックしておけば、PC、アプリ両方の「あとで買う」リストに反映されます。</li>
-					<li><strong>カートを見る</strong> : OTOTOYウェブサイトの「マイ・カート」ページに飛びます</li>
+					<li><strong>カートを見る</strong> : OTOTOYウェブサイトの「マイ・カート」ページに飛びます。</li>
 				</ul>
 			</div>
 
@@ -228,7 +268,7 @@
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-{{-- <script src="../js/index.js"></script> --}}
+<script src="{{ asset('js/aviot_player.js') }}"></script>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
 	<script src="../js/html5shiv.js"></script>

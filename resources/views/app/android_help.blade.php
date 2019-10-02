@@ -35,6 +35,9 @@
 						QRコードでログインする
 					</a>
 				<div class="nav_label">おもな操作方法</div>
+					<a href="#15" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>製品登録について
+					</a>
 				    <a href="#10" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
 						各メニューについて
@@ -52,9 +55,6 @@
 					</a>
 					<a href="#14" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>ハイレゾ再生について
-					</a>
-					<a href="#15" class="list-group-item">
-						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>製品登録について
 					</a>
 
 				<div class="nav_label">アプリでできること</div>
@@ -117,6 +117,42 @@
 
 		<div class="article">
 			<h2>おもな操作方法</h2>
+			{{-- 製品保証登録 --}}
+			<div class="section">
+				<h3 id="15">製品登録について</h3>
+				<img src="{{ asset('images/app/android-login01.jpg') }}" alt="android-player02" class="sec-img img-responsive">
+				<br>
+				<p>AVIOT PLAYERをご使用いただくにあたり、ご購入いただいたAVIOT製品の登録が必要です。<br>
+				お手元にあるAVIOT製品をご準備いただき、<br>
+				<br>
+				<span class="glyphicon glyphicon-ok-circle"></span> <strong>AVIOT製品保証登録がお済みの方 </strong><br>
+				<span class="glyphicon glyphicon-ok-circle"></span> <strong>AVIOT製品保証登録が済んでいない方</strong> <br>
+				<span class="glyphicon glyphicon-ok-circle"></span> <strong>AVIOT PLAYERログイン済みの方</strong><br>
+				<br>
+				いずれか該当する項目をご選択ください。
+				</p>
+
+				<h4>AVIOT製品保証登録がお済みの方</h4>
+				<img src="{{ asset('images/app/android-login03.jpg') }}" alt="android-player02" class="sec-img img-responsive">
+				<p>既に<a href="{{ route('top') }}">aviot.jp</a>等でAVIOT製品保証登録がお済みの方は【AVIOT製品保証登録がお済みの方】をご選択いただき、ご登録時に使用された【シリアルナンバー】と【メールアドレス】をご入力ください。</p>
+				<h4>AVIOT製品保証登録が済んでいない方</h4>
+				<img src="{{ asset('images/app/android-login02.jpg') }}" alt="android-player02" class="sec-img img-responsive">
+
+				<h4>AVIOT PLAYERログイン済みの方</h4>
+				<img src="{{ asset('images/app/android-login04.jpg') }}" alt="android-player02" class="sec-img img-responsive">
+				</p>
+				<p>縮小化されている下方の再生プレイヤーでは、再生、一時停止の操作の他に、左右にスワイプすることで前後の楽曲を選択、再生することができます。</p>
+				<img src="{{ asset('images/app/android-player01.jpg') }}" alt="android-player01" class="sec-img img-responsive">
+				<p>さらに再生プレイヤーをタップすると、全画面表示になります。再生位置の変更、楽曲の選択などの操作が行えます。<br/>
+				画面上部の再生プレイヤーやジャケット写真を左右にスワイプすることで楽曲の選択を行えます。<br/>
+				画面上部の再生プレイヤーをタップすると縮小化され、下部に戻ります。</p>
+				<img src="{{ asset('images/app/android-player02.jpg') }}" alt="android-player02" class="sec-img img-responsive">
+				<h4>注意</h4>
+				<ul class="li-dec">
+					<li>本アプリの音源再生は全てストリーミングによって行っております。通信料にご注意ください。</li>
+					<li>すべて、本アプリで再生されるストリーミング音源は、MP３ファイルによって提供されています。ハイレゾ音源においてもMP3に変換され再生されています。</li>
+				</ul>
+			</div>
 			<div class="section">
 				<h3 id="10">各メニューについて</h3>
 				<img src="{{ asset('images/app/android-menu.jpg') }}" alt="android-menu" class="sec-img img-responsive">
@@ -148,25 +184,6 @@
 				<p>AVIOT PLAYERでは試聴、およびマイライブラリにある音源の再生など、音源再生はすべてほぼすべて同じ操作方法で行えます。</p>
 				<p><img src="{{ asset('images/app/android-syousai-icon.png') }}" alt="android-syousai-icon" class="li-img">「詳細アイコン」から、「アルバムを再生する」を選択すると、縮小化されている再生プレイヤーが画面最下方に出現します。また各パッケージの詳細から聴きたい楽曲をタップすることでも同様の再生がなされます。</p>
 				<p>縮小化されている下方の再生プレイヤーで音源を再生したままでも、ダブ・メニューを切り替え、ニュースやチャート、他の音源のチェックを行えます。
-				</p>
-				<p>縮小化されている下方の再生プレイヤーでは、再生、一時停止の操作の他に、左右にスワイプすることで前後の楽曲を選択、再生することができます。</p>
-				<img src="{{ asset('images/app/android-player01.jpg') }}" alt="android-player01" class="sec-img img-responsive">
-				<p>さらに再生プレイヤーをタップすると、全画面表示になります。再生位置の変更、楽曲の選択などの操作が行えます。<br/>
-				画面上部の再生プレイヤーやジャケット写真を左右にスワイプすることで楽曲の選択を行えます。<br/>
-				画面上部の再生プレイヤーをタップすると縮小化され、下部に戻ります。</p>
-				<img src="{{ asset('images/app/android-player02.jpg') }}" alt="android-player02" class="sec-img img-responsive">
-				<h4>注意</h4>
-				<ul class="li-dec">
-					<li>本アプリの音源再生は全てストリーミングによって行っております。通信料にご注意ください。</li>
-					<li>すべて、本アプリで再生されるストリーミング音源は、MP３ファイルによって提供されています。ハイレゾ音源においてもMP3に変換され再生されています。</li>
-				</ul>
-			</div>
-			{{-- 製品保証登録 --}}
-			<div class="section">
-				<h3 id="15">製品登録について</h3>
-				<p>AVIOT PLAYERをご使用いただくにあたって、ご購入いただいたAVIOT製品の登録をお願いいたします。</p>
-				
-				<img src="{{ asset('images/app/android-login01.jpg') }}" alt="android-player02" class="sec-img img-responsive">
 				</p>
 				<p>縮小化されている下方の再生プレイヤーでは、再生、一時停止の操作の他に、左右にスワイプすることで前後の楽曲を選択、再生することができます。</p>
 				<img src="{{ asset('images/app/android-player01.jpg') }}" alt="android-player01" class="sec-img img-responsive">

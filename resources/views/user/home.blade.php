@@ -31,7 +31,7 @@
     <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
             <div class="swiper-slide movie-wrap"><video src="{{ asset('images/user/nakano_15s.mp4') }}" playsinline autoplay muted controls width="1020"></video></div>
-            <div class="swiper-slide"><a href="{{ route('pass.show') }}#TE-BD21f"><img src="{{ asset('images/user/passcode-top.jpg') }}" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://youtu.be/gugCIOd5QEo" target="_blank"><img src="{{ asset('images/user/passcode-top.jpg') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="https://youtu.be/5s2B5fy94Qk" target="_blank"><img src="{{ asset('images/user/mv_01.jpg') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="https://youtu.be/8Bw7rNG72Tc" target="_blank"><img src="{{ asset('images/user/mv_02.jpg') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="{{ route('pnk_f.show') }}"><img src="{{ asset('images/user/mv_03.jpg') }}" alt=""></a></div>

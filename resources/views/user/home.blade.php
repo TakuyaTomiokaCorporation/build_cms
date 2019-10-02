@@ -34,7 +34,7 @@
             <div class="swiper-slide"><a href="https://youtu.be/gugCIOd5QEo" target="_blank"><img src="{{ asset('images/user/passcode-top.jpg') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="https://youtu.be/5s2B5fy94Qk" target="_blank"><img src="{{ asset('images/user/mv_01.jpg') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="https://youtu.be/8Bw7rNG72Tc" target="_blank"><img src="{{ asset('images/user/mv_02.jpg') }}" alt=""></a></div>
-            <div class="swiper-slide"><a href="{{ route('pnk_f.show') }}"><img src="{{ asset('images/user/mv_03.jpg') }}" alt=""></a></div>
+            {{-- <div class="swiper-slide"><a href="{{ route('pnk_f.show') }}"><img src="{{ asset('images/user/mv_03.jpg') }}" alt=""></a></div> --}}
             <div class="swiper-slide"><a href="{{ route('gesu.show') }}"><img src="{{ asset('images/user/gesu.gif') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="{{ route('wagamama.show') }}"><img src="{{ asset('images/user/mv_04.jpg') }}" alt=""></a></div>
             <div class="swiper-slide"><a href="{{ route('cy8er.show') }}"><img src="{{ asset('images/user/mv_05.jpg') }}" alt=""></a></div>

@@ -90,6 +90,7 @@
                 <dd><input  id="00N6F00000MmEem" maxlength="255" name="serial" size="20" type="text" required pattern="^[WT][A-Z]{2,4}\d{7,8}$" value="{{ old('serial') }}"><br>
                     &nbsp;&nbsp;WまたはTから始まるアルファベットと数字を入力してください。
                 </dd>
+                <img src="{{ asset('images/user/serial_illustration.png') }}" alt="シリアルナンバーの説明">
 
                 <dt><span class="required">必須</span>お名前</dt>
                 <dd><input  id="last_name" maxlength="40" name="last_name" size="20" type="text" placeholder="姓"  required value="{{ old('last_name') }}">
@@ -166,7 +167,7 @@
 
                 <dt><span class="required">必須</span>ご購入日</dt>
                 <dd><input type="date" value="2019-01-01" min="2015-01-01" id="00N6F00000MmEer" name="date" value="{{ old('date') }}"></dd>
-                    <small>※ご購入日が記載されているレシートの日付をお選びください。</small>
+                    <small>&nbsp;&nbsp;※ご購入日が記載されているレシートの日付をお選びください。</small>
 
                 <dt><label for="email"><span class="required">必須</span>ご購入店（AVIOT公式ストア/正規代理店）</label></dt>
                 <dd>

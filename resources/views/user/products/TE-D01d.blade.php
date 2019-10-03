@@ -74,7 +74,7 @@
             <p class="mt10">フラットなトーンバランスと、よりハイスピードなスピーカードライバーを厳選し、採用。また、剛性が高く外来ノイズに強いジュラルミンケースを採用するなど、隅々まで高音質化を行って、クラス最高の音質を実現しました。ワイヤレスイヤホンである事を忘れさせる高音質と、インビジブルバッテリーを採用した軽快な使い心地を是非お楽しみ下さい。</p>
         </div>
         <div class="bgGray mt20 accessories">
-            <p class="txtS">付属品：MicroUSBケーブル、標準イヤーピース（各サイズ1色1ペア S/M/L）、イヤーウイング、（各サイズ1色1ペア S/M）、SpinFit CP100Z（各サイズ1色1ペア SS/S/M）、収納ポーチ、ユーザーマニュアル、製品保証登録カード</p>
+            <p class="txtS">付属品：MicroUSBケーブル、標準イヤーピース（各サイズ1色1ペア S/M/L）、イヤーウイング、（各サイズ1色1ペア S/M）、収納ポーチ、ユーザーマニュアル、製品保証登録カード</p>
         </div>
     </div>
         <div class="alc btn_area"><a href="https://www.amazon.co.jp/dp/B07MG34M8C/ref=cm_sw_em_r_mt_awdo_PeZzDbNJXRJ43" target="_blank" class="btn_buy">ご購入はこちら</a></div>

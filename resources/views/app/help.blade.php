@@ -52,6 +52,12 @@
 					<a href="#14" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
 						プレイリスト</a>
+					<a href="#EQ" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>イコライザー機能について
+					</a>
+					<a href="#HI" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>ハイレゾ再生について
+					</a>
 					<a href="#15" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
 						リピートとシャッフル再生</a>
@@ -222,6 +228,23 @@
 				<h4>再生画面から追加する</h4>
 				<p>「プレイリスト追加」ボタンをタップすと現在作成されているプレイリストの一覧が表示されます。タップしたプレイリストに再生中の楽曲が追加されます。</p>
 				<img src="{{ asset('images/app/ios-playlist05.jpg') }}" alt="ios-playlist05" class="sec-img img-responsive">
+			</div>
+		
+			<div class="section">
+				<h3	id="EQ">イコライザー機能について</h3>
+				<p>AVIOT PLAUERでは楽曲再生画面上でイコライザーの調整が可能です。これによりご自身の好きな音質で心地よく楽曲を楽しみいただけます。</p>
+				<img src="{{ asset('images/app/eq_1.PNG') }}" alt="イコライザー" class="sec-img img-responsive">
+				<p>上の写真で赤く囲まれている箇所をタップしてください。</p>
+				<img src="{{ asset('images/app/') }}" alt="イコライザー">
+				<p>上の画面でイコライザーの設定をすることが可能です。<br>
+					32~125K : 低音域 <br>
+					256~2000K : 中音域 <br>
+					4000K以上 : 高音域 <br>
+					になります。お好きな音域を上げるのではなく、必要ではない音域を下げるのがポイントです。
+				</p>
+			</div>
+			<div class="section">
+				<h3 id="HI">ハイレゾ再生について</h3>
 			</div>
 
 			<div class="section">

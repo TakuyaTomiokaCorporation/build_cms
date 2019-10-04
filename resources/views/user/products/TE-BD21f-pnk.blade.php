@@ -55,7 +55,7 @@
             <p class="txtS">付属品：USB Type C 1本、標準イヤーピース（各サイズ1色1ペア S/M/L）、SpinFit CP355（各サイズ1ペア SS/S/M）、シリコンストラップ、EVAセミハードケース、クリーニングクロス、ユーザーマニュアル、製品保証登録カード</p>
         </div>
     </div>
-    <div class="alc btn_area"><a href="https://www.amazon.co.jp/dp/B07TTQKHL4/" target="_blank" class="btn_buy">ご購入はこちら</a></div>
+    <div class="alc btn_area"><a href="{{ route('pnk_reservation') }}" target="_blank" class="btn_buy">ご購入はこちら</a></div>
     </div>
 
     <h3 class="mt80">「凛として時雨」のドラマー ピエール中野氏監修</h3>
@@ -157,7 +157,7 @@
         <div class="alc mt20">
             <a href="{{ route('product.show') }}" class="btn_back mt10">製品一覧へ戻る</a>
 
-            <a href="https://www.amazon.co.jp/dp/B07TTQKHL4/" target="_blank" class="btn_buy mt10">ご購入はこちら</a>
+            <a href="{{ route('pnk_reservation') }}" target="_blank" class="btn_buy mt10">ご購入はこちら</a>
         </div>
     </section>
 

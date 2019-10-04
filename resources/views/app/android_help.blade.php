@@ -159,7 +159,7 @@
 				<h4>記事アイコン</h4>
 				<p>OTOTOYにて公開されている記事があるアーティストのパッケージには<img src="{{ asset('images/app/android-feature-icon.png') }}" alt="android-feature-icon" class="li-img">「記事アイコン」が表示されます。</p>
 				<img src="{{ asset('images/app/android-feature01.jpg') }}" alt="android-feature01" class="sec-img img-responsive">
-				<p>この<img src="{{ asset('images/app/android-feature-icon.png') }}" alt="android-feature-icon" class="li-img">「記事アイコン」があるパッケージでは、<img src="{{ asset('images/app/android-feature-icon.png') }}" alt="android-feature-icon" class="li-img">「記事アイコン」そのものや<img src="{{ asset('images/app/android-syousai-icon.png') }}" alt="android-syousai-icon" class="li-img">「詳細アイコン」からそのアーティストの最新記事を見ることができます。</p>
+				<p>この<img src="{{ asset('images/app/android-feature-icon.png') }}" alt="android-feature-icon" class="li-img">「記事アイコン」があるパッケージでは、<img src="{{ asset('images/app/android-syousai-icon.png') }}" alt="android-syousai-icon" class="li-img">「詳細アイコン」からそのアーティストの最新記事を見ることができます。</p>
 				<img src="{{ asset('images/app/android-feature02.jpg') }}" alt="android-feature02" class="sec-img img-responsive">
 			</div>
 
@@ -180,6 +180,26 @@
 					<li>本アプリの音源再生は全てストリーミングによって行っております。通信料にご注意ください。</li>
 					<li>すべて、本アプリで再生されるストリーミング音源は、MP３ファイルによって提供されています。ハイレゾ音源においてもMP3に変換され再生されています。</li>
 				</ul>
+			</div>
+			<div class="section">
+				<h3 id="13">イコライザー機能について</h3>
+				<p>AVIOT PLAUERでは楽曲再生画面上でイコライザーの調整が可能です。これによりご自身の好きな音質で心地よく音楽を楽しめます。</p>
+				<img src="{{ asset('images/app/eq_android.jpg') }}" alt="イコライザー" class="sec-img img-responsive">
+				<p>上の写真で赤く囲まれている箇所をタップしてください。</p>
+				<img src="{{ asset('images/app/eq_android_2.jpg') }}" alt="イコライザー" class="sec-img img-responsive">
+				<p>上の画面でイコライザーの設定をすることが可能です。<br>
+					<ul>
+						<li>32~125K : 低音域 </li>
+						<li>256~2000K : 中音域</li>
+						<li>4000K以上 : 高音域</li>
+					</ul>
+					お好きな音域を上げるのではなく、必要ではない音域を下げるのがポイントです。
+				</p>
+			</div>
+
+			<div class="section">
+				<h3 id="14">ハイレゾ再生について</h3>
+				<p>iOS/Android(※ハイレゾ対応機種)のCD以上の情報量を持つハイレゾ音源、またはCDと同等音質(16bit/44.1kHz)のロスレス音源を、気軽にお楽しみいただけます。</p>
 			</div>
 		</div>
 

@@ -52,6 +52,12 @@
 					<a href="#14" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
 						プレイリスト</a>
+					<a href="#EQ" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>イコライザー機能について
+					</a>
+					<a href="#HI" class="list-group-item">
+						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>ハイレゾ再生について
+					</a>
 					<a href="#15" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
 						リピートとシャッフル再生</a>
@@ -111,7 +117,7 @@
 			<div class="section">
 				<h3 id="00">AVIOT PLAYERについて</h3>
 				<img src="{{ asset('images/user/ogp.png') }}" class=" img-responsive" alt="AVIOT">
-				<p>「AVIOT PLAYER」とは、読んで、聴いて、買える ミュージック・ストア「AVIOT」がお届けする音楽や情報を視聴できるアプリです。フリー・ダウンロード作品や新譜の視聴、楽曲にまつわる特集記事とニュースを読むなど、スマートフォンで手軽にAVIOTを楽しむことができます。</p>
+				<p>「AVIOT PLAYER」とは、読んで、聴いて、買える ミュージック・ストア「OTOTOY」がお届けする音楽や情報を視聴できるアプリです。フリー・ダウンロード作品や新譜の視聴、楽曲にまつわる特集記事とニュースを読むなど、スマートフォンで手軽にAVIOTを楽しむことができます。</p>
 				<p>さらに、OTOTOYアカウントを作成・ログインするとすべての機能が使用可能になります</p>
 				<ul>
 					<li>フリー・ダウンロード曲を「ライブラリに登録」することが可能になり、配信期間後も楽曲を楽しめます。</li>
@@ -222,6 +228,26 @@
 				<h4>再生画面から追加する</h4>
 				<p>「プレイリスト追加」ボタンをタップすと現在作成されているプレイリストの一覧が表示されます。タップしたプレイリストに再生中の楽曲が追加されます。</p>
 				<img src="{{ asset('images/app/ios-playlist05.jpg') }}" alt="ios-playlist05" class="sec-img img-responsive">
+			</div>
+		
+			<div class="section">
+				<h3	id="EQ">イコライザー機能について</h3>
+				<p>AVIOT PLAUERでは楽曲再生画面上でイコライザーの調整が可能です。これによりご自身の好きな音質で心地よく楽曲を楽しみいただけます。</p>
+				<img src="{{ asset('images/app/eq_ios_1.jpg') }}" alt="イコライザー" class="sec-img img-responsive">
+				<p>上の写真で赤く囲まれている箇所をタップしてください。</p>
+				<img src="{{ asset('images/app/eq_ios_2.jpg') }}" alt="イコライザー" class="sec-img img-responsive">
+				<p>上の画面でイコライザーの設定をすることが可能です。<br>
+					<ul>
+						<li>32~125K : 低音域 </li>
+						<li>256~2000K : 中音域</li>
+						<li>4000K以上 : 高音域</li>
+					</ul>
+					お好きな音域を上げるのではなく、必要ではない音域を下げるのがポイントです。
+				</p>
+			</div>
+			<div class="section">
+				<h3 id="HI">ハイレゾ再生について</h3>
+				<p>iOS/Android(※ハイレゾ対応機種)のCD以上の情報量を持つハイレゾ音源、またはCDと同等音質(16bit/44.1kHz)のロスレス音源を、気軽にお楽しみいただけます。</p>
 			</div>
 
 			<div class="section">

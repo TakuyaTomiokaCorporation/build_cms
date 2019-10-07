@@ -10,4 +10,14 @@ class InterviewController extends Controller
     {
         return view('user.interview.index');
     }
+
+    public function showProfessionals()
+    {
+        return view('user.interview.audio_professionals');
+    }
+
+    public function showSample()
+    {
+        return view('user.interview.kounoike');
+    }
 }

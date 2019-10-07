@@ -150,6 +150,8 @@ Route::get('/aviot_live_02', 'UserAppliedController@createAviotLive02Form')->nam
 |############################
 */
 Route::get('/interview', 'InterviewController@index')->name('interview.top');
+Route::get('/interview/professionals', 'InterviewController@showProfessionals')->name('interview.pro');
+Route::get('/interview/professionals/sample', 'InterviewController@showSample')->name('interview.sample');
 
 /*
 |############################

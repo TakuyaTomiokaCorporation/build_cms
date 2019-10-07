@@ -20,8 +20,8 @@ class UserRegisterController extends Controller
     public function getConfirm(UserRegister $request)
     {
         $confirm = $request -> all();
-        dd($confirm);
-        // return view('user.support.confirm')->with($confirm);
+        // dd($confirm);
+        return view('user.support.confirm')->with($confirm);
     }
 
     public function getProductThanks()

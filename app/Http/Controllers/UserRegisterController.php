@@ -17,11 +17,11 @@ class UserRegisterController extends Controller
         return view('user.support.registration');
     }
 
-    public function getConfirm(Request $request)
+    public function getConfirm(UserRegister $request)
     {
         $confirm = $request -> all();
-        // dd($confirm);
-        return view('user.support.confirm')->with($confirm);
+        dd($confirm);
+        // return view('user.support.confirm')->with($confirm);
     }
 
     public function getProductThanks()

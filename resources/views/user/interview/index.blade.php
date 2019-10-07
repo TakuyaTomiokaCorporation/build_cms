@@ -41,12 +41,12 @@
     <section class="artist_interview mb20">
         <h3 class="border_l">アーティストインタビュー</h3>
         <div class="mt10 alc">
-            <a href="https://aviot.jp/artists"><img src="./img/artistmovie.png"></a>
+            <a href="{{ route('artists.show') }}"><img src="{{ asset('images/interview/artistmovie.png') }}"></a>
         </div>
 
         <h3 class="border_l mt20">オーディオのプロに聞くAVIOT</h3>
         <div class="mt10 alc">
-            <a href="./audio_professionals.php"><img src="./img/pro.png"></a>
+            <a href="{{ route('interview.pro') }}"><img src="{{ asset('images/interview/pro.png') }}"></a>
         </div>
     </section>
 
@@ -56,19 +56,19 @@
             <h4 class="alc">完全ワイヤレスイヤホン</h4>
             <ul class="flex">
                 <li class="alc">
-                    <a href="./TE-BD21f.php"><img src="./img/TE-BD21f.png">
+                    <a href=""><img src="{{ asset('images/interview/TE-BD21f.png') }}">
                         <h5 class="mt10">TE-BD21f</h5></a>
                 </li>
                 <li class="alc">
-                    <a href="./TE-BD21f.php"><img src="./img/TE-BD21f.png">
+                    <a href=""><img src="{{ asset('images/interview/TE-BD21f.png') }}">
                         <h5 class="mt10">TE-BD21f</h5></a>
                 </li>
                 <li class="alc">
-                    <a href="./TE-BD21f.php"><img src="./img/TE-BD21f.png">
+                    <a href=""><img src="{{ asset('images/interview/TE-BD21f.png') }}">
                         <h5 class="mt10">TE-BD21f</h5></a>
                 </li>
                 <li class="alc">
-                    <a href="./TE-BD21f.php"><img src="./img/TE-BD21f.png">
+                    <a href=""><img src="{{ asset('images/interview/TE-BD21f.png') }}">
                         <h5 class="mt10">TE-BD21f</h5></a>
                 </li>
             </ul>
@@ -78,15 +78,15 @@
             <h4 class="alc">ワイヤレスイヤホン</h4>
             <ul class="flex">
                 <li class="alc">
-                    <a href="./WE-BD21d.php"><img src="./img/WE-BD21d.png">
+                    <a href=""><img src="{{ asset('images/interview/WE-BD21d.png') }}">
                         <h5 class="mt10">WE-BD21d</h5></a>
                 </li>
                 <li class="alc">
-                    <a href="./WE-BD21d.php"><img src="./img/WE-BD21d.png">
+                    <a href=""><img src="{{ asset('images/interview/WE-BD21d.png') }}">
                         <h5 class="mt10">WE-BD21d</h5></a>
                 </li>
                 <li class="alc">
-                    <a href="./WE-BD21d.php"><img src="./img/WE-BD21d.png">
+                    <a href=""><img src="{{ asset('images/interview/WE-BD21d.png') }}">
                         <h5 class="mt10">WE-BD21d</h5></a>
                 </li>
             </ul>

@@ -26,17 +26,14 @@ class UserRegister extends FormRequest
         return [
             'last_name' => 'required|max:40',
             'first_name' => 'required|max:40',
-            '00N6F00000SUcr2' => 'required|max:20',
-            '00N6F00000SUcr7' => 'required|max:20',
-            '00N6F00000MmEeS' => 'required',
-            'zip' => 'required|regex:/^\d{3}[-]\d{4}$/',
-            'state' => 'required',
-            'city' => 'required',
-            'phone' => 'regex:/^\d{2,4}[-]\d{2,4}[-]\d{2,4}$/',
-            'email' => 'required|regex:/[^\s]@[^\s]/',
-            '00N6F00000O5eOx' => 'required',
-            '00N6F00000MmEem' => 'required|regex:/^[WT][A-Z]{2,4}\d{7,8}$/',
-            '00N6F00000MmEeh' => 'required',
+            'last_name_ja' => 'required|max:20',
+            'first_name_ja' => 'required|max:20',
+            'gender' => 'required',
+            'phone' => 'nullable|regex:/^\d{2,4}[-]\d{2,4}[-]\d{2,4}$/',
+            'email' => 'required|email|confirmed',
+            'product' => 'required',
+            'serial' => 'required|regex:/^[WT][A-Z]{2,4}\d{7,8}$/',
+            'color' => 'required',
 
 
         ];

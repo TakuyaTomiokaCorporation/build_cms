@@ -88,7 +88,8 @@
 
                 <dt><span class="required">必須</span>シリアルナンバー</dt>
                 <dd><input  id="00N6F00000MmEem" maxlength="255" name="serial" size="20" type="text" required pattern="^[WT][A-Z]{2,4}\d{7,8}$" value="{{ old('serial') }}"><br>
-                    &nbsp;&nbsp;WまたはTから始まるアルファベットと数字を入力してください。
+                    <p>&nbsp;&nbsp;WまたはTから始まるアルファベットと数字を入力してください。</p>
+                    <small>&nbsp;&nbsp;※【TE-BD21f】をご購入のお客様はパッケージの底面にバーコードと番号が記載されたシールが貼られておりますので、そちらの番号をご参照ください。</small>
                 </dd>
                 <img src="{{ asset('images/user/serial_illustration.png') }}" alt="シリアルナンバーの説明">
 

@@ -84,7 +84,7 @@
             @method('PATCH')
             <dl>
                 <dt><span class="required">必須</span><label for="email">メールアドレス</label></dt>
-                <dd><input  id="email" maxlength="80" name="email" size="60" type="text"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="メールアドレスをご確認ください。"　required value="{{ old('email') }}"></dd>
+                <dd><input  id="email" maxlength="80" name="email" size="60" type="text"  required pattern="[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="メールアドレスをご確認ください。"　required value="{{ old('email') }}"></dd>
 
                 <dt><span class="required">必須</span>シリアルナンバー</dt>
                 <dd><input  id="00N6F00000MmEem" maxlength="255" name="serial" size="20" type="text" required pattern="^[WT][A-Z]{2,4}\d{7,8}$" value="{{ old('serial') }}"><br>

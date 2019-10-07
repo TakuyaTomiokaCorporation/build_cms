@@ -50,6 +50,31 @@
     transform: translateY(-50%) rotate(-45deg);
     width: 1em;
 }
+
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
 </style>
 
 @endsection
@@ -85,6 +110,16 @@
             <dl>
                 <dt><span class="required">必須</span><label for="email">メールアドレス</label></dt>
                 <dd><input  id="email" maxlength="80" name="email" size="60" type="text"  required pattern="[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="メールアドレスをご確認ください。"　required value="{{ old('email') }}"></dd>
+
+                <dt><span class="required">必須</span><label for="email_confirmation">確認用メールアドレス</label></dt>
+                <dd><input  id="email" maxlength="80" name="email_confirmation" size="60" type="text"  required pattern="[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="メールアドレスをご確認ください。"　required value="{{ old('email_check') }}"></dd>
+
+                @error('email')
+                <div class="alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    {{ $message }}
+                  </div>
+                @enderror
 
                 <dt><span class="required">必須</span>シリアルナンバー</dt>
                 <dd><input  id="00N6F00000MmEem" maxlength="255" name="serial" size="20" type="text" required pattern="^[WT][A-Z]{2,4}\d{7,8}$" value="{{ old('serial') }}"><br>

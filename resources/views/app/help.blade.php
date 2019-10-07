@@ -118,7 +118,7 @@
 				<h3 id="00">AVIOT PLAYERについて</h3>
 				<img src="{{ asset('images/user/ogp.png') }}" class=" img-responsive" alt="AVIOT">
 				<p>「AVIOT PLAYER」は、読んで・聴いて・買えるミュージック・ストア「OTOTOY」とAVIOTのコラボレーションによって生まれたサウンドプレイヤーです。OTOTOYの擁するバリエーション豊かで高音質な音源をAVIOTイヤホンで再生することはもちろん、アーティストの最新ニュースや楽曲にまつわる特集記事の配信、フリー作品／新譜の試聴まで、お手持ちのiPhoneで気軽にお楽しみいただけます。</p>
-				<p>AVIOT製品のユーザ登録を完了すると、以下の機能をご利用いただけます。</p>
+				<p>AVIOT製品のユーザ登録とOTOTOY会員登録（およびログイン）を完了すると、以下の機能をご利用いただけます。</p>
 				<ul>
 					<li>ローカル再生（iTunesライブラリの再生）</li>
 					<li>ハイレゾ再生※（WAV/FLAC/ALAC、192kHz/24bitまで）</li>

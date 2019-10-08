@@ -71,7 +71,7 @@
             <p class="txtS">付属品：USB Type C 1本、標準イヤーピース（各サイズ1色1ペア S/M/L）、SpinFit CP355（各サイズ1ペア SS/S/M）、シリコンストラップ、クリーニングクロス、収納ポーチ、ユーザーマニュアル、製品保証登録カード</p>
         </div>
     </div>
-    <div class="alc btn_area"><a href="https://www.amazon.co.jp/dp/B07TZ2RB4Y/" target="_blank" class="btn_buy">ご購入はこちら</a></div>
+    <div class="alc btn_area"><a href="https://www.amazon.co.jp/AVIOT-TE-BD21f-%E3%83%88%E3%82%A5%E3%83%AB%E3%83%BC%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9-Bluetooth%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3/dp/B07TTQFW18/ref=sr_1_7?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&keywords=%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3%2BAVIOT&qid=1570522726&s=electronics&sr=1-7&th=1" target="_blank" class="btn_buy">ご購入はこちら</a></div>
     </div>
 
     <h3 class="mt80">日本の完全ワイヤレスイヤホン、その頂点を目指して</h3>
@@ -218,7 +218,7 @@
         <div class="alc mt20">
             <a href="{{ route('product.show') }}" class="btn_back mt10">製品一覧へ戻る</a>
 
-            <a href="https://www.amazon.co.jp/dp/B07TZ2RB4Y/" target="_blank" class="btn_buy mt10">ご購入はこちら</a>
+            <a href="https://www.amazon.co.jp/AVIOT-TE-BD21f-%E3%83%88%E3%82%A5%E3%83%AB%E3%83%BC%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3-%E5%AE%8C%E5%85%A8%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9-Bluetooth%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3/dp/B07TTQFW18/ref=sr_1_7?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&keywords=%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3%2BAVIOT&qid=1570522726&s=electronics&sr=1-7&th=1" target="_blank" class="btn_buy mt10">ご購入はこちら</a>
         </div>
     </section>
 

@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="{{ asset('css/index.css') }}" rel="stylesheet" media="screen" />
 	<title>AVIOT PLAYER iOS版 ヘルプ</title>
+	<style>
+	.my-3{
+		margin-top:0.75rem;
+		margin-bottom: 0.75rem; 
+	}
+	
+	</style>
 </head>
 <body>
 
@@ -125,7 +132,7 @@
 					<li>イコライザー機能（10バンド対応）</li>
 				</ul>
 				<p>※：ワイヤレス再生時は、適用されるオーディオコーデックによりダウンサンプリング処理されます。USB DACなどAVIOTイヤホン以外の機器への出力も可能ですが、ユーザサポート対象外です。</p>
-				<p>さらにOTOTOYの以下の機能もご利用いただけます。</p>
+				<p>さらに、OTOTOYの以下の機能もご利用いただけます。</p>
 				<ul>
 					<li>OTOTOYで購入した楽曲を再生できます（楽曲データは内蔵ストレージにキャッシュされます）。</li>
 					<li>OTOTOYのフリー作品を「ライブラリ」に登録できるようになり、配信期間終了後もお楽しみいただけます。</li>
@@ -244,16 +251,52 @@
 				<img src="{{ asset('images/app/eq_ios_2.jpg') }}" alt="イコライザー" class="sec-img img-responsive">
 				<p>上の画面でイコライザーの設定をすることが可能です。<br>
 					<ul>
-						<li>32~125K : 低音域 </li>
-						<li>256~2000K : 中音域</li>
-						<li>4000K以上 : 高音域</li>
+						<li class="my-3">32~125K : 低音域 </li>
+						<li class="my-3">256~2000K : 中音域</li>
+						<li class="my-3">4000K以上 : 高音域</li>
+						<li class="my-3">-20dB ~ +20dB</li>
 					</ul>
 					お好きな音域を上げるのではなく、必要ではない音域を下げるのがポイントです。
 				</p>
 			</div>
 			<div class="section">
 				<h3 id="HI">ハイレゾ再生について</h3>
-				<p>iOS/Android(※ハイレゾ対応機種)のCD以上の情報量を持つハイレゾ音源、またはCDと同等音質(16bit/44.1kHz)のロスレス音源を、気軽にお楽しみいただけます。</p>
+
+				<p>OTOTOYではWAV、ALAC、FLAC、MP3、AAC、DSDの各フォーマットにより楽曲配信を行っています。その詳細は下表のとおりです。AVIOT PLAYERも下表のフォーマットを再生できますが、注意事項をご確認ください。</p>
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr><th>形式</th><th>主な拡張子</th><th>圧縮可逆性</th><th>スペック上限</th><th>メタデータ埋込</th><th>圧縮後サイズ</th></tr>
+						</thead>
+
+						<tbody>
+							<tr><td style="text-align:left">WAV</td><td style="text-align:left">.wav</td><td style="text-align:left">*</td><td style="text-align:left">32bit浮動小数点/768kHz</td><td style="text-align:center">×</td><td style="text-align:left">*(100%)</td></tr>
+							
+							<tr><td style="text-align:left">ALAC</td><td style="text-align:left">.m4a</td><td style="text-align:left">可逆</td><td style="text-align:left">32bit整数/192kHz</td><td style="text-align:center">○</td><td style="text-align:left">60%～70%</td></tr>
+							
+							<tr><td style="text-align:left">FLAC</td><td style="text-align:left">.flac</td><td style="text-align:left">可逆</td><td style="text-align:left">24bit整数/192KHz</td><td style="text-align:center">○</td><td style="text-align:left">60%～70%</td></tr>
+							
+							<tr><td style="text-align:left">MP3</td><td style="text-align:left">.mp3</td><td style="text-align:left">不可逆</td><td style="text-align:left">16bit/48kHz</td><td style="text-align:center">○</td><td style="text-align:left">10%～30%</td></tr>
+							
+							<tr><td style="text-align:left">AAC</td><td style="text-align:left">.m4a</td><td style="text-align:left">不可逆</td><td style="text-align:left">24bit整数/96KHz</td><td style="text-align:center">○</td><td style="text-align:left">10%～30%</td></tr>
+							
+							<tr><td style="text-align:left">DSF</td><td style="text-align:left">.dsf</td><td style="text-align:left">*</td><td style="text-align:left">1bit/11.2MHz</td><td style="text-align:center">○</td><td style="text-align:left">*(100%)</td></tr>
+							
+							<tr><td style="text-align:left">DSDIFF</td><td style="text-align:left">.dff</td><td style="text-align:left">*</td><td style="text-align:left">1bit/11.2MHz</td><td style="text-align:center">×</td><td style="text-align:left">*(100%)</td></tr>
+							
+							<caption>AVIOT PLAYERおよびOTOTOYでサポートするファイル形式</caption>
+						</tbody>
+					</table>
+				</div>
+
+				<ul>
+					<li class="my-3">ハイレゾ再生機能は、OTOTOYにログインした状態でなければご利用いただけません。設定画面に「ハイレゾプレイバック　有効」と表示されていることをご確認ください。</li>
+					<li class="my-3">2019年10月現在、iPhoneやiPadなどiOS/iPad OSベースの機器は48kHz/24bitを超えるオーディオ出力に対応していません。従ってAVIOT PLAYERで48kHz/24bitを超えるハイレゾ音源を再生した場合、ダウンサンプリングされて出力されます。</li>
+					<li class="my-3">iPhoneやiPadなどiOS/iPad OSでは、24bit信号を扱えるBluetoothオーディオコーデックをサポートしていません。AVIOT製品を含むBluetoothイヤホンに出力した場合、44.1kHz/16bitでの再生になります。</li>
+					<li class="my-3">AVIOT PLAYERでの音楽再生は「AVIOTイヤホンにワイヤレス出力した場合」のみサポート対象となります（アプリに接続中のAVIOTイヤホン画像が表示された状態）。USB DACなど外部機器にデジタルオーディオ信号を出力することは可能ですが、サポート対象外のご利用方法となるためご了承ください。</li>
+					<li class="my-3">PCから転送したハイレゾ楽曲のうちFLACとDSDについては、iTunesライブラリに登録できないApple製ソフトウェアの都合上、ローカル再生できません。ALACまたはWAVをご利用ください。</li>
+					<li class="my-3">ハイレゾ再生機能は、AVIOT製品のユーザ登録から2年間有効です。製品を追加でご登録いただいた場合、その時点から2年延長されます。</li>
+				</ul>
 			</div>
 
 			<div class="section">

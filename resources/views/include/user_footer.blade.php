@@ -44,6 +44,6 @@
     </div>
     </article>
     <div id="copyright">
-        <p>&copy;2019 AIOT</p>
+        <p>&copy;2019 AVIOT</p>
     </div>
 </footer>

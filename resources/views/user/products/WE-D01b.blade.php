@@ -63,7 +63,7 @@
     
         <h3 class="mt80">-Japan Tuned-</h3>
         <div class="">
-            <p class="alc"><img src="{{ asset('images/products/WE-D01b/WE-D01b_01.jpg') }}"></p>
+            <p class="alc"><img src="{{ asset('images/products/WE-D01b/d01b_japan_tuned.jpg') }}"></p>
                 <div><p class="product_text">日本の音を知り尽くしたオーディオのエキスパート達が、クラシックから最新ヒット曲まで約1,000曲の楽曲を、延べ3,000時間以上も掛けてじっくりと聴き込み、チューニングをしました。</p>
                     <p  class="alc mt20"><a href="{{ route('about') }}/#japansound" class="btn_Blk">詳細をみる</a></p></div>
     

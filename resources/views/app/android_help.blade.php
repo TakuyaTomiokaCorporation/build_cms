@@ -33,7 +33,7 @@
 		<!-- 目次 -->
 		<div class="nav">
 			<div class="list-group">
-				<div class="nav_label">テストようこそ</div>
+				<div class="nav_label">ようこそ</div>
 				    <a href="#00" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
 						AVIOT PLAYERについて
@@ -220,7 +220,7 @@
 			</div>
 
 			<div class="section">
-				<h3 id="">ハイレゾ再生について</h3>
+				<h3 id="14">ハイレゾ再生について</h3>
 
 				<p>OTOTOYではWAV、ALAC、FLAC、MP3、AAC、DSDの各フォーマットにより楽曲配信を行っています。その詳細は下表のとおりです。AVIOT PLAYERも下表のフォーマットを再生できますが、注意事項をご確認ください。</p>
 

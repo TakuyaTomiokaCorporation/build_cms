@@ -9,6 +9,7 @@
 <style type="text/css">
 .artist_interview div img {
     width: 1020px;
+    height: auto;
 }
 
 .content_product ul {
@@ -26,6 +27,23 @@
 .content_pro li {
     width: 28%;
 }
+.bg1 {
+  background-attachment: fixed;
+  background-image: url("{{ asset('images/interview/artistmovie.png') }}");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.bg2 {
+  background-attachment: fixed;
+  background-image: url("{{ asset('images/interview/pro.png') }}");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 </style>
 
 @endsection
@@ -39,15 +57,17 @@
     <h2 class="pt20 border_b mb20">インタビュー</h2>
 
     <section class="artist_interview mb20">
-        <h3 class="border_l">アーティストインタビュー</h3>
+        {{-- <h3 class="border_l">アーティストインタビュー</h3> --}}
         <div class="mt10 alc">
             <a href="{{ route('artists.show') }}"><img src="{{ asset('images/interview/artistmovie.png') }}"></a>
         </div>
 
-        <h3 class="border_l mt20">オーディオのプロに聞くAVIOT</h3>
-        <div class="mt10 alc">
+        {{-- <h3 class="border_l mt20">オーディオのプロに聞くAVIOT</h3> --}}
+        <div class="alc">
             <a href="{{ route('interview.pro') }}"><img src="{{ asset('images/interview/pro.png') }}"></a>
         </div>
+        {{-- <div class="bg1"></div>
+        <div class="bg2"></div> --}}
     </section>
 
     {{-- <section>

@@ -26,10 +26,11 @@
                 <h3 id="tebd21f">TE-BD21f</h3>
                 <h4 class="mt10">ライフスタイルを革命する！</h4>
                 <p class="mt10">音が出た瞬間、「この音は凄い！ワイヤレスとは思えない！」、と驚嘆。なんと業界初のハイブリッド・トリプルドライバー構成で、定評ある2基のBAドライバーも採用した豪華仕様です。</p>
-                <p>aptXコーデックに対応し、その音は限りない滑らかさと力強さを併せ持つ感動の次元といえます。</p>
+                <p class="mt10">aptXコーデックに対応し、その音は限りない滑らかさと力強さを併せ持つ感動の次元といえます。</p>
                 <p class="mt10">完全ワイヤレスの利便性と超高音質を両立し、価格もリーズナブル。新しいリスニングスタイル、すなわちライフスタイルを革命する製品として高く評価しました。</p>
             </div>
-        <p class="alc"><a href="../product/TE-BD21f/" class="btn_Blk">製品詳細はこちら</a></p>
+        <p class="alc mt20"><a href="{{ route('tebd21f') }}" class="btn_buy">製品詳細はこちら</a></p>
+        <p class="alc mt20"><a href="{{ route('interview.pro') }}" class="btn_back">一覧に戻る</a></p>
     </section>
 
 

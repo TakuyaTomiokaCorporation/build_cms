@@ -151,7 +151,13 @@ Route::get('/aviot_live_02', 'UserAppliedController@createAviotLive02Form')->nam
 */
 Route::get('/interview', 'InterviewController@index')->name('interview.top');
 Route::get('/interview/professionals', 'InterviewController@showProfessionals')->name('interview.pro');
-Route::get('/interview/professionals/sample', 'InterviewController@showSample')->name('interview.sample');
+Route::get('/interview/professionals/1', 'InterviewController@showSample');
+Route::get('/interview/professionals/2', 'InterviewController@show2');
+Route::get('/interview/professionals/3', 'InterviewController@show3');
+Route::get('/interview/professionals/4', 'InterviewController@show4');
+Route::get('/interview/professionals/5', 'InterviewController@show5');
+Route::get('/interview/professionals/6', 'InterviewController@show6');
+Route::get('/interview/professionals/7', 'InterviewController@show7');
 
 /*
 |############################

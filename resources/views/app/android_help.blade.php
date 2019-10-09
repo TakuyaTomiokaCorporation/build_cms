@@ -33,7 +33,7 @@
 		<!-- 目次 -->
 		<div class="nav">
 			<div class="list-group">
-				<div class="nav_label">ようこそ</div>
+				<div class="nav_label">テストようこそ</div>
 				    <a href="#00" class="list-group-item">
 						<span class="badge"><span class="glyphicon glyphicon-chevron-right"></span></span>
 						AVIOT PLAYERについて

@@ -120,7 +120,7 @@
 		</div>
 
 		<div class="article">
-			<h2>ようこそ</h2>
+			<h2>テストようこそ</h2>
 			<div class="section">
 				<h3 id="00">AVIOT PLAYERについて</h3>
 				<img src="{{ asset('images/user/ogp.png') }}" class=" img-responsive" alt="AVIOT">

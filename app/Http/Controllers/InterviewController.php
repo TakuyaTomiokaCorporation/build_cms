@@ -20,4 +20,34 @@ class InterviewController extends Controller
     {
         return view('user.interview.kounoike');
     }
+
+    public function show2()
+    {
+        return view('user.interview.iwai');
+    }
+
+    public function show3()
+    {
+        return view('user.interview.orihara');
+    }
+
+    public function show4()
+    {
+        return view('user.interview.unakami');
+    }
+
+    public function show5()
+    {
+        return view('user.interview.takahashi');
+    }
+
+    public function show6()
+    {
+        return view('user.interview.nomura');
+    }
+
+    public function show7()
+    {
+        return view('user.interview.yamamoto');
+    }
 }

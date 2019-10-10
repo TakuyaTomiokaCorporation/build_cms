@@ -64,13 +64,13 @@
         <h3 class="mt80">-Japan Tuned-</h3>
         <div class="">
             <p class="alc"><img src="{{ asset('images/products/WE-D01b/d01b_japan_tuned.jpg') }}"></p>
-                <div><p class="product_text">日本の音を知り尽くしたオーディオのエキスパート達が、クラシックから最新ヒット曲まで約1,000曲の楽曲を、延べ3,000時間以上も掛けてじっくりと聴き込み、チューニングをしました。</p>
+                <div><p>日本の音を知り尽くしたオーディオのエキスパート達が、クラシックから最新ヒット曲まで約1,000曲の楽曲を、延べ3,000時間以上も掛けてじっくりと聴き込み、チューニングをしました。</p>
                     <p  class="alc mt20"><a href="{{ route('about') }}/#japansound" class="btn_Blk">詳細をみる</a></p></div>
     
         <h3 class="mt80">誇張感のない、フラットなトーンバランス。</h3>
-        <p class="alc"><img src="{{ asset('images/products/WE-D01b/WE-D01b-02.jpg') }}"></p>
+        <p class="alc"><img src="{{ asset('images/products/WE-D01b/WE-D01b_01.jpg') }}"></p>
         <div>
-            <p class="product_text">開発スタート時に、まず取り組んだのは、トーンバランスがフラットで、ハイスピードなドライバーの選定です。その上で、じっくりと時間を掛け、0.1db単位の徹底したチューニングを行いました。ワイヤレスイヤホンである事を忘れるほど、ノイズや歪み感の極めて少ない、どこまでも透き通るようなサウンドに仕上げました。</p>
+            <p>開発スタート時に、まず取り組んだのは、トーンバランスがフラットで、ハイスピードなドライバーの選定です。その上で、じっくりと時間を掛け、0.1db単位の徹底したチューニングを行いました。ワイヤレスイヤホンである事を忘れるほど、ノイズや歪み感の極めて少ない、どこまでも透き通るようなサウンドに仕上げました。</p>
         </div>
     
         <h3 class="mt80">すみずみまで高音質設計</h3>
@@ -82,7 +82,7 @@
         <p  class="alc mt20"><a href="{{ route('codec') }}" class="btn_Blk">詳細をみる</a></p></div>
 
         <h3 class="mt80">汗、雨に強い</h3>
-        <p class="alc"><img src="{{ asset('images/products/WE-D01b/WE-D01b-04.jpg') }}"></p>
+        <p class="alc"><img src="{{ asset('images/products/WE-D01b/water.png') }}"></p>
         <div class="flex_ImgR">
                 <div class="flex_ImgLogo"><img src="{{ asset('images/products/WE-D01b/IPX716-9.png') }}"></div>
                 <div>
@@ -94,20 +94,20 @@
         <h3 class="mt80"></h3>
     
         <h3 class="mt80">マグネット内蔵だから、便利で安心</h3>
-        <p class="alc"><img src="{{ asset('images/products/WE-D01b/WE-D01b-05.jpg') }}"></p>
+        <p class="alc"><img src="{{ asset('images/products/WE-D01b/magnet.jpg') }}"></p>
         <div class="">
             <div>
-                <p class="product_text">イヤホンにマグネットが内蔵されていますので、使わない時はネックレスのように首にかけられます。落とす心配もいりません。</p>
+                <p>イヤホンにマグネットが内蔵されていますので、使わない時はネックレスのように首にかけられます。落とす心配もいりません。</p>
             </div>
         </div>
     
-        <h3 class="mt80">誰でも、簡単に操作が可能。</h3>
+        {{-- <h3 class="mt80">誰でも、簡単に操作が可能。</h3>
         <p class="alc"><img src="{{ asset('images/products/WE-D01b/WE-D01b-06.jpg') }}"></p>
         <div class="">
             <div>
                 <p class="product_text">イヤホンにマグネットが内蔵されていますので、使わない時はネックレスのように首にかけられます。落とす心配もいりません。</p>
             </div>
-        </div>
+        </div> --}}
     
     
         <!--製品仕様テーブル-->

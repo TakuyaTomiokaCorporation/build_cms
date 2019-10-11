@@ -44,6 +44,21 @@
   background-size: cover;
   height: 100vh;
 }
+
+.pc { display: block !important; }
+.sp { display: none !important; }
+
+@media only screen and (max-width: 750px) {
+.pc { display: none !important; }
+.sp { display: block !important; }
+}
+
+.h-screen{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
 </style>
 
 @endsection
@@ -52,22 +67,31 @@
 
 @section('content')
 
-<div id="container" class="both mb60">
+<div id="container" class="both mb10">
 <div id="" class="main w1020 w98 m_auto" role="main">
     <h2 class="pt20 border_b mb20">インタビュー</h2>
 
-    <section class="artist_interview mb20">
+    <section class="artist_interview">
         {{-- <h3 class="border_l">アーティストインタビュー</h3> --}}
-        <div class="mt10 alc">
-            <a href="{{ route('artists.show') }}"><img src="{{ asset('images/interview/artistmovie.png') }}"></a>
+        <div class="mt10 alc pc">
+            <a href="{{ route('artists.show') }}"><img src="{{ asset('images/interview/voice_pc.jpg') }}"></a>
         </div>
 
         {{-- <h3 class="border_l mt20">オーディオのプロに聞くAVIOT</h3> --}}
-        <div class="alc">
-            <a href="{{ route('interview.pro') }}"><img src="{{ asset('images/interview/pro.png') }}"></a>
+        <div class="alc pc">
+            <a href="{{ route('interview.pro') }}"><img src="{{ asset('images/interview/interview_pc.jpg') }}"></a>
         </div>
         {{-- <div class="bg1"></div>
         <div class="bg2"></div> --}}
+
+        <div class="mt10 alc sp">
+            <a href="{{ route('artists.show') }}"><img src="{{ asset('images/interview/voice_sp.jpg') }}"></a>
+        </div>
+
+        {{-- <h3 class="border_l mt20">オーディオのプロに聞くAVIOT</h3> --}}
+        <div class="alc sp">
+            <a href="{{ route('interview.pro') }}"><img src="{{ asset('images/interview/interview_sp.jpg') }}"></a>
+        </div>
     </section>
 
     {{-- <section>

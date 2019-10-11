@@ -101,13 +101,13 @@
             </div>
         </div>
     
-        {{-- <h3 class="mt80">誰でも、簡単に操作が可能。</h3>
-        <p class="alc"><img src="{{ asset('images/products/WE-D01b/WE-D01b-06.jpg') }}"></p>
+        <h3 class="mt80">誰でも、簡単に操作が可能。</h3>
+        <p class="alc"><img src="{{ asset('images/products/WE-D01b/magcup.jpg') }}"></p>
         <div class="">
             <div>
-                <p class="product_text">イヤホンにマグネットが内蔵されていますので、使わない時はネックレスのように首にかけられます。落とす心配もいりません。</p>
+                <p>イヤホンにマグネットが内蔵されていますので、使わない時はネックレスのように首にかけられます。落とす心配もいりません。</p>
             </div>
-        </div> --}}
+        </div>
     
     
         <!--製品仕様テーブル-->

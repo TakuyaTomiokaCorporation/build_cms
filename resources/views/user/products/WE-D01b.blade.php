@@ -19,7 +19,7 @@
         <section class="product_phot"><!--MV・商品画像-->
             <div class="swiper-container gallery-top">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_01.jpg') }}" alt=""></div>
+                    <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/main.jpg') }}" alt=""></div>
                     <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_02.png') }}" alt=""></div>
                     <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_03.png') }}" alt=""></div>
                     <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_04.png') }}" alt=""></div>
@@ -35,7 +35,7 @@
     
             <div class="swiper-container gallery-thumbs mt20 alc ifpc">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_01.jpg') }}" alt=""></div>
+                    <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/main.jpg') }}" alt=""></div>
                     <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_02.png') }}" alt=""></div>
                     <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_03.png') }}" alt=""></div>
                     <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_04.png') }}" alt=""></div>

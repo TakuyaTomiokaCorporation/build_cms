@@ -20,12 +20,12 @@
             <div class="swiper-container gallery-top">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/main.jpg') }}" alt=""></div>
+                    <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/BR.jpg') }}" alt=""></div>
                     <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_02.png') }}" alt=""></div>
-                    <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_03.png') }}" alt=""></div>
+                    <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/RG.jpg') }}" alt=""></div>
                     <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_04.png') }}" alt=""></div>
-                    <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_05.png') }}" alt=""></div>
+                    <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/SL.jpg') }}" alt=""></div>
                     <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_06.png') }}" alt=""></div>
-                    <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_07.png') }}" alt=""></div>
                 </div>
     
                 <!-- Add Arrows -->
@@ -33,15 +33,15 @@
                 <div class="swiper-button-prev swiper-button"></div>
             </div>
     
-            <div class="swiper-container gallery-thumbs mt20 alc ifpc">
+            <div class="swiper-container gallery-thumbs mt20 alc">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/main.jpg') }}" alt=""></div>
+                    <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/BR.jpg') }}" alt=""></div>
                     <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_02.png') }}" alt=""></div>
-                    <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_03.png') }}" alt=""></div>
+                    <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/RG.jpg') }}" alt=""></div>
                     <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_04.png') }}" alt=""></div>
-                    <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_05.png') }}" alt=""></div>
+                    <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/SL.jpg') }}" alt=""></div>
                     <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_06.png') }}" alt=""></div>
-                    <div class="swiper-slide"><img src="{{ asset('images/products/WE-D01b/WE-D01b_07.png') }}" alt=""></div>
                 </div>
             </div>
         </section>
@@ -82,7 +82,7 @@
         <p  class="alc mt20"><a href="{{ route('codec') }}" class="btn_Blk">詳細をみる</a></p></div>
 
         <h3 class="mt80">汗、雨に強い</h3>
-        <p class="alc"><img src="{{ asset('images/products/WE-D01b/water.png') }}"></p>
+        <p class="alc"><img src="{{ asset('images/products/WE-D01b/water.jpg') }}"></p>
         <div class="flex_ImgR">
                 <div class="flex_ImgLogo"><img src="{{ asset('images/products/WE-D01b/IPX716-9.png') }}"></div>
                 <div>

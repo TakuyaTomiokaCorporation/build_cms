@@ -151,13 +151,13 @@ Route::get('/aviot_live_02', 'UserAppliedController@createAviotLive02Form')->nam
 */
 Route::get('/interview', 'InterviewController@index')->name('interview.top');
 Route::get('/interview/professionals', 'InterviewController@showProfessionals')->name('interview.pro');
-Route::get('/interview/professionals/1', 'InterviewController@showSample');
-Route::get('/interview/professionals/2', 'InterviewController@show2');
-Route::get('/interview/professionals/3', 'InterviewController@show3');
-Route::get('/interview/professionals/4', 'InterviewController@show4');
-Route::get('/interview/professionals/5', 'InterviewController@show5');
-Route::get('/interview/professionals/6', 'InterviewController@show6');
-Route::get('/interview/professionals/7', 'InterviewController@show7');
+Route::get('/interview/professionals/1', 'InterviewController@showSample')->name('pro.1');
+Route::get('/interview/professionals/2', 'InterviewController@show2')->name('pro.2');
+Route::get('/interview/professionals/3', 'InterviewController@show3')->name('pro.3');
+Route::get('/interview/professionals/4', 'InterviewController@show4')->name('pro.4');
+Route::get('/interview/professionals/5', 'InterviewController@show5')->name('pro.5');
+Route::get('/interview/professionals/6', 'InterviewController@show6')->name('pro.6');
+Route::get('/interview/professionals/7', 'InterviewController@show7')->name('pro.7');
 
 /*
 |############################

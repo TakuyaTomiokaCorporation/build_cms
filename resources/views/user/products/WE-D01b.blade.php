@@ -125,11 +125,11 @@
                     <td>cVc6.0ノイズキャンセリング</td>
                 </tr>
                 <tr>
-                    <th>最大再生時間</th>
+                    <th>再生時間</th>
                     <td>約6時間</td>
                 </tr>
                 <tr>
-                    <th>最大総再生時間</th>
+                    <th>通話時間</th>
                     <td>約7時間</td>
                 </tr>
                 <tr>
@@ -163,6 +163,10 @@
                 <tr>
                     <th>対応プロファイル</th>
                     <td>A2DP,HFP,HSP,AVRCP</td>
+                </tr>
+                <tr>
+                    <th>Bluetoothマルチコネクト</th>
+                    <td>8デバイス</td>
                 </tr>
             </table>
         </div>

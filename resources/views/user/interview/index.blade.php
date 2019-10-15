@@ -7,11 +7,11 @@
 @section('css')
 
 <style type="text/css">
+
 .artist_interview div img {
     width: 1020px;
     height: auto;
 }
-
 .content_product ul {
     justify-content: center;
 }
@@ -27,22 +27,9 @@
 .content_pro li {
     width: 28%;
 }
-.bg1 {
-  background-attachment: fixed;
-  background-image: url("{{ asset('images/interview/artistmovie.png') }}");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
 
-.bg2 {
-  background-attachment: fixed;
-  background-image: url("{{ asset('images/interview/pro.png') }}");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+.h-90vh{
+    height: 90vh;
 }
 
 .pc { display: block !important; }
@@ -51,6 +38,7 @@
 @media only screen and (max-width: 750px) {
 .pc { display: none !important; }
 .sp { display: block !important; }
+
 }
 
 .h-screen{
@@ -89,7 +77,7 @@
         </div>
 
         {{-- <h3 class="border_l mt20">オーディオのプロに聞くAVIOT</h3> --}}
-        <div class="alc sp">
+        <div class="mt20 alc sp">
             <a href="{{ route('interview.pro') }}"><img src="{{ asset('images/interview/interview_sp.jpg') }}"></a>
         </div>
     </section>

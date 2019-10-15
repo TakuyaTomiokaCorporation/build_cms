@@ -69,15 +69,15 @@
             <h3 class="border_l">評論家</h3>
             <ul class="flex m_auto mt20">
                 <li class="alc">
-                    <a href="/interview/professionals/1"><img src="{{ asset('images/interview/kounoike.jpg') }}">
+                    <a href="{{ route('pro.1') }}"><img src="{{ asset('images/interview/kounoike.jpg') }}">
                     <h5 class="mt10">鴻池 賢三 氏</h5></a>
                 </li>
                 <li class="alc">
-                    <a href="/interview/professionals/2"><img src="{{ asset('images/interview/iwai.jpg') }}">
+                    <a href="{{ route('pro.2') }}"><img src="{{ asset('images/interview/iwai.jpg') }}">
                     <h5 class="mt10">岩井 喬 氏</h5></a>
                 </li>
                 <li class="alc">
-                    <a href="/interview/professionals/3"><img src="{{ asset('images/interview/orihara.jpg') }}">
+                    <a href="{{ route('pro.3') }}"><img src="{{ asset('images/interview/orihara.jpg') }}">
                     <h5 class="mt10">折原 一也 氏</h5></a>
                 </li>
             </ul>
@@ -85,15 +85,15 @@
         <div class="content_pro">
             <ul class="flex m_auto mt20">
                 <li class="alc">
-                    <a href="/interview/professionals/4"><img src="{{ asset('images/interview/unakami.jpg') }}">
+                    <a href="{{ route('pro.4') }}"><img src="{{ asset('images/interview/unakami.jpg') }}">
                     <h5 class="mt10">海上 忍 氏</h5></a>
                 </li>
                 <li class="alc">
-                    <a href="/interview/professionals/5"><img src="{{ asset('images/interview/takahashi.jpg') }}">
+                    <a href="{{ route('pro.5') }}"><img src="{{ asset('images/interview/takahashi.jpg') }}">
                     <h5 class="mt10">高橋　敦 氏</h5></a>
                 </li>
                 <li class="alc">
-                    <a href="/interview/professionals/6"><img src="{{ asset('images/interview/nomura.jpg') }}">
+                    <a href="{{ route('pro.6') }}"><img src="{{ asset('images/interview/nomura.jpg') }}">
                     <h5 class="mt10">野村ケンジ 氏</h5></a>
                 </li>
             </ul>
@@ -101,7 +101,7 @@
         <div class="content_pro">
             <ul class="flex m_auto mt20">
                 <li class="alc">
-                    <a href="/interview/professionals/7"><img src="{{ asset('images/interview/yamamoto.jpg') }}">
+                    <a href="{{ route('pro.7') }}"><img src="{{ asset('images/interview/yamamoto.jpg') }}">
                     <h5 class="mt10">山本 敦 氏</h5></a>
                 </li>
             </ul>

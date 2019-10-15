@@ -78,7 +78,7 @@
         </div>
 
         {{-- <h3 class="border_l mt20">オーディオのプロに聞くAVIOT</h3> --}}
-        <div class="alc pc">
+        <div class="alc pc mt20">
             <a href="{{ route('interview.pro') }}"><img src="{{ asset('images/interview/interview_pc.jpg') }}"></a>
         </div>
         {{-- <div class="bg1"></div>

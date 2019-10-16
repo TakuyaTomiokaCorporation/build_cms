@@ -16,7 +16,7 @@ class InterviewController extends Controller
         return view('user.interview.audio_professionals');
     }
 
-    public function showSample()
+    public function show1()
     {
         return view('user.interview.kounoike');
     }

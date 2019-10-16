@@ -9,8 +9,17 @@
 
 <style type="text/css">
 
+ @media screen and (max-width: 480px) {
+    .m-auto{
+        margin: auto;
+    }
 
+    /* .w-full{
+        width: 100%;
+    } */
+}
 
+@media screen and (max-width: 1200px) {
     .artist_interview div img {
         width: 1020px;
     }
@@ -30,6 +39,7 @@
     .content_pro li {
         width: 28%;
     }
+}
 
 
 
@@ -68,7 +78,7 @@
         <div class="mt40 content_pro">
             <h3 class="border_l">評論家</h3>
             <ul class="flex m_auto mt20">
-                <li class="alc">
+                <li class="alc m-auto">
                     <a href="{{ route('pro.1') }}"><img src="{{ asset('images/interview/kounoike.jpg') }}">
                     <h5 class="mt10">鴻池 賢三 氏</h5></a>
                 </li>

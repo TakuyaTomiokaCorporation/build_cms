@@ -30,7 +30,7 @@
             <p class="mt10">クロスオーバーもパッシブな素子に頼り切らないアコースティックな設計の良さが生きており、完全ワイヤレスイヤホンとは思えない解像度と鮮度感を味わえます。ダイナミック型ドライバーによる制動性の良い低域の豊かさも魅力です。</p>
         </div>
         <p class="alc mt20"><a href="{{ route('tebd21f') }}" class="btn_buy">製品詳細はこちら</a></p>
-        <p class="alc mt20"><a href="{{ route('interview.pro') }}" class="btn_back">一覧に戻る</a></p>
+        <p class="alc mt20"><a href="{{ route('special_contents.pro') }}" class="btn_back">一覧に戻る</a></p>
     </section>
 
 

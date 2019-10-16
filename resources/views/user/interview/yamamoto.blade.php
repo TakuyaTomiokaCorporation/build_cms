@@ -29,7 +29,7 @@
             <p class="mt10">本機もコンパクトで接続性能が安定しているし、繊細さと力強さを巧みに描き分けるサウンドも文句なし。左右イヤホンを繋げられるシリコンストラップはスポーツシーンにとても役立ちそうです。</p>
         </div>
         <p class="alc mt20"><a href="{{ route('tebd21f') }}" class="btn_buy">製品詳細はこちら</a></p>
-        <p class="alc mt20"><a href="{{ route('interview.pro') }}" class="btn_back">一覧に戻る</a></p>
+        <p class="alc mt20"><a href="{{ route('special_contents.pro') }}" class="btn_back">一覧に戻る</a></p>
     </section>
 
 

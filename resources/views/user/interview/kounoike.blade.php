@@ -30,7 +30,7 @@
                 <p class="mt10">完全ワイヤレスの利便性と超高音質を両立し、価格もリーズナブル。新しいリスニングスタイル、すなわちライフスタイルを革命する製品として高く評価しました。</p>
             </div>
         <p class="alc mt20"><a href="{{ route('tebd21f') }}" class="btn_buy">製品詳細はこちら</a></p>
-        <p class="alc mt20"><a href="{{ route('interview.pro') }}" class="btn_back">一覧に戻る</a></p>
+        <p class="alc mt20"><a href="{{ route('special_contents.pro') }}" class="btn_back">一覧に戻る</a></p>
     </section>
 
 

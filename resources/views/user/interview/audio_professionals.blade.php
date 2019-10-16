@@ -9,17 +9,29 @@
 
 <style type="text/css">
 
- @media screen and (max-width: 480px) {
-    .m-auto{
-        margin: auto;
+@media screen and (min-width: 559px){
+    .artist_interview div img {
+        width: 1020px;
     }
 
-    /* .w-full{
-        width: 100%;
-    } */
+    .content_product ul {
+        justify-content: center;
+    }
+
+    .content_product li {
+        width: 25%;
+    }
+
+    .content_pro ul {
+        justify-content: space-between;
+    }
+
+    .content_pro li {
+        width: 28%;
+    }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 959px){
     .artist_interview div img {
         width: 1020px;
     }
@@ -78,17 +90,17 @@
         <div class="mt40 content_pro">
             <h3 class="border_l">評論家</h3>
             <ul class="flex m_auto mt20">
-                <li class="alc m-auto">
+                <li class="alc">
                     <a href="{{ route('pro.1') }}"><img src="{{ asset('images/interview/kounoike.jpg') }}">
-                    <h5 class="mt10">鴻池 賢三 氏</h5></a>
+                    <h5 class="mt10"></h5></a>
                 </li>
                 <li class="alc">
                     <a href="{{ route('pro.2') }}"><img src="{{ asset('images/interview/iwai.jpg') }}">
-                    <h5 class="mt10">岩井 喬 氏</h5></a>
+                    <h5 class="mt10"></h5></a>
                 </li>
                 <li class="alc">
                     <a href="{{ route('pro.3') }}"><img src="{{ asset('images/interview/orihara.jpg') }}">
-                    <h5 class="mt10">折原 一也 氏</h5></a>
+                    <h5 class="mt10"></h5></a>
                 </li>
             </ul>
         </div>
@@ -96,15 +108,15 @@
             <ul class="flex m_auto mt20">
                 <li class="alc">
                     <a href="{{ route('pro.4') }}"><img src="{{ asset('images/interview/unakami.jpg') }}">
-                    <h5 class="mt10">海上 忍 氏</h5></a>
+                    <h5 class="mt10"></h5></a>
                 </li>
                 <li class="alc">
                     <a href="{{ route('pro.5') }}"><img src="{{ asset('images/interview/takahashi.jpg') }}">
-                    <h5 class="mt10">高橋　敦 氏</h5></a>
+                    <h5 class="mt10"></h5></a>
                 </li>
                 <li class="alc">
                     <a href="{{ route('pro.6') }}"><img src="{{ asset('images/interview/nomura.jpg') }}">
-                    <h5 class="mt10">野村ケンジ 氏</h5></a>
+                    <h5 class="mt10"></h5></a>
                 </li>
             </ul>
         </div>

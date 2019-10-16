@@ -30,7 +30,7 @@
             <p class="mt10">音質に関しては、完全ワイヤレスイヤホンの新しいレファレンスとなる存在です。ハイブリッド・トリプルドライバーの採用など、豪華な仕様の割にリーズナブルな価格設定も嬉しいかぎりです。</p>
         </div>
         <p class="alc mt20"><a href="{{ route('tebd21f') }}" class="btn_buy">製品詳細はこちら</a></p>
-        <p class="alc mt20"><a href="{{ route('interview.pro') }}" class="btn_back">一覧に戻る</a></p>
+        <p class="alc mt20"><a href="{{ route('special_contents.pro') }}" class="btn_back">一覧に戻る</a></p>
     </section>
 
 

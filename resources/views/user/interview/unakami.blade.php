@@ -30,7 +30,7 @@
             <p class="mt10">その一方、内蔵アンテナの改良や消費電力抑制など快適性への取り組みも怠らないところが、ライフスタイル大賞にふさわしいといえます。</p>
         </div>
         <p class="alc mt20"><a href="{{ route('tebd21f') }}" class="btn_buy">製品詳細はこちら</a></p>
-        <p class="alc mt20"><a href="{{ route('interview.pro') }}" class="btn_back">一覧に戻る</a></p>
+        <p class="alc mt20"><a href="{{ route('special_contents.pro') }}" class="btn_back">一覧に戻る</a></p>
     </section>
 
 

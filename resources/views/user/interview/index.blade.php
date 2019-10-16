@@ -57,7 +57,7 @@
 
 <div id="container" class="both mb20">
 <div id="" class="main w1020 w98 m_auto" role="main">
-    <h2 class="pt20 border_b mb20">インタビュー</h2>
+    <h2 class="pt20 border_b mb20">Special Contents</h2>
 
     <section class="artist_interview">
         {{-- <h3 class="border_l">アーティストインタビュー</h3> --}}
@@ -67,7 +67,7 @@
 
         {{-- <h3 class="border_l mt20">オーディオのプロに聞くAVIOT</h3> --}}
         <div class="alc pc mt20">
-            <a href="{{ route('interview.pro') }}"><img src="{{ asset('images/interview/interview_pc.jpg') }}"></a>
+            <a href="{{ route('special_contents.pro') }}"><img src="{{ asset('images/interview/interview_pc.jpg') }}"></a>
         </div>
         {{-- <div class="bg1"></div>
         <div class="bg2"></div> --}}
@@ -78,7 +78,7 @@
 
         {{-- <h3 class="border_l mt20">オーディオのプロに聞くAVIOT</h3> --}}
         <div class="mt20 alc sp ">
-            <a href="{{ route('interview.pro') }}"><img src="{{ asset('images/interview/interview_sp.jpg') }}"></a>
+            <a href="{{ route('special_contents.pro') }}"><img src="{{ asset('images/interview/interview_sp.jpg') }}"></a>
         </div>
     </section>
 

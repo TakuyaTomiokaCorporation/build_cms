@@ -71,49 +71,35 @@
         <p class="alc"><img src="{{ asset('images/products/TE-D01c/TE-D01c-01.jpg') }}"></p>
         <div class="flex_ImgR">
             <div class="flex_ImgLogo"><img src="{{ asset('images/user/JAPANtuned_logo.png') }}"></div>
-            <div><p class="product_text">日本の音を知り尽くしたオーディオのエキスパート達が、クラシックから最新のアニソンまで1,000を超える楽曲を、専用のサウンドルームでじっくりと試聴をし、徹底したチューニングを行いました。</p>
+            <div>
+                <p class="product_text">日本の音を知り尽くしたオーディオのエキスパート達が、クラシックから最新のアニソンまで1,000を超える楽曲を、専用のサウンドルームでじっくりと試聴をし、徹底したチューニングを行いました。</p>
             </div>
         </div>
         <p  class="alc mt20"><a href="{{ route('about') }}" class="btn_Blk">詳細をみる</a></p>
 
     <h3 class="mt80">全てをJapan Firstで考えました。</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01c/TE-D01c-02.jpg') }}"></p>
-    <div class="">
-            <div><p class="product_text">実は日本で販売されている多くのワイヤレスイヤホンは、日本よりも大きな米国や中国市場向けに音造りがされています。TE-D01cは、母音語で、且つ音の強弱が少ない日本語が、はっきりと美しく聞こえるようにトーンバランスを整えるなど、徹底したチューニングを行いました。</p>
-            </div>
-    </div>
+    <p class="product_text">実は日本で販売されている多くのワイヤレスイヤホンは、日本よりも大きな米国や中国市場向けに音造りがされています。TE-D01cは、母音語で、且つ音の強弱が少ない日本語が、はっきりと美しく聞こえるようにトーンバランスを整えるなど、徹底したチューニングを行いました。</p>
 
 
     <h3 class="mt80">小さなボディに、最新テクノロジーとスタミナをプラス。</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01c/TE-D01c-03.jpg') }}"></p>
-    <div class="">
-            <div><p class="product_text">Qualcomm社の最新チップ3001を採用。Bluietooth5.0に対応し、音質と同時に接続安定性も強化しました。また、サウンドクオリティーを犠牲にすることなく、イヤホン単体で最大4時間の再生を可能にするなど、省電力設計にもこだわりました。</p>
-            </div>
-    </div>
+    <p class="product_text">Qualcomm社の最新チップ3001を採用。Bluietooth5.0に対応し、音質と同時に接続安定性も強化しました。また、サウンドクオリティーを犠牲にすることなく、イヤホン単体で最大4時間の再生を可能にするなど、省電力設計にもこだわりました。</p>
 
     <h3 class="mt80">快適、簡単、気持ちいい。</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01c/TE-D01c-04.jpg') }}"></p>
-    <div class="">
-            <div><p class="product_text">スマホとのペアリング完了後、イヤホン本体をケースから取り出すだけで、簡単に自動接続。また、ケースに収納するだけで電源がOFFになります。更にケースに収納しなくても、片側のイヤホンをOFFにするだけで、もう片方もOFFになる快適設計です。</p>
-            </div>
-    </div>
+    <p class="product_text">スマホとのペアリング完了後、イヤホン本体をケースから取り出すだけで、簡単に自動接続。また、ケースに収納するだけで電源がOFFになります。更にケースに収納しなくても、片側のイヤホンをOFFにするだけで、もう片方もOFFになる快適設計です。</p>
+        
 
     <h3 class="mt80">外出が楽しくなる、軽くて、スリークなデザイン。</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01c/TE-D01c-05.jpg') }}"></p>
-            <div>
-                <p class="product_text">バックの中で嵩張らず、軽量で取り出しやすいデザインに纏めました。　ケーブルがぐちゃぐちゃに絡まり、悩まされ続けた日々とは、もうさよならです。</p>
-            </div>
+    <p class="product_text">バックの中で嵩張らず、軽量で取り出しやすいデザインに纏めました。　ケーブルがぐちゃぐちゃに絡まり、悩まされ続けた日々とは、もうさよならです。</p>
 
 
     <h3 class="mt80">まるで小さなリモコン。</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01c/TE-D01c-06.jpg') }}"></p>
-    <div class="flex_ImgR">
-            <div class="flex_ImgLogo"><img src="{{ asset('images/user/IPX4_logo.png') }}"></div>
-            <div>
-                <p class="product_text">イヤホン側面のボタンで、曲の再生、停止、ボリュームなどの基本操作が可能。また、マイクが搭載されているので、通話やSiri＆Googleアシスタントにも簡単にアクセスできます。</p>
-            </div>
-    </div>
-    <p  class="alc mt20"><a href="{{ route('waterproof') }}" class="btn_Blk">詳細をみる</a></p>
+    <p class="product_text">イヤホン側面のボタンで、曲の再生、停止、ボリュームなどの基本操作が可能。また、マイクが搭載されているので、通話やSiri＆Googleアシスタントにも簡単にアクセスできます。</p>
+    
 
 
     <!--製品仕様テーブル-->

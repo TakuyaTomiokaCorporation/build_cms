@@ -24,6 +24,9 @@
                 <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_02.png') }}" alt=""></div>
                 <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_03.png') }}" alt=""></div>
                 <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_04.png') }}" alt=""></div>
+                <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_cardinal1.png') }}" alt=""></div>
+                <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_cardinal2.png') }}" alt=""></div>
+                <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_cardinal3.png') }}" alt=""></div>
                 <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_05.png') }}" alt=""></div>
                 <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_06.png') }}" alt=""></div>
                 <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_07.png') }}" alt=""></div>
@@ -46,6 +49,9 @@
                 <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_02.png') }}" alt=""></div>
                 <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_03.png') }}" alt=""></div>
                 <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_04.png') }}" alt=""></div>
+                <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_cardinal1.png') }}" alt=""></div>
+                <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_cardinal2.png') }}" alt=""></div>
+                <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_cardinal3.png') }}" alt=""></div>
                 <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_05.png') }}" alt=""></div>
                 <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_06.png') }}" alt=""></div>
                 <div class="swiper-slide"><img src="{{ asset('images/products/TE-D01g/TE-D01g_07.png') }}" alt=""></div>
@@ -128,6 +134,11 @@
         <p class="product_text">イヤホン側面のボタンで、曲の再生、送り・戻し、停止、ボリュームなどの基本操作が可能。マイクが搭載されているので、通話ができるだけでなく、Siri＆Googleアシスタントにも簡単にアクセスできます。通話時には相手の声が左右から聞こえますし、cvcノイズキャンセリング機能との相乗効果で快適な通話が楽しめます。</p>
     </div>
 
+    <h3 class="mt80">使い心地にこだわった専用シリコンケース</h3>
+    <p class="alc"><img src="{{ asset('images/products/TE-D01g/silicon.jpg') }}"></p>
+    <div>
+        <p class="product_text">TE-D01g専用のシリコンケースが新登場しました。装着したままでバッテリー残量の確認や充電にも対応いたします。ライフスタイルにあわせてお選びいただける、全6色展開（Pink、Ivory、Red、Silver、Navy、Black）となります</p>
+    </div>
 
     <!--製品仕様テーブル-->
     <div class="mt40">

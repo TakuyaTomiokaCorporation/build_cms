@@ -4,7 +4,8 @@
         <ul class='links'>
             <li><a href='{{ route('about') }}'>AVIOTとは</a></li>
             <li><a href='{{ route('product.show') }}'>製品一覧</a></li>
-            <li><a href='{{ route('special_contents.top') }}'>Special Contents</a></li>
+            {{-- <li><a href='{{ route('special_contents.top') }}'>Special Contents</a></li> --}}
+            <li><a href="{{ route('artists.show') }}">アーティストボイス</a></li>
             <li><a href='{{ route('shoplist') }}'>取扱店舗</a></li>
             <li><a href='{{ route('support') }}'>製品サポート</a></li>
         </ul>

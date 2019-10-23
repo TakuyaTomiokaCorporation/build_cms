@@ -96,7 +96,7 @@
     <h3 class="mt80">クラス最高の音質を実現</h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01g/TE-D01g-03.jpg') }}"></p>
     <div>
-            <p class="product_text">ものにします。最新技術がぎっしり詰まった最新SoC、QCC3020と、厳選したグラフェンコーテッドスピーカーを採用し、日本人の聴覚特性に合わせ、時間を掛けて丁寧にチューニングしました。もう良い音にケーブルは必要ありません。</p>
+            <p class="product_text">最新技術がぎっしり詰まった最新SoC、QCC3020と、厳選したグラフェンコーテッドスピーカーを採用し、日本人の聴覚特性に合わせ、時間を掛けて丁寧にチューニングしました。もう良い音にケーブルは必要ありません。</p>
             <p  class="alc mt20"><a href="{{ route('qualcomm') }}" class="btn_Blk">詳細をみる</a></p>
     </div>
 

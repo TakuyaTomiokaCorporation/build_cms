@@ -37,6 +37,7 @@
                 <li>コストコ</li>
                 <li>ロフト</li>
                 <li>au Shop</li>
+                <li><a href="https://ototoy.jp/top/" target="_blank">OTOTOY</a></li>
             </ul>
         </div>
     </section>

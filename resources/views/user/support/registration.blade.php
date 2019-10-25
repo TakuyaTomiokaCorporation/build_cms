@@ -213,7 +213,7 @@
                     <option value="楽天(AVIOT公式ストア)" {{ old('from_aviot') == '楽天' ? 'selected' : '' }}>楽天</option>
                     <option value="yahoo(AVIOT公式ストア)" {{ old('from_aviot') == 'yahoo' ? 'selected' : '' }}>yahoo</option>
                     <option value="AVIOT専用予約フォーム" {{ old('from_aviot') == 'AVIOT専用予約フォーム' ? 'selected' : '' }}>AVIOT専用予約フォーム</option>
-                    <option value="ヤマダ電機グループ" {{ old('from_aviot') == 'ヤマダ電気' ? 'selected' : '' }}>ヤマダ電気</option>
+                    <option value="ヤマダ電機グループ" {{ old('from_aviot') == 'ヤマダ電気グループ' ? 'selected' : '' }}>ヤマダ電機グループ</option>
                     <option value="ビックカメラ" {{ old('from_aviot') == 'ビックカメラ' ? 'selected' : '' }}>ビックカメラ</option>
                     <option value="ヨドバシカメラ" {{ old('from_aviot') == 'ヨドバシカメラ' ? 'selected' : '' }}>ヨドバシカメラ</option>
                     <option value="コジマ" {{ old('from_aviot') == 'コジマ' ? 'selected' : '' }}>コジマ</option>
@@ -230,6 +230,7 @@
                     <option value="ツタヤ　トウキョウ　ロッポンギ" {{ old('from_aviot') == 'ツタヤ　トウキョウ　ロッポンギ' ? 'selected' : '' }}>ツタヤ　トウキョウ　ロッポンギ</option>
                     <option value="コストコ" {{ old('from_aviot') == 'コストコ' ? 'selected' : '' }}>コストコ</option>
                     <option value="au Shop" {{ old('from_aviot') == 'au Shop' ? 'selected' : '' }}>au Shop</option>
+                    <option value="OTOTOY" {{ old('from_aviot') == 'OTOTOY' ? 'selected' : '' }}>OTOTOY</option>
                     <option value="その他" {{ old('from_aviot') == 'その他' ? 'selected' : '' }}>その他</option>
                 </select>
                 </dd> 

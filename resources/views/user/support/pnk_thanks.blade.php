@@ -1,6 +1,6 @@
 @extends('layouts.user_master')
 
-@section('title', 'ありがとうございます。 |')
+@section('title', 'ご予約ありがとうございます。 |')
 
 @section('description', '日本のサウンドを熟知した日本人オーディオエキスパートが携わる日本発のオーディオビジュアルブランド')
 
@@ -20,7 +20,7 @@
             <p>TE-BD21f-pnkの予約を受け付けました。</p>
             <p>メールにてご案内をお送りしますのでご確認ください。</p>
             <p class="mt10">最長3営業日ほどで予約確認メールをお送りしていますが、確認メールが届かない場合は正常に予約できていないことがございます。<br>
-            その際は下記情報と一緒にカスタマーサポートセンターへ直接ご連絡ください。</p>
+            その際は下記情報と一緒に【TE-BD21f-pnk専用窓口】へ直接ご連絡ください。</p>
             <p class="mt10">
                 件名：TE-BD21f-pnkの予約確認について<br>
                 お名前（フリガナ）：<br>
@@ -28,14 +28,10 @@
                 電話番号（任意）：
             </p>
     
-            <div class="support_center">
-                <h3 class="mt20 mb20 border_l">カスタマーサポートセンター</h3>
-                <dl>
-                    <dt class="bold">カスタマーサポートセンター</dt>
-                    <dd>電話：<a href="050-2018-3909">050-2018-3909</a></dd>
-                    <dd>※営業時間：10:00〜17:00（土日祝除く）</dd>
-                    <dd class="mt10"><a href="https://v-trade.co.jp/contact_individual/">お問い合わせ</a></dd>
-                </dl>
+            <h3 class="mt20 mb20 border_l">TE-BD21f-pnk専用窓口</h3>
+            <div class="thanks_item">
+                <p>ご連絡先メールアドレス</p>
+                <p>pnk@aviot.jp</p>
             </div>
     
             <h3 class="border_l mt20 mb10">安心の紛失保証サービス</h3>

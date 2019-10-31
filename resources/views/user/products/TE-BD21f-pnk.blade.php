@@ -60,7 +60,7 @@
 
     <h3 class="mt80">「凛として時雨」のドラマー ピエール中野氏監修</h3>
     <div class="">
-        <p class="alc"><img src="{{ asset('images/products/TE-BD21f-pnk/TE-BD21f-pnk_01.jpg') }}"></p>
+        <p class="alc"><img src="{{ asset('images/products/TE-BD21f-pnk/TE-BD21f-pnk-01.jpg') }}"></p>
         <div class="flex_ImgR">
             <div class="flex_ImgLogo"><img src="{{ asset('images/products/TE-BD21f-pnk/TE-BD21f-pnk-02.png') }}"></div>
             <div><p class="product_text">通常モデルとの違いは音質だけに留まりません。シックなブラックをベースに、高級感あふれるゴールドのラインと、チャージングケースドアの表面とイヤホンの側面に、ピエール中野氏のアイコンを刻印。また音声ガイドには、アニメ「PSYCHO-PASS サイコパス」常守朱(CV:花澤香菜)のボイスを採用するなど、豪華な仕様です。</p>

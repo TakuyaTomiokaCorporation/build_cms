@@ -5,6 +5,11 @@
 @section('description', '日本のサウンドを熟知した日本人オーディオエキスパートが携わる日本発のオーディオビジュアルブランド')
 
 @section('css')
+<style>
+.text-sm{
+    font-size:16px;
+}
+</style>
 
 @endsection
 
@@ -134,7 +139,7 @@
         <p class="product_text">イヤホン側面のボタンで、曲の再生、送り・戻し、停止、ボリュームなどの基本操作が可能。マイクが搭載されているので、通話ができるだけでなく、Siri＆Googleアシスタントにも簡単にアクセスできます。通話時には相手の声が左右から聞こえますし、cvcノイズキャンセリング機能との相乗効果で快適な通話が楽しめます。</p>
     </div>
 
-    <h3 class="mt80">使い心地を追求した、専用シリコンケース</h3>
+    <h3 class="mt80">使い心地の良さを追求した、専用シリコンケース<span class="text-sm">（※別売り)</span></h3>
     <p class="alc"><img src="{{ asset('images/products/TE-D01g/silicon.jpg') }}"></p>
     <div>
         <p class="product_text">TE-D01g 専用のシリコンケースが新たに登場しました。ケース表面の傷を防ぎ、軽い衝撃にも耐えられます。着せ替え感覚で楽しめる、全6色（Silver、Ivory、Cardinal Red、Navy、Black、Pink）です。</p>

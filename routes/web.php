@@ -108,7 +108,8 @@ Route::get('/product/WE-D01c', 'UserController@getWed01c');
 |############################
 */
 
-Route::get('/support', 'UserRegisterController@getSupport')->name('support');
+Route::get('/support1', 'UserRegisterController@getSupport')->name('support');
+Route::get('/support', 'UserRegisterController@getQR')->name('support-qr');
 Route::get('/support/registration', 'UserRegisterController@getProductRegistration')->name('product_regiser');
 Route::patch('/support/registration/confirm', 'UserRegisterController@getConfirm')->name('product_regiser.confirm');
 Route::get('/support/registration/thanks', 'UserRegisterController@getProductThanks')->name('product_register.thanks');

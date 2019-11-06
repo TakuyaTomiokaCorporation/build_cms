@@ -34,4 +34,9 @@ class UserRegisterController extends Controller
         return view('user.support.pnk_thanks');
     }
 
+    public function getQR()
+    {
+        return view('user.support.qr');
+    }
+
 }

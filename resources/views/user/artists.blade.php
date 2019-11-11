@@ -36,6 +36,12 @@
             <div>
                 <ul class="flex">
                     <li class="artist_list">
+                        <a href="{{ route('indigo.show') }}#TE-BD21f">
+                            <span class="artist_name">indigo la End</span>
+                            <img src="{{ asset('images/artists/indigo-la-End.jpg') }}">
+                        </a>
+                    </li>
+                    <li class="artist_list">
                         <a href="{{ route('pass.show') }}#TE-BD21f">
                             <span class="artist_name">PassCode</span>
                             <img src="{{ asset('images/artists/passcode_mv02.jpg') }}">
@@ -47,6 +53,9 @@
                             <img src="{{ asset('images/artists/wadarin_mv.jpg') }}">
                         </a>
                     </li>
+                </ul>
+
+                <ul>
                     <li class="artist_list">
                         <a href="{{ route('morita.show') }}">
                             <span class="artist_name">森田くみこ</span>

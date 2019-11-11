@@ -380,6 +380,11 @@ class UserController extends Controller
         return view('user.artist.pnk');
     }
 
+    public function getIndigo()
+    {
+        return view('user.artist.indigo');
+    }
+
     public function getPnkF()
     {
         return view('user.artist.pnk_f');

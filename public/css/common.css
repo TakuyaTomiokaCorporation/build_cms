@@ -1004,8 +1004,9 @@ ul.product_category li a:hover {
 }
 
 .product_name img {
-  width: 30%;
+  width: 40%;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .artist_name {

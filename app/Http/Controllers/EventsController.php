@@ -17,4 +17,9 @@ class EventsController extends Controller
             // 'open' => $open,
         ]);
     }
+
+    public function getAviotLive03()
+    {
+        return view('user.events.2019.aviot_live_03');
+    }
 }

@@ -104,7 +104,7 @@
             </p>
         </div>
 
-    <section class="">
+    <section>
         <h3 class="alc mt40">出演アーティスト</h3>
 
         <div class="mt10">
@@ -150,7 +150,7 @@
             </div>
             <p class="alc mt20"><a href="http://harukatomiyuki.net/" target="_blank" class="btn_Blk">公式サイト</a></p>
     </section>
-    
+
 </article>
 </div><!--/main-->
 </div><!--/container-->

@@ -136,6 +136,7 @@ Route::get('/inquriy/thanks', 'ContactController@sent')->name('inquiry.sent');
 */
 
 Route::get('/events/aviot_live_02', 'EventsController@getAviotLive02');
+Route::get('/events/aviot_live_03', 'EventsController@getAviotLive03');
 
 /*
 |############################

@@ -57,7 +57,12 @@ class UserController extends Controller
 
     public function getPnkReservation()
     {
-        return view('user.support.pnk_reservation');
+        $now = Carbon::now()->format('Y-m-d H:i:s');
+        $close = Carbon::parse('2019-11-12 19:00:00');
+        return view('user.support.pnk_reservation',[
+            'now' => $now,
+            'close' => $close,
+        ]);
     }
 
     // 

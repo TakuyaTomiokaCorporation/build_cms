@@ -7,12 +7,12 @@ use App\AppliedForEvents;
 
 class UserAppliedController extends Controller
 {
-    public function createAviotLive02Form()
+    public function createAviotLive03Form()
     {
-        return view('user.form.2019.aviot_live_02');
+        return view('user.form.2019.aviot_live_03');
     }
 
-    public function confirmAviotLive02Form(Request $request)
+    public function confirmAviotLive03Form(Request $request)
     {
         $confirm = $request->all();
 

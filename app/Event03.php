@@ -19,7 +19,7 @@ class Event03 extends Model
         'recognition_from',
         'musician',
         'smart_phone',
-        'exception'
+        'expectation'
     ];
     
 }

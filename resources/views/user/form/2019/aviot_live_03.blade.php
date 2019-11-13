@@ -162,7 +162,7 @@ table {
                 </tbody>
             </table>
 		</section>
-		{{-- @if ($open < $now) --}}
+		@if ($open < $now)
 		<section>
 			<form action="{{ route('form.confirm') }}" method="POST">
 			@csrf
@@ -260,7 +260,7 @@ table {
 			</form>
 			
 		</section>
-		{{-- @endif --}}
+		@endif
 </article>
 </div><!--/main-->
 </div><!--/container-->

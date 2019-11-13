@@ -89,7 +89,7 @@
             <dd class="mt10">1500円+当日1D</dd>
 
             <dt class="fll mt10 both">チケット販売サイト：</dt>
-            <dd class="mt10">イープラス(<a href="https://eplus.jp/sf/detail/3147900001-P0030001P021001?P1=1221" target="_blank">https://eplus.jp/sf/detail/3147900001-P0030001P021001?P1=1221</a>)</dd>
+            <dd class="mt10">イープラス(<a href="https://eplus.jp/sf/detail/3147900001-P0030001" target="_blank">https://eplus.jp/sf/detail/3147900001-P0030001</a>)</dd>
         </dl>
     </section>
         <h3 class="alc mb20 mt20">AVIOT製品登録者を抽選で無料招待！</h3>

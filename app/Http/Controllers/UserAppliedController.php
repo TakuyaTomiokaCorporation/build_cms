@@ -3,13 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\AppliedForEvents;
+use App\Event03;
+use Carbon\Carbon;
 
 class UserAppliedController extends Controller
 {
     public function createAviotLive03Form()
     {
-        return view('user.form.2019.aviot_live_03');
+        $now = Carbon::now()->format('Y-m-d H:i:s');
+        $open = Carbon::parse('2019-11-13 12:00:00');
+
+        return view('user.form.2019.aviot_live_03',[
+            'now' => $now,
+            'open' => $open,
+        ]);
     }
 
     public function confirmAviotLive03Form(Request $request)
@@ -29,7 +36,7 @@ class UserAppliedController extends Controller
         return view('user.form.confirm')->with($confirm);
     }
 
-    public function storeAviotLive02Form(Request $request)
+    public function storeAviotLive03Form(Request $request)
     {
         $submit = $request->all();
 
@@ -39,7 +46,7 @@ class UserAppliedController extends Controller
         }
 
         $request->session()->regenerateToken();
-        $form = AppliedForEvents::create($submit);
+        $form = Event03::create($submit);
 
         return view('user.form.thanks');
         

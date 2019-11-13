@@ -144,7 +144,7 @@ Route::get('/events/aviot_live_03', 'EventsController@getAviotLive03');
 |############################
 */
 // Route::get('/aviot_live_02', 'UserAppliedController@createAviotLive02Form')->name('form.top');
-Route::get('//aviot_live_03', 'UserAppliedController@createAviotLive03Form')->name('form.top');
+Route::get('//aviot_live_03', 'UserAppliedController@createAviotLive03Form')->name('live03');
 // Route::patch('/aviot_live_02/confirm', 'UserAppliedController@confirmAviotLive02Form')->name('form.confirm');
 Route::patch('/events/aviot_live_03/confirm', 'UserAppliedController@confirmAviotLive03Form')->name('form.confirm');
 Route::post('/events/aviot_live_03/thanks', 'UserAppliedController@storeAviotLive03Form')->name('form.thanks');

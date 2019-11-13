@@ -61,7 +61,7 @@ footer img {
 <article class="w1020 w98 m_auto">
 	<h2 class="pt20 border_b mb20">確認画面</h2>
 	<p>下記内容にて受付いたします。</p>
-	<p class="mb20">ご確認いただき内容に問題ありませんでしたら送信ボタンを押してください。</p>
+	<p class="mb20">ご確認いただき内容にお間違いなければ送信ボタンを押してください。</p>
 		<section class="">
 			<form action="{{ route('form.thanks') }}" method="POST" enctype='multipart/form-data'>
 			@csrf
@@ -73,28 +73,6 @@ footer img {
 				<dd>{{ $email }}</dd>
 			</dl>
 
-			@if(null !== $sex or $age or $recognition_from or $purchased_product or $considered_product or $purchased_from)
-			{{-- data under this statement will submit to database. --}}
-			@isset($sex)
-				<input type="hidden" name="sex" value="{{ $sex }}">
-			@endisset 
-			@isset($age)
-				<input type="hidden" name="age" value={{ $age }}>
-			@endisset
-			@isset($recognition_from)
-				<input type="hidden" name="recognition_from" value="{{ $recognition_from }}">
-			@endisset
-			@isset($purchased_product)
-				<input type="hidden" name="purchased_product" value="{{ $purchased_product }}">
-			@endisset
-			@isset($considered_product)
-				<input type="hidden" name="considered_product" value="{{ $considered_product }}">
-			@endisset
-			@isset($purchased_from)
-				<input type="hidden" name="purchased_from" value="{{ $purchased_from }}">
-			@endisset
-
-			<h3 class="mt20">ご回答いただいたアンケート内容</h3>
 			@isset($sex)
 			<dl class="mt10">
 				<dt class="bold">性別</dt>
@@ -109,6 +87,28 @@ footer img {
 			</dl>
 			@endisset
 
+			@if(null !== $sex or $age or $recognition_from or $smart_phone or $expectation or $musician)
+			{{-- data under this statement will submit to database. --}}
+			@isset($sex)
+				<input type="hidden" name="sex" value="{{ $sex }}">
+			@endisset 
+			@isset($age)
+				<input type="hidden" name="age" value={{ $age }}>
+			@endisset
+			@isset($recognition_from)
+				<input type="hidden" name="recognition_from" value="{{ $recognition_from }}">
+			@endisset
+			@isset($smart_phone)
+				<input type="hidden" name="smart_phone" value="{{ $smart_phone }}">
+			@endisset
+			@isset($expectation)
+				<input type="hidden" name="expectation" value="{{ $expectation }}">
+			@endisset
+			@isset($musician)
+				<input type="hidden" name="musician" value="{{ $musician }}">
+			@endisset
+
+			<h3 class="mt20">ご回答いただいたアンケート内容</h3>
 			@isset($recognition_from)
 			<dl class="mt10">
 				<dt class="bold">AVIOTの製品を知ったきっかけは何ですか？</dt>
@@ -116,24 +116,24 @@ footer img {
 			</dl>
 			@endisset
 
-			@isset($purchased_product)
+			@isset($smart_phone)
 			<dl class="mt10">
-				<dt class="bold">最近ご購入いただいた製品はどちらですか？</dt>
-				<dd>{{ $purchased_product }}</dd>
+				<dt class="bold">普段お使いのスマートフォンはどちらですか？</dt>
+				<dd>{{ $smart_phone }}</dd>
 			</dl>
 			@endisset
 
-			@isset($considered_product)
+			@isset($expectation)
 			<dl class="mt10">
-				<dt class="bold">上記製品ご購入のさい他にご検討されていたものはありますか？</dt>
-				<dd>{{ $considered_product }}</dd>
+				<dt class="bold">AVIOTに今後期待することはございますか？</dt>
+				<dd>{{ $expectation }}</dd>
 			</dl>
 			@endisset
 
-			@isset($purchased_from)
+			@isset($musician)
 			<dl class="mt10">
-				<dt class="bold">上記製品のご購入はどちらでされましたか？</dt>
-				<dd>{{ $purchased_from }}</dd>
+				<dt class="bold">お好きなミュージシャンをご記入ください。</dt>
+				<dd>{{ $musician }}</dd>
 			</dl>
 			@endisset
 

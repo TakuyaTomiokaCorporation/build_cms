@@ -161,7 +161,8 @@ table {
                     </tr>
                 </tbody>
             </table>
-        </section>
+		</section>
+		{{-- @if ($open < $now) --}}
 		<section>
 			<form action="{{ route('form.confirm') }}" method="POST">
 			@csrf
@@ -180,7 +181,7 @@ table {
                 <dl class="mb40">
                     <dt class="mt20">性別</dt>
                     <dd class="mt10">
-                        <select name="sex">
+                        <select name="sex" required>
                             <option value="">---</option>
                             <option value="男性" {{ old('sex') == "男性" ? 'selected' : '' }}>男性</option>
                             <option value="女性" {{ old('sex') == "女性" ? 'selected' : '' }}>女性</option>
@@ -191,7 +192,7 @@ table {
 
                 <dl class="mb40">
                     <dt>年齢</dt>
-                    <dd class="mt10"><input type="number" name="age" min="12" max="100" value="{{ old('age') }}"></dd>
+                    <dd class="mt10"><input type="number" name="age" min="12" max="100" value="{{ old('age') }}" required></dd>
                 </dl>
 
 				<h4 class="mt40 bg-gray-900">サービス向上のため是非アンケートにご協力ください　<small>※必須ではありません</small></h4>
@@ -214,51 +215,42 @@ table {
 				</dl>
 
 				<dl class="mb40">
-					<dt>普段お使いのスマートフォン？</dt>
+					<dt>普段お使いのスマートフォンはどちらですか？</dt>
 					<dd class="mt10">
-						<select name="purchased_product">
+						<select name="smart_phone">
 							<option value="">-----</option>
-							<option value="TE-BD21f-pnk" {{ old('purchased_product') == "TE-BD21f-pnk" ? 'selected' : '' }}>TE-BD21f-pnk</option>
-							<option value="WE-BD21d" {{ old('purchased_product') == "WE-BD21d" ? 'selected' : '' }}>WE-BD21d</option>
-							<option value="TE-D01g" {{ old('purchased_product') == "TE-D01g" ? 'selected' : '' }}>TE-D01g</option>
-							<option value="TE-D01d" {{ old('purchased_product') == "TE-D01d" ? 'selected' : '' }}>TE-D01d</option>
-							<option value="TE-D01a" {{ old('purchased_product') == "TE-D01a" ? 'selected' : '' }}>TE-D01a</option>
-							<option value="TE-D01b" {{ old('purchased_product') == "TE-D01b" ? 'selected' : '' }}>TE-D01b</option>
-							<option value="TE-D01c" {{ old('purchased_product') == "TE-D01c" ? 'selected' : '' }}>TE-D01c</option>
-							<option value="TE-D01d-kzn" {{ old('purchased_product') == "TE-D01d-kzn" ? 'selected' : '' }}>TE-D01d-kzn</option>
-							<option value="TE-D01e" {{ old('purchased_product') == "TE-D01e" ? 'selected' : '' }}>TE-D01e</option>
-							<option value="TE-D01h" {{ old('purchased_product') == "TE-D01h" ? 'selected' : '' }}>TE-D01h</option>
-							<option value="WE-D01c" {{ old('purchased_product') == "WE-D01c" ? 'selected' : '' }}>WE-D01c</option>
-							<option value="WE-D01b" {{ old('purchased_product') == "WE-D01b" ? 'selected' : '' }}>WE-D01b</option>
-							<option value="WE-D01b" {{ old('purchased_product') == "その他" ? 'selected' : '' }}>その他</option>
+							<option value="iPhone" {{ old('smart_phone') == "iPhone" ? 'selected' : '' }}>iPhone</option>
+							<option value="Xperia" {{ old('smart_phone') == "Xperia" ? 'selected' : '' }}>Xperia</option>
+							<option value="AQUOS" {{ old('smart_phone') == "AQUOS" ? 'selected' : '' }}>AQUOS</option>
+							<option value="Galaxy" {{ old('smart_phone') == "Galaxy" ? 'selected' : '' }}>Galaxy</option>
+							<option value="HUAWEI" {{ old('smart_phone') == "HUAWEI" ? 'selected' : '' }}>HUAWEI</option>
+							<option value="OPPO" {{ old('smart_phone') == "OPPO" ? 'selected' : '' }}>OPPO</option>
+							<option value="arrows" {{ old('smart_phone') == "arrows" ? 'selected' : '' }}>arrows</option>
+							<option value="Google Pixel" {{ old('smart_phone') == "Google Pixel" ? 'selected' : '' }}>Google Pixel</option>
+							<option value="ZenFone" {{ old('smart_phone') == "ZenFone" ? 'selected' : '' }}>ZenFone</option>
+							<option value="HTC" {{ old('smart_phone') == "HTC" ? 'selected' : '' }}>HTC</option>
+							<option value="その他" {{ old('smart_phone') == "その他" ? 'selected' : '' }}>その他</option>
 						</select>
 					</dd>
 				</dl>
 
 				<dl class="mb40">
-					<dt class="mt10">上記製品ご購入のさい他にご検討されていたものはありますか？または、ご使用されていた製品はありますか？</dt>
+					<dt class="mt10">AVIOTに今後期待することはございますか？</dt>
 					<dd class="mt10">
-						<select name="considered_product">
+						<select name="expectation">
 							<option value="">-----</option>
-							<option value="特にない" {{ old('considered_product') == "特にない" ? 'selected' : '' }}>特にない</option>
-							<option value="TE-BD21f-pnk" {{ old('considered_product') == "TE-BD21f-pnk" ? 'selected' : '' }}>TE-BD21f-pnk</option>
-							<option value="WE-BD21d" {{ old('considered_product') == "WE-BD21d" ? 'selected' : '' }}>WE-BD21d</option>
-							<option value="TE-D01g" {{ old('considered_product') == "TE-D01g" ? 'selected' : '' }}>TE-D01g</option>
-							<option value="TE-D01d" {{ old('considered_product') == "TE-D01d" ? 'selected' : '' }}>TE-D01d</option>
-							<option value="TE-D01a" {{ old('considered_product') == "TE-D01a" ? 'selected' : '' }}>TE-D01a</option>
-							<option value="TE-D01b" {{ old('considered_product') == "TE-D01b" ? 'selected' : '' }}>TE-D01b</option>
-							<option value="TE-D01c" {{ old('considered_product') == "TE-D01c" ? 'selected' : '' }}>TE-D01c</option>
-							<option value="TE-D01d-kzn" {{ old('considered_product') == "TE-D01d-kzn" ? 'selected' : '' }}>TE-D01d-kzn</option>
-							<option value="TE-D01e" {{ old('considered_product') == "TE-D01e" ? 'selected' : '' }}>TE-D01e</option>
-							<option value="TE-D01h" {{ old('considered_product') == "TE-D01h" ? 'selected' : '' }}>TE-D01h</option>
-							<option value="WE-D01c" {{ old('considered_product') == "WE-D01c" ? 'selected' : '' }}>WE-D01c</option>
-							<option value="WE-D01b" {{ old('considered_product') == "WE-D01b" ? 'selected' : '' }}>WE-D01b</option>
+							<option value="新製品の発売" {{ old('expectation') == "新製品の発売" ? 'selected' : '' }}>新製品の発売</option>
+							<option value="イベントの実施" {{ old('expectation') == "イベントの実施" ? 'selected' : '' }}>イベントの実施</option>
+							<option value="アーティストコラボレーション" {{ old('expectation') == "アーティストコラボレーション" ? 'selected' : '' }}>アーティストコラボレーション</option>
+							<option value="AVIOT関連のアクセサリー" {{ old('expectation') == "AVIOT関連のアクセサリー" ? 'selected' : '' }}>AVIOT関連のアクセサリー</option>
+							<option value="その他" {{ old('expectation') == "その他" ? 'selected' : '' }}>その他</option>
+							<option value="特にない" {{ old('expectation') == "特にない" ? 'selected' : '' }}>特にない</option>
 						</select>
 					</dd>
 				</dl>
                 
                 <dl class="mb40">
-                    <dt>お好きなミュージシャンはどなたですか？</dt>
+                    <dt>お好きなミュージシャンをご記入ください。</dt>
                     <dd class="mt10">
                         <input type="text" name="musician" size="40">
                     </dd>
@@ -268,7 +260,7 @@ table {
 			</form>
 			
 		</section>
-	
+		{{-- @endif --}}
 </article>
 </div><!--/main-->
 </div><!--/container-->

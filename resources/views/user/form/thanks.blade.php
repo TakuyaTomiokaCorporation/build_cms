@@ -37,6 +37,7 @@ footer img {
 <div id="container" class="both mb60">
 <div id="" class="main" role="main">
 <article class="w1020 w98 m_auto">
+		<h2 class="alc"><img src="{{ asset('images/events/2019/AVIOTLIVE03.jpg') }}"></h2>
 	<h2 class="pt20 mb20">ご応募ありがとうございました。</h2>
 	<p class="">送信いたしました。</p>
 	<p>ご当選者の方には11月21日以降にメールにてご連絡させていただきますので、しばらくお待ちください。</p>

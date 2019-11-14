@@ -197,6 +197,7 @@
                     <option value="パールホワイト" {{ old('color') == 'パールホワイト' ? 'selected' : ''}}>パールホワイト</option>
                     <option value="アイボリー" {{ old('color') == 'アイボリー' ? 'selected' : ''}}>アイボリー</option>
                     <option value="ダークルージュ" {{ old('color') == 'ダークルージュ' ? 'selected' : ''}}>ダークルージュ</option>
+                    <option value="コーディナルレッド" {{ old('color') == 'コーディナルレッド' ? 'selected' : ''}}>コーディナルレッド</option>
                     <option value="ダークメタリックブラウン" {{ old('color') == 'ダークメタリックブラウン' ? 'selected' : ''}}>ダークメタリックブラウン</option>
                 </select>
                 </dd>

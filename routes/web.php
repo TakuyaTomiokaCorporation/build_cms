@@ -115,7 +115,7 @@ Route::get('/support/registration', 'UserRegisterController@getProductRegistrati
 Route::patch('/support/registration/confirm', 'UserRegisterController@getConfirm')->name('product_regiser.confirm');
 Route::get('/support/registration/thanks', 'UserRegisterController@getProductThanks')->name('product_register.thanks');
 Route::get('/pnk_reservation', 'UserController@getPnkReservation')->name('pnk_reservation');
-Route::get('/pnk_reservation/thanks', 'UserRegisterController@getPnkThanks');
+// Route::get('/pnk_reservation/thanks', 'UserRegisterController@getPnkThanks');
 
 
 /*

@@ -11,11 +11,11 @@ class UserAppliedController extends Controller
     public function createAviotLive03Form()
     {
         $now = Carbon::now()->format('Y-m-d H:i:s');
-        $open = Carbon::parse('2019-11-13 12:00:00');
+        $close = Carbon::parse('2019-11-21 00:00:00');
 
         return view('user.form.2019.aviot_live_03',[
             'now' => $now,
-            'open' => $open,
+            'close' => $close,
         ]);
     }
 

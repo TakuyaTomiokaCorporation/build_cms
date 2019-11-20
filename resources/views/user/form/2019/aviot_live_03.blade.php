@@ -126,7 +126,7 @@ table {
 <div id="" class="main" role="main">
 <article class="w1020 w98 m_auto">
 	<h2 class="alc"><img src="{{ asset('images/events/2019/AVIOTLIVE03.jpg') }}"></h2>
-		@if ($close > $now)
+		@if ($close < $now)
 		<div class="text">
 			{{-- <p class="date alc bold mb20">受付終了いたしました。</p> --}}
 		</div>
